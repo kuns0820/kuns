@@ -11,52 +11,100 @@
 <div id="ev_wrap">
 	<header>
 		<h1><a href=""><img src="imgm/logo.jpg" alt=""></a></h1>
+		<div class="search-box">
+			<p><input type="text" name="" id="" placeholder="이벤트를 검색하세요."></p>
+			<button type="button" class="btn-srh">
+				<svg viewBox="0 0 31 31"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path fill-rule="nonzero" fill="rgb(0, 127, 65)"
+				d="M30.072,29.419 C28.971,30.519 27.187,30.519 26.086,29.419 L21.111,24.449 C19.066,25.759 16.648,26.541 14.038,26.541 C6.773,26.541 0.884,20.658 0.884,13.401 C0.884,6.144 6.773,0.261 14.038,0.261 C21.302,0.261 27.192,6.144 27.192,13.401 C27.192,16.008 26.409,18.424 25.098,20.467 L30.072,25.437 C31.173,26.537 31.173,28.320 30.072,29.419 ZM14.038,4.015 C8.849,4.015 4.643,8.217 4.643,13.401 C4.643,18.585 8.849,22.787 14.038,22.787 C19.227,22.787 23.433,18.585 23.433,13.401 C23.433,8.217 19.227,4.015 14.038,4.015 Z"/>
+				</svg>
+			</button>
+		</div>
 	</header>
 
-	<div class="search-box">
-		<p><input type="text" name="" id="" placeholder="이벤트를 검색하세요."></p>
-		<button type="button" class="btn-srh">
-			<svg viewBox="0 0 31 31"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path fill-rule="nonzero" fill="rgb(0, 127, 65)"
-			d="M30.072,29.419 C28.971,30.519 27.187,30.519 26.086,29.419 L21.111,24.449 C19.066,25.759 16.648,26.541 14.038,26.541 C6.773,26.541 0.884,20.658 0.884,13.401 C0.884,6.144 6.773,0.261 14.038,0.261 C21.302,0.261 27.192,6.144 27.192,13.401 C27.192,16.008 26.409,18.424 25.098,20.467 L30.072,25.437 C31.173,26.537 31.173,28.320 30.072,29.419 ZM14.038,4.015 C8.849,4.015 4.643,8.217 4.643,13.401 C4.643,18.585 8.849,22.787 14.038,22.787 C19.227,22.787 23.433,18.585 23.433,13.401 C23.433,8.217 19.227,4.015 14.038,4.015 Z"/>
-			</svg>
-		</button>
-	</div>
-
-	<div class="search-box2">
-		<p><input type="text" name="" id="" placeholder="이벤트를 검색하세요."></p>
-		<button type="button" class="btn-srh">
-			<svg viewBox="0 0 31 31"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path fill-rule="nonzero" fill="rgb(0, 127, 65)"
-			d="M30.072,29.419 C28.971,30.519 27.187,30.519 26.086,29.419 L21.111,24.449 C19.066,25.759 16.648,26.541 14.038,26.541 C6.773,26.541 0.884,20.658 0.884,13.401 C0.884,6.144 6.773,0.261 14.038,0.261 C21.302,0.261 27.192,6.144 27.192,13.401 C27.192,16.008 26.409,18.424 25.098,20.467 L30.072,25.437 C31.173,26.537 31.173,28.320 30.072,29.419 ZM14.038,4.015 C8.849,4.015 4.643,8.217 4.643,13.401 C4.643,18.585 8.849,22.787 14.038,22.787 C19.227,22.787 23.433,18.585 23.433,13.401 C23.433,8.217 19.227,4.015 14.038,4.015 Z"/>
-			</svg>
-		</button>
-	</div>
-
 	<div id="container">
-		<div class="select">
+		<div class="select-box">
 			<select name="" id=""><option value="">전체</option></select>
 		</div>
 
 		<ul class="ev-list">
 			<li>
-				<span class="state ing">진행 중</span>
-				<a href="" class="thumb"><img src="img/sample01.jpg" alt="">
-					<span>마감임박 D-2</span>
-				</a>
-				<div class="info">
-					<p>사명변경 1주년기념 선물 증정 이벤트</p>
-					<dl>
-						<dt>이벤트 기간</dt>
-						<dd>2019.07.04~07.02</dd>
-					</dl>
+				<span class="state">진행 중</span>
+				<div class="cont">
+					<a href="" class="thumb"><img src="img/sample01.jpg" alt="">
+						<span>마감임박 D-2</span>
+					</a>
+					<div class="info">
+						<p>사명변경 1주년기념 선물 증정 이벤트</p>
+						<dl>
+							<dt>이벤트 기간</dt>
+							<dd>2019.07.04~07.02</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="state end">종료된 이벤트</span>
+				<div class="cont">
+					<a href="" class="thumb"><img src="img/sample01.jpg" alt="">
+						<em class="end">이벤트 종료</em>
+					</a>
+					<div class="info">
+						<p>사명변경 1주년기념 선물 증정 이벤트</p>
+						<dl>
+							<dt>이벤트 기간</dt>
+							<dd>2019.07.04~07.02</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="state">진행 중</span>
+				<div class="cont">
+					<a href="" class="thumb"><img src="img/sample01.jpg" alt=""></a>
+					<div class="info">
+						<p>사명변경 1주년기념 선물 증정 이벤트</p>
+						<dl>
+							<dt>이벤트 기간</dt>
+							<dd>2019.07.04~07.02</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="btn">
+					<a href="javascript:;">
+						<img src="imgM/ico_srh.png" alt="">
+						<span>당첨자 조회</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<span class="state end">종료된 이벤트</span>
+				<div class="cont">
+					<a href="" class="thumb"><img src="img/sample01.jpg" alt="">
+						<em class="end">이벤트 종료</em>
+					</a>
+					<div class="info">
+						<p>사명변경 1주년기념 선물 증정 이벤트</p>
+						<dl>
+							<dt>이벤트 기간</dt>
+							<dd>2019.07.04~07.02</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="btn">
+					<a href="javascript:;">
+						<img src="imgM/ico_srh.png" alt="">
+						<span>당첨자 조회</span>
+					</a>
 				</div>
 			</li>
 		</ul>
+
+		<div class="btn-more">
+			<button type="button">더보기 +</button>
+		</div>
 	</div>
 
 	<footer>
