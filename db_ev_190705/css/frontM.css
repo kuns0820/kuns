@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@import url(https://cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css);
+
+html, body, div, span,  iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, footer, header, hgroup, menu, nav, section, summary, video {margin:0; padding:0; border:0; vertical-align:baseline; box-sizing:border-box;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {color:#222; font-size:12px; line-height:1.2; font-family:'Nanum Gothic','Malgun Gothic','맑은 고딕','AppleSDGothicNeo-Medium','Helvetica','AppleGothic','Sans-serif','Dotum','Verdana','Helvetica',sans-serif;}
+html {font-size:1.875vw;}
+ol, ul {list-style:none;}
+em,i {font-style:normal;}
+table {border-collapse:collapse; border-spacing:0;}
+a, button {font-family:inherit;}
+a {color:inherit; font-family:inherit; text-decoration:none; font-weight:normal; color:inherit;}
+a:active, a:visited, a:hover {text-decoration:none; outline:none;}
+button {background:none; margin:0; padding:0; border:0 none; color:inherit; font-size:inherit; outline:none; cursor:pointer;}
+img {max-width:100%; vertical-align:middle;}
+svg {display:block; width:100%; height:100%;}
+fieldset {border:0 none !important;}
+input[type="text"],
+input[type="number"],
+input[type="password"] {margin:0; padding:0; border:1px solid #ddd; box-sizing:border-box; color:inherit; font-family:inherit; outline:none; -webkit-appearance:none;}
+input[type="text"]::-ms-clear {display:none;}
+input[type="text"]:-ms-clear {display:none;}
+a, textarea {color:inherit; font-family:inherit; text-decoration:none;}
+textarea::-webkit-input-placeholder {color:#dcdcdc;}
+textarea:-ms-input-placeholder {color:#dcdcdc;}
+input[type="text"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder {color:#c2c2c2;}
+input[type="text"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder {color:#c2c2c2;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
+
+#ev_wrap {overflow:hidden;}
+h1 {padding:1.5rem 0; text-align:center;}
+h1 a img {height:3.3rem;}
+
+#container {background:#f2f4f6;}
+
+.search-box {position:relative; overflow:hidden; background:#fff; margin:0 1.5rem 1.5rem; border:2px solid #007f41; border-radius:5px;}
+.search-box p {margin-right:3.5rem;}
+.search-box p input {width:100%; height:3.4rem; padding-left:1rem; border:0; color:#444; font-size:1.4rem;}
+.search-box .btn-srh {position:absolute; top:0; right:0; width:3.5rem; height:3.4rem;}
+.search-box .btn-srh svg {position:absolute; top:0; bottom:0; left:0; right:0; width:1.5rem; height:1.5rem; margin:auto;}
