@@ -42,7 +42,7 @@ footer .inr .sns {position:absolute; top:30px; right:0;}
 footer .inr .sns:after {content:""; display:block; clear:both;}
 footer .inr .sns li {float:left; margin-left:15px; font:0/0 a;}
 
-#container {background:url(../images/bg_cont.jpg) 0 0 repeat-x;}
+#container {background:url(../img/bg_cont.jpg) 0 0 repeat-x;}
 .slider {position:relative; background:#f5f5f5;}
 .slider .swiper-container {width:1194px; margin:0 auto;}
 .slider .swiper-pagination {position:absolute; bottom:-33px; left:50%; width:1194px !important; margin-left:-597px; padding-right:10px; text-align:right;}
@@ -81,7 +81,7 @@ footer .inr .sns li {float:left; margin-left:15px; font:0/0 a;}
 .chk-box span {position:absolute; top:0; left:0; background:#fff; width:23px; height:23px; border:1px solid #ccc; z-index:1;}
 .chk-box span i {position:absolute; bottom:3px; left:0; width:18px; height:22px; transition:all .2s ease; opacity:0;}
 .chk-box span input[type=checkbox] {position:absolute; top:0; left:0; width:23px; height:23px; margin:0; padding:0; opacity:0;}
-.chk-box span input[type=checkbox]:checked + i {background:url(../images/ico_chk.png) 0 0 no-repeat; background-size:18px 22px; opacity:1;}
+.chk-box span input[type=checkbox]:checked + i {background:url(../img/ico_chk.png) 0 0 no-repeat; background-size:18px 22px; opacity:1;}
 .chk-box label {display:inline-block; position:relative; padding-left:33px; color:#555; font-size:18px; cursor:pointer; line-height:1.2; z-index:2;}
 
 .search_box {margin-top:50px; text-align:right; font-size:0;}
