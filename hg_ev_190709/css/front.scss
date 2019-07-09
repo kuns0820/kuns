@@ -11,7 +11,7 @@ a, button {font-family:inherit;}
 a {color:inherit; font-family:inherit; text-decoration:none; font-weight:normal; color:inherit;}
 a:active, a:visited, a:hover {text-decoration:none; outline:none;}
 button {background:none; margin:0; padding:0; border:0 none; color:inherit; font-size:inherit; outline:none; cursor:pointer;}
-img {max-width:100%; vertical-align:middle;}
+img {width:100%; max-width:100%; vertical-align:middle;}
 fieldset {border:0 none !important;}
 input[type="text"],
 input[type="number"],
@@ -31,4 +31,27 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 @function cal($target, $container) {
 	@return ($target / $container) * 100%;
 }
-#ev_wrap {}
+#ev_wrap {overflow:hidden;}
+
+.ev02 {position:relative;
+	span[class^=chk-] {position:absolute; top:cal(585,1308); width:cal(78,640); height:cal(82,1308); color:#fff; font-size:3rem; text-align:center; font-weight:bold;}
+	.chk-cnt1 {left:cal(154,640);}
+	.chk-cnt2 {left:cal(243,640);}
+
+	.btn-check {position:absolute; top:cal(709,1308); left:cal(120,640); width:cal(404,640); height:cal(93,1308); font:0/0 a;}
+
+	.attaint {position:absolute; top:cal(850,1308); left:cal(79,640); width:cal(483,640); font:0/0 a;
+		img {display:block;}
+	}
+
+	.btn-point {position:absolute; bottom:cal(155,1308); left:cal(120,640); width:cal(404,640); height:cal(93,1308); font:0/0 a;} 
+}
+
+.ev03 {position:relative;
+	[class^=btn-] {position:absolute; width:cal(148,640); height:cal(75,1421); font:0/0 a;}
+	.btn-share_01 {top:cal(727,1421); left:cal(78,640);}
+	.btn-share_02 {top:cal(727,1421); left:cal(247,640);}
+	.btn-share_03 {top:cal(727,1421); left:cal(416,640);}
+	.btn-share_04 {top:cal(821,1421); left:cal(163,640);}
+	.btn-share_05 {top:cal(821,1421); left:cal(332,640);}
+}
