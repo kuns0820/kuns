@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+html, body, div, span,  iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, footer, header, hgroup, menu, nav, section, summary, video {margin:0; padding:0; border:0; font-size:100%; vertical-align:middle;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {font-size:12px; line-height:1.2; font-family:dotum;}
+ol, ul {list-style:none;}
+table {border-collapse:collapse; border-spacing:0;}
+a {color:inherit; font-family:inherit; text-decoration:none; font-weight:normal;
+	&:active, &:visited, &:hover{text-decoration:none; outline:none;}
+}
+button {background:none; border:0 none; color:inherit; font-size:inherit; outline:none; cursor:pointer;}
+img {max-width:100%;}
+fieldset {border:0 none !important;}
+
+a {outline:none;}
+
+// Common Module Extend
+$imgDir: '../images/';
+%clearfix {&:after {content:""; display:block; clear:both;}}
+%action {transition: all 1s ease-in-out;}
+@function cal($target, $container) {
+	@return ($target / $container) * 100%;
+}
+@mixin bgUrl($filename,$position:0 0,$repeat: no-repeat) {
+	background: url("#{$imgDir}#{$filename}") $position $repeat;
+}
+@mixin ani_mode($val:both){
+	@include css3(animation-fill-mode , $val);
+}
+@mixin ani_direction($val:alternate){
+	@include css3(animation-direction , $val);
+}
+@mixin ani($val){
+	@include css3(animation , $val);
+}
+@mixin keyfrm($ani_name) {
+	@-webkit-keyframes #{$ani_name} {@content;}
+	@-ms-keyframes #{$ani_name} {@content;}
+	@keyframes #{$ani_name} {@content;}
+}
+@mixin css3($property, $value) {
+	-webkit-#{$property}: #{$value};
+	-ms-#{$property}: #{$value};
+	#{$property}: #{$value};
+}
+
+body {background:#563a2f;}
+* {outline:none;}
+#wrap {position:relative;}
+#sliders {position:static !important;
+	.slick-arrow {position:absolute; top:50%; width:32px; height:66px; font:0/0 a; z-index:5;
+		-webkit-transform:translateY(-50%);
+		-ms-transform:translateY(-50%);
+		transform:translateY(-50%);
+		&.slick-prev {left:0; @include bgUrl("tab_prev.png"); background-size:auto 66px;}
+		&.slick-next {right:0; @include bgUrl("tab_next.png"); background-size:auto 66px;}
+	}
+	.slick-dots {width:100%; margin-top:10px; text-align:center; font:0/0 a; z-index:1;
+		li {display:inline-block; margin-left:4px;
+			&:first-child {margin-left:0;}
+			button {background:#636363; margin:0; padding:0; width:11px; height:11px; border-radius:50%; font:0/0 a;}
+			&.slick-active button {background:#fff;}
+		}
+	}
+	.slick-slide {
+		img {width:100%;}
+	}
+}
+
+.cont01 {@include bgUrl("cont01.jpg"); position:relative;
+	span {position:absolute; opacity:0;
+		&.img00 {top:cal(179px,1024px); left:cal(66px,720px); width:cal(84px,720px); height:cal(98px,1024px);}
+		&.img01 {top:cal(178px,1024px); left:cal(159px,720px); width:cal(78px,720px); height:cal(99px,1024px);}
+		&.img02 {top:cal(182px,1024px); left:cal(452px,720px); width:cal(97px,720px); height:cal(89px,1024px);}
+		&.img03 {top:cal(178px,1024px); left:cal(556px,720px); width:cal(102px,720px); height:cal(105px,1024px);}
+		&.img04 {top:cal(140px,1024px); left:cal(66px,720px); width:cal(158px,720px); height:cal(13px,1024px);}
+		&.img05 {top:cal(140px,1024px); left:cal(458px,720px); width:cal(183px,720px); height:cal(16px,1024px);}
+
+		&.img06 {top:cal(758px,1024px); left:0; width:100%; height:cal(132px,1024px);}
+		&.img07 {top:cal(890px,1024px); left:0; width:100%; height:cal(86px,1024px);}
+	}
+
+	&.slick-active .img00 {@include ani(c0100 1s ease .3s 1); @include ani_mode(both);}
+	@include keyfrm(c0100){0% {opacity:0;} 100% {opacity:1;}}
+	&.slick-active .img01 {@include ani(c0101 1s ease .6s 1); @include ani_mode(both);}
+	@include keyfrm(c0101){0% {opacity:0;} 100% {opacity:1;}}
+	&.slick-active .img02 {@include ani(c0102 1s ease .9s 1); @include ani_mode(both);}
+	@include keyfrm(c0102){0% {opacity:0;} 100% {opacity:1;}}
+	&.slick-active .img03 {@include ani(c0103 1s ease 1.2s 1); @include ani_mode(both);}
+	@include keyfrm(c0103){0% {opacity:0;} 100% {opacity:1;}}
+
+	&.slick-active .img04 {@include ani(c0104 1s ease 2s 1); @include ani_mode(both);}
+	@include keyfrm(c0104){0% {opacity:0;} 100% {opacity:1;}}
+	&.slick-active .img05 {@include ani(c0105 1s ease 2.5s 1); @include ani_mode(both);}
+	@include keyfrm(c0105){0% {opacity:0;} 100% {opacity:1;}}
+
+	&.slick-active .img06 {@include ani(c0106 1s ease 3.5s 1); @include ani_mode(both);}
+	@include keyfrm(c0106){0% {opacity:0;} 100% {opacity:1;}}
+	&.slick-active .img07 {@include ani(c0107 1s ease 4s 1); @include ani_mode(both);}
+	@include keyfrm(c0107){0% {opacity:0;} 100% {opacity:1;}}
+}
