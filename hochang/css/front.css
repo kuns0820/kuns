@@ -80,10 +80,7 @@ footer .br {display:none;}
 footer span {margin:0;}
 footer .btn_sitemap {position:absolute; bottom:20px; right:15px; width:60px; height:24px; margin:0;  line-height:24px; font-size:11px;}
 
-
 }
-
-
 
 
 #container .main {position:relative;}
@@ -110,4 +107,7 @@ footer .btn_sitemap {position:absolute; bottom:20px; right:15px; width:60px; hei
 
 @media screen and (max-width:1200px){
 
+.main .swiper-container {position:relative; width:100%;}
+
+.main .main_bnr {float:none; width:100%;}
 }
