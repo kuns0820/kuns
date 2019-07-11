@@ -33,6 +33,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 
 header {position:fixed; top:0; bottom:0; left:0; background:#fff; width:200px; z-index:10;}
 header h1 {padding:48px 0 17px; text-align:center;}
+header .btn_allMenu {display:none;}
 
 .gnb_wrap {padding:17px 0 0 0;}
 .gnb_wrap > ul > li {position:relative;}
@@ -48,8 +49,10 @@ header h1 {padding:48px 0 17px; text-align:center;}
 @media screen and (max-width:1200px){
 
 #hc_warp {padding:0;}
-header {position:static; width:100%;}
+header {position:relative; width:100%;}
 header h1 {padding:10px 0 14px;}
+header .btn_allMenu {display:block; position:absolute; top:0; bottom:0; right:0; width:100px;}
+header .btn_allMenu svg {position:absolute; top:0; bottom:0; left:0; right:0; width:40px; height:35px; margin:auto;}
 
 
 .gnb_wrap {display:none; position:absolute; top:90px; left:0; width:100%;}
