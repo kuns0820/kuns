@@ -41,7 +41,7 @@ header .btn_allMenu {display:none;}
 .gnb_wrap > ul > li.on > a,
 .gnb_wrap > ul > li > a:hover {color:#f37121;}
 .gnb_wrap .dep2 {display:none; position:absolute; top:0; left:100%; background:rgba(0,0,0,.8); padding:20px 0; white-space:nowrap; z-index:9;}
-.gnb_wrap .dep2 a {height:40px; padding:0 40px; color:#fff; line-height:40px; font-size:16px; font-weight:bold;}
+.gnb_wrap .dep2 a {display:block; height:40px; padding:0 40px; color:#fff; line-height:40px; font-size:16px; font-weight:bold;}
 .gnb_wrap .dep2 a:hover {color:#f37121;}
 .gnb_wrap > ul > li.on .dep2 {display:block;}
 
@@ -59,14 +59,22 @@ footer .btn_sitemap {display:block; background:#232323; width:86px; height:36px;
 /* 모바일 */
 @media screen and (max-width:1200px){
 
+img {width:100%;}
 #hc_warp {padding:0;}
 header {position:relative; width:100%;}
 header h1 {padding:10px 0 14px;}
-header h1 img {height:33px;}
+header h1 img {width:auto; height:33px;}
 header .btn_allMenu {display:block; position:absolute; top:0; bottom:0; right:0; width:50px;}
 header .btn_allMenu svg {position:absolute; top:0; bottom:0; left:0; right:0; width:20px; height:17px; margin:auto;}
 
-.gnb_wrap {display:none; position:absolute; top:90px; left:0; width:100%;}
+.gnb_wrap {display:none; position:absolute; top:57px; left:0; background:#f37121; width:100%; padding:25px 0;}
+.gnb_wrap.on {display:block;}
+.gnb_wrap > ul > li > a {height:33px; padding-left:30px; color:#fff; font-size:15px; line-height:33px;}
+.gnb_wrap > ul > li.on > a,
+.gnb_wrap > ul > li > a:hover {color:#fff;}
+.gnb_wrap .dep2 {position:static; background:#3d322c; padding:10px 0;}
+.gnb_wrap .dep2 a {height:25px; padding:0 0 0 40px;line-height:25px; font-size:14px;}
+.gnb_wrap > ul > li.on .dep2 {display:block;}
 
 #quick {display:table; position:static; width:100%;}
 #quick > * {display:table-cell; height:60px; vertical-align:middle;}
@@ -82,6 +90,7 @@ footer .btn_sitemap {position:absolute; bottom:20px; right:15px; width:60px; hei
 
 }
 
+#container img.mo {display:none;}
 
 #container .main {position:relative;}
 #container .main:after {content:""; display:block; clear:both;}
@@ -107,7 +116,19 @@ footer .btn_sitemap {position:absolute; bottom:20px; right:15px; width:60px; hei
 
 @media screen and (max-width:1200px){
 
+#container img.mo {display:block;}
+
 .main .swiper-container {position:relative; width:100%;}
+.main .swiper-pagination {display:none;}
+.main .swiper-button-prev,
+.main .swiper-button-next {width:30px; height:30px;}
+.main .swiper-button-prev {background:rgba(0,0,0,.5) url(../images/btn_sl_prev.png) 50% 50% no-repeat; background-size:6px auto;}
+.main .swiper-button-next {background:rgba(0,0,0,.5) url(../images/btn_sl_next.png) 50% 50% no-repeat; background-size:6px auto;}
 
 .main .main_bnr {float:none; width:100%;}
+.main .main_bnr > div a {background:none !important; height:auto; padding:0;}
+.main .main_bnr > div a p {display:none;}
+
+
+
 }

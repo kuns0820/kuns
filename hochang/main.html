@@ -9,90 +9,16 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
-	<!-- <script type="text/javascript" src="js/inc.ui.js"></script> -->
+	<script type="text/javascript" src="js/inc.ui.js"></script>
 </head>
 <body>
 <div id="hc_warp">
-	<header>
-		<h1><a href="index.php"><img src="images/logo.jpg" alt="호창엠에프"></a></h1>
-		<div class="gnb_wrap">
-			<ul>
-				<li><a href="company01.html">호창 HOchang</a>
-					<div class="dep2">
-						<ul>
-							<li><a href="company01.html">인사말</a></li>
-							<li><a href="company02.html">연혁</a></li>
-							<li><a href="company03.html">조직도</a></li>
-							<li><a href="company04.html">인증현황&특허</a></li>
-							<li><a href="company05.html">오시는길</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="car01.html">자동차부품사업부</a>
-					<div class="dep2">
-						<ul>
-							<li><a href="car01.html">제조공법 흐름도</a></li>
-							<li><a href="car02.html">제조공정</a></li>
-							<li><a href="car03.html">설비&측정 설비현황</a></li>
-							<li><a href="car04.html">제품소개</a></li>
-							<li><a href="car05.html">R&D 현황</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="build01.html">건설자재사업부</a>
-					<div class="dep2">
-						<ul>
-							<li><a href="build01.html">제품소개</a></li>
-							<li><a href="build02.html">시험성적서</a></li>
-							<li><a href="build03.html">동영상</a></li>
-							<li><a href="build04.html">견적문의</a></li>
-							<li><a href="build05.html">기술자료</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="bio01.html">바이오사업부</a>
-					<div class="dep2">
-						<ul>
-							<li><a href="bio01.html">Strategy</a></li>
-							<li><a href="bio02.html">R&D</a></li>
-							<li class="sub"><a href="bio03.html">Biotechnology</a></li>
-							<li class="sub"><a href="bio04.html">Biocosmetics</a></li>
-							<li><a href="bio05.html">Products</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<script>
-		$(function(){
-			$(".gnb_wrap > ul > li > a, .gnb_wrap .dep2").hover(function(){
-				$(this).parent().addClass("on");
-			}, function(){
-				$(this).parent().removeClass("on");
-			});
-			$(".gnb_wrap .dep2").hover(function(){
-				$(this).parent().addClass("on");
-			}, function(){
-				$(this).parent().removeClass("on");
-			});
-		});
-		</script>
-		<a href="javascript:;" class="btn_allMenu">
-			<svg viewbox="0 0 40 35"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path fill-rule="nonzero" fill="rgb(34, 34, 34)"
-			d="M-0.000,35.000 L-0.000,30.000 L40.000,30.000 L40.000,35.000 L-0.000,35.000 ZM20.000,15.000 L40.000,15.000 L40.000,20.000 L20.000,20.000 L20.000,15.000 ZM-0.000,-0.000 L40.000,-0.000 L40.000,5.000 L-0.000,5.000 L-0.000,-0.000 Z"/>
-			</svg>
-		</a>
-	</header>
-
 	<div id="container">
 		<article class="main">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide visual01"></div>
-					<div class="swiper-slide visual02"></div>
+					<div class="swiper-slide visual01"><img src="images/imgm_visual_01.jpg" alt="" class="mo"></div>
+					<div class="swiper-slide visual02"><img src="images/imgm_visual_02.jpg" alt="" class="mo"></div>
 				</div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
@@ -114,42 +40,23 @@
 
 			<div class="main_bnr">
 				<div class="bnr01">
-					<a href="car01.html"><p>자동차부품 사업부<span>㈜호창MF</span></p></a>
+					<a href="car01.html"><p>자동차부품 사업부<span>㈜호창MF</span></p>
+						<img src="images/bnrm_main_01.jpg" alt="" class="mo">
+					</a>
 				</div>
 				<div class="bnr02">
-					<a href="build01.html"><p>건설 자재 사업부<span>㈜호창메탈</span></p></a>
+					<a href="build01.html"><p>건설 자재 사업부<span>㈜호창메탈</span></p>
+						<img src="images/bnrm_main_02.jpg" alt="" class="mo">
+					</a>
 				</div>
 				<div class="bnr03">
-					<a href="bio.html"><p>바이오사업부<span>㈜호창메탈</span></p></a>
+					<a href="bio.html"><p>바이오사업부<span>㈜호창메탈</span></p>
+						<img src="images/bnrm_main_03.jpg" alt="" class="mo">
+					</a>
 				</div>
 			</div>
 		</article>
 	</div>
-
-	<div id="quick">
-		<h2>quick</h2>
-		<ul>
-			<li><a href="">(주)호창</a></li>
-		</ul>
-		<ul>
-			<li><a href="">(주)호창 MF</a></li>
-			<li><a href="">제품소개</a></li>
-			<li><a href="">인증서</a></li>
-		</ul>
-		<ul>
-			<li><a href="">(주)호창메탈</a></li>
-			<li><a href="">커플러소개</a></li>
-			<li><a href="">화장품소개</a></li>
-		</ul>
-	</div>
-
-	<footer>
-		<p class="addr">호창MF<br />부산 강서구 과학산단로 417 <br class="br" />(지사동)</p>
-		<span>고객센터 +82 51.831.3445</span>
-		<span>팩스 +82 51.831.3444</span>
-		<em class="copy">Copyright(c)HochangMF,<br class="br" />all Rights Reserved</em>
-		<a href="sitemap.html" class="btn_sitemap">사이트맵</a>
-	</footer>
 </div>
 </body>
 </html>
