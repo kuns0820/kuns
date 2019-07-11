@@ -29,7 +29,7 @@ input[type="number"]:-ms-input-placeholder {color:#dcdcdc;}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 
-#hc_warp {position:relative; padding:0 140px 0 200px; z-index:10;}
+#hc_warp {position:relative; overflow:hidden; width:100%; padding:0 140px 0 200px; z-index:10;}
 
 header {position:fixed; top:0; bottom:0; left:0; background:#fff; width:200px; z-index:10;}
 header h1 {padding:48px 0 17px; text-align:center;}
