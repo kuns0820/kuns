@@ -51,6 +51,7 @@ var inc_dom = {
 		incHD.push('</li>');
 		incHD.push('</ul>');
 		incHD.push('</div>');
+		incHD.push('<i class="allDim"></i>');
 		incHD.push('<a href="javascript:;" class="btn_allMenu">');
 		incHD.push('<svg viewbox="0 0 40 35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="nonzero" fill="rgb(34, 34, 34)" d="M-0.000,35.000 L-0.000,30.000 L40.000,30.000 L40.000,35.000 L-0.000,35.000 ZM20.000,15.000 L40.000,15.000 L40.000,20.000 L20.000,20.000 L20.000,15.000 ZM-0.000,-0.000 L40.000,-0.000 L40.000,5.000 L-0.000,5.000 L-0.000,-0.000 Z"/></svg>');
 		incHD.push('</a>');
@@ -108,26 +109,17 @@ $(function(){
 	}
 	
 	/* MOBILE */
-	// $(".mobile .gnb_wrap > ul > li > a").click(function(){
-	// 	if(!$(this).parent("li").hasClass("on")){
-	// 		$(this).parent().addClass("on");
-	// 		console.log(1)
-	// 	}else{
-	// 		$(this).parent().removeClass("on");
-	// 		console.log(2)
-	// 	}
-		
-	// 	return false;
-	// });
-
-	$("header .btn_allMenu").click(function(){
+	$("header .btn_allMenu, .allDim").click(function(){
 		$(".gnb_wrap").toggleClass("on");
 	});
 
 	$(".mobile .gnb_wrap > ul > li > a").click(function(){
 		$(this).parent().toggleClass("on");
-		
 		return false;
+	});
+
+	$(".bread .deps .selected").click(function(){
+		$(this).closest(".deps").toggleClass("active");
 	});
 });
 
