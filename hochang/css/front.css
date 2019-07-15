@@ -213,6 +213,52 @@ iframe.map {display:block; width:100%; max-width:1200px; height:600px;}
 .build03 li {float:left; width:calc(33% - 33px); margin-left:50px;}
 .build03 li:nth-child(3n + 1) {margin-left:0;}
 
+.build_form table {width:100%; margin-bottom:50px; border-top:2px solid #494949; border-bottom:1px solid #494949;}
+.build_form table .first {width:190px;}
+.build_form table th, .build_form table td {height:60px; border-top:1px solid #ccc; vertical-align:middle; font-size:18px;}
+.build_form table tr:first-child th,
+.build_form table tr:first-child td {border-top:0;}
+.build_form table th {background:#fff; padding-left:30px; color:#000; text-align:left;}
+.build_form table td {padding:5px 0 5px 20px;}
+.build_form table td input {background:#fff; height:50px; padding-left:10px; border:1px solid #ccc; box-sizing:border-box; border-radius:2px; line-height:50px; font-size:18px;}
+.build_form table td input[type=text] {width:250px;}
+.build_form table td input[type=number] {width:120px;}
+.build_form table td.cnt input[type=number] {width:250px;}
+.build_form table td span {display:inline-block; width:22px; height:50px; color:#000; font-size:18px; line-height:50px; text-align:center;}
+.build_form table td select {background:#fff; min-width:150px; height:50px; padding-left:10px; border:1px solid #ccc; border-radius:2px; color:#000; font-size:18px;}
+.build_form table td textarea {display:block; width:989px; height:170px; margin:0; padding:10px; box-sizing:border-box; border:1px solid #ccc; border-radius:2px; color:#000; font-size:18px; line-height:1.5; resize:none;}
+.build_form .submit {display:block; background:#f37121; width:220px; height:70px; margin:0 auto; border-radius:100px; color:#fff; font-size:24px; text-align:center; line-height:70px;}
+
+@media screen and (max-width:1475px) {
+	.build_form table td textarea {width:100%;}
+}
+
+@media screen and (max-width:980px) {
+	.build_form table {margin-bottom:30px;}
+	.build_form table .first {width:30%;}
+	.build_form table th, .build_form table td {height:30px;}
+	.build_form table th {padding-left:0; font-size:12px;}
+	.build_form table td > * {float:left;}
+	.build_form table td input {height:26px; font-size:12px; line-height:26px;}
+	.build_form table td input[type=text],
+	.build_form table td input[type=number],
+	.build_form table td.cnt input[type=number],
+	.build_form table td input[type=file] {width:100%;}
+	.build_form table td select {height:26px; font-size:12px;}
+	.build_form table td span {height:26px; line-height:26px; font-size:12px;}
+
+	.build_form table td.tel input[type=number] {width:30%;}
+	.build_form table td.tel span {width:5%;}
+
+	.build_form table td.mail input[type=text] {width:45%;}
+	.build_form table td.mail span {width:10%;}
+	.build_form table td.mail select {min-width:auto; width:100%; margin-top:5px;}
+
+	.build_form table td.cnt input[type=number] {width:85%;}
+	.build_form table td.cnt span {width:15%;}
+
+	.build_form .submit {width:110px; height:36px; line-height:36px; font-size:12px;}
+}
 
 @media screen and (max-width:1200px) {
 	.tbl {max-width:660px; margin:0 auto;overflow-x:auto;}
