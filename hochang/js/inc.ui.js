@@ -34,7 +34,6 @@ var inc_dom = {
 		incHD.push('<li><a href="build02.html">시험성적서</a></li>');
 		incHD.push('<li><a href="build03.html">동영상</a></li>');
 		incHD.push('<li><a href="build04.html">견적문의</a></li>');
-		incHD.push('<li><a href="build05.html">기술자료</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</div>');
 		incHD.push('</li>');
@@ -43,9 +42,9 @@ var inc_dom = {
 		incHD.push('<ul>');
 		incHD.push('<li><a href="bio01.html">Strategy</a></li>');
 		incHD.push('<li><a href="bio02.html">R&D</a></li>');
-		incHD.push('<li class="sub"><a href="bio03.html">Biotechnology</a></li>');
-		incHD.push('<li class="sub"><a href="bio04.html">Biocosmetics</a></li>');
-		incHD.push('<li><a href="bio05.html">Products</a></li>');
+		incHD.push('<li class="sub"><a href="bio02.html">Biotechnology</a></li>');
+		incHD.push('<li class="sub"><a href="bio3.html">Biocosmetics</a></li>');
+		incHD.push('<li><a href="bio04.html">Products</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</div>');
 		incHD.push('</li>');
