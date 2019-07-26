@@ -1,0 +1,58 @@
+/*
+ * @ Autor : Kuns
+ */
+@charset "utf-8";
+@import "module";
+// @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+// $my-font:"Noto Sans KR";
+
+@include reset();
+
+a {outline:none;}
+em,i {font-style:normal;}
+
+// Common Module Extend
+$imgDir: '../images/';
+%clearfix {&:after {content:""; display:block; clear:both;}}
+%action {transition: all 1s ease-in-out;}
+
+body {max-width:660px; overflow-x:hidden;}
+// body.main {background:url(../images/bg_main.gif) 0 0 repeat-x;}
+// body {background:url(../images/bg_sub.gif) 0 0 repeat-x;}
+
+#wrap {position:relative; width:1920px; height:100%;}
+
+#sliders {position:relative; height:1008px;
+	.slick-arrow {position:absolute; bottom:-9999em; left:-9999em; width:0; height:0; font:0/0 a; z-index:5;
+		&.slick-prev {}
+		&.slick-next {}
+	}
+	.slick-slide {position:relative; height:1008px;
+		.inn {width:100%; height:1008px;}
+	}
+	.slick-dots {position:absolute; bottom:10px; left:0; width:660px; text-align:center; font:0/0 a; z-index:1;
+		li {display:inline-block; margin-left:4px;
+			&:first-child {margin-left:0;}
+			button {@include bgUrl("paging.png", 100% 0); margin:0; padding:0; width:11px; height:10px; font:0/0 a;}
+			&.slick-active button {background-position:0 0 ;}
+		}
+	}
+}
+.layer {display:none; position:absolute; top:0; left:0; z-index:5;
+	.close {position:absolute; width:45px; height:45px;}
+}
+
+.cont01 {
+	background:url(../images/cont01.jpg) 0 0 no-repeat, url(../images/bg_main.gif) 0 0 repeat-x;
+}
+.cont02 {
+	background:url(../images/cont02.jpg) 0 0 no-repeat, url(../images/bg_sub.gif) 0 0 repeat-x;
+}
+.cont03 {
+	background:url(../images/cont03.jpg) 0 0 no-repeat, url(../images/bg_sub.gif) 0 0 repeat-x;
+}
+.cont04 {
+	background:url(../images/cont04.jpg) 0 0 no-repeat, url(../images/bg_sub.gif) 0 0 repeat-x;
+}
+
+.slick-slide a {position:absolute; top:658px; left:239px; width:363px; height:40px;}
