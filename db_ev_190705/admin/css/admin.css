@@ -17,7 +17,7 @@ img {max-width:100%; vertical-align:middle;}
 fieldset {border:0 none !important;}
 input[type="text"],
 input[type="number"],
-input[type="password"] {margin:0; padding:0; border:1px solid #ddd; box-sizing:border-box; color:inherit; font-family:inherit; outline:none; -webkit-appearance:none;}
+input[type="password"] {margin:0; padding:0; border:1px solid #ddd; box-sizing:border-box; color:inherit; font-family:inherit; outline:none; -webkit-appearance:none; font-size:18px;}
 input[type="text"]::-ms-clear {display:none;}
 input[type="text"]:-ms-clear {display:none;}
 a, textarea {color:inherit; font-family:inherit; text-decoration:none;}
@@ -61,11 +61,11 @@ header .inr h1 {float:left; margin-top:45px;}
 header .inr .right {float:right; margin-top:55px;}
 header .inr .right ul {float:left;}
 header .inr .right ul li {float:left;}
-header .inr .right ul li a {display:block; padding:0 25px; color:#bebebe; font-size:22px;}
+header .inr .right ul li a {display:block; padding:0 25px; color:#bebebe; font-size:22px; font-weight:700;}
 header .inr .right ul li.on a {color:#007f41;}
 
 header .inr .right .user {float:right; margin-left:25px;}
-header .inr .right .user p {float:left; padding:0 20px 0 50px; border-left:1px solid #bebebe; color:#989898; font-size:22px; font-weight:bold;}
+header .inr .right .user p {float:left; padding:0 20px 0 50px; border-left:1px solid #bebebe; color:#989898; font-size:22px; font-weight:700;}
 header .inr .right .user button {float:right; margin-top:-11px;}
 
 footer {background:#f5f5f5; margin-top:105px; border-top:1px solid #d1d1d1; color:#959595; font-size:14px; line-height:22px;}
@@ -77,19 +77,23 @@ footer .inr {width:1194px; margin:0 auto; padding:40px 0 75px;}
 #container .inr h2:before {content:""; display:inline-block; background:#007f41; width:27px; height:9px; margin-right:13px; border-radius:30px; vertical-align:5px;}
 
 .search-box {border:1px solid #007f41; border-width:2px 0;}
-.search-box dl {display:table; width:100%;}
-.search-box dl:first-child {border-bottom:1px solid #dbe2df;}
+.search-box dl {display:table; width:100%; border-top:1px solid #dbe2df;}
+.search-box dl:first-child {border-top:0;}
 .search-box dl dt,.search-box dl dd {display:table-cell; height:60px; vertical-align:middle;}
 .search-box dl dt {background:#f2f8f5; width:240px; color:#007f41; font-size:20px; text-align:center;}
 .search-box dl dd {width:954px; padding-left:30px;}
 .search-box dl dd > * {display:inline-block; vertical-align:middle;}
 .search-box dl dd .chk-box {margin-right:30px;}
+.search-box dl dd select {width:285px; height:38px; margin-right:26px; border:1px solid #bebebe; color:#b7b7b7; font-size:16px;}
+.search-box dl dd .srh_text input {display:block; width:285px; height:38px; padding-left:10px; border:1px solid #bebebe;}
+
+
 .search-box .date_wrap .day {position:relative; width:285px;}
 .search-box .date_wrap .day input {display:block; width:100%; height:38px; padding-left:10px; border:1px solid #bebebe;}
 .search-box .date_wrap .day button {position:absolute; top:6px; right:10px;}
 .search-box .date_wrap span {width:22px; height:38px; color:#b7b7b7; font-size:18px; line-height:38px; text-align:center;}
-.search-box .date_wrap .btn-srh {background:#e1e1e1; width:74px; height:38px; margin-left:5px; color:#fff; font-size:18px; text-align:center; line-height:36px;}
-.search-box .date_wrap .btn-srh span {color:#fff;}
+.search-box .btn-srh {background:#e1e1e1; width:74px; height:38px; margin-left:5px; color:#fff; font-size:18px; text-align:center; line-height:36px;}
+.search-box .btn-srh span {color:#fff;}
 
 .board {margin-top:20px; border-top:2px solid #007f41;}
 .board table {width:100%;}
@@ -98,5 +102,34 @@ footer .inr {width:1194px; margin:0 auto; padding:40px 0 75px;}
 .board td {height:60px; color:#727272; font-size:18px; text-align:center;}
 .board td span {color:#b7b7b7;}
 .board td.sbj {padding-left:10px; text-align:left;}
-.btn-right {margin-top:-40px; text-align:right;}
-.btn-right button {background:#007f41; width:190px; height:48px; color:#fff; font-size:20px; text-align:center; line-height:46px;}
+
+.board.view {border-bottom:2px solid #007f41;}
+.board.view td {padding-left:30px; text-align:left; line-height:1.8;}
+.board.view td.desc {padding-top:25px; padding-bottom:25px;}
+
+.board.write {border-bottom:2px solid #007f41;}
+.board.write th i {display:inline-block; margin-left:3px; color:#9e0b0f; font-size:20px; font-weight:bold;}
+.board.write td {padding-left:30px; text-align:left;}
+.board.write td input[type=text] {display:block; width:604px; height:38px; padding-left:10px; border:1px solid #bebebe;}
+.board.write td input[type=file] {display:inline-block; width:604px; height:38px; vertical-align:middle;}
+.board.write td input[type=file] + span {display:inline-block; color:#b7b7b7; font-size:16px; vertical-align:middle;}
+.board.write td select {width:166px; height:38px; border:1px solid #bebebe; color:#b7b7b7; font-size:16px;}
+.board.write td .day {position:relative; width:285px;}
+.board.write td .day input {display:block; width:285px; height:38px; padding-left:10px; border:1px solid #bebebe;}
+.board.write td .day button {position:absolute; top:6px; right:10px;}
+.board.write td.desc {padding:15px 0 15px 30px;}
+.board.write td textarea {display:block; width:895px; height:136px; margin:0; padding:15px; border:1px solid #bebebe; box-sizing:border-box; color:#b7b7b7; font-size:16px; line-height:1.8; resize:none;}
+
+.board.write td.img {padding:20px 0 20px 30px;}
+.board.write td.img > div {margin-bottom:15px;}
+.board.write td.img > div > * {display:inline-block; vertical-align:middle;}
+.board.write td.img > div em {margin-right:25px; color:#727272; font-size:18px;}
+
+.btn-right-mt {margin-top:-40px; text-align:right;}
+.btn-right-mt button {background:#007f41; width:190px; height:48px; color:#fff; font-size:20px; text-align:center; line-height:46px;}
+.btn-right {margin-top:20px; text-align:right;}
+.btn-right {margin:30px 0 -10px;}
+.btn-right > * {display:inline-block; vertical-align:middle;}
+.btn-right .modify {background:#007f41; width:128px; height:48px; color:#fff; font-size:20px; text-align:center; line-height:46px;}
+.btn-right .list {background:#5b5b5b; width:128px; height:48px; margin-right:5px; color:#fff; font-size:20px; text-align:center; line-height:48px;}
+.btn-right .excel {background:#5b5b5b; width:230px; height:48px; margin-right:5px; color:#fff; font-size:20px; text-align:center; line-height:48px;}
