@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(function(){
+			$(".sex_wrap a").click(function(){
+				$(this).addClass("on").siblings().removeClass("on");
+			});
+		});
+		function layers(target){
+			$this = $(target).attr("data-layer");
+			$(".layer-wrap."+ $this).css("top" , $(window).scrollTop() + 10).fadeIn("fast");
+		}
+		function layersClose(target){
+			$this = $(target).closest(".layer-wrap");
+			$this.fadeOut("fast");
+		}
+	</script>
+</head>
+<body>
+<div id="ev_header">
+	<h1><a href="" class="logo"><img src="https://heungkukfire.ncl.co.kr/images/town/logo.png" alt=""></a></h1>
+	<a href="" class="home"><img src="img/btn_ev_home.jpg" alt=""></a>
+</div>
+<div id="ev_wrap">
+	<div class="ev01">
+		<img src="img/img_01.jpg" alt="">
+	</div>
+	<div class="ev02">
+		<img src="img/img_02.jpg" alt="">
+		<div class="counter">
+			<span>윳놀이 참여 쿠폰 :</span>
+			<strong>000장</strong>
+		</div>
+		<a href="javascript:;" data-layer="cast" onclick="layers(this);" class="btn">윳던지기</a>
+	</div>
+	<div class="ev03">
+		<img src="img/img_03.jpg" alt="">
+		<a href="javascript:;" data-layer="point" onclick="layers(this);" class="point">포인트 확인하기</a>
+		<!-- <a href="javascript:;" data-layer="point-non" onclick="layers(this);" class="point">포인트 확인하기</a> -->
+	</div>
+	<div class="ev04">
+		<img src="img/img_04.jpg" alt="640 1348">
+		<a href="" class="btn-share_01">인사말</a>
+		<a href="" class="btn-share_02">니즈환기</a>
+		<a href="" class="btn-share_03">친숙자료</a>
+		<a href="" class="btn-share_04">흥미톡톡</a>
+		<a href="" class="btn-share_05">보험뉴스</a>
+	</div>
+	<div class="ev05">
+		<img src="img/img_05.jpg" alt="">
+	</div>
+</div>
+
+<div class="layer-wrap cast">
+	<div class="layer-conts">
+		<div class="conts">
+			<img src="img/pop_case_1.png" alt="도">
+			<!-- <img src="img/pop_case_2.png" alt="개">
+			<img src="img/pop_case_3.png" alt="걸">
+			<img src="img/pop_case_4.png" alt="윳">
+			<img src="img/pop_case_5.png" alt="모">
+			<img src="img/pop_case_nak.png" alt="낙"> -->
+		</div>
+		<a href="javascript:;" onclick="layersClose(this);" class="btn"></a>
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<div class="layer-wrap point">
+	<div class="layer-conts">
+		<div class="conts">
+			<img src="img/pop_point_02.png" alt="">
+			<div class="list">
+				<ul>
+					<li>
+						<div>19.08.16</div>
+						<div>개</div>
+						<div>20,000P</div>
+					</li>
+					<li>
+						<div>19.08.16</div>
+						<div>개</div>
+						<div>20,000P</div>
+					</li>
+				</ul>
+			</div>
+			<img src="img/pop_point_04.png" alt="">
+
+			<div class="btnArea">
+				<a href="javascript:;" onclick="layersClose(this);"><img src="img/btn_pop_ok.png" alt=""></a>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="layersClose(this);" class="point-close"><img src="img/btn_pop_close.png" alt=""></a>
+	</div>
+</div>
+
+<div class="layer-wrap point-non">
+	<div class="layer-conts">
+		<div class="conts">
+			<img src="img/pop_point_no.png" alt="">
+
+			<div class="btnArea">
+				<a href="javascript:;" onclick="layersClose(this);"><img src="img/btn_pop_ok.png" alt=""></a>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="layersClose(this);" class="point-close"><img src="img/btn_pop_close.png" alt=""></a>
+	</div>
+</div>
+
+
+</body>
+</html>
