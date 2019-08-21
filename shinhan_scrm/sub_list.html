@@ -1,0 +1,205 @@
+<!DOCTYPE html>	
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script>
+	if(screen.width >= 500){
+		document.write("<meta id='meta_viewport' name='viewport' content='width=device-width,target-densitydpi=medium-dpi,user-scalable=0,initial-scale=0.8,minimum-scale=0.5,maximum-scale=1.0'>");
+	}else{
+		document.write("<meta id='meta_viewport' name='viewport' content='width=device-width,target-densitydpi=medium-dpi,user-scalable=0,initial-scale=0.5,minimum-scale=0.5,maximum-scale=1.0'>");
+	}
+	</script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/common.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/ui.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/front.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/swiper.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+	<style>
+		/* #SubList {background:url(http://test.fctown.co.kr/images/new/bg_sublist.gif) 0 0 no-repeat; background-size:100% 33rem;} */
+		.sMenu-list {margin-bottom:-3.8rem;}
+		.sMenu-list .swiper-container {padding:20px 0 20px 20px; border-bottom:1px solid #5390f1;}
+		.sMenu-list .swiper-container .swiper-slide {outline:none;}
+		.sMenu-list .swiper-container .swiper-slide a {display:block; text-align:center; outline:none;}
+		.sMenu-list .swiper-container .swiper-slide a p {color:#fff; font-size:1.1rem;}
+		.sMenu-list .swiper-container .swiper-slide a span {display:inline-block; width:4.1rem; height:4.2rem;}
+		.sMenu-list .swiper-container .sm01 span {background:url(http://test.fctown.co.kr/images/new/menuS_01_off.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm02 span {background:url(http://test.fctown.co.kr/images/new/menuS_02_off.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm03 span {background:url(http://test.fctown.co.kr/images/new/menuS_03_off.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm04 span {background:url(http://test.fctown.co.kr/images/new/menuS_04_off.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm05 span {background:url(http://test.fctown.co.kr/images/new/menuS_05_off.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm06 span {background:url(http://test.fctown.co.kr/images/new/menuS_06_off.png) 0 0 no-repeat; background-size:100% 100%;}
+
+		.sMenu-list .swiper-container .sm01.on span {background:url(http://test.fctown.co.kr/images/new/menuS_01_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm02.on span {background:url(http://test.fctown.co.kr/images/new/menuS_02_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm03.on span {background:url(http://test.fctown.co.kr/images/new/menuS_03_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm04.on span {background:url(http://test.fctown.co.kr/images/new/menuS_04_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm05.on span {background:url(http://test.fctown.co.kr/images/new/menuS_05_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.sMenu-list .swiper-container .sm06.on span {background:url(http://test.fctown.co.kr/images/new/menuS_06_on.png) 0 0 no-repeat; background-size:100% 100%;}
+		.dep2-warp {}
+		.dep2-warp ul {display:none; padding:20px 48px 10px 56px; border-bottom:1px solid #5390f1; text-align:left; font-size:0;}
+		.dep2-warp ul li {display:inline-block; margin-bottom:10px;}
+		.dep2-warp ul li a {display:block; background:#1145e2; height:38px; margin-right:9px; padding:0 20px; border-radius:100px; color:#fff; font-size:24px; line-height:38px;}
+		.dep2-warp ul li.on a {background:#cfbaa1; color:#1b335f;}
+		.sublist_title {background:url(http://test.fctown.co.kr/images/new/sublist_title.png) 0 0 no-repeat; background-size:1.7rem auto; height:2.4rem; margin:0 0 .8rem 3.3rem; padding-left:2.4rem; color:#fff; font-size:1.6rem;}
+		.sublist_bg_wrap {position:relative; background:#4285f0; min-height:25rem;}
+		/* #SubList .main-slider {position:absolute; left:0; right:0; bottom:-5rem;} */
+		#SubList .main-slider {transform:translateY(5rem);}
+	</style>
+</head>
+<body id="SubList">
+<div id="warp">
+	<header>
+		<div class="header_wrap">
+			<a href="#gnbpanel" class="btn_gnb" data-role="button"><img src="http://test.fctown.co.kr/images/new/btn_allMenu2.png" alt="메뉴"></a>
+			<a href="/FcMain/FcMain.do" class="logo"><img src="http://test.fctown.co.kr/images/new/logo.png" alt="신한생명 로고"></a>
+			<a href="" class="btn_search"><img src="http://test.fctown.co.kr/images/new/btn_search2.png" alt="검색"></a>
+		</div>
+	</header>
+
+	<div id="main_content">
+		<div class="sublist_bg_wrap">
+			<div class="sMenu-list">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide sm01"><a href="" data-deps="dep2_0101">
+							<span></span><p>인사말</p>
+						</a></div>
+						<div class="swiper-slide sm02"><a href="" data-deps="dep2_0102">
+							<span></span><p>친숙자료</p>
+						</a></div>
+						<div class="swiper-slide sm03"><a href="">
+							<span></span><p>니즈환기</p>
+						</a></div>
+						<div class="swiper-slide sm04"><a href="">
+							<span></span><p>무료운세</p>
+						</a></div>
+						<div class="swiper-slide sm05"><a href="">
+							<span></span><p>질병정보</p>
+						</a></div>
+						<div class="swiper-slide sm06"><a href="">
+							<span></span><p>신한소식</p>
+						</a></div>
+					</div>
+				</div>
+	
+				<div class="dep2-warp">
+					<ul class="dep2_0101">
+						<li class="on"><a href="">#축하/감사1111</a></li>
+						<li><a href="">#축하/감사</a></li>
+						<li><a href="">#축하/감사</a></li>
+						<li><a href="">#축하/감사</a></li>
+						<li><a href="">#축하/감사</a></li>
+						<li><a href="">#축하/감사</a></li>
+					</ul>
+					<ul class="dep2_0102">
+						<li><a href="">#축하/감사222</a></li>
+						<li><a href="">#축하/감사</a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+			var swiper = new Swiper('.sMenu-list .swiper-container', {
+				slidesPerView: 5.5,
+			});
+			$(function(){
+				$(".sMenu-list .swiper-slide a").click(function(){
+					$dep = $(this).attr("data-deps");
+					if($dep == undefined){
+						
+					}else{
+						$(this).parent().addClass("on").siblings().removeClass("on");
+						$(".dep2-warp ul").hide();
+						$(".dep2-warp ul." + $dep).show();
+						return false;
+					}
+				});
+			});
+			</script>
+	
+	
+			<div class="main-slider">
+				<h3 class="sublist_title">인기 콘텐츠</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="http://placehold.it/530x330/333333/ffffff" /></div>
+						<div class="swiper-slide"><img src="http://placehold.it/530x330/ff0000/ffffff" /></div>
+						<div class="swiper-slide"><img src="http://placehold.it/530x330/1533c8/ffffff" /></div>
+					</div>
+					<button type="button" class="swiper-button-next"></button>
+					<button type="button" class="swiper-button-prev"></button>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+			var swiper = new Swiper('.main-slider .swiper-container', {
+				loop : true,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+			</script>
+		</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div>
+
+	<footer>
+		<p class="copyright">Ⓒ 2019 <span>신한생명</span> ALL RIGHTS RESERVED</p>
+	</footer>
+</div>
+</body>
+</html>
