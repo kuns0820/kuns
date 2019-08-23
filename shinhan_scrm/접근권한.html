@@ -1,0 +1,80 @@
+<!DOCTYPE html>	
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<script>
+	if(screen.width >= 500){
+		document.write("<meta id='meta_viewport' name='viewport' content='width=device-width,target-densitydpi=medium-dpi,user-scalable=0,initial-scale=0.8,minimum-scale=0.5,maximum-scale=1.0'>");
+	}else{
+		document.write("<meta id='meta_viewport' name='viewport' content='width=device-width,target-densitydpi=medium-dpi,user-scalable=0,initial-scale=0.5,minimum-scale=0.5,maximum-scale=1.0'>");
+	}
+	</script>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/common.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/ui.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/front.css">
+	<link rel="stylesheet" type="text/css" href="http://test.fctown.co.kr/common_ui/css/swiper.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+	<style>
+	.authority {padding-top:75px;}
+	.authority .logo {display:block; margin:0 auto;}
+	.authority h3 {padding-top:35px; color:#4285f0; font-size:42px; font-weight:bold; text-align:center;}
+	.authority .desc {padding:20px 0 50px; color:#797979; font-size:24px; text-align:center;}
+	.authority .img {display:block; margin:30px auto 0;}
+	.authority dl {margin:0 30px; padding:20px 10px; border:3px dotted #d8d8d8; border-width:3px 0;}
+	.authority dl dt {color:#333; font-size:24px;}
+	.authority dl dd {margin-top:5px; color:#666;}
+	.authority .warning {margin-top:30px; padding:0 40px;}
+	.authority .warning strong {display:block; color:#333; font-size:24px;}
+	.authority .warning li {margin-top:15px; padding-left:18px; text-indent:-18px; color:#666; font-size:22px;}
+	.authority .warning li:first-child {margin-top:0;}
+	.authority .warning li:before {content:""; display:inline-block; background:#333; width:6px; height:6px; margin-right:7px; vertical-align:middle; border-radius:50%;}
+	</style>
+</head>
+<body id="SubList" class="fixed_page">
+<div id="warp">
+
+	<div id="main_content" class="authority">
+		<img src="http://test.fctown.co.kr/images/new/logo_authority.png" alt="" class="logo">
+		<h3>활동지원 콘텐츠M 접근권한 안내</h3>
+		<p class="desc">신한생명 활동지원 콘텐츠M에서 제공하는 서비스를<br />이용하기 위해 필요한 접근권한을 안내드립니다.</p>
+		
+		<img src="http://test.fctown.co.kr/images/new/bg_authority.jpg" alt="" class="img">
+
+		<dl>
+			<dt>
+				<img src="http://test.fctown.co.kr/images/new/ico_saveSpace.gif" alt="">
+				저장공간(필수)
+			</dt>
+			<dd>전자명함에 등록할 사진첨부 등을 위해 필요한 권한입니다.</dd>
+		</dl>
+
+		<div class="warning">
+			<strong>※ 주의사항</strong>
+			<ul>
+				<li>필수 접근권한은 활동지원 콘텐츠M 서비스 이용에 반드시 
+				필요하며, 권한이 거부되면 서비스가 정상적으로 작동하지 
+				않을 수 있습니다.</li>
+				<li>선택 항목은 접근권한에 동의하지 않아도 활동지원 콘텐츠M 
+				서비스를 이용할 수 있으나 일부 기능 사용에 제한이 있을 수 
+				있습니다.</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div class="btn-fixed">
+		<div class="alert_msgbox">
+			<p class="msg" id="idMsg"></p>
+		</div><!-- //.alert_msgbox -->
+
+		<div class="btnset1 clearfix">
+			<a href="" class="btn3 btn3_cancel btn3_left">종료하기</a>
+			<a href="" class="btn3 btn3_save btn3_right">동의하기</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
