@@ -3,15 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
 	<title></title>
 	<link rel="stylesheet" href="video.css">
-	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		function layers(target){
+			$this = $(target).attr("data-layer");
+			$(".layer-wrap."+ $this).css("top" , $(window).scrollTop() + 30).fadeIn("fast");
+		}
+		function layersClose(target){
+			$this = $(target).closest(".layer-wrap");
+			$this.fadeOut("fast");
+		}
+	</script>
 </head>
 <body>
 <div id="video-warp">
 	<div class="player_warp">
 		<div class="player">
-			<video controls>
+			<video >
 				<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 				<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
 			</video>
@@ -27,10 +38,17 @@
 		<button type="button" class="like">좋아요 : 000</button>
 		<span class="view">조회수 : 000</span>
 		<div class="share-warp">
-			<button type="button" class="sahre">공유</button>
-			<button type="button" class="sns">카카오톡</button>
+			<button type="button" class="sahre" data-layer="share" onclick="layers(this);">공유</button>
+			<button type="button" class="sns"><img src="img_video/kakao.png" alt="카카오톡"></button>
 		</div>
 	</div>
+	<script>
+	$(function(){
+		$(".sns-warp .like").click(function(){
+			$(this).toggleClass("on");
+		});
+	});
+	</script>
 
 	<div class="news-info">
 		<div class="head">
@@ -39,20 +57,20 @@
 			<button type="button" class="btn-down">다운로드</button>
 		</div>
 		<ul class="info-list">
-			<li>
+			<li><a href="">
 				<span class="num">01</span>
 				<div class="text">
 					<p>주요 이슈 (00:05~01:02)</p>
 					<span>인수지침 변경, 7월 GA활동지원 이벤트</span>
 				</div>
-			</li>
-			<li>
+			</a></li>
+			<li><a href="">
 				<span class="num">02</span>
 				<div class="text">
 					<p>주요 이슈 (00:05~01:02)</p>
 					<span>인수지침 변경, 7월 GA활동지원 이벤트</span>
 				</div>
-			</li>
+			</a></li>
 		</ul>
 	</div>
 	
@@ -83,8 +101,38 @@
 
 	<footer>
 		<p>Ⓒ 2019 흥국화재 ALL RIGHTS RESERVED.</p>
-		<a href="#" class="top"></a>
+		<a href="#" class="top"><img src="img_video/btn_top.png" alt="상단으로"></a>
 	</footer>
+
+	<div id="quick">
+		<a href="javascript:;"><img src="img_video/btn_back.png" alt="뒤로"></a>
+		<a href="#"><img src="img_video/btn_top2.png" alt="상단으로"></a>
+	</div>
+</div>
+
+<div class="layer-wrap share">
+	<div class="layer-conts">
+		<div class="head">
+			<strong>흥국화재<br />흥미톡톡7월 소식지</strong>
+		</div>
+		<div class="conts">
+			<div class="sns">
+				<a href=""><img src="img_video/sns_pop_01.jpg" alt="트위터"></a>
+				<a href=""><img src="img_video/sns_pop_02.jpg" alt="페이스북"></a>
+				<a href=""><img src="img_video/sns_pop_03.jpg" alt="메세지"></a>
+				<a href=""><img src="img_video/sns_pop_04.jpg" alt="네이버밴드"></a>
+				<a href=""><img src="img_video/sns_pop_05.jpg" alt="카카오톡"></a>
+				<a href=""><img src="img_video/sns_pop_06.jpg" alt="카카오스토리"></a>
+				<a href=""><img src="img_video/sns_pop_07.jpg" alt="대량발송"></a>
+				<a href=""><img src="img_video/sns_pop_08.jpg" alt="링크복사"></a>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:;" onclick="layersClose(this);" class="close">
+		<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+		<path d="m20.423 17.982 15.055 15.054c0.674 0.674 0.674 1.767 0 2.442-0.674 0.674-1.767 0.674-2.441 0l-15.055-15.055-15.055 15.055c-0.674 0.674-1.767 0.674-2.441 0-0.674-0.675-0.674-1.768 0-2.442l15.055-15.054-15.055-15.055c-0.674-0.674-0.674-1.767 0-2.442 0.674-0.674 1.767-0.674 2.441 0l15.055 15.055 15.055-15.055c0.674-0.674 1.767-0.674 2.441 0 0.674 0.675 0.674 1.768 0 2.442l-15.055 15.055z" fill="#fff" fill-rule="nonzero" />
+		</svg>
+	</a>
 </div>
 </body>
 </html>
