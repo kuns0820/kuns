@@ -19,6 +19,9 @@
 			$this.fadeOut("fast");
 		}
 
+
+		// https://seiyria.com/bootstrap-slider/
+		// https://github.com/seiyria/bootstrap-slider
 		$(function(){
 			$('#video-slider1').slider({
 				formatter: function(value) {
@@ -32,6 +35,7 @@
 					return 'Current value: ' + value;
 				}
 			});
+			$("#video-slider2").slider("enable");
 
 			$('#video-slider3').slider({
 				formatter: function(value) {
@@ -51,8 +55,8 @@
 <body>
 <div id="video-warp">
 	<div class="player_warp">
-		<div class="player">
-			<video >
+		<div class="player mode_4-5">
+			<video controls>
 				<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 				<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
 			</video>

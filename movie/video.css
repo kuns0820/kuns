@@ -116,6 +116,7 @@ footer .top {display:block; width:34px; margin:15px auto 0;}
 .comment-list li .input_warp {margin-top:10px;}
 
 video {width:100%;}
+.player.mode_4-5 video {height:40rem;}
 
 .time-line {overflow-x:auto; overflow-y:hidden; width:100%; padding:0 0 13px; -webkit-overflow-scrolling:touch;}
 .time-line .inner {display:inline-flex; display:-webkit-inline-box; overflow:hidden; background:url(img_video/bg_timeLine.png) 0 12px repeat-x; background-size:auto 8px;}
