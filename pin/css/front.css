@@ -78,7 +78,7 @@ header .allMenu {display:none; position:fixed; top:0; bottom:0; left:0; right:0;
 header .allMenu .logo {padding:42px 0 78px; text-align:center;}
 header .allMenu .gnb_all {width:100%; max-width:1280px; margin:0 auto;}
 header .allMenu .gnb_all ul:after {content:""; display:block; clear:both;}
-header .allMenu .gnb_all > ul > li {float:left; width:320px;}
+header .allMenu .gnb_all > ul > li {float:left; width:25%;}
 header .allMenu .gnb_all > ul > li > a {display:block; color:#fff; font-size:19px; font-weight:bold;}
 header .allMenu .gnb_all .dep2 {padding-top:25px;}
 header .allMenu .gnb_all .dep2 a {display:block; height:34px; color:#fff; font-size:16px; line-height:34px;}
@@ -100,13 +100,31 @@ footer .innr .sns li {float:left; margin-left:15px;}
 @media screen and (max-width:1418px) {/* 모바일 COMMON */
 	header h1 {text-align:center;}
 	header .gnb_wrap {display:none;}
+	header .util {right:15px;}
+	header .allMenu .btn_close {left:auto; right:15px; margin-left:0;}
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:718px) {
+	header {border-width:0 0 3px;}
+	header .innr {height:auto; padding:5px 0;}
+	header h1 img {width:46px;}
+	header .util li img {width:20px;}
+
+	header .allMenu .logo {padding:5px 0 0;}
+	header .allMenu .logo img {width:46px;}
+	header .allMenu .btn_close {top:10px;}
+	header .allMenu .btn_close img {height:20px;}
+	header .allMenu .gnb_all > ul {padding:40px 40px 0;}
+	header .allMenu .gnb_all > ul > li {width:100%; margin-top:40px;}
+	header .allMenu .gnb_all > ul > li > a {font-size:20px;}
+	header .allMenu .gnb_all .dep2 {padding-top:10px;}
+	header .allMenu .gnb_all .dep2 a {height:25px; font-size:13px; line-height:25px;}
+
 	footer .innr {width:calc(100% - 30px); height:120px; min-height:auto;}
 	footer .innr .util {position:static;}
+	footer .innr .util ul li {margin-left:19px;}
 	footer .innr .util select {bottom:13px; left:0; width:100px; height:20px; padding:0; font-size:11px;}
-	footer .innr .util ul li a {height:30px; font-size:13px; line-height:30px;}
+	footer .innr .util ul li a {height:30px; font-size:12px; line-height:30px;}
 	footer .innr .addr {margin-top:15px; font-size:11px;}
 	footer .innr .sns {top:auto; bottom:13px; right:0;}
 	footer .innr .sns li a img {width:20px; height:20px; margin-left:0;}
