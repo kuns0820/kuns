@@ -22,6 +22,14 @@ $(function(){
 	inc_dom.footer();
 	winW = $(document).width();
 	resize();
+
+	$("header .allMenu .gnb_all").html($("header .gnb_wrap").html());
+	$("header .btn_all").click(function(){
+		$(".allMenu").show();
+	});
+	$("header .allMenu .btn_close").click(function(){
+		$(".allMenu").hide();
+	});
 	
 	if(!$("body").hasClass("mobile")){
 		$(".gnb_wrap > ul > li > a, .gnb_wrap .dep2").hover(function(){
