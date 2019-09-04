@@ -136,7 +136,6 @@ footer .innr .sns li {float:left; margin-left:15px;}
 .main_box:after {content:""; display:block; clear:both;}
 .main_box > div {float:left; width:50%; box-sizing:border-box;}
 .mid-project {width:100%; max-width:1400px; margin:75px auto;}
-
 .notice {display:table; width:100%; max-width:1400px; height:80px; margin:0 auto;}
 .notice dl {display:table-cell; width:100%; border:1px solid #dddedf; border-width:1px 0; vertical-align:middle;}
 .notice dl:after {content:""; display:block; clear:both;}
@@ -145,14 +144,25 @@ footer .innr .sns li {float:left; margin-left:15px;}
 .notice dl dd:after {content:""; position:absolute; top:50%; right:50px; background:url(../images/btn_notice.png) 0 0 no-repeat; width:17px; height:17px; transform:translateY(-50%);}
 .notice dl dd a {display:block;}
 .notice dl dd a p {overflow:hidden; text-overflow:ellipsis; width:200px; color:#969696; font-size:18px; white-space:nowrap;}
-
 .recruit {margin-top:65px;}
+
+.layer_pop {position:absolute; top:224px; left:50%; margin-left:-744px; z-index:16;}
+.layer_pop .today {position:relative; background:#000; padding:0 17px;}
+.layer_pop .today input[type=checkbox],
+.layer_pop .today label {display:inline-block; vertical-align:middle;}
+.layer_pop .today label {height:42px; margin-left:10px; color:#fff; font-size:16px; line-height:42px;}
+.layer_pop .today .btn_layer_close {position:absolute; top:0; right:0; width:42px; height:42px;}
+.layer_pop .today .btn_layer_close svg {position:absolute; top:0; bottom:0; left:0; right:0; width:16px; height:16px; margin:auto;}
+
+
 
 @media screen and (max-width:1418px) {
 	.mid-project {margin:15px auto; padding:0 15px;}
 	.notice {padding:0 15px;}
 	.notice dl dd:nth-child(4) {display:none;}
 	.recruit {margin-top:15px;}
+
+	.layer_pop {margin-left:0; transform:translateX(-50%);}
 }
 @media screen and (max-width:1140px) {
 	.notice dl dd:nth-child(4),
@@ -169,6 +179,12 @@ footer .innr .sns li {float:left; margin-left:15px;}
 	.notice dl dd {width:calc(100% - 90px); padding-right:60px;}
 	.notice dl dd:after {right:25px;}
 	.notice dl dd a p {width:100%; font-size:11px;}
+
+	.layer_pop {width:220px;}
+	.layer_pop .today {padding:0 5px;}
+	.layer_pop .today label {height:21px; margin-left:5px; font-size:11px; line-height:21px;}
+	.layer_pop .today .btn_layer_close {width:21px; height:21px;}
+	.layer_pop .today .btn_layer_close svg {width:8px; height:8px;}
 }
 
 
