@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+html, body, div, span,  iframe, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, footer, header, hgroup, menu, nav, section, summary, video {margin:0; padding:0; border:0; vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; font-family:"Noto Sans KR", "맑은 고딕", dotum; vertical-align:middle; box-sizing:border-box;}
+body {color:#383838; font-size:12px; line-height:1.2; font-family:"Noto Sans KR", "맑은 고딕", dotum;}
+ol, ul {list-style:none;}
+em,i {font-style:normal;}
+table {width:100%; border-collapse:collapse; border-spacing:0; table-layout:fixed; word-break:break-all;}
+a, button {font-family:inherit;}
+a {color:inherit; font-family:inherit; text-decoration:none; font-weight:normal; color:inherit;}
+a:active, a:visited, a:hover {text-decoration:none; outline:none; color:inherit;}
+button {background:none; border:0 none; color:inherit; font-size:inherit; outline:none; cursor:pointer;}
+
+h1,h2,h3,h4,h5,h6,th,
+strong {font-weight:500; vertical-align:0;}
+textarea {font-family:"Noto Sans KR", "맑은 고딕", dotum;}
+
+fieldset {border:0 none !important;}
+img {width:100%;}
+
+#event_wrap {overflow:hidden;}
+
+.ev_01 {position:relative;}
+.ev_01 .img2 {position:absolute; top:0; left:0; z-index:5;}
+.ev_01 .event_roulette {position:absolute; top:49.03%; left:15.93%; width:66.25%; height:38.86%; z-index:2;}
+.ev_01 .btn_roulette {position:absolute; top:49.03%; left:15.93%; width:66.25%; height:38.86%; z-index:10;}
+.ev_01 .son {position:absolute; bottom:22.456%; left:41.71%; width:12.968%; height:7.6%; z-index:9;}
+
+.ev_03 {position:relative;}
+.ev_03 .btn {position:absolute; bottom:7.168%; left:6.25%; width:87.65%; height:14.695%; font:0/0 a;}
+
+i.dim {display:none; position:fixed; top:0; bottom:0; left:0; right:0; width:100%; height:100%; background:rgba(0,0,0,.7); z-index:20;}
+.layer {display:none; position:absolute; top:70px; left:20px; right:20px; box-sizing:border-box; z-index:21;}
+.layer p.txt {position:absolute; top:22.07%; left:0; width:100%; color:#152b75; font-size:25px; font-weight:bold; text-align:center;}
+@media screen and (min-width:370px) {
+	.layer p.txt {font-size:30px;}
+}
+@media screen and (min-width:414px) {
+	.layer p.txt {font-size:36px;}
+}
+.layer p.txt span {display:block;}
+.layer .btn_ok {position:absolute; bottom:5.6%; left:22.85%; right:22.85%;}
+
+.layer.history {}
+.layer.history .btn_ok {bottom:5.245%;}
+.layer .tbl {position:absolute; top:32.03%; left:7.14%; right:7.14%; border-top:2px solid #7d7d7d; border-bottom:1px solid #7d7d7d;}
+.layer .tbl table {border-top:1px solid #fff;}
+.layer .tbl th {background:#f0f0f0; height:30px; color:#464646; font-size:13px; vertical-align:middle;}
+.layer .tbl th:first-child,
+.layer .tbl td:first-child {border-right:1px solid #dadada;}
+.layer .tbl td {height:30px; border-top:1px solid #dadada; color:#959595; font-size:13px; vertical-align:middle; text-align:center;}
