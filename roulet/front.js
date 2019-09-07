@@ -1,23 +1,22 @@
 $(function(){
 	/*
-	60 - 꽝
-	25 - 추석 명절봉투
-	90 - 건강체크키트
-	158 - L자 홀더
-	205 - 추석 명절봉투
-	275 - 기프티쇼
+	90 - 7,000 포인트
+	150 - 5,000 포인트
+	210 - 3,000 포인트
+	275 - 꽝
+	335 - 1,000 포인트
+	390 - 10,000 포인트
 
 	roulette(1, 5, 위의 적용 숫자 값);
 	*/
 
-	var gift_num = 275;
+	var gift_num = 390;
 	var stat = null;
 	$(".btn_roulette").on("click" , function(){
 		if (stat == 1){
 			return false
 		}else if(stat == null){
 			stat = 1;
-			$(".ev_01 .son").fadeOut("fast");
 			roulette(3, 15, gift_num);
 		}else{
 			alert("금일 이벤트 참여가 완료되었습니다.");
@@ -38,41 +37,16 @@ $(function(){
 	};
 
 	function ending($Num){
-		$(window).scrollTop(0);
-		$("i.dim").show();
-		switch ($Num) {
-			case 60:
-				$(".layer.lose").show();
-			break;
-			case 25:
-				$(".layer.win").show();
-				$(".layer.win .txt em").text("추석 명절봉투 당첨");
-			break;
-			case 90:
-				$(".layer.win").show();
-				$(".layer.win .txt em").text("건강체크키트 당첨");
-			break;
-			case 158:
-				$(".layer.win").show();
-				$(".layer.win .txt em").text("L자 홀더 당첨");
-			break;
-			case 205:
-				$(".layer.win").show();
-				$(".layer.win .txt em").text("추석 명절봉투 당첨");
-			break;
-			case 275:
-				$(".layer.win").show();
-				$(".layer.win .txt em").text("기프티쇼 당첨");
-			break;
-		}
+		$(".layer-wrap.win").show().css("top" , $(window).scrollTop() + 30);
+		$(".layer-wrap.win img.win-"+ $Num).show();
 	}
 });
 
-function layer_close(){
-	$(".layer , i.dim").hide();
+function layers(target){
+	$this = $(target).attr("data-layer");
+	$(".layer-wrap."+ $this).css("top" , $(window).scrollTop() + 30).fadeIn("fast");
 }
-
-function layer_history(){
-	$(window).scrollTop(0);
-	$(".layer.history , i.dim").show();
+function layersClose(target){
+	$this = $(target).closest(".layer-wrap");
+	$this.fadeOut("fast");
 }

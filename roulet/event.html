@@ -9,91 +9,106 @@
 	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="jQueryRotate.js"></script>
 	<script type="text/javascript" src="front.js"></script>
-	<title>추석맞이 활동지원 룰렛 이벤트</title>
+	<title>흥미톡톡 룰렛 이벤트</title>
 </head>
 <body>
+<div id="ev_header">
+	<h1><a href="" class="logo"><img src="https://heungkukfire.ncl.co.kr/images/town/logo.png" alt=""></a></h1>
+	<a href="" class="home"><img src="img/btn_ev_home.jpg" alt=""></a>
+</div>
 <div id="event_wrap">
 	<div class="ev_01">
-		<img src="img/img_01.jpg" alt="" class="img1">
-		<img src="img/img_0102.png" alt="" class="img2">
+		<img src="img/img_01.jpg" alt="">
+	</div>
+
+	<div class="roulet">
+		<img src="img/img_02.jpg" alt="">
+		<p class="coupon_cnt">룰렛 참여 쿠폰 : <span>000장</span></p>
+		<img src="img/img_deco.png" alt="" class="img1">
+		<img src="img/pin.png" alt="" class="pin">
 		<a href="javascript:;" class="btn_roulette"></a>
-		<img src="img/son.png" alt="" class="son">
 		<div class="event_roulette">
 			<img id="event_roulette" src="img/pan.png" alt="룰렛판">
 		</div>
+		<a href="javascript:;" data-layer="point_none" onclick="layers(this);" class="btn_point">포인트 확인하기</a>
 	</div>
 
 	<div class="ev_02">
-		<img src="img/img_02.jpg" alt="">
+		<img src="img/img_03.jpg" alt="">
+		<a href="" class="cnt01">인사말</a>
+		<a href="" class="cnt02">니즈환기</a>
+		<a href="" class="cnt03">친숙자료</a>
+		<a href="" class="cnt04">보험뉴스</a>
+		<a href="" class="cnt05">흥미톡톡</a>
 	</div>
 
 	<div class="ev_03">
-		<img src="img/img_03.jpg" alt="">
-		<a href="javascript:;" class="btn" onclick="layer_history();">당첨 내역 확인하기</a>
+		<img src="img/img_04.jpg" alt="">
 	</div>
-
-	<!-- layer -->
-	<div class="layer win">
-		<img src="img/bg_layer_01.png" alt="축하드립니다.">
-		<p class="txt">
-			<span>홍길동님</span>
-			<em>차량용 스티커 당첨</em>
-		</p>
-		<a href="javascript:;" class="btn_ok" onclick="layer_close();"><img src="img/btn_layer.jpg" alt="확인하기"></a>
-	</div>
-
-	<div class="layer lose">
-		<img src="img/bg_layer_02.png" alt="꽝 죄송합니다. 내일 다시 돌려보세요.">
-		<a href="javascript:;" class="btn_ok" onclick="layer_close();"><img src="img/btn_layer.jpg" alt="확인하기"></a>
-	</div>
-
-	<div class="layer history">
-		<img src="img/bg_layer_03.png" alt="룰렛 이벤트 당첨내역">
-		<div class="tbl">
-			<table>
-				<colgroup>
-					<col style="width:35%;">
-					<col>
-				</colgroup>
-				<thead>
-					<tr>
-						<th>날짜</th>
-						<th>상품명</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>2018.09.03</td>
-						<td>차량용 스티커</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<a href="javascript:;" class="btn_ok" onclick="layer_close();"><img src="img/btn_layer.jpg" alt="확인하기"></a>
-	</div>
-
-	<i class="dim"></i>
-	<!-- //layer -->
 </div>
+
+<!-- 포인트 당첨 내역 -->
+<div class="layer-wrap point">
+	<div class="layer-conts">
+		<img src="img/layer_point.png" alt="">
+		<p class="point_list">당첨 포인트 : <span>20,000P</span></p>
+		<p class="date">19.08.16</p>
+		<p class="point_pay">20,000P</p>
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<!-- 포인트 당첨 내역 없음 -->
+<div class="layer-wrap point_none">
+	<div class="layer-conts">
+		<img src="img/layer_point_none.png" alt="">
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<!-- 이벤트 종료 -->
+<div class="layer-wrap ev_end">
+	<div class="layer-conts">
+		<img src="img/layer_ev_end.png" alt="">
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<!-- 이벤트 대상 아님 -->
+<div class="layer-wrap impossible">
+	<div class="layer-conts">
+		<img src="img/layer_impossible.png" alt="">
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<!-- 콘텐츠를 공유해주세요. 공유 횟수 부족 -->
+<div class="layer-wrap share">
+	<div class="layer-conts">
+		<img src="img/layer_share5.png" alt="">
+		<!-- <img src="img/layer_share4.png" alt=""> 4회부족
+		<img src="img/layer_share3.png" alt=""> 3회부족
+		<img src="img/layer_share2.png" alt=""> 2회부족
+		<img src="img/layer_share1.png" alt=""> 1회부족 -->
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+<!-- 포인트 당첨 리스트 -->
+<div class="layer-wrap win">
+	<div class="layer-conts">
+		<img src="img/layer_win_10000.png" alt="1만 포인트" class="win-390">
+		<img src="img/layer_win_7000.png" alt="7천 포인트" class="win-90">
+		<img src="img/layer_win_5000.png" alt="5천 포인트" class="win-150">
+		<img src="img/layer_win_3000.png" alt="3천 포인트" class="win-210">
+		<img src="img/layer_win_none.png" alt="꽝" class="win-275">
+		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+	</div>
+</div>
+
+
+
+
+
 </body>
 </html>
