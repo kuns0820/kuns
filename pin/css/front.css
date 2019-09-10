@@ -230,6 +230,33 @@ footer .innr .sns li {float:left; margin-left:15px;}
 .paging .prev,.paging .next {background:#fff; width:30px; height:30px; padding:0; border:1px solid #d9dddf; border-radius:1px; vertical-align:19px; font:0/0 a;}
 .paging .prev:before,.paging .next:before {content:""; display:inline-block; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(36,36,36,0.999)' viewBox='0 0 11 20'%3e%3cpath d='m10.703 10.464-8.699 8.702c-0.379 0.379-0.994 0.379-1.374 0-0.379-0.379-0.379-0.995 0-1.374l8.013-8.014-8.013-8.015c-0.379-0.379-0.379-0.994 0-1.374 0.38-0.379 0.995-0.379 1.374 0l8.699 8.702c0.38 0.379 0.38 0.994 0 1.373z'/%3e%3c/svg%3e") no-repeat; background-size:100% 100%; width:6px; height:10px; margin:0 auto; vertical-align:-19px;}
 
+.bbs_view dl {border-top:2px solid #222; border-bottom:1px solid #555;}
+.bbs_view dt {padding:40px;}
+.bbs_view dt strong {color:#000; font-size:27px;}
+.bbs_view dt div {margin-top:20px;}
+.bbs_view dt div:after {content:""; display:block; clear:both;}
+.bbs_view dt div span,
+.bbs_view dt div em {float:left; padding:0 20px; border-left:1px solid #eee; color:#888; font-size:17px;}
+.bbs_view dt div em {color:#2485c7;}
+.bbs_view dt div span:first-child {padding-left:0; border-left:0;}
+.bbs_view dd {min-height:420px; border-top:1px solid #eee;}
+.bbs_view dd .conts {padding:40px; color:#666; font-size:17px; line-height:1.5;}
+.btn-col {margin-top:40px;}
+.btn-col a {display:block; background:#2485c8; width:175px; height:64px; margin:0 auto; color:#fff; font-size:17px; text-align:center; line-height:64px;}
+
+.tbl table {width:100%; border-top:2px solid #222; border-bottom:1px solid #555;}
+.tbl table th,
+.tbl table td {height:70px; vertical-align:middle; text-align:center;}
+.tbl table th {border-bottom:1px solid #222; color:#000; font-size:20px;}
+.tbl table td {border-top:1px solid #eee; color:#666; font-size:17px;}
+.tbl table tr:first-child td {border-top:0;}
+.tbl table td a {display:block; color:#222; text-align:left;}
+.tbl table td em {color:#2485c8;}
+
+.tbl .col1 {width:110px;}
+.tbl .col3 {width:250px;}
+.tbl .col4 {width:150px;}
+
 
 @media screen and (max-width:1418px) {
 	
@@ -256,4 +283,24 @@ footer .innr .sns li {float:left; margin-left:15px;}
 
 	.paging {margin-top:20px;}
 	.paging a {height:14px; font-size:11px; line-height:14px;}
+
+	.bbs_view dt {padding:20px;}
+	.bbs_view dt strong {font-size:14px;}
+	.bbs_view dt div {margin-top:10px;}
+	.bbs_view dt div span,
+	.bbs_view dt div em {padding:0 10px; font-size:11px;}
+	.bbs_view dd {min-height:210px;}
+	.bbs_view dd .conts {padding:20px; font-size:12px;}
+	.btn-col {margin-top:20px;}
+	.btn-col a {width:87px; height:32px; font-size:12px; line-height:32px;}
+
+	.tbl .col1 {display:none;}
+	.tbl .col3 {width:150px;}
+	.tbl .col4 {width:15%;}
+	.tbl table th,
+	.tbl table td {height:35px;}
+	.tbl table th:first-child,
+	.tbl table td:first-child {display:none;}
+	.tbl table th {font-size:13px;}
+	.tbl table td {font-size:12px;}
 }

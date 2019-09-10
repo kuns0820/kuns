@@ -30,7 +30,7 @@
 		<div class="event_roulette">
 			<img id="event_roulette" src="img/pan.png" alt="룰렛판">
 		</div>
-		<a href="javascript:;" data-layer="point_none" onclick="layers(this);" class="btn_point">포인트 확인하기</a>
+		<a href="javascript:;" data-layer="point" onclick="layers(this);" class="btn_point">포인트 확인하기</a>
 	</div>
 
 	<div class="ev_02">
@@ -50,11 +50,28 @@
 <!-- 포인트 당첨 내역 -->
 <div class="layer-wrap point">
 	<div class="layer-conts">
-		<img src="img/layer_point.png" alt="">
-		<p class="point_list">당첨 포인트 : <span>20,000P</span></p>
-		<p class="date">19.08.16</p>
-		<p class="point_pay">20,000P</p>
-		<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+		<div class="head">
+			<img src="img/layer_point_head.png" alt="">
+			<p class="point_total">당첨 포인트 : <span>20,000P</span></p>
+		</div>
+		<div class="point_list">
+			<div class="list"><div>
+				<span>19.08.16</span>
+				<span>20,000P</span>
+			</div></div>
+			<div class="list"><div>
+				<span>19.08.16</span>
+				<span>20,000P</span>
+			</div></div>
+			<div class="list"><div>
+				<span>19.08.16</span>
+				<span>20,000P</span>
+			</div></div>
+		</div>
+		<div class="foot">
+			<img src="img/layer_point_bottom.png" alt="">
+			<a href="javascript:;" onclick="layersClose(this);" class="close"></a>
+		</div>
 	</div>
 </div>
 
