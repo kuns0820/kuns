@@ -1,0 +1,58 @@
+/*
+ * @ Autor : Kuns
+ */
+@charset "utf-8";
+@import "module";
+// @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+// $my-font:"Noto Sans KR";
+
+@include reset();
+
+a {outline:none;}
+em,i {font-style:normal;}
+
+// Common Module Extend
+$imgDir: '../images/';
+%clearfix {&:after {content:""; display:block; clear:both;}}
+%action {transition: all 1s ease-in-out;}
+
+body {max-width:720px; overflow-x:hidden;}
+// body.main {background:url(../images/bg_main.gif) 0 0 repeat-x;}
+// body {background:url(../images/bg_sub.gif) 0 0 repeat-x;}
+
+#wrap {position:relative; width:720px; height:100%;}
+
+#sliders {position:relative; height:1280px;
+	.slick-arrow {position:absolute; bottom:-9999em; left:-9999em; width:0; height:0; font:0/0 a; z-index:5;
+		&.slick-prev {}
+		&.slick-next {}
+	}
+	.slick-slide {position:relative; height:1280px;
+		.inn {width:100%; height:1280px;}
+	}
+	.slick-dots {position:absolute; bottom:10px; left:0; width:660px; text-align:center; font:0/0 a; z-index:1;
+		li {display:inline-block; margin-left:8px;
+			&:first-child {margin-left:0;}
+			button {background:#fff; margin:0; padding:0; width:15px; height:15px; border:2px solid #bbb; border-radius:50%; font:0/0 a;}
+			&.slick-active button {background:#017f40; border-color:#017f40;}
+		}
+	}
+}
+.layer {display:none; position:absolute; top:0; left:0; z-index:5;
+	.close {position:absolute; width:45px; height:45px;}
+}
+
+.cont01 {
+	background:url(../images/cont01.jpg) 0 0 no-repeat
+}
+.cont02 {
+	background:url(../images/cont02.jpg) 0 0 no-repeat
+}
+.cont03 {
+	background:url(../images/cont03.jpg) 0 0 no-repeat
+}
+.cont04 {
+	background:url(../images/cont04.jpg) 0 0 no-repeat
+}
+
+.slick-slide a {position:absolute; top:425px; left:212px; width:310px; height:37px;}

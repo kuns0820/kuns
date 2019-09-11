@@ -10,13 +10,13 @@
 	<script type="text/javascript" src="js/inc.ui.js"></script>
 </head>
 <body>
-<div class="layer_pop">
+<div class="layer_pop" style="display:none;">
 	<div class="conts">
 		<a href=""><img src="images/img_layerpop.jpg" alt=""></a>
 	</div>
 	<div class="today">
-		<input type="checkbox" name="" id="today">
-		<label for="today">하루동안 보지 않기</label>
+		<!-- <input type="checkbox" id="chkday" name="chkbox" value="checkbox" onclick="couponClose()"> -->
+		<label for="chkday" class="btn_close" onclick="couponClose()" style="cursor:pointer;">하루동안 보지 않기</label>
 		<button type="button" class="btn_layer_close">
 			<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 			<path d="m15.778 14.364-1.414 1.414-6.364-6.364-6.364 6.364-1.414-1.414 6.364-6.364-6.364-6.364 1.414-1.414 6.364 6.364 6.364-6.364 1.414 1.414-6.364 6.364 6.364 6.364z" fill="#fff" fill-rule="nonzero"/>
@@ -82,5 +82,41 @@
 	</div>
 	
 </div>
+
+<script>
+function getCookie(cname) {
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length;i++){
+		var c = ca[i];
+		while(c.charAt(0)==' ') c = c.substring(1);
+		if(c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	}
+	return "";
+}
+function setCookie(cname, cvalue, exdays) {
+	var d = new Date();
+	d.setDate(d.getDate() + 1);
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function couponClose(){
+	setCookie("today","Y",1);
+	$(".layer_pop").hide(); 
+}
+$(function(){
+	cookiedata = document.cookie;
+	if(getCookie("today") != "Y"){
+		$(".layer_pop").show();
+	}else{
+		$(".layer_pop").hide();
+	}
+	$(".layer_pop .btn_layer_close").click(function(){
+		$(".layer_pop").hide();
+	});
+});
+
+</script>
 </body>
 </html>
