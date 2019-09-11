@@ -11,19 +11,25 @@
 	<script type="text/javascript" src="js/inc.ui.js"></script>
 	<script>
 	$(document).scroll(function() {
-  console.log($(".element").visible());
-});
+		$(".element").each(function(e){
+			if($(this).visible(true)){
+				$(this).addClass("active")
+			}
+		});
+	});
 	</script>
 	<style>
 		#ssneo {position:relative; height:5000px;}
-		.element {position:absolute; bottom:0; left:0;}
+		.ffff {position:absolute; bottom:0; left:0;}
+		.asdf {position:absolute; bottom:500px; left:0;}
 	</style>
 </head>
 <body>
 <!-- https://hudi.kr/jquery-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%8B%9C-%ED%8A%B9%EC%A0%95-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EA%B0%80-%ED%99%94%EB%A9%B4%EC%97%90-%EB%B3%B4%EC%9D%B4%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8/
 https://github.com/customd/jquery-visible -->
 <div id="ssneo">
-<div class="element">sdfs</div>
+<div class="element ffff">sdfs</div>
+<div class="element asdf">sdfs</div>
 </div>
 </div>
 </body>
