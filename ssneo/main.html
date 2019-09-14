@@ -12,13 +12,17 @@
 	<script type="text/javascript" src="js/jquery.visible.js"></script>
 	<!-- <script type="text/javascript" src="js/inc.ui.js"></script> -->
 	<script>
+	$(function(){vsb();});
 	$(document).scroll(function() {
+		vsb();
+	});
+	function vsb(){
 		$("section").each(function(e){
 			if($(this).visible(true)){
 				$(this).addClass("active")
 			}
 		});
-	});
+	}
 	</script>
 </head>
 <body>
