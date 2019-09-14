@@ -6,30 +6,215 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<script type="text/javascript" src="js/jquery.visible.js"></script>
-	<script type="text/javascript" src="js/inc.ui.js"></script>
+	<!-- <script type="text/javascript" src="js/inc.ui.js"></script> -->
 	<script>
 	$(document).scroll(function() {
-		$(".element").each(function(e){
+		$("section").each(function(e){
 			if($(this).visible(true)){
 				$(this).addClass("active")
 			}
 		});
 	});
 	</script>
-	<style>
-		#ssneo {position:relative; height:5000px;}
-		.ffff {position:absolute; bottom:0; left:0;}
-		.asdf {position:absolute; bottom:500px; left:0;}
-	</style>
 </head>
 <body>
-<!-- https://hudi.kr/jquery-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%8B%9C-%ED%8A%B9%EC%A0%95-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8%EA%B0%80-%ED%99%94%EB%A9%B4%EC%97%90-%EB%B3%B4%EC%9D%B4%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8/
-https://github.com/customd/jquery-visible -->
-<div id="ssneo">
-<div class="element ffff">sdfs</div>
-<div class="element asdf">sdfs</div>
+<div id="ssneo_warp">
+	<header>
+		<h1><a href=""><img src="images/logo.png" alt="ABIT"></a></h1>
+		<div class="gnb">
+			<ul>
+				<li><a href="">IEO</a></li>
+				<li><a href="">자산현황</a></li>
+				<li><a href="">커뮤니티</a></li>
+				<li><a href="">고객지원</a></li>
+				<li><a href="">제휴&middot;제안</a></li>
+			</ul>
+		</div>
+		<div class="util">
+			<a href="">로그인</a>
+			<a href="">회원가입</a>
+		</div>
+		<button type="button" class="btn_menu"><img src="images/btn_menu.gif" alt="메뉴"></button>
+	</header>
+
+	<main role="main" class="main">
+		<div class="visual"><div class="swiper-container">
+			<div class="swiper-pagination"></div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="text">
+						<p>암호화폐도 <strong>에스크로다.</strong></p>
+					</div>
+					<div class="img" style="background:url(images/visual_01.jpg) 50% 0 no-repeat; background-size:cover;"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="text">
+						<p>암호화폐도 <strong>에스크로다.</strong></p>
+					</div>
+					<div class="img" style="background:url(images/visual_01.jpg) 50% 0 no-repeat; background-size:cover;"></div>
+				</div>
+			</div>
+		</div></div>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true
+				},
+			});
+		</script>
+
+		<section class="sct02"><div class="innr">
+			<div class="text">
+				<h2>증권사 MTS 수준의 <strong>안전한 거래</strong></h2>
+				<p class="desc">이곳은 생활의 이로움을 만들기 위해 다양한 제안을 받는 곳입니다.<br />
+				불편함이 있으시면 언제든 오셔서 이야기해주세요.</p>
+				<div class="btns"><a href="" class="goto">거래하러 가기</a></div>
+			</div>
+			<img src="images/img_sec02.jpg" alt="" class="img">
+		</div></section>
+
+		<section class="sct03"><div class="innr">
+			<div class="text">
+				<h2>에이빗 <strong>거래소 소식</strong></h2>
+				<p class="desc">믿음과 신뢰를 바탕으로 고객의 자산을 안전하게 지키고,<br />
+				차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+				<div class="btns"><a href="" class="goto">자세히 보기</a></div>
+			</div>
+			<div class="bbs-list">
+				<ul>
+					<li><a href="">
+						<span class="cate">EVENT</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">NOTICE</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">EVENT</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">NOTICE</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+				</ul>
+			</div>
+		</div></section>
+
+		<section class="sct04"><div class="innr">
+			<div class="text">
+				<h2>에이빗 거래소 <strong>앱 다운로드</strong></h2>
+				<p class="desc">믿음과 신뢰를 바탕으로 고객의 자산을 안전하게 지키고,<br />
+				차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+				<div class="btns">
+					<a href=""><img src="images/btn_ios.png" alt=""></a>
+					<a href=""><img src="images/btn_aos.png" alt=""></a>
+					<a href="" class="goto">AST Wallet Down</a>
+					<span class="qr"><img src="images/img_qr.png" alt=""></span>
+				</div>
+			</div>
+			<img src="images/img_sec04.jpg" alt="" class="img">
+		</div></section>
+
+		<div class="csCenter">
+			<div class="cs_box">
+				<dl>
+					<dt>고객센터</dt>
+					<dd>
+						<strong>1544-4343</strong>
+						<span>평일 09:00~22:00 (토,일 및 공휴일 휴무)</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>에이빗 라운지</dt>
+					<dd>
+						<p><img src="images/ico_cs01.gif" alt=""> 운영시간 : 평일 09:00~18:00</p>
+						<p><img src="images/ico_cs02.gif" alt=""> 서울특별시 강남구 논현동 학동로 20길 28, 에이빗 사옥1F</p>
+					</dd>
+				</dl>
+			</div>
+			<div class="sns_box">
+				<a href=""><img src="images/sns_01.gif" alt=""></a>
+				<a href=""><img src="images/sns_02.gif" alt=""></a>
+				<a href=""><img src="images/sns_03.gif" alt=""></a>
+				<a href=""><img src="images/sns_04.gif" alt=""></a>
+				<a href=""><img src="images/sns_05.gif" alt=""></a>
+				<a href=""><img src="images/sns_06.gif" alt=""></a>
+				<a href=""><img src="images/sns_07.gif" alt=""></a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="fMenu">
+			<div class="innr">
+				<div class="fgnb">
+					<div class="box">
+						<div><a href="">IEO</a>
+							<ul class="dep2">
+								<li><a href="">- IEO 참여신청</a></li>
+								<li><a href="">- 신청 내역리스트 확인</a></li>
+							</ul>
+						</div>
+						<div><a href="">자산현황</a></div>
+					</div>
+					<div class="box"><a href="">커뮤니티</a>
+						<ul class="dep2">
+							<li><a href="">- 뉴스</a></li>
+							<li><a href="">- NEO insight</a></li>
+							<li><a href="">- 이벤트</a></li>
+						</ul>
+					</div>
+					<div class="box"><a href="">고객지원</a>
+						<ul class="dep2">
+							<li><a href="">- 공지사항</a></li>
+							<li><a href="">- FAQ</a></li>
+						</ul>
+					</div>
+					<div class="box"><a href="">제휴&middot;제안</a>
+						<ul class="dep2">
+							<li><a href="">- 사업 제휴</a></li>
+							<li><a href="">- 상장</a></li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="down_info">
+					<a href="">SS-NEO 회사정보</a>
+					<a href="">AST 백서</a>
+					<a href="">거래소 가이드 다운로드</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="copy_wrap">
+			<div class="addr">
+				<span>사업자 등록번호 787-86-01212</span>
+				<span>서울특별시 강남구 학동로 20길 28(2,3층)</span>
+				<span>업무시간 09:00~18:00</span>
+				<span>고객센터 1544-4343</span>
+				<span>e-Mail  cs@ss-neo.com</span>
+			</div>
+			<p class="copy">COPYRIGHTⓒ 2018 SS-NEO.ALL RIGHT RESERVED.</p>
+
+			<div class="certifi">
+				<a href="javascript:;"><img src="images/img_copy01.jpg" alt=""></a>
+				<a href="javascript:;"><img src="images/img_copy02.jpg" alt=""></a>
+				<a href="javascript:;"><img src="images/img_copy03.jpg" alt=""></a>
+				<a href="javascript:;"><img src="images/img_copy04.jpg" alt=""></a>
+			</div>
+		</div>
+	</footer>
 </div>
 </div>
 </body>
