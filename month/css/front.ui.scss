@@ -16,21 +16,19 @@ $imgDir: '../images/';
 %clearfix {&:after {content:""; display:block; clear:both;}}
 %action {transition: all 1s ease-in-out;}
 
-body {max-width:720px; overflow-x:hidden;}
-// body.main {background:url(../images/bg_main.gif) 0 0 repeat-x;}
-// body {background:url(../images/bg_sub.gif) 0 0 repeat-x;}
+body {overflow-x:hidden;}
 
-#wrap {position:relative; width:720px; height:100%;}
+#wrap {position:relative; width:100%; max-width:720px; margin:0 auto;}
 
-#sliders {position:relative; height:1280px;
+#sliders {position:relative;
 	.slick-arrow {position:absolute; bottom:-9999em; left:-9999em; width:0; height:0; font:0/0 a; z-index:5;
 		&.slick-prev {}
 		&.slick-next {}
 	}
-	.slick-slide {position:relative; height:1280px;
-		.inn {width:100%; height:1280px;}
+	.slick-slide {position:relative;
+		.inn {width:100%;}
 	}
-	.slick-dots {position:absolute; bottom:10px; left:0; width:660px; text-align:center; font:0/0 a; z-index:1;
+	.slick-dots {position:absolute; bottom:10px; left:0; width:100%; text-align:center; font:0/0 a; z-index:1;
 		li {display:inline-block; margin-left:8px;
 			&:first-child {margin-left:0;}
 			button {background:#fff; margin:0; padding:0; width:15px; height:15px; border:2px solid #bbb; border-radius:50%; font:0/0 a;}
@@ -42,17 +40,5 @@ body {max-width:720px; overflow-x:hidden;}
 	.close {position:absolute; width:45px; height:45px;}
 }
 
-.cont01 {
-	background:url(../images/cont01.jpg) 0 0 no-repeat
-}
-.cont02 {
-	background:url(../images/cont02.jpg) 0 0 no-repeat
-}
-.cont03 {
-	background:url(../images/cont03.jpg) 0 0 no-repeat
-}
-.cont04 {
-	background:url(../images/cont04.jpg) 0 0 no-repeat
-}
-
-.slick-slide a {position:absolute; top:425px; left:212px; width:310px; height:37px;}
+.slick-slide img {width:100%;}
+.slick-slide a {position:absolute; top:33.2%; left:30%; width:42.5%; height:2.96%;}

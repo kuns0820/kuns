@@ -17,28 +17,18 @@
 				arrows: true,
 				dots: true
 			});
-			$('#sliders').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-				// console.log(currentSlide,nextSlide,event)
-				// if(nextSlide == 1){
-				// 	$("body").addClass("main");
-				// }else{
-				// 	$("body").removeClass("main");
-				// }
-			});
-			$('#sliders').on('afterChange', function(event, slick, currentSlide, nextSlide){
-			//	console.log(currentSlide)
-				
-			});
+			$('#sliders').on('beforeChange', function(event, slick, currentSlide, nextSlide){});
+			$('#sliders').on('afterChange', function(event, slick, currentSlide, nextSlide){});
 		});
 	</script>
 </head>
 <body class="main">
 	<div id="wrap">
 		<div id="sliders">
-			<div class="cont01"></div>
-			<div class="cont02"><a href="http://www.jeonjunight.com" target="_blank"></a></div>
-			<div class="cont03"></div>
-			<div class="cont04"></div>
+			<div class="cont01"><img src="images/cont01.jpg" alt=""></div>
+			<div class="cont02"><img src="images/cont02.jpg" alt=""><a href="http://www.jeonjunight.com" target="_blank"></a></div>
+			<div class="cont03"><img src="images/cont03.jpg" alt=""></div>
+			<div class="cont04"><img src="images/cont04.jpg" alt=""></div>
 		</div>
 	</div>
 </body>
