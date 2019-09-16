@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); */
 
 @font-face {font-family:"Noto Sans KR"; font-style:normal; font-weight:100; src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format("woff2"),
 	url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format("woff"),
@@ -25,6 +25,7 @@
 	url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format("woff"),
 	url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format("opentype");
 }
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 html , body , div , span , iframe , h1 , h2 , h3 , h4 , h5 , h6 , p , a , address , em , img , strong , dl , dt , dd , ol , ul , li , fieldset , form , label , legend , table , caption , tbody , tfoot , thead , tr , th , td , article , aside , canvas , footer , header , hgroup , menu , nav , section , summary , video {margin:0; padding:0; border:0; box-sizing:border-box;font-size:100%; vertical-align:baseline;}
@@ -142,7 +143,7 @@ main {padding-top:210px; transition:padding .2s ease;}
 .visual .text p {color:#111; font-size:80px; font-weight:300;}
 .visual .text p strong {font-weight:bold;}
 .visual .swiper-slide .img {height:600px; transition:height .2s ease;}
-.visual .swiper-slide-active p {opacity:0; transform:translateY(10px); animation:slideUP 1s ease .5s 1 both;}
+.visual .swiper-slide-active p {opacity:0; transform:translateY(10px); animation:slideUP 1s ease .5s 1 both; font-family: 'Montserrat';}
 .visual .swiper-container .swiper-pagination {position:absolute; top:40px; bottom:auto; left:50%; right:auto; width:1280px; padding:0 70px; font-size:0; text-align:right; transform:translateX(-50%);}
 .visual .swiper-pagination span {display:inline-block; background:transparent; width:20px; height:20px; margin:0 0 0 10px !important; border:6px solid #ccc; border-radius:50%; box-sizing:border-box; opacity:1;}
 .visual .swiper-pagination span[class*=active] {border-color:#2dd0d4;}
