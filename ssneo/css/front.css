@@ -433,14 +433,3 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .layer-conts.alertMsg .close {position:absolute; top:30px; right:30px; font:0/0 a;}
 .layer-conts.alertMsg [class^=btn-col] {padding-bottom:50px;}
 
-.fixd-menu {position:fixed; bottom:0; left:50%; background:#e9f4fb; width:100%; max-width:1140px; border-radius:40px 40px 0 0; transform:translateX(-50%);}
-.fixd-menu:after {content:""; display:block; clear:both;}
-.fixd-menu .left {float:left; padding-left:50px;}
-.fixd-menu .left a {float:left; height:80px; padding:0 30px; color:#111; font-size:16px; line-height:80px;}
-.fixd-menu .left a img {display:inline-block; margin-right:10px; vertical-align:middle;}
-.fixd-menu .right {float:right;}
-.fixd-menu .right a {float:left; height:80px; margin-right:80px; color:#111; font-size:16px; line-height:80px;}
-.fixd-menu .right a:first-child {margin-right:60px;}
-.fixd-menu .right a em {display:inline-block; background:#fff; width:28px; height:28px; margin:0 10px; border-radius:50%; color:#406fdb; font-size:16px; line-height:28px; text-align:center;}
-.fixd-menu .right a.btn-buy em {color:#fc3b69;}
-.fixd-menu .right a:after {content:""; display:inline-block; background:url(../images/sub/ico_fix_04.png) 0 0 no-repeat; background-size:100% 100%; width:10px; height:6px; vertical-align:1px;}
