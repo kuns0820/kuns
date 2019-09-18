@@ -8,7 +8,7 @@ var inc_dom = {
 		incHD.push('<li><a href=""><span>IEO</span></a>');
 		incHD.push('<ul class="dep2">');
 		incHD.push('<li><a href="">IEO 참여신청</a></li>');
-		incHD.push('<li><a href="">신청 내역리스트<br />확인</a></li>');
+		incHD.push('<li><a href="">신청 내역리스트<br /> 확인</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
 		incHD.push('<li><a href=""><span>자산현황</span></a></li>');
@@ -38,6 +38,7 @@ var inc_dom = {
 		incHD.push('<a href="">회원가입</a>');
 		incHD.push('</div>');
 		incHD.push('<button type="button" class="btn_menu"><img src="images/btn_menu.gif" alt="메뉴"></button>');
+		incHD.push('<div class="gnb-layer"></div>');
 		incHD.push('</header>');
 		
 		$("main").before(incHD.join(''));
@@ -70,6 +71,18 @@ var inc_dom = {
 $(function(){
 	inc_dom.header();
 	inc_dom.footer();
+	$("header .gnb-layer").append('<h1><a href=""><img src="images/logo.png" alt="ABIT"></a></h1>');
+	$("header .gnb-layer").append($("header .gnb").html());
+	$("header .gnb-layer").append('<button type="button" class="btn_close"><img src="images/sub/btn_allMenuClose.gif" alt="메뉴 닫기"></button>');
+
+	$("header .btn_menu").click(function(){
+		$("body").css("overflow" , "hidden");
+		$("header .gnb-layer").addClass("active");
+	});
+	$("header .gnb-layer .btn_close").click(function(){
+		$("body").css("overflow" , "unset");
+		$("header .gnb-layer").removeClass("active");
+	});
 });
 
 function layers(target){

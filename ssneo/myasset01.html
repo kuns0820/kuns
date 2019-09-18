@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.visible.js"></script>
+	<script type="text/javascript" src="js/inc.ui.js"></script>
+</head>
+<body>
+<div id="ssneo_warp">
+	<main role="main" class="asset">
+		<div class="sVisual asset"><div class="innr">
+			<h2>자산관리</h2>
+			<p class="desc">고객님이 보유하고 있는 자산내역을 확인하실 수 있습니다.</p>
+		</div></div>
+
+		<article>
+			<div class="tab-col-4">
+				<a href="" class="on">자산 현황</a>
+				<a href="">거래 내역</a>
+				<a href="">판매 대기</a>
+				<a href="">구매 대기</a>
+			</div>
+			
+			<div class="title-grid">
+				<h3 class="title">총 자산 현황</h3>
+				<span class="right">평가금액은 KRW로 임의 환산된 추정값이며 참고용입니다.</span>
+			</div>
+
+			<div class="asset-total">
+				<strong>보유자산</strong>
+				<p><span>5,000,000.00</span> AST</p>
+			</div>
+
+			<div class="asset-cell">
+				<div class="box">
+					<strong>평가 금액</strong>
+					<p>500,000,000</p>
+					<em>KRW</em>
+				</div>
+				<div class="box">
+					<strong>매수 평균가</strong>
+					<p>105.12</p>
+					<em>KRW</em>
+				</div>
+				<div class="box">
+					<strong>매도 평균가</strong>
+					<p>120.53</p>
+					<em>KRW</em>
+				</div>
+			</div>
+
+			<div class="title-grid">
+				<h3 class="title">거래 계좌</h3>
+				<span class="right">인증 완료된 계좌입니다. 에스크로 거래 시, 주 거래 계좌로 사용해 주시기 바랍니다.</span>
+			</div>
+
+			<div class="asset-bank">
+				<strong>신한은행</strong>
+				<span>홍길동</span>
+				<span>123-45-678901</span>
+			</div>
+
+			<div class="title-grid">
+				<h3 class="title">전송 내역</h3>
+				<span class="right">완료 거래의 결과와 자산의 변동 내역 리스트 입니다.</span>
+			</div>
+
+			<p class="scroll_guide">좌우로 스크롤 해주세요.</p>
+			<div class="tbl asset">
+				<table>
+					<colgroup>
+						<col style="width:17%">
+						<col style="width:20%">
+						<col style="width:13%">
+						<col style="width:17%">
+						<col style="width:15%">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>거래형태</th>
+							<th>거래일시(GMT+9)</th>
+							<th>거래자ID</th>
+							<th>수량(AST)</th>
+							<th>자산현황</th>
+							<th>AST지갑주소<br />해시 값</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><span class="text-red">구매 / Received</span></td>
+							<td>2019.03.29 23:15</td>
+							<td>**bcd</td>
+							<td class="cnt">-2</td>
+							<td><p class="deposit">12,345,678</p></td>
+							<td><button type="button" class="btn-hash" data-layer="hashAddr" onclick="layers(this);">확인</button></td>
+						</tr>
+						<tr>
+							<td><span class="text-blue">판매 / Sent</span></td>
+							<td>2019.03.29 23:15</td>
+							<td>**bcd</td>
+							<td class="cnt">+6,000,333</td>
+							<td><p class="deposit">6,000,555,000</p></td>
+							<td><button type="button" class="btn-hash" data-layer="hashAddr" onclick="layers(this);">확인</button></td>
+						</tr>
+						<tr>
+							<td><span class="text-red">구매 / Received</span></td>
+							<td>2019.03.29 23:15</td>
+							<td>**bcd</td>
+							<td class="cnt">-2</td>
+							<td><p class="deposit">12,345,678</p></td>
+							<td><button type="button" class="btn-hash" data-layer="hashAddr" onclick="layers(this);">확인</button></td>
+						</tr>
+						<tr>
+							<td><span class="text-blue">판매 / Sent</span></td>
+							<td>2019.03.29 23:15</td>
+							<td>**bcd</td>
+							<td class="cnt">+6,000,333</td>
+							<td><p class="deposit">6,000,555,000</p></td>
+							<td><button type="button" class="btn-hash" data-layer="hashAddr" onclick="layers(this);">확인</button></td>
+						</tr>
+						<tr>
+							<td><span class="text-blue">판매 / Sent</span></td>
+							<td>2019.03.29 23:15</td>
+							<td>**bcd</td>
+							<td class="cnt">+6,000,333</td>
+							<td><p class="deposit">6,000,555,000</p></td>
+							<td><button type="button" class="btn-hash" data-layer="hashAddr" onclick="layers(this);">확인</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="paging">
+				<a href="javascript:;" class="prev">이전</a>
+				<a href="javascript:;" class="on">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;" class="next">다음</a>
+			</div>
+			
+		</article>
+	</main>
+</div>
+</body>
+</html>
+
+
