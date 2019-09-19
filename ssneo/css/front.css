@@ -107,22 +107,22 @@ footer .copy_wrap .addr {font-size:0;}
 footer .copy_wrap .addr span {display:inline-block; margin:10px 20px 0 0; padding-right:20px; border-right:1px solid #353535; color:rgba(2525,255,255,.2); font-size:14px;}
 footer .copy_wrap .addr span:last-child {margin-right:0; padding-right:0; border-right:0;}
 footer .copy_wrap p.copy {margin-top:10px; color:rgba(2525,255,255,.2); font-size:13px; font-family:Myriad Pro; letter-spacing:0;}
-footer .copy_wrap .certifi {margin-top:40px; font-size:0;}
-footer .copy_wrap .certifi a {display:inline-block; margin-left:30px;}
-footer .copy_wrap .certifi a:first-child {margin-left:0;}
+
+aside {position:fixed; bottom:80px; right:60px;}
+aside a {display:block; background:#2dd0d4; width:96px; height:96px; margin-top:20px; border-radius:50%; color:#fff; font-size:16px; font-weight:bold; line-height:96px; text-align:center;}
 
 @media screen and (max-width:768px) {
 	footer .copy_wrap {padding:25px 30px 30px;}
 	footer .copy_wrap .addr span {margin:5px 10px 0 0; padding-right:10px; font-size:11px;}
 	footer .copy_wrap .addr span:first-child {width:100%; margin:0; padding:0; border-right:0;}
 	footer .copy_wrap p.copy {font-size:11px;}
-	footer .copy_wrap .certifi {margin-top:20px;}
-	footer .copy_wrap .certifi a {margin-left:10px;}
-	footer .copy_wrap .certifi a img {height:22px;}
+
+	aside {bottom:40px; right:30px;}
+	aside a {width:48px; height:48px; margin-top:10px; font-size:11px; line-height:48px;}
 }
 
-
-main.main {padding-top:210px; transition:padding .2s ease;}
+main {border-bottom:1px solid #ddd;}
+main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 @media screen and (max-width:1158px) {
 	main.main {padding-top:110px;}
 }
@@ -403,7 +403,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 
 .layer-wrap {display:none; position:absolute; top:0; left:0; width:100%; z-index:50;}
 .layer-wrap:after {content:""; position:fixed; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,.8); z-index:15;}
-.layer-wrap .layer-conts {position:absolute; top:100px; left:50%; background:#fff; border-radius:3px; transform:translateX(-50%); z-index:16;}
+.layer-wrap .layer-conts {position:absolute; top:100px; left:50%; background:#fff; border-radius:3px; transform:translateX(-50%); z-index:16; transition:all .2s ease;}
 
 .info-box-gray {background:#f8f8f8; margin-top:30px; padding:45px 40px; border-radius:3px;}
 .info-box-gray li {margin-top:13px; color:#565656; font-size:17px;}
@@ -470,15 +470,76 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 /* ** // ** */
 
 /* IEO */
+.ieo_step {margin-top:50px; font-size:0;}
+.ieo_step li {display:inline-block; width:25%; height:232px; padding:0 35px; border-right:1px solid #eee; box-sizing:border-box; vertical-align:middle;}
+.ieo_step li:first-child {border-left:1px solid #eee;}
+.ieo_step li .num {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat";}
+.ieo_step li strong {display:block; margin-top:6px; color:#000; font-size:26px;}
+.ieo_step li p {margin-top:20px; color:#111; font-size:18px; line-height:1.4;}
+.ieo_step li .btn_down {display:block; background:#073c61; width:100%; max-width:210px; height:38px; margin-top:20px; border-radius:38px; color:#fff; font-size:16px; line-height:38px; text-align:center;}
+.chk-box.ieo-agree {margin-top:20px;}
+
+.account_info {margin-top:30px; padding:34px 0; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
+.account_info > * {display:inline-block;}
+.account_info select {width:207px; height:50px; padding-left:10px; border:1px solid #555; border-width:0 0 1px 0; color:#111; font-size:20px;}
+.account_info .inp {margin-left:20px; border-bottom:1px solid #555;}
+.account_info .inp input[type=text] {width:100%; height:50px; padding-left:10px; border:0; box-sizing:border-box; color:#888; font-size:20px;}
+
+.account_info2 {margin-top:30px; padding:16px 0; border:1px solid #ddd; border-radius:3px; font-size:0;}
+.account_info2 .box {display:inline-block; width:50%; padding:28px 0; box-sizing:border-box; text-align:center;}
+.account_info2 .box:first-child {border-right:1px solid #eee;}
+.account_info2 .box > * {display:inline-block;}
+.account_info2 .box .inp {width:190px; margin:0 20px; border-bottom:1px solid #555;}
+.account_info2 .box input[type=text] {width:100%; height:38px; padding-right:10px; border:0; box-sizing:border-box; color:#888; font-size:20px; text-align:right;}
+.account_info2 .box .btn-ok {background:#2dd0d4; width:64px; height:38px; margin-left:80px; border-radius:38px; color:#fff; font-size:16px; line-height:38px;}
+.account_info2 .box span {color:#111; font-size:20px;}
+.account_info2_text {margin-top:20px; color:#111; font-size:18px;}
+
 .ieo_idBox {margin-top:30px; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
-.ieo_idBox strong,
-.ieo_idBox span {display:inline-block; height:117px; font-size:20px; line-height:117px;}
+.ieo_idBox strong, .ieo_idBox span {display:inline-block; height:117px; font-size:20px; line-height:117px;}
 .ieo_idBox strong {color:#000; font-weight:normal;}
 .ieo_idBox span {color:#073b62;}
 .ieo_idBox span:before {content:""; display:inline-block; background:#dcdcdc; margin:0 50px; width:5px; height:5px; border-radius:50%; vertical-align:4px;}
 
 .tbl table td .deposit {color:#000; font-weight:bold; text-align:right;}
 .tbl table td .detail {display:block; background:#2dd0d5; width:96px; height:38px; border-radius:38px; color:#fff; font-size:16px; line-height:38px; font-weight:bold; text-align:center;}
+
+@media screen and (max-width:1250px) {
+	.ieo_step li {width:50%;}
+	.ieo_step li:nth-child(3) {border-left:1px solid #eee;}
+	.ieo_step li:nth-child(3),
+	.ieo_step li:nth-child(4) {margin-top:60px;}
+}
+@media screen and (max-width:970px) {
+	.account_info > * {display:block; width:320px !important; margin:10px auto 0 !important;}
+	.account_info2 .box {display:block; width:100% !important; border:0 !important;}
+}
+@media screen and (max-width:768px) {
+	.ieo_step {margin-top:25px;}
+	.ieo_step li {height:130px; padding:0 17px;}
+	.ieo_step li:nth-child(3),
+	.ieo_step li:nth-child(4) {margin-top:30px;}
+	.ieo_step li .num {font-size:25px;}
+	.ieo_step li strong {margin-top:3px; font-size:13px;}
+	.ieo_step li p {margin-top:10px; font-size:12px;}
+	.ieo_step li .btn_down {max-width:150px; height:19px; margin-top:10px; font-size:11px; line-height:19px;}
+	.chk-box.ieo-agree {margin-top:10px;}
+	.account_info {margin-top:15px; padding:17px 0;}
+	.account_info > * {display:block; width:160px !important; margin:5px auto 0 !important;}
+	.account_info select {height:25px; font-size:12px;}
+	.account_info .inp input[type=text] {height:25px; font-size:12px;}
+	.account_info2 {margin-top:15px; padding:8px 0;}
+	.account_info2 .box {padding:14px 0;}
+	.account_info2 .box .inp {width:95px; margin:0 10px;}
+	.account_info2 .box input[type=text] {height:19px; padding-right:5px; font-size:12px;}
+	.account_info2 .box .btn-ok  {width:32px; height:19px; margin-left:40px; font-size:11px; line-height:19px;}
+	.account_info2 .box span  {font-size:11px;}
+	.account_info2_text {margin-top:10px; font-size:11px;}
+	.ieo_idBox {margin-top:15px;}
+	.ieo_idBox strong, .ieo_idBox span {height:58px; font-size:12px; line-height:58px;}
+	.ieo_idBox span:before {margin:0 15px; width:3px; height:3px; vertical-align:2px;}
+	.tbl table td .detail {width:60px; height:20px; line-height:18px; font-size:11px;}
+}
 
 .layer-conts [class^=btn-col] {margin-top:40px; padding-bottom:60px;}
 .layer-conts [class^=btn-col] a {width:160px; height:60px; border-radius:60px; border:2px solid #ddd; color:#888; font-size:20px; line-height:56px;}
@@ -507,8 +568,34 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .layer-conts.alertMsg .close {position:absolute; top:30px; right:30px; font:0/0 a;}
 .layer-conts.alertMsg [class^=btn-col] {padding-bottom:50px;}
 
-<<<<<<< HEAD
-=======
+@media screen and (max-width:768px) {
+	.layer-conts [class^=btn-col] {margin-top:20px; padding-bottom:30px;}
+	.layer-conts [class^=btn-col] a {width:80px; height:30px; font-size:11px; line-height:28px;}
+	.layer-conts.alertMsg,
+	.layer-conts.applyForm {left:30px; right:30px; width:auto; margin:0 auto; transform:translateX(0);}
+	.layer-conts.applyForm:before {left:18px; right:18px; height:4px;}
+	.layer-conts.applyForm .util {margin-top:20px; padding:0 30px;}
+	.layer-conts.applyForm .util li {margin-right:20px;}
+	.layer-conts.applyForm .util li button {font-size:11px;}
+	.layer-conts.applyForm .util li button img {margin-right:3px;}
+	.layer-conts.applyForm h2 {margin:20px 0 25px; padding:0 30px; font-size:18px;}
+	.layer-conts.applyForm .tbl_col {padding:0 30px 20px;}
+	.layer-conts.applyForm .tbl_col.bg {padding-bottom:20px;}
+	.layer-conts.applyForm .tbl_col table th, .layer-conts.applyForm .tbl_col table td {height:34px;}
+	.layer-conts.applyForm .tbl_col table th {font-size:12px;}
+	.layer-conts.applyForm .tbl_col table td input[type=text] {height:34px; font-size:11px;}
+	.layer-conts.alertMsg .close,
+	.layer-conts.applyForm .close {top:10px; right:20px; padding:10px;}
+	.layer-conts.alertMsg .close img,
+	.layer-conts.applyForm .close img {width:10px; height:10px;}
+	.layer-conts.applyForm .info_text {margin-top:15px; padding:0 30px; font-size:11px;}
+
+	.layer-conts.alertMsg {padding:37px 0 0;}
+	.layer-conts.alertMsg .msg_text {font-size:12px;}
+	.layer-conts.alertMsg .close {top:15px; right:15px;}
+	.layer-conts.alertMsg [class^=btn-col] {padding-bottom:25px;}
+}
+
 /* Join */
 main article.member {max-width:900px; padding-top:115px; transition:all .2s ease;}
 article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #073c61; font-size:37px;}
@@ -569,7 +656,7 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 	.btn-col-find {margin-top:30px;}
 	.btn-col-find a,
 	.btn-col-join button,
-	.btn-col-join .btn-join {display:block; width:158px; height:39px; margin-left:auto !important; margin-right:auto !important; border-radius:39px; font-size:12px; line-height:39px;}
+	.btn-col-join .btn-join {display:block; width:158px; height:39px; margin-left:auto !important; margin-right:auto !important; border-radius:39px; font-size:12px; line-height:37px;}
 	.btn-col-find a:last-child,
 	.btn-col-join .btn-join {margin-top:10px;}
 
@@ -635,4 +722,3 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 	.tbl.asset table td [class^=text-] {padding-left:10px; font-size:11px;}
 	.tbl.asset table td .btn-hash {width:31px; height:19px; font-size:11px;}
 }
->>>>>>> fe49e333ce8141fc66b9c888eb6ca2efc7405de4
