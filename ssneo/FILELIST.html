@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<style>
+		* {margin:0; padding:0; text-decoration:none;}
+		dl {padding:15px; border-bottom:1px solid #555;}
+		dl dt {font-weight:bold;}
+		dl dd {padding:5px 0 5px 15px;}
+		dl dd a {color:#555; font-size:13px;}
+		dl dd a span {display:inline-block; vertical-align:2px;}
+	</style>
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	$(function(){
+		$("dd a span").each(function(){
+			$(this).text(" - " + $(this).parent().attr("href"));
+		});
+	});
+	</script>
+</head>
+<body>
+<dl>
+	<dt>메인</dt>
+	<dd><a href="main.html" target="_blank">메인<span></span></a></dd>
+</dl>
+<dl>
+	<dt>IEO</dt>
+	<dd><a href="ieo.html" target="_blank">IEO 참여 신청<span></span></a></dd>
+	<dd><a href="ieo_list.html" target="_blank">내 IEO 신청 내역 확인<span></span></a></dd>
+	<dd><a href="ieo_popup.html" target="_blank">IEO 팝업 모음<span></span></a></dd>
+</dl>
+<dl>
+	<dt>자산현황</dt>
+	<dd><a href="myasset01.html" target="_blank">자산현황<span></span></a></dd>
+	<dd><a href="myasset02.html" target="_blank">거래내역<span></span></a></dd>
+	<dd><a href="myasset03.html" target="_blank">판매대기<span></span></a></dd>
+	<dd><a href="myasset04.html" target="_blank">구매대기<span></span></a></dd>
+	<dd><a href="myasset_popup.html" target="_blank">자산현황 팝업 모음<span></span></a></dd>
+</dl>
+<dl>
+	<dt>멤버쉽</dt>
+	<dd><a href="login.html" target="_blank">로그인<span></span></a></dd>
+	<dd><a href="join.html" target="_blank">회원가입<span></span></a></dd>
+	<dd><a href="find_id.html" target="_blank">아이디 찾기<span></span></a></dd>
+	<dd><a href="id_mail.html" target="_blank">아이디 찾기 메일 보내기<span></span></a></dd>
+	<dd><a href="find_pw.html" target="_blank">비밀번호 찾기<span></span></a></dd>
+	<dd><a href="pw_mail.html" target="_blank">비밀번호 찾기 메일 보내기<span></span></a></dd>
+</dl>
+</body>
+</html>
+
+
