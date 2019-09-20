@@ -640,6 +640,10 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 .btn-col-find a {background:#fff; width:316px; height:78px; border-color:#2dd0d4; border-radius:78px; color:#2dd0d4; font-size:25px; line-height:74px; text-align:center;}
 .findImg {display:block; width:141px; margin:74px auto 0;}
 
+.layer-conts.terms-pop {width:100%; max-width:720px;}
+.layer-conts.terms-pop .head-terms {background:#2dd0d4; height:76px; border-radius:3px 3px 0 0; color:#fff; font-size:25px; text-align:center; font-weight:bold; line-height:76px;}
+.layer-conts.terms-pop .terms-text {overflow-y:auto; height:640px; padding:0 40px; border-bottom:1px solid #ddd; color:#555; font-size:18px; line-height:1.5; white-space:pre-line; word-break:keep-all;}
+
 @media screen and (max-width:1058px) {
 	main article.member {padding-left:70px; padding-right:70px;}
 }
@@ -673,6 +677,9 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 	.join_search {margin-top:20px;}
 	.join_search a {padding:0 25px; font-size:12px;}
 	.findImg {width:70px; margin:37px auto 0;}
+
+	.layer-conts.terms-pop {left:30px; right:30px; width:auto; margin:0 auto; transform:translateX(0);}
+	.layer-conts.terms-pop .head-terms {height:38px; font-size:14px; line-height:38px;}
 }
 
 
