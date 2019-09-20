@@ -8,7 +8,7 @@ var inc_dom = {
 		incHD.push('<li><a href="ieo.html"><span>IEO</span></a>');
 		incHD.push('<ul class="dep2">');
 		incHD.push('<li><a href="ieo.html">IEO 참여신청</a></li>');
-		incHD.push('<li><a href="ieo_list.html">신청 내역리스트<br /> 확인</a></li>');
+		incHD.push('<li><a href="ieo_list.html">신청 내역리스트 확인</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
 		incHD.push('<li><a href="myasset01.html"><span>자산현황</span></a></li>');
@@ -162,7 +162,7 @@ function layersClose(target){
 
 $(function(){
 	$(".gnb li").on("mouseover" , function(){
-		$(".gnb li .dep2").css({
+		$(this).find(".dep2").css({
 			"opacity" : "1",
 			"visibility" : "visible"
 		});
