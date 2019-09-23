@@ -71,16 +71,16 @@
 		</div>
 		<div class="time-line">
 			<div class="inner">
-				<div class="video_wrap"><input id="video-slider1" data-slider-id='videoSlider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100" data-slider-tooltip="hide"/>
+				<div class="video_wrap" style="width:150px;"><input id="video-slider1" data-slider-id='videoSlider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100" data-slider-tooltip="hide"/>
 					<p class="sbj">7월 GA활동지원 이벤트</p>
 				</div>
-				<div class="video_wrap"><input id="video-slider2" data-slider-id='videoSlider2' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-tooltip="hide"/>
+				<div class="video_wrap" style="width:200px;"><input id="video-slider2" data-slider-id='videoSlider2' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-tooltip="hide"/>
 					<p class="sbj">이벤트22</p>
 				</div>
-				<div class="video_wrap"><input id="video-slider3" data-slider-id='videoSlider3' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
+				<div class="video_wrap" style="width:400px;"><input id="video-slider3" data-slider-id='videoSlider3' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
 					<p class="sbj">이벤트33</p>
 				</div>
-				<div class="video_wrap"><input id="video-slider4" data-slider-id='videoSlider4' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
+				<div class="video_wrap" style="width:100px;"><input id="video-slider4" data-slider-id='videoSlider4' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
 					<p class="sbj">이벤트44</p>
 				</div>
 			</div>
@@ -252,9 +252,9 @@ function palyer_size(){
 	playerH = $(".player_warp .player video").outerHeight();
 	$(".player_warp").css("padding-top" , playerH);
 }
-window.onload = function(){
+$(window).bind("load resize scroll" , function(){
 	palyer_size();
-}
+});
 </script>
 </body>
 </html>

@@ -124,7 +124,7 @@ video {width:100%;}
 .time-line .inner .video_wrap {background:url(img_video/ico_timeLine.png) 2px 3px no-repeat; background-size:5px auto; padding:22px 4px 0;}
 .time-line .inner .video_wrap .sbj {margin-top:8px; color:#666; font-size:12px; letter-spacing:-1px;}
 
-.slider.slider-horizontal {width:150px; height:auto;}
+.slider.slider-horizontal {width:100%; height:auto;}
 .time-line .slider-selection {background:#2d1461;}
 .slider.slider-horizontal .slider-track {height:6px;}
 .slider-handle {background:#fff; top:50%; width:14px; height:14px; margin-top:-9px; border:4px solid #2d1461; box-sizing:border-box; box-shadow:none;}
