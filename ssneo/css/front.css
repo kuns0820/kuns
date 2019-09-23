@@ -372,7 +372,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 
 /* Sub */
 .sVisual .innr {width:100%; max-width:1140px; height:306px; margin:0 auto; padding-top:155px; box-sizing:border-box; transition:all .2s ease;}
-.sVisual h2 {color:#fff; font-size:40px; font-family:"Montserrat"; letter-spacing:0;}
+.sVisual h2 {color:#fff; font-size:40px; font-family:"Montserrat", "Noto Sans KR"; letter-spacing:0;}
 .sVisual .desc {margin-top:16px; color:#fff; font-size:24px;}
 .sVisual.ieo {background:url(../images/sub/visual_ieo.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 .sVisual.asset {background:url(../images/sub/visual_asset.jpg) 50% 0 no-repeat; background-size:auto 100%;}
@@ -393,7 +393,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 [class^=btn-col-] button:first-child {margin-left:0;}
 
 .paging {margin-top:40px; font-size:0; line-height:0; text-align:center;}
-.paging a {display:inline-block; height:38px; padding:0 8px; border-radius:2px; color:#545454; font-size:16px; line-height:38px; font-family:"Montserrat"; vertical-align:middle;}
+.paging a {display:inline-block; height:38px; padding:0 8px; border-radius:2px; color:#545454; font-size:16px; line-height:38px; font-family:"Montserrat", "Noto Sans KR"; vertical-align:middle;}
 .paging a:first-child {margin-left:0;}
 .paging a:hover,
 .paging a.on {color:#2485c8; font-weight:bold;}
@@ -426,7 +426,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .tbl table th,
 .tbl table td {height:70px; vertical-align:middle; text-align:center;}
 .tbl table th {border-bottom:1px solid #555; color:#000; font-size:18px;}
-.tbl table td {border-bottom:1px solid #ddd; color:#555; font-size:17px; font-family:"Montserrat"; font-weight:500;}
+.tbl table td {border-bottom:1px solid #ddd; color:#555; font-size:17px; font-family:"Montserrat", "Noto Sans KR"; font-weight:500;}
 
 .btn-refresh {position:absolute; top:192px; right:-140px;}
 .btn-goTop {position:absolute; bottom:60px; right:-140px;}
@@ -483,7 +483,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .ieo_step {margin-top:50px; font-size:0;}
 .ieo_step li {display:inline-block; width:25%; height:232px; padding:0 35px; border-right:1px solid #eee; box-sizing:border-box; vertical-align:middle;}
 .ieo_step li:first-child {border-left:1px solid #eee;}
-.ieo_step li .num {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat";}
+.ieo_step li .num {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat", "Noto Sans KR";}
 .ieo_step li strong {display:block; margin-top:6px; color:#000; font-size:26px;}
 .ieo_step li p {margin-top:20px; color:#111; font-size:18px; line-height:1.4;}
 .ieo_step li .btn_down {display:block; background:#073c61; width:100%; max-width:210px; height:38px; margin-top:20px; border-radius:38px; color:#fff; font-size:16px; line-height:38px; text-align:center;}
@@ -692,7 +692,7 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 .asset-total {display:table; background:#f8f8f8; width:100%; margin-top:25px; border-radius:3px;}
 .asset-total > * {display:table-cell; height:124px; vertical-align:middle;}
 .asset-total strong {padding-left:60px; color:#000; font-size:25px;}
-.asset-total p {padding-right:60px; color:#073c61; font-size:35px; text-align:right; font-family:"Montserrat";}
+.asset-total p {padding-right:60px; color:#073c61; font-size:35px; text-align:right; font-family:"Montserrat", "Noto Sans KR";}
 .asset-total p span {font-weight:bold;}
 
 .asset-cell {margin-top:20px;}
@@ -702,7 +702,7 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 .asset-cell .box:nth-child(2) {background:#e9f4fb; margin:0 24px;}
 .asset-cell .box:nth-child(3) {background:#f3f5f6;}
 .asset-cell .box strong {color:#111; font-size:20px; font-weight:normal;}
-.asset-cell .box p {margin-top:35px; color:#073c61; font-size:28px; font-family:"Montserrat"; font-weight:bold;}
+.asset-cell .box p {margin-top:35px; color:#073c61; font-size:28px; font-family:"Montserrat", "Noto Sans KR"; font-weight:bold;}
 .asset-cell .box em {position:absolute; top:20px; right:20px; background:#fff; width:64px; height:30px; border-radius:30px; color:#555; font-size:14px; line-height:30px; text-align:center;}
 
 .asset-bank {margin-top:30px; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
