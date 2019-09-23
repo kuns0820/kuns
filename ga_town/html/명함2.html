@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="">
+<div id="ga_wrap">
+	<div id="container">
+		<article class="name_card">
+			<div class="nc_top">
+				<span class="logo"><img src="../images/town/logo_NC.png" alt=""></span>
+				<a href="javascript:;" class="close"><img src="../images/town/btn_layer_close2.png" alt=""></a>
+				<div class="thum"><img src="../images/town/img_NC_thum.jpg" alt="">
+					<span class="icon"><img src="../images/town/icon_NC_01.png" alt=""></span>
+				</div>
+				<strong class="name"><span>에이스 홍길동 입니다.</spa></strong>
+				<p class="intro_text">
+					NLC GLOBAL GA의 사명을 가지고 고객이 꼭 필요로하는<br />보장을 제공하기 위해 노력하겠습니다.
+				</p>
+			</div>
+
+			<div class="select_tab">
+				<div><button type="button" class="layer_insurance-1">생명보험사</button></div>
+				<div><button type="button" class="layer_insurance-2">손해보험사</button></div>
+			</div>
+
+			<div class="fixe_btn-btm col-2">
+				<button type="button" class="btn-negative">저장</button>
+				<a href="" class="btn-positive">취소</a>
+			</div>
+
+			<script>
+			$(function(){
+				$(".select_tab .layer_insurance-1").click(function(){
+					$(".insurance-1").show();
+				});
+
+				$(".select_tab .layer_insurance-2").click(function(){
+					$(".insurance-2").show();
+				});
+
+				$(".layer-pop .layer-close").click(function(){
+					$(".layer-pop").hide();
+				});
+			});
+			</script>
+
+			<div class="layer-pop insurance-1" style="display: none;">
+				<div class="layer-conts">
+					<h2>생명보험사</h2>
+					<div class="scrollarea insurance">
+						<ul>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1"><i></i></span>
+									<label for="group1">삼성생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group2"><i></i></span>
+									<label for="group2">DB생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group3"><i></i></span>
+									<label for="group3">신한생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group4"><i></i></span>
+									<label for="group4">한화생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group4"><i></i></span>
+									<label for="group4">한화생명</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="layer-close">닫기</button>
+				</div>
+				<i class="dim"></i>
+			</div>
+
+			<div class="layer-pop insurance-2" style="display: none;">
+				<div class="layer-conts">
+					<h2>손해보험사</h2>
+					<div class="scrollarea insurance">
+						<ul>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1"><i></i></span>
+									<label for="group1">삼성생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group2"><i></i></span>
+									<label for="group2">DB생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group3"><i></i></span>
+									<label for="group3">신한생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group4"><i></i></span>
+									<label for="group4">한화생명</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group4"><i></i></span>
+									<label for="group4">한화생명</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button type="button" class="layer-close">닫기</button>
+				</div>
+				<i class="dim"></i>
+			</div>
+		</article>
+	</div>
+</div>
+</body>
+</html>

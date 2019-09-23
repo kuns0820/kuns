@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="detail_page">
+<div id="ga_wrap">
+	<div id="container">
+		<article class="">
+			<div class="conts-detail swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/img_conts_detail.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/img_conts_detail.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.conts-detail', {
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					loop : false
+				});
+			});
+			</script>
+
+			<div class="fixed_nav">
+				<button type="button" class="btn-back">뒤로</button>
+				<div class="btns">
+					<button type="button" class="btn-sms">문자</button>
+					<button type="button" class="btn-bigsms">대량발송</button>
+					<button type="button" class="btn-share">공유</button>
+					<button type="button" class="btn-kakao">카카오톡</button>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					$(".fixed_nav .btn-share").click(function(){
+						$(".share_layer").show();
+					});
+				});
+			</script>
+
+			<div class="layer-pop share_layer">
+				<div class="layer-conts">
+					<p>졸업/입학을 앞둔 우리 아이,<br />CI보험을 선택해야 하는 이유!</p>
+					<div class="share_list">
+						<ul>
+							<li><a href=""><img src="../images/town/btn_share_01.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_02.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_03.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_04.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_05.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_06.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_07.jpg" alt=""></a></li>
+							<li><a href=""><img src="../images/town/btn_share_08.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="layer-close">닫기</button>
+				<i class="dim"></i>
+			</div>
+			<script>
+				$(function(){
+					$(".layer-pop .layer-close").click(function(){
+						$(".layer-pop").hide();
+					});
+				});
+			</script>
+		</article>
+	</div>
+</div>
+</body>
+</html>

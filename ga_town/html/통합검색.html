@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+
+	<script>
+	$(function(){
+		$(".search-box.slt .btn-selected").click(function(){
+			$(".group-select").show();
+		});
+		$(".group-select input[type=radio]").click(function(){
+			$text = $(this).attr("title");
+			$(".search-box.slt .btn-selected span").text($text);
+		});
+	});
+	</script>
+</head>
+<body class="bg_main">
+<div id="ga_wrap">
+	<header class="hd-fff">
+		<a href="" class="col-l_01 btn-text"><i></i>통합검색</a>
+	</header>
+
+	<div id="container">
+		<article class="">
+			<div class="search-box slt">
+				<a href="javascript:;" class="btn-selected"><span>전체전체전체</spa></a>
+				<div class="inp_box">
+					<input type="text" name="" id="" placeholder="이름으로 검색하세요.">
+					<button type="submit" class="btn-submit">검색</button>
+				</div>
+			</div>
+
+			<div class="keyword main-box">
+				<h2>핫!키워드</h2>
+				<div class="conts">
+					<a href="">어린이보험</a>
+					<a href="">의료실비</a>
+					<a href="">암보험</a>
+					<a href="">어린이보험</a>
+					<a href="">의료실비</a>
+					<a href="">암보험</a>
+				</div>
+			</div>
+			
+			<div class="srh_text main-box">
+				<h2>추천 검색어</h2>
+				<table>
+					<colgroup>
+						<col style="width:50%;">
+						<col style="width:50%;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td><a href="">
+								<div><em>01</em></div>
+								<div><span>종합</span></div>
+							</a></td>
+							<td><a href="">
+								<div><em>02</em></div>
+								<div><span>명절 운전자 기본수칙명절 운전자 기본수칙</span></div>
+							</a></td>
+						</tr>
+						<tr>
+							<td><a href="">
+								<div><em>03</em></div>
+								<div><span>미세먼지미세먼지미세먼지미세먼지</span></div>
+							</a></td>
+							<td><a href="">
+								<div><em>04</em></div>
+								<div><span>종합</span></div>
+							</a></td>
+						</tr>
+						<tr>
+							<td><a href="">
+								<div><em>05</em></div>
+								<div><span>미세먼지미세먼지</span></div>
+							</a></td>
+							<td><a href="">
+								<div><em>06</em></div>
+								<div><span>기본약관</span></div>
+							</a></td>
+						</tr>
+						<tr>
+							<td><a href="">
+								<div><em>05</em></div>
+								<div><span>미세먼지미세먼지</span></div>
+							</a></td>
+							<td><a href="">
+								<div><em>06</em></div>
+								<div><span>기본약관</span></div>
+							</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</article>
+		<footer>
+			ⓒ 2019 엔씨엘피플스 ALL  RIGHTS  RESERVED
+			<a href="#" class="btn_top"><img src="../images/town/btn_top.png" alt=""></a>
+		</footer>
+	</div>
+
+	<!-- 레이어 팝업 -->
+	<script>
+	$(function(){
+		$(".layer-pop .layer-close").click(function(){
+			$(".layer-pop").hide();
+		});
+	});
+	</script>
+	
+	<!-- 셀렉 레이어 팝업 -->
+	<div class="layer-pop group-select">
+		<div class="layer-conts">
+			<h2>항목 선택하기</h2>
+			<div class="scrollarea">
+				<ul>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+							<label for="group1">전체</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group2" title="보험뉴스"><i></i></span>
+							<label for="group2">보험뉴스</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group3" title="고객터치"><i></i></span>
+							<label for="group3">고객터치</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group4" title="보험상품"><i></i></span>
+							<label for="group4">보험상품</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group5" title="고객관리"><i></i></span>
+							<label for="group5">고객관리</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="layer-close">닫기</button>
+		</div>
+		<i class="dim"></i>
+	</div>
+</div>
+</body>
+</html>

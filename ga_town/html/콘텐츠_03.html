@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+
+	<script>
+	$(function(){
+		$(".search-box.slt .btn-selected").click(function(){
+			$(".group-select").show();
+		});
+		$(".group-select input[type=radio]").click(function(){
+			$text = $(this).attr("title");
+			$(".search-box.slt .btn-selected span").text($text);
+		});
+	});
+	</script>
+</head>
+<body class="fix_pdd">
+<div id="ga_wrap">
+	<header class="hd-fff">
+		<p class="col-l_01 btn-text">대량발송</p>
+		<p class="col-r_02 point">내포인트 : 5,000P</p>
+		<a href="" class="col-r_01 btn-close">닫기</a>
+	</header>
+
+	<div id="container">
+		<article class="">
+			<div class="search-box slt">
+				<a href="javascript:;" class="btn-selected"><span>전체전체전체</spa></a>
+				<div class="inp_box">
+					<input type="text" name="" id="" placeholder="이름으로 검색하세요.">
+					<button type="submit" class="btn-submit">검색</button>
+				</div>
+			</div>
+			
+			<div class="total_chk">
+				<p class="text"><span>2</span>/100</p>
+				<a href="javascript:;" class="chk_all">모두선택</a>
+				<a href="javascript:;" class="chk_cancel">모두취소</a>
+			</div>
+			<ul class="customer_list">
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk1"><i></i></span>
+							<label for="chk1">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>니즈환기</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk2"><i></i></span>
+							<label for="chk2">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>-</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk3"><i></i></span>
+							<label for="chk3">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>통화(발신)</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk4"><i></i></span>
+							<label for="chk4">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>인사말</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk5"><i></i></span>
+							<label for="chk5">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>방문예약</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+				<li>
+					<div class="col-1">
+						<div class="chk-box">
+							<span><input type="checkbox" name="" id="chk6"><i></i></span>
+							<label for="chk6">고병식</label>
+						</div>
+					</div>
+					<div class="col-2">
+						<p>친숙자료</p>
+					</div>
+					<div class="col-3">
+						<button type="button" class="btn-detail">상세</button>
+					</div>
+				</li>
+			</ul>
+		</article>
+		<a href="javascript:;" class="btn-fix-contact">보내기</a>
+	</div>
+
+	<!-- 셀렉 레이어 팝업 -->
+	<div class="layer-pop group-select">
+		<div class="layer-conts">
+			<h2>항목 선택하기</h2>
+			<div class="scrollarea">
+				<ul>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+							<label for="group1">전체</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group2" title="보험뉴스"><i></i></span>
+							<label for="group2">보험뉴스</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group3" title="고객터치"><i></i></span>
+							<label for="group3">고객터치</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group4" title="보험상품"><i></i></span>
+							<label for="group4">보험상품</label>
+						</div>
+					</li>
+					<li>
+						<div class="chk-box">
+							<span><input type="radio" name="group" id="group5" title="고객관리"><i></i></span>
+							<label for="group5">고객관리</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button type="button" class="layer-close">닫기</button>
+		</div>
+		<i class="dim"></i>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body id="share_view">
+<div id="ga_wrap">
+	<div id="container">
+		<article class="">
+			<div class="conts-detail swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide movie">
+						<div class="movie_conts">
+							<p class="tit">
+								축제의 뜨거운 열기
+							</p>
+							<span class="date">등록일:2019.02.20</span>
+						</div>
+						<div class="cts">
+							<video width="400" controls="">
+								<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+								<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+							</video>
+							<div class="text">
+								<p class="btn_fullsize"><a href=""><img src="../images/town/ico_fullsize.gif" alt=""> 전체화면</a></p>
+								“일생일대에 단 한 번뿐인 결혼이 코앞으로 다가왔는데 갑자기 
+								‘벚꽃축제’ 때문에 주차장을 이용하지 말라니… 결혼식장의 일방적인 통보에 그저 황당할 따름입니다”
+								경기도청 후문께 위치한 경기교총웨딩하우스가 4월<br>4월
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<article class="name_card">
+							<div class="nc_top">
+								<span class="logo"><img src="../images/town/logo_NC.png" alt=""></span>
+								<div class="thum"><img src="../images/town/img_NC_thum.jpg" alt="">
+									<span class="icon"><img src="../images/town/icon_NC_01.png" alt=""></span>
+								</div>
+								<strong class="name"><span>에이스 홍길동 입니다.</spa></strong>
+								<p class="intro_text">
+									NLC GLOBAL GA의 사명을 가지고 고객이 꼭 필요로하는<br />보장을 제공하기 위해 노력하겠습니다.
+								</p>
+							</div>
+
+							<ul class="my_info_list">
+								<li>
+									<span>휴대폰 :</span>
+									<em>010-1234-1234</em>
+								</li>
+								<li>
+									<span>이메일 :</span>
+									<em>gatown@ncl.co.kr</em>
+								</li>
+								<li>
+									<span>회사명 :</span>
+									<em>NLC GLOBAL GA</em>
+								</li>
+								<li>
+									<span>지점명 :</span>
+									<em>논현동 글로벌지점</em>
+								</li>
+								<li class="license_wrap">
+									<span>자격증 :</span>
+									<div class="license_list swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+											</div>
+											<div class="swiper-slide">
+												<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<script>
+									$(document).ready(function(){
+										var swiper2 = new Swiper('.license_list', {
+											pagination: {
+												el: '.swiper-pagination',
+											},
+											loop : true
+										});
+									});
+									</script>
+								</li>
+							</ul>
+
+							<div class="btn_phone">
+								<a href="" class="btn-sms">문자하기</a>
+								<a href="" class="btn-tel">전화하기</a>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="share_paging"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var userSwipe = new Swiper('.conts-detail', {
+					autoHeight: true,
+					pagination: {
+						el: '.share_paging',
+					},
+					normalizeSlideIndex : true,
+					loop : false,
+				});
+				
+				userSwipe.on('slideChange', function (index) {
+					if($(".conts-detail .share_paging span:last-child").hasClass("swiper-pagination-bullet-active")){
+						$('.share_paging').fadeOut();
+					}else{
+						$('.share_paging').fadeIn();
+					}
+				});
+			});
+			</script>
+		</article>
+	</div>
+</div>
+</body>
+</html>

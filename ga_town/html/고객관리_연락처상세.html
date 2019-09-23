@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="fix_pdd">
+<div id="ga_wrap">
+	<header class="hd-fff">
+		<a href="" class="col-l_01 btn-text"><i></i>연락처 상세보기</p>
+		<a href="" class="col-r_01 btn-text">수정</a>
+	</header>
+
+	<div id="container">
+		<article class="">
+			<h2 class="tit-ctc">홍길동</h2>
+			<strong class="stit-ctc">기본정보</strong>
+			<ul class="ctc-detail">
+				<li>휴대전화 : <strong>010-1234-5678</strong></li>
+				<li>주소 : <strong>서울시 강남구 언주로 121길 17, 파인시티 2층</strong></li>
+				<li>그룹 : <strong>친구</strong></li>
+			</ul>
+
+			<strong class="stit-ctc">추가정보</strong>
+			<ul class="ctc-detail">
+				<li>생일 : <strong>양력 1955년 12월 04일</strong></li>
+			</ul>
+
+			<strong class="stit-ctc">차량정보</strong>
+			<ul class="ctc-detail">
+				<li>차량번호 : <strong>00가 0000</strong></li>
+				<li>차종 : <strong>승합차</strong></li>
+				<li>만료일: <strong>2019년 1월 4일</strong></li>
+			</ul>
+
+			<strong class="stit-ctc">콘텐츠 보내기</strong>
+			<ul class="ctc_contents_list">
+				<li><a href=""><img src="../images/town/ico_ctc_01.png" alt=""><span>문자</span></a></li>
+				<li><a href=""><img src="../images/town/ico_ctc_02.png" alt=""><span>인사말</span></a></li>
+				<li><a href=""><img src="../images/town/ico_ctc_03.png" alt=""><span>친숙자료</span></a></li>
+				<li><a href=""><img src="../images/town/ico_ctc_04.png" alt=""><span>니즈환기</span></a></li>
+				<li><a href=""><img src="../images/town/ico_ctc_05.png" alt=""><span>기프티쇼</span></a></li>
+			</ul>
+
+			<strong class="stit-ctc">메모</strong>
+			<div class="memo_wrap">
+				<div class="inp_group type-add">
+					<input type="text" name="" id="" placeholder="추가 메모를 작성하세요">
+					<button type="submit" class="btn-add">추가</button>
+				</div>
+				<ul>
+					<li>
+						<div class="box">
+							<p>자연을 먼저 생각하는 자동차란 뜻으로 국내에서는 1995년 환경친화적 산업구조로의 전환촉진에 관한 법률제정이 추진되며 쓰이기 시작했다. </p>
+							<span class="date">2018년 7월 30일</span>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<p>자연을 먼저 생각하는 자동차란 뜻으로 국내에서는 1995년 환경친화적 산업구조로의 전환촉진에 관한 법률제정이 추진되며 쓰이기 시작했다. </p>
+							<span class="date">2018년 7월 30일</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<strong class="stit-ctc">관리이력
+				<a href="javascript:;" class="sync">동기화</a>
+			</strong>
+			<div class="record_wrap">
+				<div class="tab">
+					<a href="javascript:;" class="on">통화목록</a>
+					<a href="javascript:;">문자이력</a>
+					<a href="javascript:;">터치이력</a>
+				</div>
+				<ul class="list">
+					<li>
+						<div class="box">
+							<span class="date">2018.07.25 AM. 12:15</span>
+							<p>자연을 먼저 생각하는 자동차란 뜻으로 국내에서는 1995년 환경친화적 산업구조로의 전환촉진에 관한 법률제정이 추진되며 쓰이기 시작했다. </p>
+							<a href="javascript:;" class="more">더보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<span class="date">2018.07.25 AM. 12:15</span>
+							<p>자연을 먼저 생각하는 자동차란 뜻으로 국내에서는 1995년 환경친화적 산업구조로의 전환촉진에 관한 법률제정이 추진되며 쓰이기 시작했다. </p>
+							<a href="javascript:;" class="more">더보기</a>
+						</div>
+					</li>
+				</ul>
+				<script>
+				$(function(){
+					$(".record_wrap .list .more").click(function(){
+						$(".layer-pop.ctc-memo").show();
+					});
+				});
+				</script>
+			</div>
+		</article>
+		<a href="javascript:;" class="btn-fix-contact">삭제하기</a>
+	</div>
+
+	<!-- 레이어 팝업 -->
+	<script>
+	$(function(){
+		$(".layer-pop .layer-close, .layer-pop.ctc-memo-del .btn-cancel").click(function(){
+			$(".layer-pop").hide();
+		});
+
+		$(".layer-pop.ctc-memo .btn-memo-del").click(function(){
+			$(".layer-pop").hide();
+			$(".layer-pop.ctc-memo-del").show();
+		});
+	});
+	</script>
+
+	<div class="layer-pop ctc-memo">
+		<div class="layer-conts">
+			<div class="memo_detail">
+				<p>일시 : <strong>2018.07.25 12:15</strong></p>
+				<p>구분 : <strong>발신</strong></p>
+				<div class="text">
+					즐거운 월요일 입니다.오늘도 좋은 하루 보내시고건승하고 건강하고 어려운 상담이 필요하실때 언제든지 불러주세요
+				</div>
+				<a href="javascript:;" class="btn-memo-del">삭제하기</a>
+			</div>
+			
+			<button type="button" class="layer-close">닫기</button>
+		</div>
+		<i class="dim"></i>
+	</div>
+
+	<div class="layer-pop ctc-memo-del">
+		<div class="layer-conts">
+			<div class="memo_detail">
+				<p>APP에서 삭제하시겠습니까?</p>
+				<div class="btn_wrap">
+					<a href="javascript:;" class="btn-cancel">취소</a>
+					<a href="javascript:;" class="btn-del">삭제</a>
+				</div>
+			</div>
+		</div>
+		<i class="dim"></i>
+	</div>
+</div>
+</body>
+</html>

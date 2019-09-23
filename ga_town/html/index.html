@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="bg_main">
+<div id="ga_wrap">
+	<header class="hd-main">
+		<h1>
+			<a href="" class="logo"><img src="../images/town/logo.png" alt=""></a>
+		</h1>
+		<a href="javascript:;" class="col-l_01 btn-menu">전체메뉴</a>
+		<a href="" class="col-r_02 btn-tsrh">통합검색</a>
+		<a href="" class="col-r_01 btn-mypage">마이페이지</a>
+	</header>
+
+	<script>
+		$(function(){
+			$("header .btn-menu").click(function(){
+				if(!$("body").hasClass("all_menu")){
+					$("body").addClass("all_menu");
+				}
+			});
+
+			$("#side_wrap .close_side").click(function(){
+				$("body").removeClass("all_menu");
+			});
+
+			$("#side_wrap .all_menu_list li a").click(function(){
+				$data = $(this).parent().attr("id");
+				$(this).parent().addClass("on").siblings().removeClass("on");
+				if($data != undefined){
+					$("#side_wrap .menu_depth > ul").hide();
+					$("#side_wrap .menu_depth > ul." + $data).show();
+				}
+			});
+
+			$(".menu_depth .dep3").each(function(){
+				if($(this).find("li").length >= 4){
+					$(this).find("li:gt(2)").css("border-bottom" , "0");
+				}else{
+					$(this).find("li:lt(3)").css("border-bottom" , "0");
+				}
+			});
+		});
+	</script>
+	<div id="side_wrap">
+		<div class="inr_wrap">
+			<div class="menu_title">GA Town 서비스 메뉴
+				<button type="button" class="close_side"><img src="../images/town/btn_all_close.png" alt=""></button>
+			</div>
+			<div class="all_menu_list">
+				<ul>
+					<li class="a01 on"><a href="javascript:;"><p>새소식</p></a></li>
+					<li class="a02"><a href="javascript:;"><p>운세</p></a></li>
+					<li class="a03"><a href="javascript:;"><p>쇼핑/기프티쇼</p></a></li>
+					<li class="a04"><a href="javascript:;"><p>보험상품</p></a></li>
+					<li id="a05" class="a05"><a href="javascript:;"><p>보험뉴스</p></a></li>
+					<li id="a06" class="a06"><a href="javascript:;"><p>고객터치</p></a></li>
+					<li id="a07" class="a07"><a href="javascript:;"><p>고객관리</p></a></li>
+					<li id="a08" class="a08"><a href="javascript:;"><p>고객센터</p></a></li>
+				</ul>
+			</div>
+			<div class="menu_depth">
+				<ul class="dep2 a05">
+					<li><a href="">각사 소식지</a></li>
+					<li><a href="">보험뉴스</a>
+						<ul class="dep3">
+							<li><a href="">경제</a></li>
+							<li><a href="">건강</a></li>
+							<li><a href="">카드뉴스</a></li>
+							<li><a href="">생활</a></li>
+							<li><a href="">동영상</a></li>
+						</ul>
+					</li>
+					<li><a href="">업계동향</a></li>
+				</ul>
+
+				<ul class="dep2 a06">
+					<li><a href="">인사말</a>
+						<ul class="dep3">
+							<li><a href="">안부인사</a></li>
+							<li><a href="">계절인사</a></li>
+							<li><a href="">기념일</a></li>
+							<li><a href="">결혼/상조</a></li>
+							<li><a href="">가입/감사</a></li>
+						</ul>
+					</li>
+					<li><a href="">니즈환기</a>
+						<ul class="dep3">
+							<li><a href="">종신/암</a></li>
+							<li><a href="">누후/연금</a></li>
+							<li><a href="">상속/세금</a></li>
+							<li><a href="">변액/결제</a></li>
+							<li><a href="">자녀/교육</a></li>
+						</ul>
+					</li>
+					<li><a href="">친숙자료</a>
+						<ul class="dep3">
+							<li><a href="">건강</a></li>
+							<li><a href="">금융설계</a></li>
+							<li><a href="">여성/육아</a></li>
+							<li><a href="">생활/상식</a></li>
+							<li><a href="">기타/명언</a></li>
+						</ul>
+					</li>
+					<li><a href="">문자</a>
+						<ul class="dep3">
+							<li><a href="">안부</a></li>
+							<li><a href="">안내</a></li>
+							<li><a href="">축하</a></li>
+							<li><a href="">감사</a></li>
+							<li><a href="">Fun</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="dep2 a07">
+					<li><a href="">연락처관리</a></li>
+					<li><a href="">신규등록</a></li>
+				</ul>
+
+				<ul class="dep2 a08">
+					<li><a href="">이용약관</a></li>
+					<li><a href="">개인정보취급방침</a></li>
+				</ul>
+			</div>
+			
+			<p class="copy">ⓒ 2019 엔씨엘피플스 ALL  RIGHTS  RESERVED</p>
+		</div>
+	</div>
+
+	<div id="container">
+		<article class="">
+			<div class="visual_bnr swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/main_bnr.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/main_bnr.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.visual_bnr', {
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					loop : true
+				});
+			});
+			</script>
+
+			<div class="main_menu">
+				<ul>
+					<li class="m01"><a href="javascript:;"><span></span><p>보험뉴스</p></a></li>
+					<li class="m02"><a href="javascript:;"><span></span><p>고객터치</p></a></li>
+					<li class="m03"><a href="javascript:;"><span></span><p>보험상품</p></a></li>
+				</ul>
+				<div class="deps m01">
+					<div class="dep2">
+						<div class="inr">
+							<a href="javascript:;" class="m0101">인사말111</a>
+							<a href="javascript:;" class="m0102">니즈환기</a>
+							<a href="javascript:;" class="m0103">인사말111</a>
+							<a href="javascript:;" class="m0104">니즈환기</a>
+							<a href="javascript:;" class="m0105">인사말111</a>
+							<a href="javascript:;" class="m0106">니즈환기</a>
+						</div>
+					</div>
+					<div class="dep3 m0101">
+						<a href="">안부인사m0101</a>
+						<a href="">계절인사</a>
+						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
+					</div>
+					<div class="dep3 m0102">
+						<a href="">안부인사m0102</a>
+						<a href="">계절인사</a>
+						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
+					</div>
+				</div>
+				<div class="deps m02">
+					<div class="dep2">
+						<div class="inr">
+							<a href="javascript:;">인사말222</a>
+							<a href="javascript:;">니즈환기</a>
+						</div>
+					</div>
+					<div class="dep3">
+						<a href="">안부인사222</a>
+						<a href="">계절인사</a>
+						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
+					</div>
+				</div>
+				<ul>
+					<li class="m04"><a href="javascript:;"><span></span><p>운세</p></a></li>
+					<li class="m05"><a href="javascript:;"><span></span><p>쇼핑/기프티쇼</p></a></li>
+					<li class="m06"><a href="javascript:;"><span></span><p>고객관리</p></a></li>
+				</ul>
+				<div class="deps">
+					<div class="dep2">
+						<div class="inr">
+							<a href="javascript:;">인사말</a>
+							<a href="javascript:;">니즈환기</a>
+							<a href="javascript:;">친숙자료</a>
+							<a href="javascript:;">문자</a>
+						</div>
+					</div>
+					<div class="dep3">
+						<a href="">안부인사</a>
+						<a href="">계절인사</a>
+						<a href="">가입/유지감사</a>
+						<a href="">결혼/상조</a>
+						<a href="">기념일</a>
+						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
+					</div>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					$(".main_menu li a").click(function(){
+						var $this = $(this).parent().attr("class");
+						$(".main_menu .deps, .main_menu .deps .dep3").hide();
+						
+						if($(this).closest("ul").next(".deps").css("display") == "none" && !$(this).parent().hasClass("on")){
+							$(".main_menu li").removeClass("on");
+							$(this).parent().addClass("on");
+							$(".main_menu .deps."+$this).show();
+						}else{
+							$(this).parent().removeClass("on");
+							$(this).closest("ul").next(".deps").hide();
+						}
+					});
+					$(".main_menu .dep2 a").click(function(){
+						var $this =  $(this).attr("class");
+						$(this).closest(".deps").find(".dep3").hide();
+						$(this).closest(".deps").find(".dep3."+$this).show();
+					});
+					$(".main_menu .dep3 .close").click(function(){
+						$(this).closest(".dep3").hide();
+					});
+				});
+			</script>
+
+			<div class="luck_wrap main-box">
+				<h2 class="mtit"><a href="">오늘의 운세</a></h2>
+				<div class="conts">
+					<div class="thum">
+						<img src="https://nhlife.fctown.com/images/sub_v2/today_ani05.png" alt="">
+					</div>
+					<div class="luck_text">
+						<strong>홍길동님의 오늘의 운세</strong>
+						<p><a href="">장수가 전쟁터를 만난 형국입니다. 이전 임금이 착한 신하를 얻은 운세입니다. 그동안의 침체에서 벗어나 이제 활동 장수가 전쟁터를 만난 형국입니다. 이전 임금이 착한 신하를 얻은 운세입니다. 그동안의 침체에서 벗어나 이제 활동</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="board_wrap main-box">
+				<h2 class="mtit"><a href="">오늘의 새소식</a></h2>
+				<div class="conts">
+					<ul>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천월요병으로 우울한가요? 회사서 4가지 실천월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="board_wrap main-box">
+				<h2 class="mtit"><a href="">보험뉴스</a></h2>
+				<div class="conts">
+					<ul>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천월요병으로 우울한가요? 회사서 4가지 실천월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+						<li><a href="">
+							<p>월요병으로 우울한가요? 회사서 4가지 실천</p>
+							<span>2019.02.11</span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="keyword main-box">
+				<h2 class="mtit"><a href="">핫!키워드</a></h2>
+				<div class="conts">
+					<a href="">어린이보험</a>
+					<a href="">의료실비</a>
+					<a href="">암보험</a>
+					<a href="">어린이보험</a>
+					<a href="">의료실비</a>
+					<a href="">암보험</a>
+				</div>
+			</div>
+
+			<div class="main-box">
+				<h2 class="mtit"><a href="">우수상품</a></h2>
+				<div class="conts">
+					<ul class="product_list">
+						<li><a href="">
+							<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+							<span class="logo"><img src="../images/town/logo_prd_01.png" alt=""></span>
+							<p class="tit">내가 사는 주택화재 대비하는 주택화재보험</p>
+							<em class="num"><i>손해보험협회 심의필</i>제0001호(2018.11.14)</em>
+						</a></li>
+						<li><a href="">
+							<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+							<span class="logo"><img src="../images/town/logo_prd_02.png" alt=""></span>
+							<p class="tit">내가 사는 주택화재 대비하는 주택화재보험</p>
+							<em class="num"><i>손해보험협회 심의필</i>제0001호(2018.11.14)</em>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="main-box">
+				<h2 class="mtit"><a href="">추천상품</a></h2>
+				<div class="conts">
+					<ul class="product_list">
+						<li><a href="">
+							<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+							<span class="logo"><img src="../images/town/logo_prd_01.png" alt=""></span>
+							<p class="tit">내가 사는 주택화재 대비하는 주택화재보험</p>
+							<em class="num"><i>손해보험협회 심의필</i>제0001호(2018.11.14)</em>
+						</a></li>
+						<li><a href="">
+							<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+							<span class="logo"><img src="../images/town/logo_prd_02.png" alt=""></span>
+							<p class="tit">내가 사는 주택화재 대비하는 주택화재보험</p>
+							<em class="num"><i>손해보험협회 심의필</i>제0001호(2018.11.14)</em>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="bnr main-box">
+				<a href=""><img src="../images/town/bnr_main_01.jpg" alt=""></a>
+			</div>
+
+			<div class="product main-box">
+				<h2 class="mtit"><a href="">각사소식지</a></h2>
+				<div class="conts">
+					<div class="product_slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.product_slider', {
+					slidesPerView: 2.2,
+					paginationClickable: true,
+					spaceBetween: 10
+				});
+			});
+			</script>
+
+			<div class="product main-box">
+				<h2 class="mtit"><a href="">인사말</a></h2>
+				<div class="conts">
+					<div class="product_slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product main-box">
+				<h2 class="mtit"><a href="">친숙자료</a href=""></h2>
+				<div class="conts">
+					<div class="product_slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="giftshow main-box">
+				<h2 class="mtit"><a href="">기프티쇼 인기상품</a></h2>
+				<div class="conts">
+					<ul class="giftshow_list">
+						<li><a href="">
+							<div class="prd">
+								<img src="https://imgs.giftishow.co.kr/Resource/goods/G00000262024/G00000262024_250.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>CU</span>매일)페레로로쉐3구</p>
+								<div class="price">
+									<span>1,750원</span>
+									<em>1,800원</em>
+								</div>
+							</div>
+						</a></li>
+						<li><a href="">
+							<div class="prd">
+								<img src="https://imgs.giftishow.co.kr/Resource/goods/G00000240921/G00000240921_250.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>파리바게뜨(외부핀)</span>즐거운꼬마버스타요친구들</p>
+								<div class="price">
+									<span>41,630원</span>
+									<em>43,000원</em>
+								</div>
+							</div>
+						</a></li>
+						<li><a href="">
+							<div class="prd">
+								<img src="https://imgs.giftishow.co.kr/Resource/goods/G00000190616/G00000190616_250.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>gs25 (넷비전)</span>프링글스오리지날(대)</p>
+								<div class="price">
+									<span>3,200원</span>
+									<em>3,300원</em>
+								</div>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="product main-box">
+				<h2 class="mtit"><a href="">니즈환기</a></h2>
+				<div class="conts">
+					<div class="product_slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									현대해상<br />하이매거진 2월호
+								</p>
+							</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sms main-box">
+				<h2 class="mtit"><a href="">나만의 문자</a></h2>
+				<div class="conts">
+					<ul class="sms_list">
+						<li>
+							<span><img src="../images/town/bg_main_sms.gif" alt=""></span>
+							<div class="text">
+								<p>
+									당신의 2월은 근심 걱정없고, 사랑과 웃음만이 넘쳐나는 한달이었으면 겠습니다. 건강하고 행복한 2월 보내세요~♡
+								</p>
+							</div>
+						</li>
+						<li>
+							<span><img src="../images/town/bg_main_sms.gif" alt=""></span>
+							<div class="text">
+								<p>
+									당신의 2월은 근심 걱정없고, 사랑과 웃음만이 넘쳐나는 한달이었으면 겠습니다. 건강하고 행복한 2월 보내세요~♡
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="giftshow main-box">
+				<h2 class="mtit"><a href="">기프티쇼 인기상품</a></h2>
+				<div class="conts">
+					<ul class="giftshow_list">
+						<li><a href="">
+							<div class="prd">
+								<img src="../images/town/@sample2.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>필립스</span>매일)페레로로쉐3구</p>
+								<div class="price">
+									<span>1,750원</span>
+									<em>1,800원</em>
+								</div>
+							</div>
+						</a></li>
+						<li><a href="">
+							<div class="prd">
+								<img src="../images/town/@sample2.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>필립스</span>즐거운꼬마버스타요친구들</p>
+								<div class="price">
+									<span>41,630원</span>
+									<em>43,000원</em>
+								</div>
+							</div>
+						</a></li>
+						<li><a href="">
+							<div class="prd">
+								<img src="../images/town/@sample2.jpg">
+								<p class="disc">3<em>%</em></p>
+							</div>
+							<div class="detail">
+								<p class="brand"><span>필립스</span>프링글스오리지날(대)</p>
+								<div class="price">
+									<span>3,200원</span>
+									<em>3,300원</em>
+								</div>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="bnr main-box">
+				<a href=""><img src="../images/town/bnr_main_01.jpg" alt=""></a>
+			</div>
+
+		</article>
+	</div>
+
+	<footer>
+		ⓒ 2019 엔씨엘피플스 ALL  RIGHTS  RESERVED
+		<a href="#" class="btn_top"><img src="../images/town/btn_top.png" alt=""></a>
+	</footer>
+</div>
+</body>
+</html>
