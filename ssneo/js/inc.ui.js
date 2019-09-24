@@ -51,7 +51,7 @@ var inc_dom = {
 		incFR.push('<dt>고객센터</dt>');
 		incFR.push('<dd>');
 		incFR.push('<strong>1544-4343</strong>');
-		incFR.push('<span>평일 09:00~22:00 (토,일 및 공휴일 휴무)</span>');
+		incFR.push('<span>평일 09:00~18:00 (토,일 및 공휴일 휴무)</span>');
 		incFR.push('</dd>');
 		incFR.push('</dl>');
 		incFR.push('<dl>');
@@ -63,13 +63,13 @@ var inc_dom = {
 		incFR.push('</dl>');
 		incFR.push('</div>');
 		incFR.push('<div class="sns_box">');
-		incFR.push('<a href=""><img src="images/sns_01.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_02.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_03.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_04.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_05.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_06.gif" alt=""></a>');
-		incFR.push('<a href=""><img src="images/sns_07.gif" alt=""></a>');
+		incFR.push('<a href="" class="sns01"></a>');
+		incFR.push('<a href="" class="sns02"></a>');
+		incFR.push('<a href="" class="sns03"></a>');
+		incFR.push('<a href="" class="sns04"></a>');
+		incFR.push('<a href="" class="sns05"></a>');
+		incFR.push('<a href="" class="sns06"></a>');
+		incFR.push('<a href="" class="sns07"></a>');
 		incFR.push('</div>');
 		incFR.push('</div>');
 		incFR.push('<div class="fMenu">');
@@ -106,17 +106,25 @@ var inc_dom = {
 		incFR.push('</div>');
 		incFR.push('<div class="down_info">');
 		incFR.push('<a href="">K-DAX 회사정보</a>');
-		incFR.push('<a href="">AST 백서</a>');
 		incFR.push('<a href="">거래소 가이드 다운로드</a>');
+		incFR.push('<a href="">제휴문의</a>');
+		incFR.push('<a href="">상장문의</a>');
 		incFR.push('</div>');
 		incFR.push('</div>');
 		incFR.push('</div>');
 		incFR.push('<footer>');
 		incFR.push('<div class="copy_wrap">');
+		incFR.push('<p class="logo"><img src="images/fLogo.png" alt="KDAX"></p>');
+		incFR.push('<ul class="futil">');
+		incFR.push('<li><a href="">개인정보 처리방침</a></li>');
+		incFR.push('<li><a href="">서비스 이용약관</a></li>');
+		incFR.push('<li><a href="">API이용약관</a></li>');
+		incFR.push('<li><a href="">법적 고지</a></li>');
+		incFR.push('</ul>');
 		incFR.push('<div class="addr">');
-		incFR.push('<span>사업자 등록번호 787-86-01212</span>');
-		incFR.push('<span>서울특별시 강남구 학동로 20길 28(2,3층)</span>');
-		incFR.push('<span>업무시간 09:00~18:00</span>');
+		incFR.push('<span>사업자 등록번호 787-86-01212</span><br class="mo" />');
+		incFR.push('<span class="pc">서울특별시 강남구 학동로 20길 28(2,3층)</span><br class="pc" />');
+		incFR.push('<span class="mo">업무시간 09:00~18:00</span><br class="mo" />');
 		incFR.push('<span>고객센터 1544-4343</span>');
 		incFR.push('<span>e-Mail  cs@ss-neo.com</span>');
 		incFR.push('</div>');
@@ -135,9 +143,10 @@ var inc_dom = {
 $(function(){
 	inc_dom.header();
 	inc_dom.footer();
-	$("header .gnb-layer").append('<h1><a href=""><img src="images/logo.png" alt="ABIT"></a></h1>');
+	$("header .gnb-layer").append('<h1><a href="/"><img src="images/logo.png" alt="ABIT"></a></h1>');
 	$("header .gnb-layer").append($("header .gnb").html());
 	$("header .gnb-layer").append('<button type="button" class="btn_close"><img src="images/sub/btn_allMenuClose.gif" alt="메뉴 닫기"></button>');
+	$("header .gnb-layer").append("<div class='layer_util'>" + $("header .util").html() + "</div>");
 
 	$("header .btn_menu").click(function(){
 		$("body").css("overflow" , "hidden");
