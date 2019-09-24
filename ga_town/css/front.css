@@ -33,7 +33,7 @@ header {position:relative; height:55px;}
 .hd-main h1 .logo_cs img {width:63px;}
 
 .hd-fff {background:#fff; border-bottom:1px solid #e4e4e4;}
-.hd-fff > .btn-text {width:auto; padding:0 15px; font-size:14px; line-height:55px;}
+.hd-fff > .btn-text {width:auto; padding:0 15px; font-size:16px; line-height:55px;}
 .hd-fff > a i {display:inline-block; background:url(../images/town/btn_h_arrow.png) 0 0 no-repeat; background-size:100%; width:9px; height:14px; margin-right:9px; vertical-align:-1px;}
 
 header > a,
@@ -252,7 +252,9 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 
 .srh_list_menu {display:table; width:100%; border-top:1px solid #e4e4e4;}
 .srh_list_menu.non-line_t {border-top:0;}
-.srh_list_menu a {display:table-cell; width:33%; height:35px; text-align:center; vertical-align:middle;}
+.srh_list_menu a {display:table-cell; width:25%; height:35px; text-align:center; vertical-align:middle;}
+.srh_list_menu a:nth-child(2) {width:21%;}
+.srh_list_menu a:nth-child(4) {width:29%;}
 .srh_list_menu a:before {content:""; display:inline-block; width:15px; height:15px;}
 .srh_list_menu .slt:before {display:none;}
 .srh_list_menu .slt:after {content:""; display:inline-block; background:url(../images/town/ico_slt.png) 50% 50% no-repeat; background-size:8px 5px; width:8px; height:5px; margin-left:9px; vertical-align:2px;}
@@ -260,6 +262,7 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 .srh_list_menu .sync:before {background:url(../images/town/ico_re.png) 50% 50% no-repeat; background-size:15px 12px; margin-right:10px; vertical-align:-2px;}
 .srh_list_menu .allChk:before {background:url(../images/town/cs_chk_off.png) 50% 50% no-repeat; background-size:15px 15px; margin-right:7px; vertical-align:-2px;}
 .srh_list_menu .on.allChk:before {background:url(../images/town/cs_chk_on.png) 50% 50% no-repeat; background-size:15px 15px;}
+.srh_list_menu .delete:before {background:url("data:image/svg+xml,%3csvg viewBox='0 0 16 18' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m10.517 8.816 5.06 6.983c0.364 0.502 0.148 1.144-0.482 1.433-0.63 0.29-1.435 0.118-1.799-0.383l-4.439-6.127c-0.021 4e-3 -0.041 9e-3 -0.061 0.016-0.085 0.029-0.166 0.055-0.256 0.069-0.084 0.013-0.164 0.014-0.248 0.013-0.084 1e-3 -0.164 0-0.248-0.013-0.09-0.014-0.172-0.04-0.256-0.069-0.02-7e-3 -0.04-0.012-0.061-0.016l-4.44 6.127c-0.363 0.501-1.169 0.673-1.799 0.383-0.629-0.289-0.845-0.931-0.482-1.433l5.061-6.983-5.061-6.983c-0.363-0.502-0.147-1.144 0.482-1.434 0.63-0.289 1.436-0.117 1.799 0.384l4.44 6.127c0.179-0.068 0.365-0.098 0.554-0.099 5e-3 0 0.011 1e-3 0.016 1e-3 0.184 1e-3 0.358 0.033 0.525 0.092 0.011 4e-3 0.024 2e-3 0.035 6e-3l4.439-6.127c0.364-0.501 1.169-0.673 1.799-0.384 0.63 0.29 0.846 0.932 0.482 1.434l-5.06 6.983z' fill='%23666' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:8px 9px; width:15px; height:15px; border:1px solid #666; border-radius:50%; margin-right:7px; vertical-align:-2px;}
 
 .cs-list_group {display:block; background:#f2f4f6; height:23px; padding-left:25px; box-sizing:border-box; border-top:1px solid #e4e4e4; line-height:23px;}
 
@@ -269,8 +272,8 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 .customer_list li div[class^=col] {display:table-cell; height:32px; box-sizing:border-box; vertical-align:middle;}
 .customer_list li .col-1 {width:130px; padding-left:15px;}
 .customer_list li .col-2 {text-align:center;}
-.customer_list li .col-3 {width:40px;}
-.customer_list li .col-3 button {display:block; background:url(../images/town/btn_dot3.png) 50% 50% no-repeat; background-size:2px 12px; width:40px; height:32px; font:0/0 a;}
+.customer_list li .col-3 {width:80px;}
+.customer_list li .col-3 button {display:block; background-size:2px 12px; width:59px; height:18px; margin:0 auto; border:1px solid #888; color:#888; font-size:11px; text-align:center; line-height:18px;}
 
 .chk-box {position:relative;}
 .chk-box span {position:absolute; top:0; left:0; width:16px; height:15px; z-index:1;}
@@ -286,7 +289,7 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 .terms .chk-box span i {background:url(../images/town/chk_terms_off.png) 0 0 no-repeat; background-size:100% 100%; width:22px; height:22px;}
 .terms .chk-box span input[type=checkbox]:checked + i {background:url(../images/town/chk_terms_on.png) 0 0 no-repeat; background-size:100% 100%;}
 
-.fixed_bar {position:fixed; bottom:0; left:0; background:#fff; width:100%; border-top:2px solid #f2f4f6; z-index:100;}
+.fixed_bar {position:fixed; bottom:0; left:0; background:#323743; width:100%; border-top:2px solid #f2f4f6; color:#fff; z-index:100;}
 .fixed_bar ul {display:table; width:100%; border-top:1px solid #b7b7b7;}
 .fixed_bar ul li {display:table-cell; vertical-align:middle;}
 .fixed_bar ul li a {display:block; height:42px; line-height:42px; text-align:center;}
@@ -328,12 +331,12 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 }
 .group-select ul li label {display:block; height:45px; padding-left:44px; font-size:13px; line-height:45px;}
 
-.detail-menu li a {display:block; background:url(../images/town/ico_list_arrow.gif) calc(100% - 15px) 50% no-repeat; background-size:6px 10px; height:45px; padding-left:20px; font-size:13px; line-height:45px;}
-.detail-menu li a:before {content:""; display:inline-block; width:20px; height:20px; margin-right:15px; vertical-align:-5px;}
-.detail-menu li.d01 a:before {background:url(../images/town/ico_csDetail_01.gif) 50% 50% no-repeat; background-size:20px 20px;}
-.detail-menu li.d02 a:before {background:url(../images/town/ico_csDetail_02.gif) 50% 50% no-repeat; background-size:20px 20px;}
+.detail-menu li a {display:block; background:url(../images/town/ico_list_arrow.gif) calc(100% - 15px) 50% no-repeat; background-size:6px 10px; height:50px; padding-left:20px; font-size:14px; line-height:50px;}
+.detail-menu li a:before {content:""; display:inline-block; width:25px; height:25px; margin-right:15px; vertical-align:-5px;}
+.detail-menu li.d01 a:before {background:url(../images/town/ico_csDetail_01.gif) 50% 50% no-repeat; background-size:25px 25px;}
+.detail-menu li.d02 a:before {background:url(../images/town/ico_csDetail_02.gif) 50% 50% no-repeat; background-size:25px 25px;}
 .detail-menu li.d03 a:before {background:url(../images/town/ico_csDetail_03.gif) 50% 50% no-repeat; background-size:20px 20px;}
-.detail-menu li.d04 a:before {background:url(../images/town/ico_csDetail_04.gif) 50% 50% no-repeat; background-size:20px 20px;}
+.detail-menu li.d04 a:before {background:url(../images/town/ico_csDetail_04.gif) 50% 50% no-repeat; background-size:25px 25px;}
 
 .group-list {margin:0 15px; padding:15px 0 0;}
 .group-list dt {position:relative; font-weight:normal;}
@@ -371,7 +374,7 @@ h2.mtit {background:url(../images/town/ico_mtit_arrow.gif) 100% 50% no-repeat; b
 
 .regi-conts.default .inp-regi {margin-top:5px;}
 .regi-conts.default .inp-regi:first-child {margin-top:0;}
-.regi-conts.default a.btn-srh {display:block; background:#7a8190; height:38px; margin-top:5px; padding:0 15px; border:1px solid #6d7481; box-sizing:border-box; color:#fff; line-height:38px;}
+.regi-conts.default a.btn-srh {display:block; background:#7a8190; height:38px; margin-top:10px; padding:0 15px; border:1px solid #6d7481; box-sizing:border-box; color:#fff; line-height:38px;}
 .regi-conts.default a.btn-srh:before {content:""; display:inline-block; background:url(../images/town/btn_srh_regi.png) 0 0 no-repeat; background-size:100%; width:13px; height:13px; margin-right:10px; vertical-align:-2px;}
 .regi-conts.default a.btn-group {display:block; background:url(../images/town/ico_list_arrow.gif) calc(100% - 13px) 50% no-repeat; background-size:6px 10px; height:38px; margin-top:5px; padding:0 15px; border:1px solid #787878; box-sizing:border-box; color:#0a62aa; line-height:38px;}
 
@@ -504,6 +507,11 @@ article.regi-detail .regi-conts.carInfo input {color:#0a62aa;}
 .scd_inp button {position:absolute; top:0; right:0; width:50px; height:35px; font:0/0 a;}
 .scd_inp button.btn-calendar {background:url(../images/town/btn_scd_01.png) 50% 50% no-repeat; background-size:20px 20px;}
 .scd_inp button.btn-time {background:url(../images/town/btn_scd_02.png) 50% 50% no-repeat; background-size:20px 20px;}
+.scd_inp input[type=text] {background:transparent; width:50%; height:35px; padding-left:10px; border:0; color:#555;}
+.scd_inp_time:after {content:""; display:block; clear:both;}
+.scd_inp_time select {float:left; width:30%; height:40px; margin:0 0 0 4px; padding-left:10px; border:1px solid #d4d4d4; color:#666; font-size:12px;}
+.scd_inp_time select:first-child {width:calc(40% - 8px); margin-left:0;}
+
 .scd_textarea textarea {min-height:150px; padding:15px; border:1px solid #d4d4d4; box-sizing:border-box;}
 
 .l_dim {position:fixed; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,.8); width:100%; height:100%; z-index:1;}
