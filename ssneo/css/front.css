@@ -117,6 +117,7 @@ footer .copy_wrap .addr span {display:inline-block; margin:10px 20px 0 0; paddin
 footer .copy_wrap .addr span:last-child {margin-right:0; padding-right:0; border-right:0;}
 footer .copy_wrap .addr span.pc {border-right:0;}
 footer .copy_wrap .addr br.mo {display:none;}
+footer .copy_wrap .addr span:last-child {display:block; margin-right:0; padding-right:0; border:0;}
 footer .copy_wrap p.copy {margin-top:20px; color:rgba(2525,255,255,.2); font-size:13px; font-family:Myriad Pro; letter-spacing:0;}
 
 aside {position:fixed; bottom:80px; right:60px; z-index:50;}
@@ -143,7 +144,7 @@ aside a:hover {background:#111;}
 	footer .copy_wrap p.copy {font-size:11px;}
 
 	aside {bottom:40px; right:30px;}
-	aside a {width:48px; height:48px; margin-top:10px; font-size:11px; line-height:48px;}
+	aside a {width:62px; height:62px; margin-top:10px; font-size:11px; line-height:62px;}
 }
 
 main {border-bottom:1px solid #ddd;}
@@ -159,6 +160,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 @keyframes slideUP{ 0% {opacity:0; transform:translateY(10px);} 100% {opacity:1; transform:translateY(0);}}
 @keyframes opacty{ 0% {opacity:0;} 100% {opacity:1;}}
 
+.visual {position:relative;}
 .visual .text {width:100%; max-width:1280px; margin:0 auto; padding:0 70px 100px;}
 .visual .text p {color:#111; font-size:80px; font-weight:300;}
 .visual .text p strong {font-weight:bold;}
@@ -176,6 +178,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .main section .btns .goto {display:inline-block; background:#2dd0d4; height:60px; padding:0 50px; border-radius:60px; color:#fff; font-size:20px; line-height:60px;}
 .main section .btns .goto:hover {background:#111;}
 
+.sct01 {position:relative;}
 .sct01 .swiper-container {width:1060px; margin:90px auto 0; padding-bottom:100px;}
 .sct01 .swiper-slide {background:url("data:image/svg+xml;charset=utf-8,%3csvg viewBox='0 0 300 411' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m-0 96 165-96h135v361l-84 50h-216v-315z' fill='%23f6f6f6' fill-rule='evenodd'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%; height:410px; padding:170px 0 0 38px; box-sizing:border-box;}
 .sct01 .swiper-slide span.ico {position:absolute; top:0; left:40px;}
@@ -185,6 +188,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sct01 .swiper-button-prev {top:auto; bottom:255px; width:40px; height:81px; outline:none; transition:all .2s ease;}
 .sct01 .swiper-button-next {right:0; background:url("data:image/svg+xml;charset=utf-8,%3csvg viewBox='0 0 38.5 83.5' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m0.5 81.838 35.662-40.338-35.662-40.338' fill='none' fill-rule='evenodd' stroke='rgb(204, 204, 204)' stroke-width='2px'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%;}
 .sct01 .swiper-button-prev {left:0; background:url("data:image/svg+xml;charset=utf-8,%3csvg viewBox='0 0 38.5 83.5' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m37.5 1.162-35.632 40.338 35.632 40.338' fill='none' fill-rule='evenodd' stroke='rgb(204, 204, 204)' stroke-width='2px'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%;}
+
 @media screen and (max-width:1158px) {
 	.sct01 .swiper-container {width:680px;}
 	.sct01 .swiper-button-prev {left:70px;}
@@ -209,7 +213,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 	.sct01 .swiper-slide p {margin-top:10px; font-size:11px;}
 }
 
-.sct02 {background:#f4f6f8;}
+.sct02 {position:relative; background:#f4f6f8; z-index:11;}
 .sct02 .innr {height:1000px;}
 .sct02 h2 strong {display:block;}
 .sct02 .img {position:absolute; bottom:0; right:0;}
@@ -239,6 +243,8 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sct04.active img {animation:opacty 1s ease .5s 1 both;}
 
 .main section.sct03 .innr {padding-bottom:80px;}
+.sct03 {position:relative;}
+.sct03 .innr {position:relative; z-index:5;}
 .sct03 .bbs-list {margin-top:58px;}
 .sct03 .bbs-list li {margin-top:20px;}
 .sct03 .bbs-list li:first-child {margin-top:0;}
@@ -250,7 +256,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sct03 .bbs-list li a p {width:64%; padding:0 10px; color:#333; font-size:20px;}
 .sct03 .bbs-list li a em {width:20%; color:#898989; font-size:18px; text-align:center;}
 
-.sct04 {background:#edf1f4;}
+.sct04 {position:relative; background:#edf1f4; z-index:10;}
 .sct04 .innr {height:930px;}
 .sct04 h2 strong {display:block;}
 .sct04 .btns {position:relative;}
@@ -263,6 +269,75 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sct04 .btns a.goto:after {content:""; display:inline-block; background:url(../images/ico_ast.png) 0 0 no-repeat; background-size:100% 100%; width:18px; height:18px; margin-left:10px; vertical-align:-1px;}
 .sct04 .btns .qr {position:absolute; top:-23px; left:288px;}
 .sct04 .img {position:absolute; bottom:0; right:-252px;}
+
+/* @@@@@@@@@@@@@@ 모션 정의 @@@@@@@@@@@@@@ */
+.sct01 .deco_x {position:absolute; top:0; left:50%; width:auto; height:1057px; margin-left:-950px; animation:lineX 30s ease .5s forwards infinite;}
+@keyframes lineX {
+	0%, 100% {transform:translate(0, 0);}
+	50% {transform:translate(-100px, -100px);}
+}
+.sct03 .deco_k {position:absolute; top:0; left:50%; width:auto; height:933px; margin-left:330px; animation:lineK 30s ease .5s forwards infinite;}
+.sct03 .deco_k img {max-width:none;}
+@keyframes lineK {
+	0%, 100% {transform:translate(0, 0);}
+	50% {transform:translate(-50px, 50px);}
+}
+
+.visual .deco_circle {position:absolute; top:139px; left:-20%; background:#2dd0d4; width:114px; height:114px; border-radius:50%; z-index:10; animation:circle1 80s ease .5s forwards infinite;}
+.sct02 .deco_circle2 {position:absolute; bottom:-57px; left:-20%; background:#2dd0d4; width:114px; height:114px; border-radius:50%; z-index:10; animation:circle2 10s ease .5s forwards infinite;}
+
+@media screen and (max-width: 1158px){
+	.visual .deco_circle {top:120px; animation:circle1-2 80s ease .5s forwards infinite;}
+}
+
+@media screen and (max-width:768px) {
+	.sct01 .deco_x {height:556px; margin-left:-300px;}
+	.sct01 .deco_x img {height:556px;}
+	.sct03 .deco_k {height:723px; margin-left:-150px;}
+	.sct03 .deco_k img {height:723px;}
+
+	.visual .deco_circle {top:120px; width:57px; height:57px; animation:circle1-3 80s ease .5s forwards infinite;}
+	.sct02 .deco_circle2 {bottom:-28px; width:57px; height:57px; animation:circle2-2 80s ease .5s forwards infinite;}
+}
+@keyframes circle1 {
+	0% {top:139px; left:-20%; background:#2dd0d4;}
+	45% {top:139px; left:110%;}
+	50% {top:739px; left:110%;}
+	95% {top:739px; left:-20%; background:#073c61;}
+	100% {top:139px; left:-20%;}
+}
+@keyframes circle1-2 {
+	0% {top:120px; left:-20%; background:#2dd0d4;}
+	45% {top:120px; left:110%;}
+	50% {top:715px; left:110%;}
+	95% {top:715px; left:-20%; background:#073c61;}
+	100% {top:120px; left:-20%;}
+}
+@keyframes circle1-3 {
+	0% {top:120px; left:-20%; background:#2dd0d4;}
+	45% {top:120px; left:110%;}
+	50% {top:420px; left:110%;}
+	95% {top:420px; left:-20%; background:#073c61;}
+	100% {top:120px; left:-20%;}
+}
+
+@keyframes circle2 {
+	0% {bottom:-57px; left:-20%; background:#073c61;}
+	45% {bottom:-57px; left:110%;}
+	50% {bottom:-1053px; left:110%;}
+	95% {bottom:-1053px; left:-20%; background:#2dd0d4;}
+	100% {bottom:-57px; left:-20%;}
+}
+@keyframes circle2-2 {
+	0% {bottom:-28px; left:-20%; background:#073c61;}
+	45% {bottom:-28px; left:110%;}
+	50% {bottom:-751px; left:110%;}
+	95% {bottom:-751px; left:-20%; background:#2dd0d4;}
+	100% {bottom:-28px; left:-20%;}
+}
+
+
+/* @@@@@@@@@@@@@@ //모션 정의 @@@@@@@@@@@@@@ */
 
 .csCenter {width:100%; max-width:1280px; margin:0 auto; padding:60px 70px;}
 .csCenter:after {content:""; display:block; clear:both;}

@@ -127,6 +127,7 @@ var inc_dom = {
 		incFR.push('<span class="mo">업무시간 09:00~18:00</span><br class="mo" />');
 		incFR.push('<span>고객센터 1544-4343</span>');
 		incFR.push('<span>e-Mail  cs@ss-neo.com</span>');
+		incFR.push('<span>매매주문 문의 02-2088-8656</span>');
 		incFR.push('</div>');
 		incFR.push('<p class="copy">COPYRIGHTⓒ 2018 SS-NEO.ALL RIGHT RESERVED.</p>');
 		incFR.push('</div>');
