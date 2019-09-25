@@ -70,8 +70,9 @@ footer .top {display:block; width:34px; margin:15px auto 0;}
 .issue-warp .head {position:relative; padding:20px 0 15px;}
 .issue-warp .head .num {position:absolute; top:20px; left:0; background:#2d1561; width:30px; height:30px; border-radius:50%; color:#fff; font-size:19px; text-align:center; line-height:30px;}
 .issue-warp .head .text {margin-left:35px; padding-top:2px;}
-.issue-warp .head .text p {color:#2d1561; font-size:13px; font-weight:bold;}
+.issue-warp .head .text > p {color:#2d1561; font-size:13px; font-weight:bold;}
 .issue-warp .head .text p span {display:block;}
+.issue-warp .head .text .editor-box {margin-top:10px;}
 .issue-warp .head .text ul {margin-top:10px;}
 .issue-warp .head .text ul li {color:#636363; font-size:12px; line-height:1.7;}
 .issue-warp .head .text ul li:before {content:""; display:inline-block; background:#636363; width:2px; height:2px; margin-right:5px; border-radius:50%; vertical-align:4px;}
