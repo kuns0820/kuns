@@ -902,11 +902,13 @@ table td .btn-basic.non {background:#ccc;}
 /* 제휴제안 */
 .suggest_top {margin:70px 0; padding-bottom:70px; border-bottom:1px solid #888;}
 .suggest_top strong {display:block; color:#111; font-size:30px;}
-.suggest_top p {margin-top:30px; color:#111; font-size:24px; line-height:1.4; letter-spacing:-1.5px;}
+.suggest_top p {margin-top:30px; color:#111; font-size:24px; line-height:1.5; letter-spacing:-1.5px;}
 .suggest_top.sgg01 {background:url(../images/sub/ico_suggest01.jpg) calc(100% - 62px) 35px no-repeat;}
 .suggest_top.sgg02 {background:url(../images/sub/ico_suggest02.jpg) calc(100% - 62px) 35px no-repeat;}
 .suggest_top.sgg03 {background:url(../images/sub/ico_suggest03.jpg) calc(100% - 62px) 0 no-repeat; padding-bottom:90px;}
 .suggest_top.sgg04 {background:url(../images/sub/ico_suggest04.jpg) calc(100% - 62px) 35px no-repeat;}
+.suggest_top br.ta {display:none;}
+.suggest_top br.pc {display:block;}
 
 .suggest h4 {color:#111; font-size:30px;}
 .suggest .stit {display:block; margin-top:35px; color:#000; font-size:26px;}
@@ -925,6 +927,32 @@ table td .btn-basic.non {background:#ccc;}
 .sgg_sbox dd {display:table-cell; vertical-align:middle;}
 .sgg_sbox dt {width:200px; color:#000; font-size:20px; text-align:center;}
 .sgg_sbox dd {color:#111; font-size:20px; line-height:1.5;}
+
+@media screen and (max-width:1250px) {
+	.suggest .suggest_top {background:none;}
+	.suggest_top br.ta {display:block;}
+	.suggest_top br.pc {display:none;}
+}
+@media screen and (max-width:768px) {
+	.suggest_top {margin:35px 0; padding-bottom:35px;}
+	.suggest_top strong {font-size:20px;}
+	.suggest_top p {margin-top:15px; font-size:16px;}
+	.suggest .suggest_top br {display:none;}
+
+	.suggest h4 {font-size:20px;}
+	.suggest .stit {margin-top:10px; font-size:16px;}
+	.suggest .sdesc {margin-top:10px; font-size:14px;}
+	.suggest .sdesc2 {margin-top:35px; font-size:14px;}
+
+	.sgg_info {margin-top:35px;}
+	.sgg_info li {margin-top:10px; font-size:14px;}
+
+	.sgg_sbox {margin-top:15px; padding:20px 0;}
+	.sgg_sbox dt, .sgg_sbox dd {font-size:13px;}
+	.sgg_sbox dt {width:100px;}
+}
+
+
 
 .sgg_step {margin-top:45px; padding-bottom:80px; border-bottom:1px solid #888;}
 .sgg_step:after {content:""; display:block; clear:both;}
