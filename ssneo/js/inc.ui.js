@@ -59,6 +59,7 @@ var inc_dom = {
 		incFR.push('<dd>');
 		incFR.push('<p><img src="images/ico_cs01.gif" alt=""> 운영시간 : 평일 09:00~18:00</p>');
 		incFR.push('<p><img src="images/ico_cs02.gif" alt=""> 서울특별시 강남구 논현동 학동로 20길 28 2층</p>');
+		incFR.push('<p><img src="images/ico_cs03.png" alt=""> 대표번호 : 02-2088-8656</p>');
 		incFR.push('</dd>');
 		incFR.push('</dl>');
 		incFR.push('</div>');
@@ -115,12 +116,12 @@ var inc_dom = {
 		incFR.push('<footer>');
 		incFR.push('<div class="copy_wrap">');
 		incFR.push('<p class="logo"><img src="images/fLogo.png" alt="KDAX"></p>');
-		incFR.push('<ul class="futil">');
-		incFR.push('<li><a href="">개인정보 처리방침</a></li>');
-		incFR.push('<li><a href="">서비스 이용약관</a></li>');
-		incFR.push('<li><a href="">API이용약관</a></li>');
-		incFR.push('<li><a href="">법적 고지</a></li>');
-		incFR.push('</ul>');
+		incFR.push('<div class="futil">');
+		incFR.push('<span><a href="">개인정보 처리방침</a></span>');
+		incFR.push('<span><a href="">서비스 이용약관</a></span><br />');
+		incFR.push('<span><a href="">API이용약관</a></span>');
+		incFR.push('<span><a href="">법적 고지</a></span>');
+		incFR.push('</div>');
 		incFR.push('<div class="addr">');
 		incFR.push('<span>사업자 등록번호 787-86-01212</span><br class="mo" />');
 		incFR.push('<span class="pc">서울특별시 강남구 학동로 20길 28(2,3층)</span><br class="pc" />');

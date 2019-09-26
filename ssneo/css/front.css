@@ -50,6 +50,8 @@ input[type="text"]::-webkit-input-placeholder , input[type="number"]::-webkit-in
 input[type="text"]:-ms-input-placeholder , input[type="number"]:-ms-input-placeholder {color:#999;}
 input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 
+.mt20 {margin-top:20px !important;}
+
 #ssneo_warp {overflow:hidden; position:relative; width:100%; z-index:10;}
 
 header {position:relative; width:100%; max-width:1280px; height:100px; margin:0 auto; padding:33px 70px 0; box-sizing:border-box;}
@@ -109,9 +111,10 @@ footer {background:#1e1e1e;}
 footer .copy_wrap {position:relative; width:100%; max-width:1280px; margin:0 auto; padding:50px 70px 60px 260px;}
 footer .copy_wrap .logo {position:absolute; top:50px; left:70px;}
 footer .copy_wrap .futil {font-size:0;}
-footer .copy_wrap .futil li {display:inline-block;}
-footer .copy_wrap .futil li a {display:block; padding:0 25px; border-left:1px solid #4b4b4b; color:rgba(255,255,255,.3); font-size:16px;}
-footer .copy_wrap .futil li:first-child a {padding-left:0; border-left:0;}
+footer .copy_wrap .futil span {display:inline-block;}
+footer .copy_wrap .futil span a {display:block; padding:0 20px; border-left:1px solid #4b4b4b; color:rgba(255,255,255,.3); font-size:16px;}
+footer .copy_wrap .futil span:first-child a {padding-left:0; border-left:0;}
+footer .copy_wrap .futil br {display:none;}
 footer .copy_wrap .addr {margin-top:15px; font-size:0;}
 footer .copy_wrap .addr span {display:inline-block; margin:10px 20px 0 0; padding-right:20px; border-right:1px solid #353535; color:rgba(2525,255,255,.2); font-size:14px;}
 footer .copy_wrap .addr span:last-child {margin-right:0; padding-right:0; border-right:0;}
@@ -133,18 +136,21 @@ aside a:hover {background:#111;}
 	footer .copy_wrap .logo img {width:auto; height:100%;}
 
 	footer .copy_wrap .futil {margin-top:17px;}
-	footer .copy_wrap .futil li a {padding:0 5px; border:0; font-size:11px;}
+	footer .copy_wrap .futil span a {padding:0 15px; border:0; font-size:13px;}
+	footer .copy_wrap .futil br {display:block;}
+	footer .copy_wrap .futil br + span a {padding-left:0;}
+	footer .copy_wrap .futil span:nth-child(3),
+	footer .copy_wrap .futil span:nth-child(4) {margin-top:5px;}
 
-	footer .copy_wrap .addr span {margin:5px 5px 0 0; padding-right:5px; font-size:11px;}
-	footer .copy_wrap .addr span:first-child {width:100%; margin:0; padding:0; border-right:0;}
+	footer .copy_wrap .addr span {display:block; margin:5px 0 0 0; padding:0; border:0; font-size:13px;}
 	footer .copy_wrap .addr br.mo {display:block;}
 	footer .copy_wrap .addr br.pc {display:none;}
 	footer .copy_wrap .addr span.pc {border-right:1px solid #353535;}
 	footer .copy_wrap .addr span.mo {border-right:0; padding-right:0; margin-right:0;}
-	footer .copy_wrap p.copy {font-size:11px;}
+	footer .copy_wrap p.copy {margin-top:10px; font-size:12px;}
 
 	aside {bottom:40px; right:30px;}
-	aside a {width:62px; height:62px; margin-top:10px; font-size:11px; line-height:62px;}
+	aside a {width:62px; height:62px; margin-top:10px; font-size:13px; line-height:62px;}
 }
 
 main {border-bottom:1px solid #ddd;}
@@ -349,7 +355,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .csCenter .cs_box dl dd {float:left;}
 .csCenter .cs_box dl dd strong {display:block; margin-top:-6px; color:#333; font-size:44px;}
 .csCenter .cs_box dl dd span {display:block; margin-top:5px; color:#999; font-size:16px;}
-.csCenter .cs_box dl dd p {margin-bottom:15px; color:#666; font-size:18px;}
+.csCenter .cs_box dl dd p {margin-bottom:15px; padding-left:15px; color:#666; font-size:18px; text-indent:-15px;}
 .csCenter .cs_box dl dd p img {vertical-align:-1px;}
 .csCenter .sns_box {float:right; width:367px; font:0/0 a;}
 .csCenter .sns_box a {display:inline-block; width:60px; height:60px; margin:0 0 40px 40px;}
@@ -427,12 +433,12 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 
 	.csCenter {padding:30px 30px;}
 	.csCenter .cs_box dl {margin-top:30px;}
-	.csCenter .cs_box dl dt {width:100px; font-size:14px;}
-	.csCenter .cs_box dl dd {width:calc(100% - 100px);}
+	.csCenter .cs_box dl dt {width:110px; font-size:16px;}
+	.csCenter .cs_box dl dd {width:calc(100% - 110px);}
 	.csCenter .cs_box dl dd strong {font-size:24px;}
-	.csCenter .cs_box dl dd span {font-size:11px;}
-	.csCenter .cs_box dl dd p {font-size:11px;}
-	.csCenter .cs_box dl dd p img {width:8px; height:auto;}
+	.csCenter .cs_box dl dd span {font-size:13px;}
+	.csCenter .cs_box dl dd p {font-size:13px;}
+	.csCenter .cs_box dl dd p img {width:12px; height:auto;}
 	.csCenter .sns_box {margin-top:25px; font:0/0 a;}
 	.csCenter .sns_box a {width:30px; height:30px; margin:0 0 10px 10px;}
 }
@@ -471,12 +477,14 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 	.fMenu {padding:30px 0;}
 	.fMenu .innr {padding:0 30px;}
 	.fMenu .innr .fgnb {width:100%;}
-	.fMenu .innr .fgnb .box {width:50% !important; margin-bottom:25px;}
-	.fMenu .innr .fgnb .box a,
-	.fMenu .innr .fgnb .box .dep2 a {font-size:12px;}
+	.fMenu .innr .fgnb .box {width:50% !important; height:150px; margin-bottom:25px;}
+	.fMenu .innr .fgnb .box:nth-child(3),
+	.fMenu .innr .fgnb .box:nth-child(4) {height:100px;}
+	.fMenu .innr .fgnb .box a {font-size:15px;}
+	.fMenu .innr .fgnb .box .dep2 a {font-size:13px;}
 	.fMenu .innr .down_info {width:100%;}
 	.fMenu .innr .down_info:after {content:""; display:block; clear:both;}
-	.fMenu .innr .down_info a {float:left; width:calc(50% - 5px); margin-top:0; margin-left:10px; font-size:11px;}
+	.fMenu .innr .down_info a {float:left; width:calc(50% - 5px); margin-top:0; margin-left:10px; font-size:13px;}
 	.fMenu .innr .down_info a:nth-child(odd) {margin-left:0;}
 	.fMenu .innr .down_info a:nth-child(3),
 	.fMenu .innr .down_info a:nth-child(4) {margin-top:5px;}
@@ -513,7 +521,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .paging .prev {margin-right:12px;}
 .paging .next {margin-left:12px;}
 .paging .prev:before {transform:rotate(180deg);}
-.paging .prev,.paging .next {background:#f8f8f8; width:38px; height:38px; padding:0; border-radius:50%; vertical-align:19px; font:0/0 a;}
+.paging .prev,.paging .next {background:#f8f8f8; width:38px; height:38px; padding:0; border-radius:50%; font:0/0 a;}
 .paging .prev:before,.paging .next:before {content:""; display:inline-block; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(30,79,109,0.999)' viewBox='0 0 11 20'%3e%3cpath d='m10.703 10.464-8.699 8.702c-0.379 0.379-0.994 0.379-1.374 0-0.379-0.379-0.379-0.995 0-1.374l8.013-8.014-8.013-8.015c-0.379-0.379-0.379-0.994 0-1.374 0.38-0.379 0.995-0.379 1.374 0l8.699 8.702c0.38 0.379 0.38 0.994 0 1.373z'/%3e%3c/svg%3e") no-repeat; background-size:100% 100%; width:7px; height:11px; margin:0 auto; vertical-align:-24px;}
 
 .layer-wrap {display:none; position:absolute; top:0; left:0; width:100%; z-index:50;}
@@ -521,16 +529,16 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .layer-wrap .layer-conts {position:absolute; top:100px; left:50%; background:#fff; border-radius:3px; transform:translateX(-50%); z-index:16; transition:all .2s ease;}
 
 .info-box-gray {background:#f8f8f8; margin-top:30px; padding:45px 40px; border-radius:3px;}
-.info-box-gray li {margin-top:13px; color:#565656; font-size:17px;}
+.info-box-gray li {margin-top:13px; padding-left:12px; color:#565656; font-size:17px; text-indent:-15px; line-height:1.5;}
 .info-box-gray li:first-child {margin-top:0;}
 .info-box-gray li:before {content:""; display:inline-block; background:#083c63; width:5px; height:5px; margin-right:10px; border-radius:50%; vertical-align:4px;}
 
-.chk-box {position:relative;}
-.chk-box span {display:inline-block; position:relative; background:#fff; width:30px; height:30px; border:2px solid #ddd; border-radius:3px; box-sizing:border-box; z-index:1; vertical-align:middle;}
+.chk-box {position:relative; padding-left:44px;}
+.chk-box span {position:absolute; top:-3px; left:0; background:#fff; width:30px; height:30px; border:2px solid #ddd; border-radius:3px; box-sizing:border-box; z-index:1; vertical-align:middle;}
 .chk-box span i {position:absolute; top:-2px; left:-2px; background:#2dd0d4 url("data:image/svg+xml,%3csvg viewBox='0 0 19 13' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m17.632 3.146-8.486 8.486c-0.586 0.585-1.535 0.585-2.121 0l-5.657-5.657c-0.586-0.586-0.586-1.536 0-2.122 0.586-0.585 1.536-0.585 2.121 0l4.597 4.597 7.424-7.425c0.586-0.586 1.536-0.586 2.122 0 0.585 0.586 0.585 1.535 0 2.121z' fill='white' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:17px 12px; width:30px; height:30px; border-radius:3px; transition:all .2s ease; opacity:0;}
 .chk-box span input[type=checkbox] {position:absolute; top:-2px; left:-2px; width:30px; height:30px; margin:0; padding:0; opacity:0; z-index:5; cursor:pointer;}
 .chk-box span input[type=checkbox]:checked + i {opacity:1;}
-.chk-box label {display:inline-block; position:relative; height:30px; margin-left:10px; color:#111; font-size:18px; cursor:pointer; line-height:30px; z-index:2; vertical-align:middle;}
+.chk-box label {display:inline-block; position:relative; height:30px; color:#111; font-size:18px; cursor:pointer; line-height:1.3; z-index:2; vertical-align:middle;}
 
 .scroll_guide {display:none; margin:0 0 15px; color:#111; font-size:18px; text-align:right;}
 .scroll_guide:after {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg viewBox='0 0 32 29' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m32 19-12 10v-2l9.6-8h-29.6v-2h32v2zm-32-7v-2l12-10v2l-9.6 8h29.6v2h-32z' fill='%2311ccd3'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%; width:32px; height:29px; margin-left:15px; vertical-align:middle;}
@@ -557,34 +565,35 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 	.tbl table {min-width:1023px;}
 }
 @media screen and (max-width:768px) {
-	.sVisual .innr {height:153px; padding:77px 30px 0;}
-	.sVisual h2 {font-size:20px;}
-	.sVisual .desc {margin-top:8px; font-size:12px;}
-	main article {padding:12px 30px 50px;}
-	h3.title {margin-top:37px; font-size:15px;}
-	[class^=tab-col-] a {height:42px; font-size:12px; line-height:42px;}
+	.sVisual .innr {height:153px; padding:60px 30px 0;}
+	.sVisual h2 {font-size:35px;}
+	.sVisual .desc {margin-top:5px; font-size:17px;}
+	main article {padding:12px 20px 50px;}
+	h3.title {margin-top:37px; font-size:20px;}
+	[class^=tab-col-] a {height:42px; font-size:13px; line-height:42px;}
 	[class^=btn-col-] {margin-top:20px;}
 	[class^=btn-col-] a, [class^=btn-col-] button {margin-left:10px;}
 	.tab-col-4 a {width:50%;}
 	.paging {margin-top:20px;}
-	.paging a {height:19px; padding:0 4px; font-size:11px; line-height:19px;}
+	.paging a {height:24px; padding:0 6px; font-size:13px; line-height:24px;}
 	.paging .prev {margin-right:6px;}
 	.paging .next {margin-left:6px;}
-	.paging .prev,.paging .next {width:19px; height:19px; vertical-align:9px;}
-	.paging .prev:before,.paging .next:before {width:4px; height:6px; vertical-align:-12px;}
+	.paging .prev,.paging .next {width:24px; height:24px;}
+	.paging .prev:before,.paging .next:before {width:4px; height:6px; vertical-align:-14px;}
 	.info-box-gray {margin-top:15px; padding:22px 20px;}
-	.info-box-gray li {margin-top:6px; font-size:12px;}
+	.info-box-gray li {margin-top:6px; font-size:13px; text-indent:-9px;}
 	.info-box-gray li:before {width:3px; height:3px; margin-right:5px; vertical-align:2px;}
-	.chk-box span {width:15px; height:15px;}
+	.chk-box {padding-left:22px;}
+	.chk-box span {top:2px; width:15px; height:15px;}
 	.chk-box span i {background-size:9px 6px; width:15px; height:15px;}
 	.chk-box span input[type=checkbox] {width:15px; height:15px;}
-	.chk-box label {height:15px; margin-left:5px; font-size:12px; line-height:15px;}
-	.scroll_guide {margin:0 0 7px; font-size:11px;}
+	.chk-box label {height:15px; font-size:13px;}
+	.scroll_guide {margin:0 0 7px; font-size:13px;}
 	.scroll_guide:after {width:16px; height:15px; margin-left:7px;}
-	.tbl {margin-top:20px; width:calc(100% + 30px);}
+	.tbl {margin-top:20px; width:calc(100% + 0px);}
 	.tbl table th, .tbl table td {height:35px;}
-	.tbl table th {font-size:12px;}
-	.tbl table td {font-size:11px;}
+	.tbl table th,
+	.tbl table td {font-size:13px;}
 	.btn-refresh {top:-17px; right:30px;}
 	.btn-refresh img {width:35px; height:35px;}
 	.btn-goTop {display:none;}
@@ -594,12 +603,13 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 
 /* IEO */
 .ieo_step {margin-top:50px; font-size:0;}
-.ieo_step li {display:inline-block; width:25%; height:232px; padding:0 35px; border-right:1px solid #eee; box-sizing:border-box; vertical-align:middle;}
+.ieo_step li {display:inline-block; width:25%; height:240px; padding:0 35px; border-right:1px solid #eee; box-sizing:border-box; vertical-align:middle;}
 .ieo_step li:first-child {border-left:1px solid #eee;}
 .ieo_step li .num {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat", "Noto Sans KR";}
 .ieo_step li strong {display:block; margin-top:6px; color:#000; font-size:26px;}
 .ieo_step li p {margin-top:20px; color:#111; font-size:18px; line-height:1.4;}
-.ieo_step li .btn_down {display:block; background:#073c61; width:100%; max-width:210px; height:38px; margin-top:20px; border-radius:38px; color:#fff; font-size:16px; line-height:38px; text-align:center;}
+.ieo_step li .btn_down {display:inline-block; background:#073c61; margin-top:15px; padding:15px 15px; border-radius:38px; color:#fff; font-size:16px; line-height:1.2; text-align:center;}
+.ieo_step li .btn_down br {display:none;}
 .chk-box.ieo-agree {margin-top:20px;}
 
 .account_info {margin-top:30px; padding:34px 0; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
@@ -617,6 +627,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .account_info2 .box .btn-ok {background:#2dd0d4; width:64px; height:38px; margin-left:80px; border-radius:38px; color:#fff; font-size:16px; line-height:38px;}
 .account_info2 .box span {color:#111; font-size:20px;}
 .account_info2_text {margin-top:20px; color:#111; font-size:18px;}
+.account_info2_text br {display:none;}
 
 .ieo_idBox {margin-top:30px; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
 .ieo_idBox strong, .ieo_idBox span {display:inline-block; height:117px; font-size:20px; line-height:117px;}
@@ -639,29 +650,31 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 }
 @media screen and (max-width:768px) {
 	.ieo_step {margin-top:25px;}
-	.ieo_step li {height:130px; padding:0 17px;}
+	.ieo_step li {height:160px; padding:0 17px;}
 	.ieo_step li:nth-child(3),
 	.ieo_step li:nth-child(4) {margin-top:30px;}
 	.ieo_step li .num {font-size:25px;}
-	.ieo_step li strong {margin-top:3px; font-size:13px;}
-	.ieo_step li p {margin-top:10px; font-size:12px;}
-	.ieo_step li .btn_down {max-width:150px; height:19px; margin-top:10px; font-size:11px; line-height:19px;}
+	.ieo_step li strong {margin-top:3px; font-size:16px;}
+	.ieo_step li p {margin-top:10px; font-size:14px;}
+	.ieo_step li .btn_down {margin-top:10px; padding:7px 14px; font-size:13px;}
+	.ieo_step li .btn_down br {display:block;}
 	.chk-box.ieo-agree {margin-top:10px;}
-	.account_info {margin-top:15px; padding:17px 0;}
-	.account_info > * {display:block; width:160px !important; margin:5px auto 0 !important;}
-	.account_info select {height:25px; font-size:12px;}
-	.account_info .inp input[type=text] {height:25px; font-size:12px;}
-	.account_info2 {margin-top:15px; padding:8px 0;}
+	.account_info {margin-top:15px; padding:17px 0 25px;}
+	.account_info > * {display:block; width:90% !important; margin:5px auto 0 !important;}
+	.account_info select {height:40px; font-size:15px;}
+	.account_info .inp input[type=text] {height:40px; font-size:15px;}
+	.account_info2 {margin-top:10px; padding:8px 0;}
 	.account_info2 .box {padding:14px 0;}
-	.account_info2 .box .inp {width:95px; margin:0 10px;}
+	.account_info2 .box .inp {width:40%; margin:0 10px;}
 	.account_info2 .box input[type=text] {height:19px; padding-right:5px; font-size:12px;}
-	.account_info2 .box .btn-ok  {width:32px; height:19px; margin-left:40px; font-size:11px; line-height:19px;}
-	.account_info2 .box span  {font-size:11px;}
-	.account_info2_text {margin-top:10px; font-size:11px;}
+	.account_info2 .box .btn-ok {width:50px; height:30px; margin-left:20px; font-size:13px; line-height:19px;}
+	.account_info2 .box span  {font-size:14px;}
+	.account_info2_text {margin-top:10px; font-size:14px;}
+	.account_info2_text br {display:block;}
 	.ieo_idBox {margin-top:15px;}
-	.ieo_idBox strong, .ieo_idBox span {height:58px; font-size:12px; line-height:58px;}
+	.ieo_idBox strong, .ieo_idBox span {height:58px; font-size:14px; line-height:58px;}
 	.ieo_idBox span:before {margin:0 15px; width:3px; height:3px; vertical-align:2px;}
-	.tbl table td .detail {width:60px; height:20px; line-height:18px; font-size:11px;}
+	.tbl table td .detail {width:60px; height:20px; line-height:18px; font-size:13px;}
 }
 
 .layer-conts [class^=btn-col] {margin-top:40px; padding-bottom:60px;}
@@ -694,7 +707,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 
 @media screen and (max-width:768px) {
 	.layer-conts [class^=btn-col] {margin-top:20px; padding-bottom:30px;}
-	.layer-conts [class^=btn-col] a {width:80px; height:30px; font-size:11px; line-height:28px;}
+	.layer-conts [class^=btn-col] a {width:80px; height:30px; font-size:13px; line-height:28px;}
 	.layer-conts.alertMsg,
 	.layer-conts.applyForm {left:30px; right:30px; width:auto; margin:0 auto; transform:translateX(0);}
 	.layer-conts.applyForm:before {left:18px; right:18px; height:4px;}
@@ -706,8 +719,8 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 	.layer-conts.applyForm .tbl_col {padding:0 30px 20px;}
 	.layer-conts.applyForm .tbl_col.bg {padding-bottom:20px;}
 	.layer-conts.applyForm .tbl_col table th, .layer-conts.applyForm .tbl_col table td {height:34px;}
-	.layer-conts.applyForm .tbl_col table th {font-size:12px;}
-	.layer-conts.applyForm .tbl_col table td input[type=text] {height:34px; font-size:11px;}
+	.layer-conts.applyForm .tbl_col table th {font-size:13px;}
+	.layer-conts.applyForm .tbl_col table td input[type=text] {height:34px; font-size:13px;}
 	.layer-conts.alertMsg .close,
 	.layer-conts.applyForm .close {top:10px; right:20px; padding:10px;}
 	.layer-conts.alertMsg .close img,
@@ -769,37 +782,38 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 @media screen and (max-width:768px) {
 	main article.member	{padding-top:57px; padding-left:30px; padding-right:30px;}
 	article.member h3 {padding-bottom:15px; font-size:18px;}
-	.tbl_join {margin-top:12px; padding:20px 0;}
+	.tbl_join {margin-top:0; padding:20px 0;}
 	.tbl_join dl {display:block; margin-top:10px;}
-	.tbl_join dl dt {display:block; width:100%; font-size:12px;}
+	.tbl_join dl dt {display:block; width:100%; font-size:15px;}
 	.tbl_join dl dd {display:block; padding:5px 0;}
-	.tbl_join dl dd input[type=text] {height:32px; padding-left:10px; font-size:11px;}
+	.tbl_join dl dd input[type=text] {height:38px; padding-left:10px; font-size:13px;}
 	.tbl_join dl dd .inp {margin-right:110px;}
-	.tbl_join dl dd .btn-certifi {top:5px; width:105px; height:30px; font-size:11px; line-height:30px;}
-	.tbl_join dl dd .desc {margin-top:12px; font-size:11px;}
+	.tbl_join dl dd .btn-certifi {top:5px; width:105px; height:38px; font-size:12px; line-height:38px;}
+	.tbl_join dl dd .desc {margin-top:12px; font-size:12px;}
 	.terms-box {margin-top:10px; padding:10px 0 0 0;}
 	.terms-box dl {padding:5px 0;}
-	.terms-box dl dd a {height:15px; line-height:15px; font-size:12px;}
-	.btn-col-join {margin-top:10px;}
+	.terms-box dl dd a {height:15px; line-height:15px; font-size:13px;}
+	.btn-col-join {margin-top:30px;}
 	.btn-col-find {margin-top:30px;}
 	.btn-col-find a,
 	.btn-col-join button,
-	.btn-col-join .btn-join {display:block; width:158px; height:39px; margin-left:auto !important; margin-right:auto !important; border-radius:39px; font-size:12px; line-height:37px;}
+	.btn-col-join .btn-join {display:block; width:158px; height:40px; margin-left:auto !important; margin-right:auto !important; border-radius:39px; font-size:18px; line-height:38px;}
 	.btn-col-find a:last-child,
 	.btn-col-join .btn-join {margin-top:10px;}
 
 	.join_search {margin-top:20px;}
-	.join_search a {padding:0 25px; font-size:12px;}
+	.join_search a {padding:0 25px; font-size:13px;}
 	.findImg {width:70px; margin:37px auto 0;}
 
 	.layer-conts.terms-pop {left:30px; right:30px; width:auto; margin:0 auto; transform:translateX(0);}
-	.layer-conts.terms-pop .head-terms {height:38px; font-size:14px; line-height:38px;}
+	.layer-conts.terms-pop .head-terms {height:38px; font-size:15px; line-height:38px;}
+	.layer-conts.terms-pop .terms-text {height:320px; font-size:13px;}
 }
 
 
 /* ASSET */
 .title-grid {position:relative;}
-.title-grid .right {display:block; position:absolute; bottom:0; right:0; color:#888; font-size:17px;}
+.title-grid .right {display:block; position:absolute; bottom:0; right:0; color:#888; font-size:17px; line-height:1.4;}
 .title-grid .right.asset3 {border-bottom:1px solid transparent; color:#111;}
 .title-grid .right.asset3:after {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m13 8h-5v5c0 0.552-0.448 1-1 1s-1-0.448-1-1v-5h-5c-0.552 0-1-0.448-1-1s0.448-1 1-1h5v-5c0-0.552 0.448-1 1-1s1 0.448 1 1v5h5c0.552 0 1 0.448 1 1s-0.448 1-1 1z' fill='%23555'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%; width:14px; height:14px; margin-left:10px; vertical-align:0;}
 .title-grid .right.asset3:hover {border-color:#111;}
@@ -857,7 +871,7 @@ table td .btn-basic.non {background:#ccc;}
 	.asset-cell .box p {margin-top:25px;}
 }
 @media screen and (max-width:768px) {
-	.title-grid .right {margin-top:7px; font-size:11px;}
+	.title-grid .right {margin-top:7px; font-size:13px;}
 	.title-grid .right.asset3:after {width:7px; height:7px; margin-left:5px;}
 	.asset-total {margin-top:12px;}
 	.asset-total > * {height:62px;}
@@ -865,15 +879,15 @@ table td .btn-basic.non {background:#ccc;}
 	.asset-total p {padding-right:30px; font-size:14px;}
 	.asset-cell {margin-top:10px;}
 	.asset-cell .box {padding:32px 0;}
-	.asset-cell .box strong {font-size:11px;}
+	.asset-cell .box strong {font-size:14px;}
 	.asset-cell .box p {margin-top:12px; font-size:15px;}
-	.asset-cell .box em {top:10px; right:10px; width:32px; height:15px; font-size:11px; line-height:15px;}
+	.asset-cell .box em {top:10px; right:10px; width:40px; height:18px; font-size:12px; line-height:18px;}
 	.asset-bank {margin-top:15px;}
-	.asset-bank strong, .asset-bank span {height:60px; font-size:11px; line-height:60px;}
+	.asset-bank strong, .asset-bank span {height:60px; font-size:15px; line-height:60px;}
 	.asset-bank span:before {margin:0 15px; width:3px; height:3px; vertical-align:2px;}
-	.tbl.asset table td [class^=text-] {padding-left:10px; font-size:11px;}
+	.tbl.asset table td [class^=text-] {padding-left:10px; font-size:13px;}
 	table td .btn-basic,
-	.tbl.asset table td .btn-hash {width:31px; height:19px; font-size:11px;}
+	.tbl.asset table td .btn-hash {width:50px; height:22px; font-size:13px; line-height:20px;}
 
 	.layer-conts.asset-pop {left:30px; right:30px; width:auto; margin:0 auto; transform:translateX(0);}
 	.layer-conts.asset-pop .head-asset {height:38px; font-size:14px; line-height:38px;}
