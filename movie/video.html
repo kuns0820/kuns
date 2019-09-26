@@ -110,7 +110,7 @@
 			<button type="button" class="btn-down">다운로드</button>
 		</div>
 		<ul class="info-list">
-			<li><a href="">
+			<li><a href="javascript:;" onclick="gotoSCR(this);" data-start="list01">
 				<span class="num">01</span>
 				<div class="text">
 					<p>주요 이슈 (00:05~01:02)</p>
@@ -128,27 +128,25 @@
 	</div>
 	
 	<div class="issue-warp">
-		<div class="head">
+		<div class="head" data-arrive="list01">
 			<span class="num">01</span>
 			<div class="text">
 				<p>여름철 휴가 전 차량 점검 서비스 <span>(00:05~01:02)</span></p>
 				<div class="editor-box">
 					<p>인수지침 변경 : 인수지침 변경에 따른 약관 변경</p>
+					<p>7월 GA활동지원 이벤트</p>
+					<p>7월 화재보험 영업 2건 시 최대 3만 활동 포인트 </p>
+					<p>여름철 휴가 전 차량 점검 서비스</p>
+					<p>5년 무사고 운전자 에어컨 필터 무상 교체 쿠폰 지원</p>
+					<p>자동차 1분 컨설팅</p>
 				</div>
-				<ul>
-					<li>인수지침 변경 : 인수지침 변경에 따른 약관 변경</li>
-					<li>7월 GA활동지원 이벤트</li>
-					<li>7월 화재보험 영업 2건 시 최대 3만 활동 포인트 </li>
-					<li>여름철 휴가 전 차량 점검 서비스</li>
-					<li>5년 무사고 운전자 에어컨 필터 무상 교체 쿠폰 지원</li>
-					<li>자동차 1분 컨설팅</li>
-				</ul>
 
 				<img src="http://placehold.it/360x50/333333/ffffff?text=img" class="img" />
 
 				<button type="button" class="btn-down">다운로드</button>
 			</div>
 		</div>
+		
 		<div class="comment">
 			<div class="head">
 				<div class="title">
@@ -258,6 +256,15 @@ function palyer_size(){
 $(window).bind("load resize scroll" , function(){
 	palyer_size();
 });
+
+function gotoSCR(obj){
+	_this = $(obj);
+	__this = _this.data("start");
+	_goto = $("div[data-arrive=" + __this + "]").offset().top;
+	$("html, body").animate({
+		scrollTop : _goto - playerH
+	}, "fast");
+}
 </script>
 </body>
 </html>

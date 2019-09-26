@@ -357,6 +357,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .csCenter .cs_box dl dd span {display:block; margin-top:5px; color:#999; font-size:16px;}
 .csCenter .cs_box dl dd p {margin-bottom:15px; padding-left:15px; color:#666; font-size:18px; text-indent:-15px;}
 .csCenter .cs_box dl dd p img {vertical-align:-1px;}
+.csCenter .cs_box dl dd p:last-child img {vertical-align:-4px;}
 .csCenter .sns_box {float:right; width:367px; font:0/0 a;}
 .csCenter .sns_box a {display:inline-block; width:60px; height:60px; margin:0 0 40px 40px;}
 .csCenter .sns_box a.sns01 {background:url(../images/sns_01.gif) 0 0 no-repeat; background-size:100% 100%;}
@@ -497,6 +498,7 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sVisual .desc {margin-top:16px; color:#fff; font-size:24px;}
 .sVisual.ieo {background:url(../images/sub/visual_ieo.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 .sVisual.asset {background:url(../images/sub/visual_asset.jpg) 50% 0 no-repeat; background-size:auto 100%;}
+.sVisual.suggest {background:url(../images/sub/visual_suggest.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 
 main article {position:relative; width:100%; max-width:1140px; margin:0 auto; padding:25px 0 100px; transition:padding .2s ease;}
 
@@ -897,6 +899,45 @@ table td .btn-basic.non {background:#ccc;}
 	.asset .title.line-top {margin-top:40px; padding-top:50px;}
 }
 
+/* 제휴제안 */
+.suggest_top {margin:70px 0; padding-bottom:70px; border-bottom:1px solid #888;}
+.suggest_top strong {display:block; color:#111; font-size:30px;}
+.suggest_top p {margin-top:30px; color:#111; font-size:24px; line-height:1.4; letter-spacing:-1.5px;}
+.suggest_top.sgg01 {background:url(../images/sub/ico_suggest01.jpg) calc(100% - 62px) 35px no-repeat;}
+.suggest_top.sgg02 {background:url(../images/sub/ico_suggest02.jpg) calc(100% - 62px) 35px no-repeat;}
+.suggest_top.sgg03 {background:url(../images/sub/ico_suggest03.jpg) calc(100% - 62px) 0 no-repeat; padding-bottom:90px;}
+.suggest_top.sgg04 {background:url(../images/sub/ico_suggest04.jpg) calc(100% - 62px) 35px no-repeat;}
 
+.suggest h4 {color:#111; font-size:30px;}
+.suggest .stit {display:block; margin-top:35px; color:#000; font-size:26px;}
+.suggest .sdesc {margin-top:15px; color:#111; font-size:20px; line-height:1.4;}
+.suggest .sdesc2 {margin-top:75px; color:#111; font-size:20px; line-height:1.4;}
 
+.sgg_info {margin-top:70px;}
+.sgg_info li {margin-top:15px; color:#111; font-size:20px;}
+.sgg_info li:first-child {margin-top:0;}
+.sgg_info li:after {content:""; display:block; clear:both;}
+.sgg_info li strong {float:left;}
+.sgg_info li span {float:left;}
 
+.sgg_sbox {display:table; background:#f8f8f8; width:100%; margin-top:25px; padding:40px 0;}
+.sgg_sbox dt,
+.sgg_sbox dd {display:table-cell; vertical-align:middle;}
+.sgg_sbox dt {width:200px; color:#000; font-size:20px; text-align:center;}
+.sgg_sbox dd {color:#111; font-size:20px; line-height:1.5;}
+
+.sgg_step {margin-top:45px; padding-bottom:80px; border-bottom:1px solid #888;}
+.sgg_step:after {content:""; display:block; clear:both;}
+.sgg_step dl {float:left; width:calc(33.3% - 40px); margin-left:60px;}
+.sgg_step dl:first-child {margin-left:0;}
+.sgg_step dl dt strong {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat", "Noto Sans KR";}
+.sgg_step dl dt span {display:block; margin-top:10px; color:#000; font-size:26px;}
+.sgg_step dl dd {margin-top:30px;}
+.sgg_step dl dd div {display:table; background-image:url(../images/sub/ico_suggest0302.png); background-position:calc(100% - 20px) calc(100% - 20px); background-repeat:no-repeat; width:100%; margin-top:10px; padding:35px 0; border-radius:3px;}
+.sgg_step dl dd div:last-child {background-image:none;}
+.sgg_step dl:nth-child(1) dd div {background-color:#e6fafa;}
+.sgg_step dl:nth-child(2) dd div {background-color:#e9f4fb;}
+.sgg_step dl:nth-child(3) dd div {background-color:#f3f5f6;}
+.sgg_step dl dd div:first-child {margin-top:0;}
+.sgg_step dl dd div p {display:table-cell; width:100%; padding:0 40px; color:#111; font-size:20px; vertical-align:middle;}
+.sgg_step dl dd div p span {display:block; margin-top:10px; color:#555; font-size:17px;}
