@@ -493,12 +493,13 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 
 
 /* Sub */
-.sVisual .innr {width:100%; max-width:1140px; height:306px; margin:0 auto; padding-top:155px; box-sizing:border-box; transition:all .2s ease;}
+.sVisual .innr {width:100%; max-width:1140px; height:306px; margin:0 auto; padding-top:155px; box-sizing:border-box;}
 .sVisual h2 {color:#fff; font-size:40px; font-family:"Montserrat", "Noto Sans KR"; letter-spacing:0;}
 .sVisual .desc {margin-top:16px; color:#fff; font-size:24px;}
 .sVisual.ieo {background:url(../images/sub/visual_ieo.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 .sVisual.asset {background:url(../images/sub/visual_asset.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 .sVisual.suggest {background:url(../images/sub/visual_suggest.jpg) 50% 0 no-repeat; background-size:auto 100%;}
+.sVisual.community {background:url(../images/sub/visual_community.jpg) 50% 0 no-repeat; background-size:auto 100%;}
 
 main article {position:relative; width:100%; max-width:1140px; margin:0 auto; padding:25px 0 100px; transition:padding .2s ease;}
 
@@ -508,6 +509,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 [class^=tab-col-] a.on {border-color:#073d63; color:#000; font-weight:bold;}
 .tab-col-2 a {width:50%;}
 .tab-col-4 a {width:25%;}
+.tab-col-3 a {width:33.3%;}
 
 [class^=btn-col-] {margin-top:40px; font-size:0; text-align:center;}
 [class^=btn-col-] a,
@@ -916,43 +918,19 @@ table td .btn-basic.non {background:#ccc;}
 .suggest .sdesc2 {margin-top:75px; color:#111; font-size:20px; line-height:1.4;}
 
 .sgg_info {margin-top:70px;}
-.sgg_info li {margin-top:15px; color:#111; font-size:20px;}
+.sgg_info li {display:table; width:100%; margin-top:15px; color:#111; font-size:20px;}
 .sgg_info li:first-child {margin-top:0;}
 .sgg_info li:after {content:""; display:block; clear:both;}
-.sgg_info li strong {float:left;}
-.sgg_info li span {float:left;}
+.sgg_info li strong,
+.sgg_info li span {display:table-cell; vertical-align:top;}
+.sgg_info li strong {white-space:nowrap;}
+.sgg_info li span {width:100%; padding-left:3px;}
 
 .sgg_sbox {display:table; background:#f8f8f8; width:100%; margin-top:25px; padding:40px 0;}
 .sgg_sbox dt,
 .sgg_sbox dd {display:table-cell; vertical-align:middle;}
 .sgg_sbox dt {width:200px; color:#000; font-size:20px; text-align:center;}
 .sgg_sbox dd {color:#111; font-size:20px; line-height:1.5;}
-
-@media screen and (max-width:1250px) {
-	.suggest .suggest_top {background:none;}
-	.suggest_top br.ta {display:block;}
-	.suggest_top br.pc {display:none;}
-}
-@media screen and (max-width:768px) {
-	.suggest_top {margin:35px 0; padding-bottom:35px;}
-	.suggest_top strong {font-size:20px;}
-	.suggest_top p {margin-top:15px; font-size:16px;}
-	.suggest .suggest_top br {display:none;}
-
-	.suggest h4 {font-size:20px;}
-	.suggest .stit {margin-top:10px; font-size:16px;}
-	.suggest .sdesc {margin-top:10px; font-size:14px;}
-	.suggest .sdesc2 {margin-top:35px; font-size:14px;}
-
-	.sgg_info {margin-top:35px;}
-	.sgg_info li {margin-top:10px; font-size:14px;}
-
-	.sgg_sbox {margin-top:15px; padding:20px 0;}
-	.sgg_sbox dt, .sgg_sbox dd {font-size:13px;}
-	.sgg_sbox dt {width:100px;}
-}
-
-
 
 .sgg_step {margin-top:45px; padding-bottom:80px; border-bottom:1px solid #888;}
 .sgg_step:after {content:""; display:block; clear:both;}
@@ -969,3 +947,56 @@ table td .btn-basic.non {background:#ccc;}
 .sgg_step dl dd div:first-child {margin-top:0;}
 .sgg_step dl dd div p {display:table-cell; width:100%; padding:0 40px; color:#111; font-size:20px; vertical-align:middle;}
 .sgg_step dl dd div p span {display:block; margin-top:10px; color:#555; font-size:17px;}
+
+@media screen and (max-width:1250px) {
+	.suggest .suggest_top {background:none;}
+	.suggest_top br.ta {display:block;}
+	.suggest_top br.pc {display:none;}
+}
+@media screen and (max-width:1024px) {
+	.sgg_step {margin-top:22px; padding-bottom:40px;}
+	.sgg_step dl {width:100%; margin-top:55px; margin-left:0;}
+	.sgg_step dl:first-child {margin-top:0;}
+	.sgg_step dl dd {margin-top:15px;}
+}
+@media screen and (max-width:768px) {
+	.suggest_top {margin:35px 0; padding-bottom:35px;}
+	.suggest_top strong {font-size:20px;}
+	.suggest_top p {margin-top:15px; font-size:16px;}
+	.suggest_top.sgg03 {padding-bottom:35px;}
+	.suggest .suggest_top br {display:none;}
+
+	.suggest h4 {font-size:20px;}
+	.suggest .stit {margin-top:10px; font-size:16px;}
+	.suggest .sdesc {margin-top:10px; font-size:14px;}
+	.suggest .sdesc2 {margin-top:35px; font-size:14px;}
+
+	.sgg_info {margin-top:35px;}
+	.sgg_info li {margin-top:10px; font-size:14px;}
+
+	.sgg_sbox {margin-top:15px; padding:20px 0;}
+	.sgg_sbox dt, .sgg_sbox dd {font-size:13px;}
+	.sgg_sbox dt {width:100px;}
+	
+	.sgg_step dl dt strong {font-size:25px;}
+	.sgg_step dl dt span {font-size:16px;}
+	.sgg_step dl dd div {background-size:20px 20px; padding:15px 0;}
+	.sgg_step dl dd div p {padding:0 20px; font-size:14px;}
+	.sgg_step dl dd div p span {margin-top:5px; font-size:14px;}
+	.sgg_step dl dd div p span br {display:none;}
+}
+
+/* 커뮤니티 */
+.news_list {margin-top:30px; border-top:2px solid #111;}
+.news_list li {padding:30px 0; border-bottom:1px solid #ddd;}
+.news_list a {display:block; position:relative; padding:0 0 0 260px;}
+.news_list a .thumb {position:absolute; top:0; left:0; overflow:hidden; border:1px solid #eee; border-radius:3px;}
+.news_list a .thumb img {display:block; width:212px; height:132px;}
+.news_list a .text_wrap {display:table; table-layout:fixed; width:100%; height:134px;}
+.news_list a .text_wrap .innr {display:table-cell; vertical-align:middle;}
+.news_list a .text_wrap .innr strong {display:block; overflow:hidden; text-overflow:ellipsis; color:#000; font-size:25px; white-space:nowrap;}
+.news_list a .text_wrap .innr p {display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; white-space:normal; -webkit-line-clamp:2; max-height:53px; margin-top:20px; color:#555; font-size:18px; line-height:1.5;}
+
+.news_list.insight a .thumb img {width:214px; height:214px;}
+.news_list.insight a .text_wrap {height:214px;}
+.news_list a .text_wrap .innr p {-webkit-line-clamp:4; max-height:106px;}
