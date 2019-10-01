@@ -277,16 +277,16 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .sct04 .img {position:absolute; bottom:0; right:-252px;}
 
 /* @@@@@@@@@@@@@@ 모션 정의 @@@@@@@@@@@@@@ */
-.sct01 .deco_x {position:absolute; top:0; left:50%; width:auto; height:1057px; margin-left:-950px; animation:lineX 30s ease .5s forwards infinite;}
+.sct01 .deco_x {position:absolute; top:0; left:50%; width:auto; height:933px; margin-left:-750px; animation:lineX 45s ease .5s forwards infinite;}
 @keyframes lineX {
 	0%, 100% {transform:translate(0, 0);}
 	50% {transform:translate(-100px, -100px);}
 }
-.sct03 .deco_k {position:absolute; top:0; left:50%; width:auto; height:933px; margin-left:330px; animation:lineK 30s ease .5s forwards infinite;}
+.sct03 .deco_k {position:absolute; top:0; left:50%; width:auto; height:933px; margin-left:330px; animation:lineK 45s ease .5s forwards infinite;}
 .sct03 .deco_k img {max-width:none;}
 @keyframes lineK {
 	0%, 100% {transform:translate(0, 0);}
-	50% {transform:translate(-50px, 50px);}
+	50% {transform:translate(-100px, 100px);}
 }
 
 .visual .deco_circle {position:absolute; top:139px; left:0; background:#2dd0d4; width:114px; height:114px; border-radius:50%; z-index:10; animation:circle1 160s ease .5s forwards infinite;}
@@ -297,8 +297,8 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 }
 
 @media screen and (max-width:768px) {
-	.sct01 .deco_x {height:556px; margin-left:-300px;}
-	.sct01 .deco_x img {height:556px;}
+	.sct01 .deco_x {height:723px; margin-left:-300px;}
+	.sct01 .deco_x img {height:723px;}
 	.sct03 .deco_k {height:723px; margin-left:-150px;}
 	.sct03 .deco_k img {height:723px;}
 
@@ -621,14 +621,16 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .account_info > * {display:inline-block;}
 .account_info select {width:207px; height:50px; padding-left:10px; border:1px solid #555; border-width:0 0 1px 0; color:#111; font-size:20px;}
 .account_info .inp {margin-left:20px; border-bottom:1px solid #555;}
-.account_info .inp input[type=text] {width:100%; height:50px; padding-left:10px; border:0; box-sizing:border-box; color:#888; font-size:20px;}
+.account_info .inp input[type=text],
+.account_info .inp input[type=password] {width:100%; height:50px; padding-left:10px; border:0; box-sizing:border-box; color:#888; font-size:20px;}
 
 .account_info2 {margin-top:30px; padding:16px 0; border:1px solid #ddd; border-radius:3px; font-size:0;}
 .account_info2 .box {display:inline-block; width:50%; padding:28px 0; box-sizing:border-box; text-align:center;}
 .account_info2 .box:first-child {border-right:1px solid #eee;}
 .account_info2 .box > * {display:inline-block;}
 .account_info2 .box .inp {width:190px; margin:0 20px; border-bottom:1px solid #555;}
-.account_info2 .box input[type=text] {width:100%; height:38px; padding-right:10px; border:0; box-sizing:border-box; color:#888; font-size:20px; text-align:right;}
+.account_info2 .box input[type=text],
+.account_info2 .box input[type=password] {width:100%; height:38px; padding-right:10px; border:0; box-sizing:border-box; color:#888; font-size:20px; text-align:right;}
 .account_info2 .box .btn-ok {background:#2dd0d4; width:64px; height:38px; margin-left:80px; border-radius:38px; color:#fff; font-size:16px; line-height:38px;}
 .account_info2 .box span {color:#111; font-size:20px;}
 .account_info2_text {margin-top:20px; color:#111; font-size:18px;}
@@ -667,11 +669,13 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 	.account_info {margin-top:15px; padding:17px 0 25px;}
 	.account_info > * {display:block; width:90% !important; margin:5px auto 0 !important;}
 	.account_info select {height:40px; font-size:15px;}
-	.account_info .inp input[type=text] {height:40px; font-size:15px;}
+	.account_info .inp input[type=text],
+	.account_info .inp input[type=password] {height:40px; font-size:15px;}
 	.account_info2 {margin-top:10px; padding:8px 0;}
 	.account_info2 .box {padding:14px 0;}
 	.account_info2 .box .inp {width:40%; margin:0 10px;}
-	.account_info2 .box input[type=text] {height:19px; padding-right:5px; font-size:12px;}
+	.account_info2 .box input[type=text],
+	.account_info2 .box input[type=password] {height:19px; padding-right:5px; font-size:12px;}
 	.account_info2 .box .btn-ok {width:50px; height:30px; margin-left:20px; font-size:13px; line-height:19px;}
 	.account_info2 .box span  {font-size:14px;}
 	.account_info2_text {margin-top:10px; font-size:14px;}
@@ -701,7 +705,8 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .layer-conts.applyForm .tbl_col table td {height:68px; vertical-align:middle; text-align:left;}
 .layer-conts.applyForm .tbl_col table th {color:#000; font-size:20px;}
 .layer-conts.applyForm .tbl_col table td {border-bottom:1px solid #ddd;}
-.layer-conts.applyForm .tbl_col table td input[type=text] {background:transparent; width:100%; height:68px; padding-left:5px; border:0; box-sizing:border-box; color:#565656; font-size:20px;}
+.layer-conts.applyForm .tbl_col table td input[type=text],
+.layer-conts.applyForm .tbl_col table td input[type=password] {background:transparent; width:100%; height:68px; padding-left:5px; border:0; box-sizing:border-box; color:#565656; font-size:20px;}
 .layer-conts.applyForm .info_text {margin-top:30px; padding:0 65px; color:#898989; font-size:16px; line-height:1.6;}
 .layer-conts.applyForm .close {position:absolute; top:36px; right:65px; font:0/0 a;}
 
@@ -725,7 +730,8 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 	.layer-conts.applyForm .tbl_col.bg {padding-bottom:20px;}
 	.layer-conts.applyForm .tbl_col table th, .layer-conts.applyForm .tbl_col table td {height:34px;}
 	.layer-conts.applyForm .tbl_col table th {font-size:13px;}
-	.layer-conts.applyForm .tbl_col table td input[type=text] {height:34px; font-size:13px;}
+	.layer-conts.applyForm .tbl_col table td input[type=text],
+	.layer-conts.applyForm .tbl_col table td input[type=password] {height:34px; font-size:13px;}
 	.layer-conts.alertMsg .close,
 	.layer-conts.applyForm .close {top:10px; right:20px; padding:10px;}
 	.layer-conts.alertMsg .close img,
@@ -748,7 +754,9 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 .tbl_join dl dd {display:table-cell; vertical-align:middle;}
 .tbl_join dl dt {width:182px; color:#111; font-size:20px; text-align:left; font-weight:normal;}
 .tbl_join dl dd {position:relative; padding:10px 0;}
-.tbl_join dl dd input[type=text] {width:100%; height:64px; padding-left:20px; border:1px solid #ccc; box-sizing:border-box; color:#111; font-size:20px;}
+.tbl_join dl dd input[type=text],
+.tbl_join dl dd input[type=password],
+.tbl_join dl dd input[type=number] {width:100%; height:64px; padding-left:20px; border:1px solid #ccc; box-sizing:border-box; color:#111; font-size:20px;}
 .tbl_join dl dd .inp {margin-right:220px;}
 .tbl_join dl dd .btn-certifi {position:absolute; top:10px; right:0; background:#073c61; width:210px; height:60px; border-radius:60px; color:#fff; font-size:18px; text-align:center; line-height:60px;}
 .tbl_join dl dd .desc {display:block; margin-top:15px; color:#999; font-size:16px;}
@@ -791,7 +799,9 @@ article.member h3 {margin-top:0; padding-bottom:30px; border-bottom:2px solid #0
 	.tbl_join dl {display:block; margin-top:10px;}
 	.tbl_join dl dt {display:block; width:100%; font-size:15px;}
 	.tbl_join dl dd {display:block; padding:5px 0;}
-	.tbl_join dl dd input[type=text] {height:38px; padding-left:10px; font-size:13px;}
+	.tbl_join dl dd input[type=text],
+	.tbl_join dl dd input[type=password],
+	.tbl_join dl dd input[type=number] {height:38px; padding-left:10px; font-size:13px;}
 	.tbl_join dl dd .inp {margin-right:110px;}
 	.tbl_join dl dd .btn-certifi {top:5px; width:105px; height:38px; font-size:12px; line-height:38px;}
 	.tbl_join dl dd .desc {margin-top:12px; font-size:12px;}
@@ -1126,6 +1136,31 @@ table td .btn-basic.non {background:#ccc;}
 .out_info ul li span:first-child {margin-top:15px;}
 .terms-box.memOut {padding-top:0; border-top:0;}
 
+.memOut02 .title-grid {padding-bottom:30px; border-bottom:1px solid #111;}
+.memOut02 .title-grid .right {bottom:30px;}
+.memOut02 .title-grid .right br {display:none;}
+.memOut02 .tbl_join {max-width:900px; margin:0 auto;}
+.memOut02 .tbl_join p.desc {margin-top:30px; color:#888; font-size:17px;}
+
+.tbl_join.file dd {position:relative;}
+.tbl_join.file dd div {margin-right:180px;}
+.tbl_join.file dd div:after {content:""; display:block; clear:both;}
+.tbl_join.file dd div .btn-del {float:left; height:38px; margin-top:12px; padding:0 15px; border:2px solid #ff4545; border-radius:38px; color:#ff4545; font-size:16px; line-height:34px; text-align:center;}
+.tbl_join.file dd div span {float:right; margin-top:19px; color:#888; font-size:17px;}
+.tbl_join.file dd input[type=file] {position:absolute; top:0; left:-9999em; width:0px; height:0px; font:0/0 a;}
+.tbl_join.file dd .btn-file {position:absolute; top:10px; right:0; background:#073c61; width:170px; height:60px; border-radius:60px; color:#fff; font-size:17px; line-height:58px; text-align:center;}
+.tbl_join.file dt,
+.tbl_join.file dd {vertical-align:top;}
+.tbl_join.file dt {padding-top:30px;}
+.memOut02 .terms-box {border-color:#888;}
+.memOut_desc {margin-top:30px; padding-top:30px; border-top:1px solid #888; color:#111; font-size:24px; line-height:1.5;}
+
+.question_frm .title {padding-bottom:30px; border-bottom:2px solid #111;}
+.question_frm .tbl_join {max-width:900px; margin:0 auto;}
+.question_frm .tbl_join dd select {width:100%; height:65px; padding-left:20px; border:1px solid #ccc; color:#111; font-size:20px;}
+.question_frm .tbl_join dd textarea {width:100%; height:280px; padding:20px; box-sizing:border-box; border:1px solid #ccc; color:#111; font-size:20px; resize:none;}
+.question_frm .tbl_join .text-question dt {padding-top:33px; vertical-align:top;}
+
 @media screen and (max-width:1250px) {
 	.out_step .step-box {background-position:40px 10px;}
 }
@@ -1143,7 +1178,7 @@ table td .btn-basic.non {background:#ccc;}
 	.my_certifi .box .innr .certifi_finish,
 	.my_certifi .box .innr .certifi_soon {width:82px; height:30px; line-height:30px; font-size:13px;}
 	.my_certifi .box .innr button {line-height:28px;}
-}	
+}
 
 @media screen and (max-width:768px) {
 	.myp-box strong, .myp-box span {font-size:14px;}
@@ -1184,4 +1219,33 @@ table td .btn-basic.non {background:#ccc;}
 	.out_info ul li {margin-top:15px; font-size:13px;}
 	.out_info ul li span {margin-left:7px; font-size:13px;}
 	.out_info ul li span:first-child {margin-top:5px;}
+	.memOut02 .title-grid {padding-bottom:15px;}
+	.memOut02 .title-grid .right {bottom:15px;}
+	.memOut02 .title-grid .right br {display:block;}
+	.memOut02 .tbl_join p.desc {margin-top:15px; font-size:13px;}
+	.tbl_join.file dt {padding-top:0;}
+	.tbl_join.file dd div {margin-right:0; padding-right:90px;}
+	.tbl_join.file dd div .btn-del {height:22px; margin-top:6px; padding:0 10px; font-size:13px; line-height:20px;}
+	.tbl_join.file dd div span {margin-top:10px; margin-right:-90px; font-size:13px;}
+	.tbl_join.file dd .btn-file {top:5px; width:85px; height:38px; font-size:13px; line-height:36px;}
+	.memOut_desc {margin-top:15px; padding-top:15px; font-size:16px;}
+	.question_frm .title {padding-bottom:15px;}
+	.question_frm .tbl_join dd select {height:38px; padding-left:10px; font-size:13px;}
+	.question_frm .tbl_join dd textarea {height:140px; padding:10px; font-size:13px;}
+	.question_frm .tbl_join .text-question dt {padding-top:0;}
+	.question_frm .btn-col-join .btn-join {margin:0 0 10px 0;}
+}
+
+.mypage_certifi .title {padding-bottom:30px; border-bottom:2px solid #111;}
+.mypage_certifi .tbl_join {max-width:900px; margin:0 auto;}
+.mypage_certifi .tbl_join dd div {margin-right:220px;}
+.mypage_certifi .tbl_join dd button {position:absolute; top:10px; right:0; background:#073c61; width:210px; height:60px; border-radius:60px; color:#fff; text-align:center; font-size:18px; line-height:58px;}
+.mypage_certifi .tbl_join dd select {width:100%; height:65px; padding-left:20px; border:1px solid #ccc; color:#111; font-size:20px;}
+
+
+@media screen and (max-width:768px) {
+	.mypage_certifi .title {padding-bottom:15px;}
+	.mypage_certifi .tbl_join dd div {margin-right:110px;}
+	.mypage_certifi .tbl_join dd button {top:5px; width:105px; height:38px; font-size:13px; line-height:36px;}
+	.mypage_certifi .tbl_join dd select {height:38px; padding-left:10px; font-size:13px;}
 }
