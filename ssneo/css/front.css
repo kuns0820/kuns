@@ -44,6 +44,7 @@ input[type="text"] , input[type="number"] , input[type="password"] {margin:0; pa
 input[type="text"]::-ms-clear {display:none;}
 input[type="text"]:-ms-clear {display:none;}
 a , textarea {color:inherit; font-family:inherit; text-decoration:none;}
+select {background:#fff;}
 textarea::-webkit-input-placeholder {color:#999;}
 textarea:-ms-input-placeholder {color:#999;}
 input[type="text"]::-webkit-input-placeholder , input[type="number"]::-webkit-input-placeholder {color:#999;}
