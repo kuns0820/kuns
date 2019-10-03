@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.visible.js"></script>
+	<script type="text/javascript" src="js/inc.ui.js"></script>
+</head>
+<body>
+<div id="ssneo_warp">
+
+	<main role="main" class="csCT">
+		<div class="sVisual cscenter"><div class="innr">
+			<h2>고객지원</h2>
+			<p class="desc">차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+		</div></div>
+
+		<article>
+			<div class="tab-col-2">
+				<a href="notice.html">공지사항</a>
+				<a href="faq.html" class="on">FAQ</a>
+			</div>
+
+			<div class="title-grid">
+				<h3 class="title">FAQ</h3>
+				<div class="right_tab">
+					<a href="javascript:;">가입및 탈퇴</a>
+					<a href="javascript:;">정보변경</a>
+					<a href="javascript:;">거래</a>
+					<a href="javascript:;" class="on">일반</a>
+				</div>
+			</div>
+
+			<div class="question-list">
+				<ul>
+					<li>
+						<div class="head">
+							<a href="javascript:;">제 계정이 해킹을 당한 것 같아요. 계정을 이용 정지할 수 있나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">
+							계정 이용 정지가 진행되면 로그인이 불가 해집니다. 정지 해제 신청 시에는 본인임을 증빙할 수 있는 서류를 제출해야 합니다.<br />
+							SS-NEO에 가입하신 이메일 주소로 아래 정보를 기재하시어 고객센터로 접수 부탁드리겠습니다.<br />
+							- 이름 :<br />
+							- 생년월일 :<br />
+							- SS-NEO 인증 이메일 :<br />
+							- SS-NEO 인증 휴대폰번호 :<br />
+							- 계정 이용 정지 신청 사유 :<br />
+							고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343
+						</div>
+					</li>
+				</ul>
+			</div>
+			<script>
+			$(function(){
+				$(".question-list .head a").click(function(){
+					$(this).closest("li").toggleClass("on").siblings().removeClass("on");
+				});
+			});
+			</script>
+		</article>
+	</main>
+</div>
+</body>
+</html>
+
+
