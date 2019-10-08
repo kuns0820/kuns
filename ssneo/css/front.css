@@ -618,8 +618,13 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .ieo_step li .num {color:#111; font-size:50px; font-weight:bold; font-family:"Montserrat", "Noto Sans KR";}
 .ieo_step li strong {display:block; margin-top:6px; color:#000; font-size:26px;}
 .ieo_step li p {margin-top:20px; color:#111; font-size:18px; line-height:1.4;}
-.ieo_step li .btn_down {display:inline-block; background:#073c61; margin-top:15px; padding:15px 15px; border-radius:38px; color:#fff; font-size:16px; line-height:1.2; text-align:center;}
-.ieo_step li .btn_down br {display:none;}
+.ieo_step li .btn_down_wrap {position:relative;}
+.ieo_step li .btn_down_wrap .btn_down {display:inline-block; background:#073c61; margin-top:15px; padding:15px 15px; border-radius:38px; color:#fff; font-size:16px; line-height:1.2; text-align:center;}
+.ieo_step li .btn_down_wrap .btn_down br {display:none;}
+.ieo_step li .btn_down_wrap .layer_down {position:absolute; top:55px; left:0; background:url(../images/sub/ieo_btnLayer.png) 0 0 no-repeat; width:227px; height:121px;}
+.ieo_step li .btn_down_wrap .layer_down a {position:absolute; width:112px; height:28px;}
+.ieo_step li .btn_down_wrap .layer_down a.btn_aos {top:32px; right:23px;}
+.ieo_step li .btn_down_wrap .layer_down a.btn_ios {top:66px; right:23px;}
 .chk-box.ieo-agree {margin-top:20px;}
 
 .account_info {margin-top:30px; padding:34px 0; border:1px solid #ddd; border-radius:3px; font-size:0; text-align:center;}
