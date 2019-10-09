@@ -81,7 +81,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="asset-pop" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -103,7 +103,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="asset-pop" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -125,7 +125,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="asset-pop" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -147,7 +147,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="asset-pop" onclick="layers(this);">가능</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -161,6 +161,63 @@
 			</div>
 		</article>
 	</main>
+</div>
+
+<!--  -->
+<div class="layer-wrap ">
+	<div class="layer-conts asset-pop">
+		<div class="head-asset">
+			<strong>거래 진행 단계 / 거래 취소 기준</strong>
+		</div>
+		<div class="tbl aseet_pop2">
+			<table>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>매도 진행단계</th>
+						<th>매수 진행단계</th>
+						<th>거래<br /> 취소여부</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>매도신청 / 등록</td>
+						<td>매수신청 / 등록</td>
+						<td rowspan="3" class="last">가능</td>
+					</tr>
+					<tr>
+						<td>매도신청 /<br /> 등록완료</td>
+						<td>매수신청 /<br /> 등록완료</td>
+					</tr>
+					<tr>
+						<td>매수자 요청</td>
+						<td>매도자 요청</td>
+					</tr>
+					<tr>
+						<td>입금 대기중</td>
+						<td>송금 대기중</td>
+						<td rowspan="3" class="last">불가능</td>
+					</tr>
+					<tr>
+						<td>매도자 수취확인</td>
+						<td>송금 완료</td>
+					</tr>
+					<tr>
+						<td>거래 완료</td>
+						<td>거래 완료</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="btn-col-1">
+			<a href="javascript:;" class="positive" onclick="layersClose(this);">확인</a>
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -30,29 +30,416 @@
 			<div class="title-grid">
 				<h3 class="title">FAQ</h3>
 				<div class="right_tab">
-					<a href="javascript:;">가입및 탈퇴</a>
-					<a href="javascript:;">정보변경</a>
-					<a href="javascript:;">거래</a>
-					<a href="javascript:;" class="on">일반</a>
+					<a href="javascript:;" class="on" data-target="tab-01">가입및 탈퇴</a>
+					<a href="javascript:;" data-target="tab-02">정보변경</a>
+					<a href="javascript:;" data-target="tab-03">거래</a>
+					<a href="javascript:;" data-target="tab-04">일반</a>
 				</div>
 			</div>
 
 			<div class="question-list">
-				<ul>
+				<ul class="tab-01">
+					<li>
+						<div class="head">
+							<a href="javascript:;">회원 가입은 어떻게 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">홈페이지 상단, JOIN버튼을 클릭하면 회원가입 페이지로 이동하며 간단한 본인 확인 절차를 거치면 가입이 완료됩니다. 본인 이외의 개인정보를 사용하여 회원가입이 불가능하며, 적발 시 모든 거래가 중지되고 탈퇴처리 됩니다. 미성년자, 만 19세 미만의 회원님들은 가입이 불가능합니다.
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">본인 명의의 핸드폰으로만 가입이 가능한가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">본인 명의의 휴대번호 하나에 하나의 계정으로 가입이 가능하며 본인 명의의 번호로만 가입이 가능합니다. 금융사기를 예방하기 위한 조치이므로 양해 부탁드립니다.
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">동일한 휴대폰 번호로 여러 계정을 만들 수 있나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">본인 명의의 휴대폰 번호로 가입된 1개의 계정만 서비스 이용이 가능합니다. 또한, 소유한 단말기의 개수와 관계없이 1인 1계정만 사용할 수 있습니다.
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">본인 명의의 휴대폰, 은행계좌가 없어도 가입할 수 있나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">SS-NEO는 금융위원회 가상통화 관련 자금세탁방지 가이드라인에 따른 가상통화 거래 실명제 실시 조치에 의거하여, 실명이 확인된 입출금 계좌의 거래를 지원합니다. 따라서 본인 명의의 휴대폰으로만 가입하실 수 있으며, 본인 명의의 입출금 계좌를 등록하여 거래를 이용하실수 있습니다.
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">인증메일이 오지 않아요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">인증메일은 가입 시 입력하신 메일로 발송됩니다. 수신확인이 안 되실 경우 ‘스팸 메일함’을 확인해 주시기 바랍니다. 10분 이상 지연될 경우 고객센터 이메일로 문의 부탁드립니다.
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">PASS 진행 중, 인증문자가 오지 않은 경우는 어떻게 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">통신사 또는 알뜰폰 여부를 재확인 부탁드립니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">휴대폰 인증이 안돼요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body"> 인터넷 익스플로러 구 버전이나 안드로이드 기본 인터넷 앱으로 인증 진행 시 오류가 발생될 수 있습니다. 고객님의 원활한 사이트 이용과 거래를 위해 크롬(Chrome)브라우저의 사용을 권장합니다.
+※휴대폰 인증이 안 되는 경우는 다음과 같습니다.
+① 본인 명의의 휴대폰이 아닌 경우
+② 가입하신 회원명과 휴대폰 가입 명의자가 다른 경우
+③ 휴대폰 가입자명과 동일하지 않을 경우(“류” 와”유” 도 정확히 구분해야 함)
+④ 알뜰 폰인 경우(일부 해당 통신망에서 신호의 유실로 실패하는 경우 발생)
+⑤ 통신사를 통한 실사용자 등록이 완료되지 않은 법인 명의 휴대폰인 경우(통신사 고객센터로 본인이 실사용자 등록 처리해야함)
+⑥ 스팸 방지 앱을 사용하거나 휴대폰 인증 발신 번호가 스팸으로 설정되어 있을 경우</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">법인 회원으로 가입하고 싶어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">법인 회원가입 관련 문의는 아래 고객센터 이메일로 문의 부탁드립니다.
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">법인 폰으로 이용 가능한가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">법인 명의 휴대폰인 경우 가입된 이동통신사를 통해 법인 명의 본인인증을 등록하신 후 이용 가능합니다. 등록 방법은 가입하신 이동통신사를 통해 확인해 주세요.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">외국인 가입 및 거래가 가능한가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">네, 가능합니다. 회원가입과 본인 인증절차, 국내은행 입출금 계좌 등록을 완료하셨을 경우에 에스크로 시스템이 정상 이용이 가능합니다. 단, EU회원국 국적인(EU 시민)은 일시적으로 가입이 어려울 수 있습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">회원탈퇴는 어떻게 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body"> 회원탈퇴 진행 방법
+PC : [ my page > 개인정보 > 내정보 관리 > 회원탈퇴 ]
+앱 경로 : [ 개인정보> 내 정보 관리 > 회원탈퇴 ]
+1주일 이내에 처리됩니다. 탈퇴 접수 후 1주일간은 거래 등록(매도, 매수)이 제한됩니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">탈퇴 후, 재가입은 언제 가능한가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">에스크로 시스템 정책에 따라, 탈퇴 후 6개월 이내 동일 정보로 재가입이 불가능합니다. 동일 정보는 동일 아이디, 휴대폰 번호와 이메일 중 한 가지라도 같을 경우 6개월 이내 재가입이 불가능합니다.
+※탈퇴 전 확인사항
+- 탈퇴 전 회원님의 디지털 자산 잔액을 출금해주세요. 잔액이 남아있으면 탈퇴가 불가능합니다.
+- 탈퇴 전 진행중인 거래가 있는 경우 탈퇴가 불가능합니다.
+- 회원 탈퇴 시, SS-NEO에 등록된 회원님의 개인정보 및 서비스 이용기록은 모두 삭제되며 복구되지 않습니다. 단, 관계법령에 따라 회사가 보관하여야 하는 정보는 일정 기간 보관됩니다.
+- 회원탈퇴 후에는 고객님의 KRW, 자산 및 포인트 정보가 모두 파기되기 때문에 이벤트 혜택(페이 백 등)과 에어 드랍을 받을 수 없습니다.</div>
+					</li>
+				</ul>
+				<ul class="tab-02">
+					<li>
+						<div class="head">
+							<a href="javascript:;">비밀번호를 분실했는데 어떻게 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">PC 경로 : [ LOGIN > 비밀번호 찾기 > 이메일로 찾기 ]
+앱 경로 : [ LOGIN > 비밀번호 찾기 > 이메일로 찾기 ]</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">비밀번호 변경은 어떻게 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">PC경로 : [my page > 개인정보 > 내정보 관리 > 비밀번호 변경 ]
+앱 경로 : [ 개인정보> 내 정보 관리 > 비밀번호 변경 ]</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">휴대전화 번호를 변경하고 싶어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">휴대전화 번호 변경 문의는 아래 고객센터 이메일로 문의 부탁드립니다.
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">입출금계좌를 변경하고 싶어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">입출금계좌 변경 문의는 아래 고객센터 이메일로 문의 부탁드립니다.
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">개명을 했는데 어떻게 해야 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">하단에 안내된 비대면 본인 확인 서류 5가지를 고객센터 이메일로 보내주세요고객센터에서 서류 확인 후 보안 인증 초기화가 진행됩니다. 초기화된 후에는 개명하신 이름으로 보안 인증 절차를 새로 진행하여야 합니다. 대상 인증 절차 : 실명인증, 이메일 인증, 계좌점유인증(입출금 계좌등록)
+※ 실명 정정을 위한 비대면 본인 확인 서류 5가지
+1. 메모가 부착된 신분증 사본(주민등록증, 운전면허증)
+- 메모 기재 내용
+1) SS-NEO 개명사실 확인
+2) 목적 : 개명 사실 확인
+3) 가입 이메일 :
+4) 요청 일자 :
+2. 메모가 부착된 신분증을 들고 있는 본인의 사진
+3. 개명 전/후 확인이 가능한 3개월 이내 발급된 주민등록초본
+4. 개명 후 성명이 확인되는 휴대전화 증빙서류(가입서류, 통신요금명세서 등)
+5. 개명 후 성함이 예금주로 확인되는 통장 사본
+- 개인정보 보호를 위해 생년월일을 제외한 주민등록번호 뒷자리는 가리고 접수해 주세요.
+- 사진 촬영 기간을 기준으로 제출일 이전에 찍은 사진은 인정하지 않습니다.
+- 신분증 부착 메모에는 인증 목적, 이메일, 요청일자를 반드시 기입해 주세요.
+- 보내주신 서류는 개명을 위한 본인 확인 용도로 사용됩니다.
+자료 제출 이후 초기화 완료까지 영업일 기준 2~3일가량 소요되며, 문의 건수 증가 등 상황에 따라 유동적으로 변동될 수 있는 점 참고 부탁드립니다.
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343</div>
+					</li>
+				</ul>
+				<ul class="tab-03">
+					<li>
+						<div class="head">
+							<a href="javascript:;">거래처리가 지연되는 이유가 무엇인가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">입금에 소요되는 시간은 보통 10분~60분 정도 소요됩니다. 다만 블록체인 네트워크에 미 승인 거래가 과도하게 쌓인 경우 확인이 지연될 수 있으며, 입금이 지연될 수 있습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">디지털 자산 송금 주소를 잘못 입력했어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">디지털 자산 특성상 출금 신청이 완료되면 취소할 수 없으니, 송금 전 주소를 꼭 확인해 주세요. 주소 오 입력 시 송금이 정상적으로 이루어지지 않아 소중한 고객님의 자산을 잃을 수 있습니다. 송금신청 완료 이후의 송금 과정은 블록체인 네트워크에서 처리되며, 이 과정에서 발생하는 문제는 SS-NEO에서 처리할 수 없습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">이용제한에 해당되는 행위와 패널티는 무엇인가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body"><div class="tbl"><table class="faq_table ftable100">
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th>내용</th>
+									<th>1차</th>
+									<th>2차</th>
+									<th>3차</th>
+									<th>4차</th>
+									<th>5차</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">개인정보</td>
+									<td class="taleft">개인정보 도용</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="taleft">제출문서 위조</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>결제도용</td>
+									<td class="taleft">타인의 결제수단 무단도용(AST지갑, 계좌 등)</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>거래대행</td>
+									<td class="taleft">수수료 등 이익을 얻을 목적으로 타인을 대행하여 암호 화폐를 거래하는 경우</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td rowspan="2">계정도용</td>
+									<td class="taleft">타인의 계정을 도용하여 피해를 입힌 경우 (가해자 중지)</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="taleft">계정 도용 피해 허위 신고</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>시스템 악용</td>
+									<td class="taleft">불법프로그램, 유해프로그램, 악성 스크립트 등을 사용</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td rowspan="4">거래</td>
+									<td class="taleft">관리자 사고접수 중재 거절 및 무응답 (3일)</td>
+									<td>경고<br>통보</td>
+									<td>1년<br>정지</td>
+									<td>영구<br>정지</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="taleft">의도적인 현금 이상 입금 진행 시</td>
+									<td>경고<br>통보</td>
+									<td>100일<br>정지</td>
+									<td>1년<br>정지</td>
+									<td>영구<br>정지</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td class="taleft">입금승인 시간 초과 (일주일10회 이상)</td>
+									<td>경고<br>통보</td>
+									<td>30일<br>정지</td>
+									<td>100일<br>정지</td>
+									<td>1년<br>정지</td>
+									<td>영구<br>정지</td>
+								</tr>
+								<tr>
+									<td class="taleft">수취확인 시간 초과 (일주일 10회 이상)</td>
+									<td>경고<br>통보</td>
+									<td>30일<br>정지</td>
+									<td>100일<br>정지</td>
+									<td>1년<br>정지</td>
+									<td>영구<br>정지</td>
+								</tr>
+							</tbody>
+						</table></div>
+						* 거래의 1차 위반의 경우, 경고 통보 이후 90일간 정상거래 혹은 거래를 하지 않으면 1차 위반은 리셋 되며, 리셋 기간 이후의 패널티는 다시 1차 위반으로 취급합니다.
+* 거래의 2차 위반 이후의 경우는 리셋 되지 않습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">거래 시 전송 수수료가 발생하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">1. 거래 등록 수수료는 없으며, 거래 체결 완료 시 거래 수수료가 발생합니다.
+2. 거래 수수료는 매도자가 부담하며, 매도 등록 후 단순 변심으로 거래 취소를 하였을 경우에는 거래수수료를 제외한 매도 등록 금액만 환급됩니다.
+3. 거래 수수료는 구간별로 부과하며, 시장상황이나 자산 특성에 따라 다르게 적용 될 수 있습니다.
+<div class="tbl"><table class="faq_table">
+								<thead>
+									<tr>
+										<th>구간(거래금액)</th>
+										<th>수수료</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>~ 1,000 AST</td>
+										<td>0.2%</td>
+									</tr>
+									<tr>
+										<td>~ 10,000 AST</td>
+										<td>0.17%</td>
+									</tr>
+									<tr>
+										<td>~ 100,000 AST</td>
+										<td>0.15%</td>
+									</tr>
+								</tbody>
+						</table></div></div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">거래현황은 어디에서 확인 하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">PC 경로 : 자산관리
+앱 경로 : 자산관리</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">거래 시, ESCROW (에스크로) 거래만 가능하나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">SS-NEO는 거래 중 발생 가능한 사고를 예방하기 위하여 개인간의 에스크로 거래를 진행합니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">거래를 수정하고 싶어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">체결된 거래에 대해서는 수정 및 취소가 불가능합니다. 단, 미 체결된 거래는 취소 후 다시 거래할 수 있습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">최소 거래 가능 금액은 얼마인가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">SS-NEO의 최소 거래 가능 금액은 '거래 이용 안내'에서 확인하실 수 있습니다.</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">등록한 거래가 사라졌어요.</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">등록된 거래는 18시 이후 거래 리스트에서 일괄 삭제됩니다.
+리스트에 다시 재등록을 하시려면 콜센터(1544-4343)로 연락하시어 재등록하시기 바랍니다.
+-홈페이지 하단 문의 신청 버튼을 클릭하시어 재등록 요청을 하실 수 있습니다.</div>
+					</li>
+				</ul>
+				<ul class="tab-04">
+					<li>
+						<div class="head">
+							<a href="javascript:;">해외에서도 이용 가능한가요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">해외에서도 SS-NEO를 이용할 수 있습니다. 다만 EU회원국은 접속이 원활하지 않을 수 있으며, 안전하고 원활한 서비스 이용을 위해 아래 본인확인 수단을 소지하고 계셔야 이용 가능합니다.
+1. 국내 통신사에 가입된 본인 명의 휴대폰
+휴대폰 본인확인이 가능한 본인명의의 휴대폰이 필요하며, 로밍 상태에서도 이용하실 수 있습니다.
+법인명의 휴대폰의 경우 이동통신사가 제공하는 실사용자 등록을 통해 본인확인 서비스를 받을 수 있습니다.
+2. 본인 명의의 국내 은행 계좌
+본인 명의의 국내 은행 계좌를 보유하고 계셔야 계좌인증 절차 후 해당 계좌로 거래 대금 입출금을 할 수 있습니다.
+						</div>
+					</li>
 					<li>
 						<div class="head">
 							<a href="javascript:;">제 계정이 해킹을 당한 것 같아요. 계정을 이용 정지할 수 있나요?</a>
 							<span class="date"></span>
 						</div>
-						<div class="body">
-							계정 이용 정지가 진행되면 로그인이 불가 해집니다. 정지 해제 신청 시에는 본인임을 증빙할 수 있는 서류를 제출해야 합니다.<br />
-							SS-NEO에 가입하신 이메일 주소로 아래 정보를 기재하시어 고객센터로 접수 부탁드리겠습니다.<br />
-							- 이름 :<br />
-							- 생년월일 :<br />
-							- SS-NEO 인증 이메일 :<br />
-							- SS-NEO 인증 휴대폰번호 :<br />
-							- 계정 이용 정지 신청 사유 :<br />
-							고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343
+						<div class="body">계정 이용 정지가 진행되면 로그인이 불가 해집니다. 정지 해제 신청 시에는 본인임을 증빙할 수 있는 서류를 제출해야 합니다.SS-NEO에 가입하신 이메일 주소로 아래 정보를 기재하시어 고객센터로 접수 부탁드리겠습니다.
+- 이름 :
+- 생년월일 :
+- SS-NEO 인증 이메일 :
+- SS-NEO 인증 휴대폰번호 :
+- 계정 이용 정지 신청 사유 :
+고객센터 이메일 : cs@ss-neo.com 고객센터 1544-4343
+						</div>
+					</li>
+					<li>
+						<div class="head">
+							<a href="javascript:;">저의 개인정보는 어떻게 활용하고 있나요?</a>
+							<span class="date"></span>
+						</div>
+						<div class="body">SS-NEO는 법령이 정하는 바에 따라 회원님의 개인정보를 보호하기 위해 노력하고 있습니다. 회원님의 개인정보는 서비스의 원활한 제공을 위해 회원님이 동의한 목적과 범위 내에서만 이용되고 있습니다.
 						</div>
 					</li>
 				</ul>
@@ -61,6 +448,12 @@
 			$(function(){
 				$(".question-list .head a").click(function(){
 					$(this).closest("li").toggleClass("on").siblings().removeClass("on");
+				});
+
+				$(".title-grid .right_tab a").click(function(){
+					var _target = $(this).data("target");
+					$(this).addClass("on").siblings().removeClass("on");
+					$(".question-list ."+_target).show().siblings().hide();
 				});
 			});
 			</script>
