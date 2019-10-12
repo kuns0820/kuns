@@ -31,7 +31,7 @@
 			
 			<div class="title-grid">
 				<h3 class="title">매도대기 리스트</h3>
-				<span class="right asset3">거래 진행 단계 / 거래취소 기준</span>
+				<a href="javascript:;" class="right asset3" data-layer="ast-guide" onclick="layers(this);">거래 진행 단계 / 거래취소 기준</a>
 			</div>
 			<p class="scroll_guide">좌우로 스크롤 해주세요.</p>
 			<div class="tbl asset">
@@ -81,7 +81,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="tsc-layer" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -103,7 +103,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="tsc-layer" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -125,7 +125,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="tsc-layer" onclick="layers(this);">가능</button></td>
 						</tr>
 						<tr>
 							<td>2019.03.29<br />23:15</td>
@@ -147,7 +147,7 @@
 							<td>**asdf</td>
 							<td>**asdf</td>
 							<td>등록완료</td>
-							<td><button type="button" class="btn-basic">가능</button></td>
+							<td><button type="button" class="btn-basic" data-layer="tsc-layer" onclick="layers(this);">가능</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -161,6 +161,115 @@
 			</div>
 		</article>
 	</main>
+</div>
+
+<!-- 매도 등록 취소 -->
+<div class="layer-wrap ">
+	<div class="layer-conts asset-pop tsc-layer">
+		<div class="head-asset">
+			<strong>매도등록 취소</strong>
+		</div>
+		
+		<div class="tbl aseet_pop">
+			<dl>
+				<dt>등록자ID</dt>
+				<dd>gax***</dd>
+			</dl>
+			<dl>
+				<dt>등록시간</dt>
+				<dd>2019.03.29 23:15</dd>
+			</dl>
+			<dl>
+				<dt>거래자ID</dt>
+				<dd>bcd**</dd>
+			</dl>
+			<dl>
+				<dt>거래번호</dt>
+				<dd>456</dd>
+			</dl>
+			<dl>
+				<dt>교환수량</dt>
+				<dd>2 AST</dd>
+			</dl>
+			<dl>
+				<dt>단가</dt>
+				<dd>100 KRW</dd>
+			</dl>
+			<dl>
+				<dt>교환금액</dt>
+				<dd>200 KRW</dd>
+			</dl>
+			<dl>
+				<dt>수수료</dt>
+				<dd>0.2 AST</dd>
+			</dl>
+		</div>
+		<span class="txt_tsc_warnning">거래 수수료는 반환되지 않습니다.</span>
+		<p class="txt_tsc_desc">이용 제한 사유에 해당되는 행위를 하였을 경우 서비스 제한이 될 수 있습니다.</p>
+		<a href="" class="btn_tscDetail">내용확인</a>
+		<strong class="title_tsc">정말로 매도등록을 취소 하시겠습니까?</strong>
+		<div class="btn-col-2">
+			<a href="javascript:;" class="negative">예, 취소하겠습니다.</a>
+			<a href="javascript:;" class="positive" onclick="layersClose(this);">아니오, 거래를 유지하겠습니다.</a>
+		</div>
+	</div>
+</div>
+
+<!-- 거래 진행 단계 / 거래취소 기준 -->
+<div class="layer-wrap ">
+	<div class="layer-conts asset-pop ast-guide">
+		<div class="head-asset">
+			<strong>거래 진행 단계 / 거래 취소 기준</strong>
+		</div>
+		<div class="tbl aseet_pop2">
+			<table>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>매도 진행단계</th>
+						<th>매수 진행단계</th>
+						<th>거래<br /> 취소여부</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>매도신청 / 등록</td>
+						<td>매수신청 / 등록</td>
+						<td rowspan="3" class="last">가능</td>
+					</tr>
+					<tr>
+						<td>매도신청 /<br /> 등록완료</td>
+						<td>매수신청 /<br /> 등록완료</td>
+					</tr>
+					<tr>
+						<td>매수자 요청</td>
+						<td>매도자 요청</td>
+					</tr>
+					<tr>
+						<td>입금 대기중</td>
+						<td>송금 대기중</td>
+						<td rowspan="3" class="last">불가능</td>
+					</tr>
+					<tr>
+						<td>매도자 수취확인</td>
+						<td>송금 완료</td>
+					</tr>
+					<tr>
+						<td>거래 완료</td>
+						<td>거래 완료</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="btn-col-1">
+			<a href="javascript:;" class="positive" onclick="layersClose(this);">확인</a>
+		</div>
+	</div>
 </div>
 </body>
 </html>

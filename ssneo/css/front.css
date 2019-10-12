@@ -558,6 +558,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 .tbl table td {height:70px; vertical-align:middle; text-align:center;}
 .tbl table th {border-bottom:1px solid #555; color:#000; font-size:18px;}
 .tbl table td {border-bottom:1px solid #ddd; color:#555; font-size:17px; font-family:"Montserrat", "Noto Sans KR"; font-weight:500;}
+.tbl td .no-list {padding:80px 0; color:#555; font-size:18px; text-align:center;}
 
 .btn-refresh {position:absolute; top:192px; right:-140px;}
 .btn-goTop {position:absolute; bottom:60px; right:-140px;}
@@ -604,6 +605,7 @@ h3.title {margin-top:75px; color:#000; font-size:30px;}
 	.tbl table th, .tbl table td {height:35px;}
 	.tbl table th,
 	.tbl table td {font-size:13px;}
+	.tbl td .no-list {padding:20px 0; font-size:13px;}
 	.btn-refresh {top:-17px; right:30px;}
 	.btn-refresh img {width:35px; height:35px;}
 	.btn-goTop {display:none;}
@@ -905,14 +907,20 @@ table td .btn-basic.non {background:#ccc;}
 .layer-conts.asset-pop .tbl.aseet_pop dl dd {float:left; min-height:60px; line-height:60px;}
 .layer-conts.asset-pop .tbl.aseet_pop dl dt {width:180px; padding-left:20px; border-color:#ddd; box-sizing:border-box; color:#111; text-align:left; font-size:18px;}
 .layer-conts.asset-pop .tbl.aseet_pop dl dd {width:calc(100% - 180px); color:#555; text-align:left; font-size:16px;}
-
 .layer-conts.asset-pop .tbl.aseet_pop2 table {table-layout:fixed;}
 .layer-conts.asset-pop .tbl.aseet_pop2 table th br,
 .layer-conts.asset-pop .tbl.aseet_pop2 table td br {display:none;}
 .layer-conts.asset-pop .tbl.aseet_pop2 table td.last {background:#f8f8f8;}
-
 .layer-conts.asset-pop .text-box {padding:45px 40px; color:#555; font-size:18px;}
 .layer-conts.asset-pop .text-box li {margin-top:20px;}
+
+.layer-conts.tsc-layer .aseet_pop {margin-bottom:30px;}
+.layer-conts.tsc-layer .txt_tsc_warnning {display:block; margin-bottom:20px; color:#fc3b69; font-size:17px; text-align:center;}
+.layer-conts.tsc-layer .txt_tsc_desc {color:#888; font-size:17px; text-align:center;}
+.layer-conts.tsc-layer .btn_tscDetail {display:block; background:#073c61; width:86px; height:38px; margin:20px auto 0; border-radius:38px; color:#fff; font-size:16px; line-height:38px; text-align:center;}
+.layer-conts.tsc-layer .title_tsc {display:block; margin-top:25px; color:#111; font-size:25px; text-align:center; font-weight:normal;}
+.layer-conts.tsc-layer .btn-col-2 .positive {width:280px;}
+.layer-conts.tsc-layer .btn-col-2 .negative {width:200px;}
 
 .asset .title.line-top {margin-top:80px; padding-top:100px; border-top:1px solid #888;}
 
@@ -951,12 +959,23 @@ table td .btn-basic.non {background:#ccc;}
 	.layer-conts.asset-pop .tbl.aseet_pop dl dt {font-size:13px;}
 	.layer-conts.asset-pop .tbl.aseet_pop dl dd {font-size:13px;}
 	.asset .title.line-top {margin-top:40px; padding-top:50px;}
-
 	.layer-conts.asset-pop .tbl.aseet_pop2 table th br,
 	.layer-conts.asset-pop .tbl.aseet_pop2 table td br {display:block;}
-
 	.layer-conts.asset-pop .text-box {padding:22px 20px; font-size:13px;}
 	.layer-conts.asset-pop .text-box li {margin-top:10px;}
+
+	.layer-conts.tsc-layer .aseet_pop {margin-bottom:15px;}
+	.layer-conts.tsc-layer .txt_tsc_warnning {margin-bottom:10px; font-size:13px;}
+	.layer-conts.tsc-layer .txt_tsc_desc {font-size:14px;}
+	.layer-conts.tsc-layer .btn_tscDetail {width:75px; height:30px; margin:10px auto 0; font-size:13px; line-height:30px;}
+	.layer-conts.tsc-layer .title_tsc {margin-top:20px; font-size:16px;}
+	.layer-conts.tsc-layer [class^=btn-col] a,
+	.layer-conts.tsc-layer [class^=btn-col] button {display:block; width:auto; padding:0 25px;}
+	.layer-conts.tsc-layer .tbl.aseet_pop dl dt {width:85px;}
+	.layer-conts.tsc-layer .tbl.aseet_pop dl dd {width:calc(100% - 85px);}
+	.layer-conts.tsc-layer .btn-col-2 a {margin:0 auto; padding:0;}
+	.layer-conts.tsc-layer .btn-col-2 .positive {width:190px; margin-top:10px;}
+	.layer-conts.tsc-layer .btn-col-2 .negative {width:135px;}
 }
 
 /* 제휴제안 */
@@ -1047,6 +1066,7 @@ table td .btn-basic.non {background:#ccc;}
 /* 커뮤니티 */
 .news_list {margin-top:30px; border-top:2px solid #111;}
 .news_list li {padding:30px 0; border-bottom:1px solid #ddd;}
+.news_list li.no-list {padding:80px 0; color:#555; font-size:18px; text-align:center;}
 .news_list a {display:block; position:relative; padding:0 0 0 260px;}
 .news_list a .thumb {position:absolute; top:0; left:0; overflow:hidden; border:1px solid #eee; border-radius:3px;}
 .news_list a .thumb img {display:block; width:212px; height:132px;}
@@ -1070,11 +1090,13 @@ table td .btn-basic.non {background:#ccc;}
 .event_list:after {content:""; display:block; clear:both;}
 .event_list li {float:left; overflow:hidden; width:calc(50% - 8px); margin-top:30px; border:1px solid #eee; border-radius:3px;}
 .event_list li:nth-child(odd) {margin-right:16px;}
+.event_list li.no-list {width:100%; padding:80px 0; border:0; color:#555; font-size:18px; text-align:center;}
 .event_list li a img {width:560px; height:204px;}
 
 @media screen and (max-width:768px) {
 	.news_list, .bbs_view, .event_list {margin-top:15px;}
 	.news_list li {padding:15px 0;}
+	.news_list li.no-list {padding:40px 0; font-size:13px;}
 	.news_list a {padding:0 0 0 130px;}
 	.news_list a .thumb img {width:106px; height:66px;}
 	.news_list a .text_wrap {height:67px;}
@@ -1091,6 +1113,7 @@ table td .btn-basic.non {background:#ccc;}
 
 	.event_list {padding:0 0 15px;}
 	.event_list li {width:100%; margin-top:15px; margin-left:0;}
+	.event_list li.no-list {padding:40px 0; font-size:13px;}
 	.event_list li a img {width:100%; height:auto;}
 }
 
@@ -1307,6 +1330,7 @@ table td .btn-basic.non {background:#ccc;}
 
 .notice-list {margin-top:30px; border-top:2px solid #111;}
 .notice-list li {position:relative; padding:40px 130px 40px 30px; border-bottom:1px solid #ddd;}
+.notice-list li.no-list {padding:80px 0; color:#555; font-size:18px; text-align:center;}
 .notice-list li a {color:#000; font-size:25px; line-height:1.4;}
 .notice-list li .date {position:absolute; top:47px; right:30px; color:#888; font-size:18px; font-family:"Montserrat", "Noto Sans KR";}
 
@@ -1342,6 +1366,7 @@ table td .btn-basic.non {background:#ccc;}
 	.notice-list li {padding:20px 15px;}
 	.notice-list li a {font-size:16px;}
 	.notice-list li .date {display:block; position:static; margin-top:5px; font-size:13px;}
+	.notice-list li.no-list {padding:40px 0;font-size:13px;}
 	.notice_view dt {padding:20px 15px;}
 	.notice_view dt p {font-size:16px;}
 	.notice_view dt .date {font-size:13px;}
