@@ -37,7 +37,7 @@ var inc_dom = {
 		incHD.push('<a href="login.html">로그인</a>');
 		incHD.push('<a href="join.html">회원가입</a>');
 		incHD.push('</div>');
-		incHD.push('<button type="button" class="btn_menu"><img src="images/btn_menu.gif" alt="메뉴"></button>');
+		incHD.push('<button type="button" class="btn_menu"><img src="images/btn_menu.png" alt="메뉴"></button>');
 		incHD.push('<div class="gnb-layer"></div>');
 		incHD.push('</header>');
 		
@@ -57,8 +57,8 @@ var inc_dom = {
 		incFR.push('<dl>');
 		incFR.push('<dt>K-DAX 라운지</dt>');
 		incFR.push('<dd>');
-		incFR.push('<p><img src="images/ico_cs01.gif" alt=""> 운영시간 : 평일 09:00~18:00</p>');
-		incFR.push('<p><img src="images/ico_cs02.gif" alt=""> 서울특별시 강남구 논현동 학동로 20길 28 2층</p>');
+		incFR.push('<p><img src="images/ico_cs01.png" alt=""> 운영시간 : 평일 09:00~18:00</p>');
+		incFR.push('<p><img src="images/ico_cs02.png" alt=""> 서울특별시 강남구 논현동 학동로 20길 28 2층</p>');
 		incFR.push('<p><img src="images/ico_cs03.png" alt=""> 대표번호 : 02-2088-8656</p>');
 		incFR.push('</dd>');
 		incFR.push('</dl>');
@@ -191,7 +191,7 @@ $(function(){
 	inc_dom.termsLayer();
 	$("header .gnb-layer").append('<h1><a href="/"><img src="images/logo.png" alt="ABIT"></a></h1>');
 	$("header .gnb-layer").append($("header .gnb").html());
-	$("header .gnb-layer").append('<button type="button" class="btn_close"><img src="images/sub/btn_allMenuClose.gif" alt="메뉴 닫기"></button>');
+	$("header .gnb-layer").append('<button type="button" class="btn_close"><img src="images/sub/btn_allMenuClose.png" alt="메뉴 닫기"></button>');
 	$("header .gnb-layer").append("<div class='layer_util'>" + $("header .util").html() + "</div>");
 
 	$("header .btn_menu").click(function(){

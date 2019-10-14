@@ -364,20 +364,20 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 .csCenter .cs_box dl dd p:last-child img {vertical-align:-2px;}
 .csCenter .sns_box {float:right; width:367px; font:0/0 a;}
 .csCenter .sns_box a {display:inline-block; width:60px; height:60px; margin:0 0 40px 40px;}
-.csCenter .sns_box a.sns01 {background:url(../images/sns_01.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns02 {background:url(../images/sns_02.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns03 {background:url(../images/sns_03.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns04 {background:url(../images/sns_04.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns05 {background:url(../images/sns_05.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns06 {background:url(../images/sns_06.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns07 {background:url(../images/sns_07.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns01:hover {background:url(../images/sns_01_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns02:hover {background:url(../images/sns_02_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns03:hover {background:url(../images/sns_03_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns04:hover {background:url(../images/sns_04_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns05:hover {background:url(../images/sns_05_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns06:hover {background:url(../images/sns_06_on.gif) 0 0 no-repeat; background-size:100% 100%;}
-.csCenter .sns_box a.sns07:hover {background:url(../images/sns_07_on.gif) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns01 {background:url(../images/sns_01.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns02 {background:url(../images/sns_02.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns03 {background:url(../images/sns_03.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns04 {background:url(../images/sns_04.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns05 {background:url(../images/sns_05.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns06 {background:url(../images/sns_06.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns07 {background:url(../images/sns_07.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns01:hover {background:url(../images/sns_01_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns02:hover {background:url(../images/sns_02_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns03:hover {background:url(../images/sns_03_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns04:hover {background:url(../images/sns_04_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns05:hover {background:url(../images/sns_05_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns06:hover {background:url(../images/sns_06_on.png) 0 0 no-repeat; background-size:100% 100%;}
+.csCenter .sns_box a.sns07:hover {background:url(../images/sns_07_on.png) 0 0 no-repeat; background-size:100% 100%;}
 @media screen and (min-width:1158px) {
 	.csCenter .sns_box a:nth-child(4n+1) {margin-left:0;}
 }
@@ -982,10 +982,10 @@ table td .btn-basic.non {background:#ccc;}
 .suggest_top {margin:70px 0; padding-bottom:70px; border-bottom:1px solid #888;}
 .suggest_top strong {display:block; color:#111; font-size:30px;}
 .suggest_top p {margin-top:30px; color:#111; font-size:24px; line-height:1.5; letter-spacing:-1.5px;}
-.suggest_top.sgg01 {background:url(../images/sub/ico_suggest01.jpg) calc(100% - 62px) 35px no-repeat;}
-.suggest_top.sgg02 {background:url(../images/sub/ico_suggest02.jpg) calc(100% - 62px) 35px no-repeat;}
-.suggest_top.sgg03 {background:url(../images/sub/ico_suggest03.jpg) calc(100% - 62px) 0 no-repeat; padding-bottom:90px;}
-.suggest_top.sgg04 {background:url(../images/sub/ico_suggest04.jpg) calc(100% - 62px) 35px no-repeat;}
+.suggest_top.sgg01 {background:url(../images/sub/ico_suggest01.png) calc(100% - 62px) 35px no-repeat;}
+.suggest_top.sgg02 {background:url(../images/sub/ico_suggest02.png) calc(100% - 62px) 35px no-repeat;}
+.suggest_top.sgg03 {background:url(../images/sub/ico_suggest03.png) calc(100% - 62px) 0 no-repeat; padding-bottom:90px;}
+.suggest_top.sgg04 {background:url(../images/sub/ico_suggest04.png) calc(100% - 62px) 35px no-repeat;}
 .suggest_top br.ta {display:none;}
 .suggest_top br.pc {display:block;}
 
@@ -1189,7 +1189,7 @@ table td .btn-basic.non {background:#ccc;}
 .tbl_join.myp_02 {max-width:900px; margin:0 auto;}
 .out_step {margin-top:80px;}
 .out_step:after {content:""; display:block; clear:both;}
-.out_step .step-box {float:left; background:url(../images/sub/ico_outstep.gif) calc(100% - 70px) 100% no-repeat; width:25%;}
+.out_step .step-box {float:left; background:url(../images/sub/ico_outstep.png) calc(100% - 70px) 100% no-repeat; width:25%;}
 .out_step .step-box:last-child {background:none;}
 .out_step .step-box strong {color:#ccc; font-size:50px; font-family:"Montserrat", "Noto Sans KR";}
 .out_step .step-box p {margin-top:10px; color:#ccc; font-size:26px;}
