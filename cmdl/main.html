@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.visible.js"></script>
+	<script type="text/javascript" src="js/inc.ui.js"></script>
+	<script>
+	$(function(){vsb();});
+	$(document).scroll(function() {
+		vsb();
+	});
+	function vsb(){
+		$("section").each(function(e){
+			if($(this).visible(true)){
+				$(this).addClass("active")
+			}
+		});
+	}
+	</script>
+</head>
+<body>
+<div id="ssneo_warp" class="main">
+	<main role="main" class="main">
+		<div class="visual">
+			<span class="deco_circle"></span>
+			<div class="swiper-container">
+			<div class="swiper-pagination"></div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="text">
+						<p>암호화폐도 <strong>에스크로다.</strong></p>
+					</div>
+					<div class="img" style="background:url(images/visual_01.jpg) 50% 0 no-repeat; background-size:cover;"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="text">
+						<p>암호화폐도 <strong>에스크로다.</strong></p>
+					</div>
+					<div class="img" style="background:url(images/visual_02.jpg) 50% 0 no-repeat; background-size:cover;"></div>
+				</div>
+			</div>
+		</div></div>
+		<script>
+			var swiper = new Swiper('.visual .swiper-container', {
+				pagination: {
+					el: '.swiper-pagination'
+				},
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+			});
+		</script>
+
+		<section class="sct01"><div class="innr">
+			<div class="text">
+				<h2>원칙을 지키는 <strong>암호화폐 거래소</strong></h2>
+				<p class="desc">믿음과 신뢰를 바탕으로 고객의 자산을 안전하게 지키고,<br />
+				차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+				<div class="btns"><a href="" class="goto">거래하러 가기</a></div>
+			</div>
+
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide conts1">
+						<span class="ico"><img src="images/icon_s0101.png" alt=""></span>
+						<strong>엄선된 암호화폐</strong>
+						<p>글로벌 시장에서 <br />
+						기술력, 안정성, 시장성 등의 <br />
+						가치를 인정받은 암호화폐들을 <br />
+						엄선하여 상장합니다. </p>
+					</div>
+					<div class="swiper-slide conts2">
+						<span class="ico"><img src="images/icon_s0102.png" alt=""></span>
+						<strong>종합 금융 플랫폼 </strong>
+						<p>K-DAX캐시를 통해<br />
+						온/오프라인 암호화폐 <br />
+						결제 시스템을<br />
+						사용하실 수 있습니다.</p>
+					</div>
+					<div class="swiper-slide conts3">
+						<span class="ico"><img src="images/icon_s0103.png" alt=""></span>
+						<strong>업계 최상위 보안 시스템 </strong>
+						<p>ISMS 인증, 5-5-7 규정 준수,<br />
+						지갑분리 및 보안 솔루션으로<br />
+						고객님의 자산을 안전하게 <br />
+						보관합니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+			<span class="deco_x"><img src="images/bg_k.png" alt=""></span>
+		</section>
+		<script>
+			var swiper = new Swiper('.sct01 .swiper-container', {
+				slidesPerView: 3,
+				loop: true,
+				spaceBetween: 80,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					1158 : {
+						slidesPerView: 2,
+						spaceBetween: 80,
+					},
+					900 : {
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+					768 : {
+						slidesPerView: 1,
+						spaceBetween: 0,
+					}
+				}
+			});
+		</script>
+
+		<section class="sct02"><div class="innr">
+			<div class="text">
+				<h2>증권사 MTS 수준의 <strong>안전한 거래</strong></h2>
+				<p class="desc">이곳은 생활의 이로움을 만들기 위해 다양한 제안을 받는 곳입니다.<br />
+				불편함이 있으시면 언제든 오셔서 이야기해주세요.</p>
+				<div class="btns"><a href="" class="goto">거래하러 가기</a></div>
+			</div>
+			<img src="images/img_sec02.png" alt="" class="img">
+		</div>
+			<span class="deco_circle2"></span>
+		</section>
+
+		<section class="sct03"><div class="innr">
+			<div class="text">
+				<h2>KDAX <strong>거래소 소식</strong></h2>
+				<p class="desc">믿음과 신뢰를 바탕으로 고객의 자산을 안전하게 지키고,<br />
+				차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+				<div class="btns"><a href="" class="goto">자세히 보기</a></div>
+			</div>
+			<div class="bbs-list">
+				<ul>
+					<li><a href="">
+						<span class="cate">EVENT</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">NOTICE</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">EVENT</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+					<li><a href="">
+						<span class="cate">NOTICE</span>
+						<p>SS-NEO 추석맞이 ‘소원을 말해봐’ 이벤트 안내</p>
+						<em class="date">2019-09-04</em>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+			<span class="deco_k"><img src="images/bg_k.png" alt=""></span>
+		</section>
+
+		<section class="sct04"><div class="innr">
+			<div class="text">
+				<h2>KDAX 거래소 <strong>앱 다운로드</strong></h2>
+				<p class="desc">믿음과 신뢰를 바탕으로 고객의 자산을 안전하게 지키고,<br />
+				차별화된 전략으로 고객에게 깊은 감동을 제공합니다.</p>
+				<div class="btns">
+					<a href="" class="app"><img src="images/btn_ios.png" alt="">SS-NEO iOS</a>
+					<a href="" class="app aos"><img src="images/btn_aos.png" alt="">SS-NEO Android</a>
+					<a href="" class="goto">AST Wallet Down</a>
+					<span class="qr"><img src="images/img_qr.png" alt=""></span>
+				</div>
+			</div>
+			<img src="images/img_sec04.png" alt="" class="img">
+		</div></section>
+	</main>
+</div>
+
+
+</body>
+</html>
