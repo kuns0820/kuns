@@ -242,7 +242,7 @@ main {margin-top:5rem;}
 .bread .deps:after {content:""; position:absolute; top:50%; left:0; background:#e9e9e9; width:1px; height:1.3rem; margin-top:-0.65rem;}
 .bread .deps .selected {display:block; position:relative; min-width:10rem; height:2.6rem; padding:0 3rem 0 1rem; box-sizing:border-box; color:#888; line-height:2.6rem; font-size:0.8rem;}
 .bread .deps .selected:after {content:""; position:absolute; top:50%; right:1.5rem; background:url("data:image/svg+xml,%3csvg viewBox='0 0 16 10' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m15.071 2-7.071 7.071-7.071-7.071 1.414-1.414 5.657 5.656 5.657-5.656 1.414 1.414z' fill='%23555'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:0.7rem; height:0.4rem; transform:translateY(-50%);
-transition:all 0.2s ease; -webkit-transform:translateY(-50%); -ms-transform:translateY(-50%); }
+transition:all 0.2s ease;}
 .bread.map .deps .selected:after {display:none;}
 .bread .deps .layer_deps {position:absolute; top:2.6rem; left:0; background:#04468e; width:calc(100% + 1px); padding:10px 0; opacity:0; visibility:hidden; transition:all 0.2s ease;}
 .bread .deps .layer_deps a {display:block; height:2.5rem; padding-left:1.5rem; box-sizing:border-box; color:#fff; line-height:2.5rem; font-size:0.85rem;}
@@ -257,6 +257,18 @@ transition:all 0.2s ease; -webkit-transform:translateY(-50%); -ms-transform:tran
 
 @media screen and (max-width:786px) {
 	main {margin-top:0;}
+
+	.svisual {height:9.7rem; padding-top:3.4rem;}
+	.svisual h2 {font-size:1.5rem;}
+	.svisual p {margin-top:0.85rem; font-size:0.55rem;}
+	.svisual.sub01 {background-image:url(../images/sub/msvisual_sub01.jpg); background-size:cover;}
+
+	.bread .home {width:1.35rem; height:1.3rem;}
+	.bread .deps:after {height:0.65rem; margin-top:-0.3rem;}
+	.bread .deps .selected {min-width:5rem; height:1.3rem; padding:0 1.5rem 0 0.5rem;line-height:1.3rem; font-size:0.6rem;}
+	.bread .deps .selected:after {right:0.75rem;  width:0.35rem; height:0.2rem;}
+	.bread .deps .layer_deps {top:1.3rem; padding:0.25rem 0;}
+	.bread .deps .layer_deps a {height:1.25rem; padding-left:0.75rem; line-height:1.25rem; font-size:0.55rem;}
 }
 
 
