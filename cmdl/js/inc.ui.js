@@ -5,12 +5,12 @@ var inc_dom = {
 		incHD.push('<h1><a href="main.html">CMDL</a></h1>');
 		incHD.push('<div class="gnb_wrap">');
 		incHD.push('<ul class="gnb">');
-		incHD.push('<li><a href=".html">COMPANY</a>');
+		incHD.push('<li><a href="company01.html">COMPANY</a>');
 		incHD.push('<ul class="dep2">');
-		incHD.push('<li><a href=".html">인사말</a></li>');
-		incHD.push('<li><a href=".html">비전</a></li>');
-		incHD.push('<li><a href=".html">연혁</a></li>');
-		incHD.push('<li><a href=".html">오시는길</a></li>');
+		incHD.push('<li><a href="company01.html">인사말</a></li>');
+		incHD.push('<li><a href="company02.html">비전</a></li>');
+		incHD.push('<li><a href="company03.html">연혁</a></li>');
+		incHD.push('<li><a href="company04.html">오시는길</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
 		incHD.push('<li><a href=".html">BUSINESS</a>');

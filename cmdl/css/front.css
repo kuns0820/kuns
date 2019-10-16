@@ -63,7 +63,7 @@ header {position:absolute; top:0; left:0; right:0; z-index:100; transition:all .
 header .innr {position:relative; max-width:1498px; height:5rem; margin:0 auto;}
 header .innr:after {content:""; display:block; clear:both;}
 header .innr h1 {float:left; transition:all .2s ease;}
-header .innr h1 a {display:block; width:7.85rem; height:5rem; background:url(../images/logo_blue.png) 50% 50% no-repeat; font:0/0 a;}
+header .innr h1 a {display:block; width:7.85rem; height:5rem; background:url(../images/logo_blue.png) 50% 50% no-repeat; background-size:100% auto; font:0/0 a;}
 header .innr .gnb_wrap {float:right; margin-right:4.85rem; transition:all .2s ease;}
 header .innr .gnb:after {content:""; display:block; clear:both;}
 header .innr .gnb > li {float:left; position:relative;}
@@ -254,6 +254,10 @@ transition:all 0.2s ease; -webkit-transform:translateY(-50%); -ms-transform:tran
 .bread .deps.active .selected:after {transform:rotate(180deg); transform-origin:50% 25%;}
 .bread .deps.active .layer_deps {opacity:1; visibility:visible;}
 .bread.map .deps .selected:after {display:none;}
+
+@media screen and (max-width:786px) {
+	main {margin-top:0;}
+}
 
 
 main #contents {max-width:1498px; margin:0 auto; padding:4rem 0 7rem 0;}
