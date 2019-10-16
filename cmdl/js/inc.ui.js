@@ -41,8 +41,12 @@ var inc_dom = {
 	},
 	footer : function(){
 		var incFR = [];
-		incFR.push('<div class="csCenter">');
-		
+		incFR.push('<footer>');
+		incFR.push('<span class="logo"><img src="images/logo_foot.jpg" alt="(주)씨엠디엘"></span>');
+		incFR.push('<p>주식회사 씨엠디엘  |  사업자등록번호 : 129-81-1111  |  주소 : 충남 천안시 동남구 5산단2로107</p>');
+		incFR.push('<p>Tel : 031-954-1111  |  fax : 031-953-1111  |  E-mail : cmdl@cmdl.co.kr</p>');
+		incFR.push('<em>copyrightⓒ cmdl. all right reserved</em>');
+		incFR.push('</footer>');
 		
 		$("main").after(incFR.join(''));
 	}
@@ -50,7 +54,7 @@ var inc_dom = {
 
 $(function(){
 	inc_dom.header();
-	//inc_dom.footer();
+	inc_dom.footer();
 
 	
 	$("header > .innr > .gnb_wrap > .gnb > li > a").on("mouseover" , function(){
@@ -62,10 +66,16 @@ $(function(){
 
 	$("header .gnb-layer").append($("header .gnb_wrap").html());
 	$("header .btn_allMenu").click(function(){
+		$("body").css("overflow" , "hidden");
 		$("header .gnb-layer").fadeIn("fast");
 	});
 	$("header .gnb-layer .btn_allClose").click(function(){
+		$("body").css("overflow" , "");
 		$("header .gnb-layer").fadeOut("fast");
+	});
+
+	$(".bread .deps .selected").click(function(){
+		$(this).closest(".deps").toggleClass("active");
 	});
 });
 
