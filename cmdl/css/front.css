@@ -331,3 +331,65 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:3rem;}
 	.vision .section02 .innr [class^=cell-] p span {height:2.85rem; font-size:0.55rem;}
 	.vision .section02 .innr .cell-06 {background-size:11.5rem auto; margin-top:1rem; padding-bottom:29.7%;}
 }
+
+.history .section {background:url(../images/sub/bg_history.png) 50% 0 repeat-y;}
+.history .section [class^=list_wrap-] {position:relative;}
+.history .section [class^=list_wrap-] strong {display:block; background:#fff; padding:0.5rem 0; color:#04468d; font-size:2.5rem; text-align:center;}
+.history .section [class^=list_wrap-] [class^=list-] {position:absolute; top:4.4rem;}
+.history .section [class^=list_wrap-] [class^=list-] em {color:#111; font-size:0.9rem;}
+.history .section [class^=list_wrap-] [class^=list-] span {color:#555; font-size:0.9rem; letter-spacing:-1.5px;}
+.history .section [class^=list_wrap-] [class^=list-] > div {position:relative; margin-bottom:1.5rem;}
+.history .section [class^=list_wrap-] [class^=list-] > div:after {content:""; display:block; clear:both;}
+.history .section [class^=list_wrap-] [class^=list-] > div:before {content:""; position:absolute; top:50%; background:#fff; width:0.85rem; height:0.85rem; border:2px solid #04468d; border-radius:50%; transform:translateY(-50%); z-index:5;}
+.history .section [class^=list_wrap-] [class^=list-] > div i:before {content:""; position:absolute; top:50%; background:#ddd; width:8.7rem; height:1px; transform:translateY(-50%);}
+.history .section [class^=list_wrap-] [class^=list-] > div i:after {content:""; position:absolute; top:50%; background:#04468d; width:0.4rem; height:0.4rem; border-radius:50%; transform:translateY(-50%);}
+
+.history .section [class^=list_wrap-] .list-right {left:50%;}
+.history .section [class^=list_wrap-] .list-right > div {padding-left:11rem;}
+.history .section [class^=list_wrap-] .list-right > div:before {left:-0.45rem;}
+.history .section [class^=list_wrap-] .list-right > div i:before {left:0.35rem;}
+.history .section [class^=list_wrap-] .list-right > div i:after {left:9.05rem;}
+.history .section [class^=list_wrap-] .list-right em {float:left;}
+.history .section [class^=list_wrap-] .list-right span {float:left; margin-left:1rem;}
+
+.history .section [class^=list_wrap-] .list-left {right:50%;}
+.history .section [class^=list_wrap-] .list-left > div {padding-right:11rem;}
+.history .section [class^=list_wrap-] .list-left > div:before {right:-0.45rem;}
+.history .section [class^=list_wrap-] .list-left > div i:before {right:0.35rem;}
+.history .section [class^=list_wrap-] .list-left > div i:after {right:9.05rem;}
+.history .section [class^=list_wrap-] .list-left em {float:right;}
+.history .section [class^=list_wrap-] .list-left span {float:left; margin-right:1rem;}
+
+.history .section .list_wrap-2019 {padding-bottom:4.5rem;}
+.history .section .list_wrap-2017 {padding-bottom:6.7rem;}
+.history .section .list_wrap-2015 {padding-bottom:4.5rem;}
+.history .section .list_wrap-2013 {padding-bottom:9rem;}
+.history .section .list_wrap-2012 {padding-bottom:6.7rem;}
+.history .section .list_wrap-2010,
+.history .section .list_wrap-2009 {padding-bottom:4.5rem;}
+.history .section .list_wrap-2007 {padding-bottom:6.7rem;}
+.history .section .list_wrap-2006 {padding-bottom:1.5rem;}
+
+@media screen and (max-width:786px) {
+	.history .section {background-position:0.1rem 2.25rem;}
+	.history .section [class^=list_wrap-] strong {background:transparent; padding:0.25rem 0; font-size:1.25rem;}
+	.history .section [class^=list_wrap-]:first-child strong {background:#fff;}
+	.history .section [class^=list_wrap-] [class^=list-] {top:2.2rem; left:0 !important; right:auto;}
+	.history .section [class^=list_wrap-] [class^=list-] > div {margin-bottom:0.25rem; padding:0 0 0 0.7rem;}
+	.history .section [class^=list_wrap-] [class^=list-] > div:before,
+	.history .section [class^=list_wrap-] [class^=list-] > div i:before {display:none;}
+	.history .section [class^=list_wrap-] [class^=list-] > div i:after {top:0.3rem; left:0; width:0.2rem; height:0.2rem; transform:translateY(0);}
+	.history .section [class^=list_wrap-] [class^=list-] em,
+	.history .section [class^=list_wrap-] [class^=list-] span {float:left; font-size:0.55rem;}
+	.history .section [class^=list_wrap-] [class^=list-] span {margin:0 0 0 0.25rem;}
+	.history .section .list_wrap-2019 {padding-bottom:45px;}
+	.history .section .list_wrap-2017 {padding-bottom:67px;}
+	.history .section .list_wrap-2015 {padding-bottom:45px;}
+	.history .section .list_wrap-2013 {padding-bottom:90px;}
+	.history .section .list_wrap-2012 {padding-bottom:67px;}
+	.history .section .list_wrap-2010,
+	.history .section .list_wrap-2009 {padding-bottom:45px;}
+	.history .section .list_wrap-2007 {padding-bottom:67px;}
+	.history .section .list_wrap-2006 {padding-bottom:15px;}
+
+}
