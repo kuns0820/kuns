@@ -233,6 +233,9 @@ main {margin-top:5rem;}
 .svisual h2 {color:#fff; font-size:3rem;}
 .svisual p {margin-top:1.7rem; color:#fff; font-size:1.1rem;}
 .svisual.sub01 {background:url(../images/sub/svisual_sub01.jpg) 50% 0 no-repeat;}
+.svisual.sub02 {background:url(../images/sub/svisual_sub02.jpg) 50% 0 no-repeat;}
+.svisual.sub03 {background:url(../images/sub/svisual_sub03.jpg) 50% 0 no-repeat;}
+.svisual.sub04 {background:url(../images/sub/svisual_sub04.jpg) 50% 0 no-repeat;}
 
 .bread {position:relative; background:#fafafa; border-top:1px solid #ececec; border-bottom:1px solid #f0f0f0; z-index:5;}
 .bread .innr {max-width:1498px; margin:0 auto;}
@@ -259,7 +262,7 @@ main #contents {max-width:1498px; margin:0 auto; padding:4rem 0 7rem 0;}
 main #contents h3 {margin-bottom:4.3rem; text-align:center;}
 main #contents h3 span {display:inline-block; position:relative; padding-bottom:1.7rem; color:#111; font-size:2.25rem; font-weight:normal;}
 main #contents h3 span:after {content:""; position:absolute; bottom:0; left:50%; background:#111; width:100%; height:2px; max-width:4.5rem; transform:translateX(-50%);}
-main #contents .stit {margin-bottom:26px; color:#111; font-size:3rem;}
+main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 
 @media screen and (max-width:1516px) {
 	main #contents {padding-left:1.5rem; padding-right:1.5rem;}
@@ -412,4 +415,70 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:3rem;}
 	.location dl dt {width:3.5rem; height:2rem;}
 	.location dl dd {width:calc(100% - 3.5rem);}
 	.location dl dd br {display:block;}
+}
+
+.sppt1 .stit {margin-top:4rem;}
+.sppt1 .desc {margin-top:3.75rem; color:#111; font-size:1.7rem; text-align:center; line-height:1.5;}
+.sppt_step {border:1px solid #ddd;}
+.sppt_step:after {content:""; display:block; clear:both;}
+.sppt_step li {float:left; position:relative; width:33.3%; height:13rem; padding:1.75rem 0 0 2.25rem; border-left:1px solid #ddd; box-sizing:border-box;}
+.sppt_step li em {color:#ddd; font-size:2rem; font-weight:bold; font-family:"Montserrat";}
+.sppt_step li p {margin-top:1rem; color:#555; font-size:0.9rem; line-height:1.6;}
+.sppt_step li .btn_down {position:absolute; bottom:2rem; right:2rem; background:url(../images/sub/ico_sppt1_01.png) 0 0 no-repeat; background-size:2.95rem 2.5rem; width:2.95rem; height:2.5rem; font:0/0 a;}
+.sppt_step li.s02 {background:url(../images/sub/ico_sppt1_02.png) calc(100% - 2rem) calc(100% - 2rem) no-repeat; background-size:2.3rem 2.7rem;}
+.sppt_step li.s03 {background:url(../images/sub/ico_sppt1_03.png) calc(100% - 2rem) calc(100% - 2rem) no-repeat; background-size:2.85rem 1.9rem;}
+.sppt1 .tbl table {width:100%; border:1px solid #111; border-width:1px 0;}
+.sppt1 .tbl table .sppt1_col {width:15%;}
+.sppt1 .tbl table th,
+.sppt1 .tbl table td {height:3.9rem; border-bottom:1px solid #ddd; vertical-align:middle; text-align:left;}
+.sppt1 .tbl table th {background:#f8f8f8; padding-left:2rem; color:#111; font-size:0.9rem;}
+.sppt1 .tbl table td {padding-left:2.9rem; color:#555; font-size:0.9rem;}
+.sppt1 .step {width:67.85rem; margin:0 auto; font-size:0; text-align:center;}
+.sppt1 .step > i {display:inline-block; background:url(../images/sub/arrow_sppt1.png) 0 0 no-repeat; background-size:5.65rem 0.65rem; width:5.65rem; height:0.65rem; margin-top:4.15rem; vertical-align:top;}
+.sppt1 .step > div {display:inline-block; width:9.05rem; vertical-align:top;}
+.sppt1 .step > div span {display:block; width:9.05rem; height:9.05rem;}
+.sppt1 .step > div strong {display:block; margin:0.75rem 0; color:#111; font-size:1rem;}
+.sppt1 .step > div p {display:block; color:#555; font-size:0.9rem;}
+.sppt1 .step .st01 span {background:url(../images/sub/img_sppt101.png) 0 0 no-repeat; background-size:100% 100%;}
+.sppt1 .step .st02 span {background:url(../images/sub/img_sppt102.png) 0 0 no-repeat; background-size:100% 100%;}
+.sppt1 .step .st03 span {background:url(../images/sub/img_sppt103.png) 0 0 no-repeat; background-size:100% 100%;}
+.sppt1 .step .st04 span {background:url(../images/sub/img_sppt104.png) 0 0 no-repeat; background-size:100% 100%;}
+.sppt1 .step .st05 span {background:url(../images/sub/img_sppt105.png) 0 0 no-repeat; background-size:100% 100%;}
+.sppt1 .sppt_notice {background:#f8f8f8 url(../images/sub/ico_sppt1.png) 2.9rem 50% no-repeat; background-size:2.05rem 2.05rem; margin-top:2.5rem; padding:1.8rem 0 1.8rem 7.6rem;}
+.sppt1 .sppt_notice p {margin-top:0.75rem; color:#555; font-size:0.9rem;}
+.sppt1 .sppt_notice p:first-child {margin-top:0;}
+.sppt1 .doc {display:table; width:100%; margin-top:2rem; border:1px solid #ddd;}
+.sppt1 .doc strong, .sppt1 .doc p {display:table-cell; vertical-align:middle; font-size:0.9rem;}
+.sppt1 .doc strong {width:8.7rem; margin-right:2.9rem; padding-left:2.5rem; box-sizing:border-box; color:#111; font-weight:bold;}
+.sppt1 .doc p {padding:2.5rem 0 2.5rem 0.75rem; color:#555;}
+.sppt1 .doc p br {display:none;}
+@media screen and (max-width:786px) {
+	.sppt1 .stit {margin-top:2rem;}
+	.sppt1 .desc {margin-top:1.85rem; font-size:0.75rem;}
+	.sppt_step li {width:100%; height:5.85rem; padding:1rem 0 0 1.25rem; border-top:1px solid #ddd; border-left:0;}
+	.sppt_step li:first-child {border-top:0;}
+	.sppt_step li em {font-size:17px;}
+	.sppt_step li p {margin-top:10px; font-size:11px;}
+	.sppt_step li .btn_down {bottom:1rem; right:1rem; background-size:29px 25px; width:29px; height:25px;}
+	.sppt_step li.s02 {background-position:calc(100% - 1rem) calc(100% - 1rem); background-size:1.15rem 1.35rem;}
+	.sppt_step li.s03 {background-position:calc(100% - 1rem) calc(100% - 1rem); background-size:1.4rem 0.95rem;}
+	.sppt1 .tbl table .sppt1_col {width:30%;}
+	.sppt1 .tbl table th, .sppt1 .tbl table td {height:1.95rem;}
+	.sppt1 .tbl table th {padding-left:0.75rem; font-size:0.55rem;}
+	.sppt1 .tbl table td {padding-left:0.75rem; font-size:0.55rem;}
+	.sppt1 .step {width:auto;}
+	.sppt1 .step > i {display:none;}
+	.sppt1 .step > div {width:4.5rem; margin-left:0.95rem;}
+	.sppt1 .step > div.st01, .sppt1 .step > div.st04 {margin-left:0;}
+	.sppt1 .step > div.st04, .sppt1 .step > div.st05 {margin-top:0.9rem;}
+	.sppt1 .step > div span {width:4.5rem; height:4.5rem;}
+	.sppt1 .step > div strong {margin:0.4rem 0; font-size:0.6rem;}
+	.sppt1 .step > div p {font-size:0.55rem;}
+	.sppt1 .sppt_notice {background-position:.45rem 50%; background-size:1rem 1rem; margin-top:1.25rem; padding:0.9rem 0 0.9rem 2rem;}
+	.sppt1 .sppt_notice p {margin-top:0.35rem; font-size:0.55rem;}
+	.sppt1 .doc {display:block; margin-top:2rem; padding:0.5rem;}
+	.sppt1 .doc strong, .sppt1 .doc p {display:block; font-size:0.55rem;}
+	.sppt1 .doc strong {width:4.35rem; margin-right:1.45rem; padding-left:0;}
+	.sppt1 .doc p {margin-top:0.5rem; padding:0; line-height:1.4;}
+	.sppt1 .doc p br {display:block;}
 }

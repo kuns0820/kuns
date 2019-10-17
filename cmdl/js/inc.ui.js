@@ -27,8 +27,8 @@ var inc_dom = {
 		incHD.push('</li>');
 		incHD.push('<li><a href=".html">SUPPORT</a>');
 		incHD.push('<ul class="dep2">');
-		incHD.push('<li><a href=".html">인재채용</a></li>');
-		incHD.push('<li><a href=".html">Contact us</a></li>');
+		incHD.push('<li><a href="support01.html">인재채용</a></li>');
+		incHD.push('<li><a href="support02.html">Contact us</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
 		incHD.push('</ul>');
