@@ -129,7 +129,7 @@ body.all_menu #side_wrap {-webkit-transform:translateX(0); transform:translateX(
 .all_menu_wrap .mService .menu .m110 {background:url(../images/town/ico_mService0110.png) 50% 12px no-repeat; background-size:25px 29px;}
 .all_menu_wrap .mService .menu div.on a {border-bottom:4px solid #0b60a7;}
 .all_menu_wrap .mService .dep2 {display:none; padding:15px 30px;}
-.all_menu_wrap .mService .dep2 dt {background:url("data:image/svg+xml,%3csvg viewBox='0 0 21.5 12.5' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m20.5 1.196-10 10.304-10-10.304' fill='none' fill-rule='evenodd' stroke='%235a5a5a' stroke-width='1px'/%3e%3c/svg%3e") calc(100% - 15px) 50% no-repeat; background-size:14px 8px; border-bottom:1px solid #707070;}
+.all_menu_wrap .mService .dep2 dt {background:url("data:image/svg+xml,%3csvg viewBox='0 0 21.5 12.5' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m20.5 1.196-10 10.304-10-10.304' fill='none' fill-rule='evenodd' stroke='%235a5a5a' stroke-width='2px'/%3e%3c/svg%3e") calc(100% - 15px) 50% no-repeat; background-size:14px 8px; border-bottom:1px solid #707070;}
 .all_menu_wrap .mService .dep2 dt:after {content:""; display:block; clear:both;}
 .all_menu_wrap .mService .dep2 dt button,
 .all_menu_wrap .mService .dep2 dt a {float:left; position:relative; height:40px; line-height:40px;}
