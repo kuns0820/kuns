@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="../css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/swiper.min.js"></script>
+</head>
+<body class="bg_gray">
+<div id="ga_wrap">
+	<header class="hd-main">
+		<h1>
+			<a href="" class="logo"><img src="../images/town/logo.png" alt=""></a>
+			<a href="" class="logo_ins"><img src="../images/town/logo_Insurance.png" alt=""></a>
+		</h1>
+		<a href="" class="col-l_01 btn-menu">전체메뉴</a>
+		<a href="" class="col-r_02 btn-tsrh">통합검색</a>
+		<a href="" class="col-r_01 btn-mypage">마이페이지</a>
+	</header>
+
+	<div id="container">
+		<article class="">
+			<div class="sMenu-3">
+				<a href="" class="on">손해보험</a>
+				<a href="">생명보험</a>
+				<a href="">My보험사</a>
+			</div>
+			<div class="slt_insur">
+				<a href=""><img src="../images/town/@sample2.gif" alt=""></a>
+			</div>
+
+			<div class="visual_bnr swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/main_bnr.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="../images/town/main_bnr.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.visual_bnr', {
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					loop : true
+				});
+			});
+			</script>
+
+			<div class="menu_insur">
+				<a href="" class="mi01"><span>보험상품</span></a>
+				<a href="" class="mi02 new"><span>소식지</span></a>
+				<a href="" class="mi03 on new"><span>동영상</span></a>
+				<a href="" class="mi04"><span>이벤트</span></a>
+				<a href="" class="mi05"><span>자료실</span></a>
+			</div>
+
+			<div class="sort_area mb0">
+				<select name="tsortKey" id="tsortKey" onchange="goSortKey(this.value)">
+				<option value="contentsSeq">최신순</option>
+				<option value="readCnt" selected="">조회순</option>
+				<option value="recomCnt">추천순</option>
+				</select>
+			</div>
+
+			<div class="insur_prd_list col">
+				<ul>
+					<li><a href="">
+						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
+						<div class="text_box">
+							<span class="cate">상품소개/현대해상</span>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
+							<div class="info">
+								<span>2019-02-06</span>
+								<span>조회수 : 000</span>
+							</div>
+						</div>
+					</a></li>
+					<li><a href="">
+						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
+						<div class="text_box">
+							<span class="cate">상품소개/현대해상</span>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
+							<div class="info">
+								<span>2019-02-06</span>
+								<span>조회수 : 000</span>
+							</div>
+						</div>
+					</a></li>
+					<li><a href="">
+						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
+						<div class="text_box">
+							<span class="cate">상품소개/현대해상</span>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
+							<div class="info">
+								<span>2019-02-06</span>
+								<span>조회수 : 000</span>
+							</div>
+						</div>
+					</a></li>
+				</ul>
+
+				<button type="button" class="btn-conts_more"><span>+</span> 콘텐츠 더보기</button>
+			</div>
+			
+		</article>
+	</div>
+
+	<footer>
+		<p class="copy">ⓒ 2019 엔씨엘피플스 ALL  RIGHTS  RESERVED</p>
+	</footer>
+</div>
+</body>
+</html>

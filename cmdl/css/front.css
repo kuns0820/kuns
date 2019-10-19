@@ -30,7 +30,10 @@
 html , body , div , span , iframe , h1 , h2 , h3 , h4 , h5 , h6 , p , a , address , em , img , strong , dl , dt , dd , ol , ul , li , fieldset , form , label , legend , table , caption , tbody , tfoot , thead , tr , th , td , article , aside , canvas , footer , header , hgroup , menu , nav , section , summary , video {margin:0; padding:0; border:0; box-sizing:border-box;font-size:100%; vertical-align:baseline;}
 article , aside , details , figcaption , figure , footer , header , hgroup , menu , nav , section , main {display:block;}
 body {line-height:1.2; font-family:'Noto Sans KR',"Malgun Gothic","맑은 고딕","AppleSDGothicNeo-Medium","Helvetica","AppleGothic","Sans-serif","Dotum","Verdana","Helvetica",sans-serif; font-size:10px; letter-spacing:-.5px;}
-html {font-size:1.042vw;}
+html {font-size:1.335vw;}
+@media screen and (min-width:1498px) {
+	html {font-size:20px;}
+}
 @media screen and (max-width:786px) {
 	html {font-size:5.556vw;}
 }
@@ -228,6 +231,13 @@ section .btn_detail {display:block; background:url("data:image/svg+xml,%3csvg vi
 
 /* 서브 */
 main {margin-top:5rem;}
+
+img.pc {display:block;}
+img.mo {display:none;}
+@media screen and (max-width:786px) {
+	img.pc {display:none;}
+	img.mo {display:block; width:100%;}
+}
 
 .svisual {height:19.35rem; padding-top:6.75rem; box-sizing:border-box; text-align:center;}
 .svisual h2 {color:#fff; font-size:3rem;}
@@ -481,4 +491,46 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 	.sppt1 .doc strong {width:4.35rem; margin-right:1.45rem; padding-left:0;}
 	.sppt1 .doc p {margin-top:0.5rem; padding:0; line-height:1.4;}
 	.sppt1 .doc p br {display:block;}
+}
+
+.bss1 .text {margin:4rem 0 3.5rem; color:#555; font-size:0.9rem; line-height:2; text-align:center; word-break:keep-all;}
+.bss1 .desc {margin-top:3.75rem; color:#111; font-size:1.7rem; text-align:center; line-height:1.5;}
+.bss1 .desc .mo {display:none;}
+@media screen and (max-width:786px) {
+	.bss1 .text {margin:2rem 0 1.75rem; font-size:0.55rem;}
+	.bss1 .text br {display:none;}
+	.bss1 .desc {margin-top:1.85rem; font-size:0.85rem;}
+	.bss1 .desc .mo {display:block;}
+}
+
+.mft1 .text {margin:4rem 0 3.5rem; color:#555; font-size:0.9rem; line-height:2; text-align:center; word-break:keep-all;}
+.mft1 .desc {margin-top:3.75rem; color:#111; font-size:1.7rem; text-align:center; line-height:1.5; letter-spacing:-2px; word-break:keep-all;}
+.mft1 .desc .mo {display:none;}
+.mft1 .mft1_step {font-size:0; text-align:center;}
+.mft1 .mft1_step li {display:inline-block; width:14.4rem; margin-left:5.75rem; vertical-align:top;}
+.mft1 .mft1_step li:first-child {margin-left:0;}
+.mft1 .mft1_step li i {display:block; width:100%; height:14.4rem;}
+.mft1 .mft1_step li em {display:block; margin-top:1.5rem; color:#04468d; font-size:2rem; text-align:center; font-family:"Montserrat";}
+.mft1 .mft1_step li strong {display:block; margin-top:0.75rem; color:#111; font-size:1.2rem; text-align:center;}
+.mft1 .mft1_step li p {margin-top:1rem; color:#555; font-size:0.9rem; text-align:center; line-height:1.5; letter-spacing:-1px;}
+.mft1 .mft1_step li.s01 i {background:url(../images/sub/img_mft0102.png) 0 0 no-repeat; background-size:100% 100%;}
+.mft1 .mft1_step li.s02 i {background:url(../images/sub/img_mft0103.png) 0 0 no-repeat; background-size:100% 100%;}
+.mft1 .mft1_step li.s03 i {background:url(../images/sub/img_mft0104.png) 0 0 no-repeat; background-size:100% 100%;}
+.mft1 .mft1_step li.s04 i {background:url(../images/sub/img_mft0105.png) 0 0 no-repeat; background-size:100% 100%;}
+.mft1 .mft1_step li.s51 i {background:url(../images/sub/img_mft0106.png) 0 0 no-repeat; background-size:100% 100%;}
+@media screen and (max-width:1516px) {
+	.mft1 .mft1_step li {margin-left:4.35rem;}
+}
+@media screen and (max-width:786px) {
+	.mft1 .text {margin:2rem 0 1.75rem; font-size:0.55rem;}
+	.mft1 .text br {display:none;}
+	.mft1 .desc {margin-top:1.85rem; font-size:0.75rem;}
+	.mft1 .desc .mo {display:block;}	
+	.mft1 .mft1_step li {width:7.2rem; min-height:13.45rem; margin-left:1.6rem;}
+	.mft1 .mft1_step li.s03 {margin-left:0;}
+	.mft1 .mft1_step li i {height:7.2rem;}
+	.mft1 .mft1_step li em {margin-top:15px; font-size:1rem;}
+	.mft1 .mft1_step li strong {margin-top:0.35rem; font-size:0.6rem;}
+	.mft1 .mft1_step li p {margin-top:0.5rem; font-size:0.4rem; letter-spacing:-2px;}
+	.mft1 .mft1_step li.s03 p br {display:none;}
 }
