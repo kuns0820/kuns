@@ -16,6 +16,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin
 input::-webkit-input-placeholder {color:#c2c2c2;}
 textarea::-webkit-input-placeholder {color:#c2c2c2;}
 textarea {background-image:none; width:100%; box-sizing:border-box; color:#666; font-family:inherit; resize:none; box-shadow:none; -webkit-appearance:none; -webkit-box-shadow:none;}
+select {background:#fff;}
 
 body.bg_main {background:#e8ebef;}
 body.bg_gray {background:#f2f4f6;}
