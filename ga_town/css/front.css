@@ -495,8 +495,8 @@ ul.ctc-detail li strong {color:#666;}
 .record_wrap .tab a:first-child {width:calc(34% - 3px);}
 .record_wrap .tab a.on {border-color:#0a62aa; color:#0a62aa; z-index:2;}
 .record_wrap .list li .box {position:relative; margin-top:10px; padding:10px 40px 10px 10px; box-sizing:border-box; border:1px solid #d4d4d4;}
-.record_wrap .list li p {line-height:1.4;}
-.record_wrap .list li .date {display:block; margin-bottom:5px; color:#b7b7b7; font-size:11px;}
+.record_wrap .list li p {line-height:1.4; font-size:14px;}
+.record_wrap .list li .date {display:block; margin-bottom:5px; color:#b7b7b7; font-size:12px;}
 .record_wrap .list li .more {position:absolute; top:0; bottom:0; right:0; background:url(../images/town/btn_ctc_more.png) 50% 50% no-repeat; background-size:14px 15px; width:35px; height:100%; font:0/0 a;}
 .record_wrap .list[class*=tab-] {display:none;}
 .record_wrap .list.tab-Cont01 {display:block;}
@@ -644,7 +644,7 @@ article.regi-detail .regi-conts.carInfo input {color:#0a62aa;}
 .insurance-box li .text_box .info span:before {content:""; display:inline-block; background:#a1a1a1; width:1px; height:10px; margin:0 5px; vertical-align:-1px;}
 .insurance-box li .text_box .info span:first-child:before {display:none;}
 
-.btn-conts_more {display:block; width:100%; height:34px; margin-top:10px; border:1px solid #a1a1a1; box-sizing:border-box; color:#a1a1a1; text-align:center; line-height:32px;}
+.btn-conts_more {display:block; width:100%; height:34px; margin-top:10px; border:1px solid #a1a1a1; box-sizing:border-box; color:#a1a1a1; text-align:center; line-height:30px;}
 .btn-conts_more span {font-size:17px;}
 .btn-conts_more.mlr15 {width:calc(100% - 30px); margin:15px 15px 0;}
 
