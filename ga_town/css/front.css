@@ -31,7 +31,7 @@ header {position:relative; height:55px;}
 .hd-main h1 {text-align:center; font-size:0;}
 .hd-main h1 a {display:inline-block; vertical-align:top;}
 .hd-main h1 a img {vertical-align:middle;}
-.hd-main h1 .logo img {width:61px;}
+.hd-main h1 .logo img {width:auto; height:16px;}
 .hd-main h1 .logo_cs {margin-left:7px;}
 .hd-main h1 .logo_cs img {width:63px;}
 .hd-main h1 .logo_ins {margin-left:7px;}
