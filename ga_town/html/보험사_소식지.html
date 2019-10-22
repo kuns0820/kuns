@@ -31,8 +31,56 @@
 				<a href="">My보험사</a>
 			</div>
 			<div class="slt_insur">
-				<a href=""><img src="../images/town/@sample2.gif" alt=""></a>
+				<a href="javascript:;" class="selected"><span><img src="../images/town/@sample2.gif" alt=""></spa></a>
+				<div class="layer_slt_insur">
+					<div class="layer_cont">
+						<h2>손해보험사 선택</h2>
+						<ul class="list">
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+									<label for="group1">메리츠화재</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+									<label for="group1">AIG손해보험</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+									<label for="group1">KB손해보험</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+									<label for="group1">현대해상</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk-box">
+									<span><input type="radio" name="group" id="group1" title="전체"><i></i></span>
+									<label for="group1">흥국화재</label>
+								</div>
+							</li>
+						</ul>
+						<button type="butotn" class="btn_close">닫기</button>
+					</div>
+				</div>
 			</div>
+			<script>
+				$(function(){
+					$(".slt_insur .selected").click(function(){
+						$(this).parent().toggleClass("on");
+					});
+					$(".layer_slt_insur .layer_cont .btn_close").click(function(){
+						$(".slt_insur").toggleClass("on");
+					});
+				});
+			</script>
 
 			<div class="visual_bnr swiper-container">
 				<div class="swiper-wrapper">
