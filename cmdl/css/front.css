@@ -347,65 +347,51 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 	.vision .section02 .innr .cell-06 {background-size:11.5rem auto; margin-top:1rem; padding-bottom:29.7%;}
 }
 
-.history .section {background:url(../images/sub/bg_history.png) 50% 0 repeat-y;}
-.history .section [class^=list_wrap-] {position:relative;}
-.history .section [class^=list_wrap-] strong {display:block; background:#fff; padding:0.5rem 0; color:#04468d; font-size:2.5rem; text-align:center;}
-.history .section [class^=list_wrap-] [class^=list-] {position:absolute; top:4.4rem;}
-.history .section [class^=list_wrap-] [class^=list-] em {color:#111; font-size:0.9rem;}
-.history .section [class^=list_wrap-] [class^=list-] span {color:#555; font-size:0.9rem; letter-spacing:-1.5px;}
-.history .section [class^=list_wrap-] [class^=list-] > div {position:relative; margin-bottom:1.5rem;}
-.history .section [class^=list_wrap-] [class^=list-] > div:after {content:""; display:block; clear:both;}
-.history .section [class^=list_wrap-] [class^=list-] > div:before {content:""; position:absolute; top:50%; background:#fff; width:0.85rem; height:0.85rem; border:2px solid #04468d; border-radius:50%; transform:translateY(-50%); z-index:5;}
-.history .section [class^=list_wrap-] [class^=list-] > div i:before {content:""; position:absolute; top:50%; background:#ddd; width:8.7rem; height:1px; transform:translateY(-50%);}
-.history .section [class^=list_wrap-] [class^=list-] > div i:after {content:""; position:absolute; top:50%; background:#04468d; width:0.4rem; height:0.4rem; border-radius:50%; transform:translateY(-50%);}
+.history.section {background:url(../images/sub/bg_history.png) 50% 0 repeat-y;}
+.history.section .list_wrap {position:relative;}
+.history.section .list_wrap:after {content:""; display:block; clear:both;}
+.history.section .list_wrap strong {display:block; background:#fff; width:100%; margin-bottom:10px; padding:0.5rem 0; color:#04468d; font-size:2.5rem; text-align:center;}
+.history.section .list_wrap [class^=list-] em {color:#111; font-size:0.9rem;}
+.history.section .list_wrap [class^=list-] span {color:#555; font-size:0.9rem; letter-spacing:-1.5px;}
+.history.section .list_wrap [class^=list-] > div {position:relative; margin-bottom:1.5rem;}
+.history.section .list_wrap:last-child [class^=list-] > div:last-child {margin-bottom:0;}
+.history.section .list_wrap [class^=list-] > div:after {content:""; display:block; clear:both;}
+.history.section .list_wrap [class^=list-] > div:before {content:""; position:absolute; top:50%; background:#fff; width:0.85rem; height:0.85rem; border:2px solid #04468d; border-radius:50%; transform:translateY(-50%); z-index:5;}
+.history.section .list_wrap [class^=list-] > div i:before {content:""; position:absolute; top:50%; background:#ddd; width:8.7rem; height:1px; transform:translateY(-50%);}
+.history.section .list_wrap [class^=list-] > div i:after {content:""; position:absolute; top:50%; background:#04468d; width:0.4rem; height:0.4rem; border-radius:50%; transform:translateY(-50%);}
+.history.section .list_wrap [class^=list-] em {width:1.9rem;}
+.history.section .list_wrap [class^=list-] span {width:calc(100% - 2.9rem);}
 
-.history .section [class^=list_wrap-] .list-right {left:50%;}
-.history .section [class^=list_wrap-] .list-right > div {padding-left:11rem;}
-.history .section [class^=list_wrap-] .list-right > div:before {left:-0.45rem;}
-.history .section [class^=list_wrap-] .list-right > div i:before {left:0.35rem;}
-.history .section [class^=list_wrap-] .list-right > div i:after {left:9.05rem;}
-.history .section [class^=list_wrap-] .list-right em {float:left;}
-.history .section [class^=list_wrap-] .list-right span {float:left; margin-left:1rem;}
+.history.section .list_wrap .list-right {float:right; width:50%;}
+.history.section .list_wrap .list-right > div {padding-left:9.6rem;}
+.history.section .list_wrap .list-right > div:before {left:-0.45rem;}
+.history.section .list_wrap .list-right > div i:before {left:-0.65rem;}
+.history.section .list_wrap .list-right > div i:after {left:8.05rem;}
+.history.section .list_wrap .list-right em {float:left; margin-right:1rem;}
+.history.section .list_wrap .list-right span {float:left; text-align:left;}
 
-.history .section [class^=list_wrap-] .list-left {right:50%;}
-.history .section [class^=list_wrap-] .list-left > div {padding-right:11rem;}
-.history .section [class^=list_wrap-] .list-left > div:before {right:-0.45rem;}
-.history .section [class^=list_wrap-] .list-left > div i:before {right:0.35rem;}
-.history .section [class^=list_wrap-] .list-left > div i:after {right:9.05rem;}
-.history .section [class^=list_wrap-] .list-left em {float:right;}
-.history .section [class^=list_wrap-] .list-left span {float:left; margin-right:1rem;}
-
-.history .section .list_wrap-2019 {padding-bottom:4.5rem;}
-.history .section .list_wrap-2017 {padding-bottom:6.7rem;}
-.history .section .list_wrap-2015 {padding-bottom:4.5rem;}
-.history .section .list_wrap-2013 {padding-bottom:9rem;}
-.history .section .list_wrap-2012 {padding-bottom:6.7rem;}
-.history .section .list_wrap-2010,
-.history .section .list_wrap-2009 {padding-bottom:4.5rem;}
-.history .section .list_wrap-2007 {padding-bottom:6.7rem;}
-.history .section .list_wrap-2006 {padding-bottom:1.5rem;}
+.history.section .list_wrap .list-left {float:left; width:50%;}
+.history.section .list_wrap .list-left > div {padding-right:9.6rem;}
+.history.section .list_wrap .list-left > div:before {right:-0.45rem;}
+.history.section .list_wrap .list-left > div i:before {right:-0.65rem;}
+.history.section .list_wrap .list-left > div i:after {right:8.05rem;}
+.history.section .list_wrap .list-left em {float:right; margin-left:1rem;}
+.history.section .list_wrap .list-left span {float:right; text-align:right;}
 
 @media screen and (max-width:786px) {
-	.history .section {background-position:0.1rem 2.25rem;}
-	.history .section [class^=list_wrap-] strong {background:transparent; padding:0.25rem 0; font-size:1.25rem;}
-	.history .section [class^=list_wrap-]:first-child strong {background:#fff;}
-	.history .section [class^=list_wrap-] [class^=list-] {top:2.2rem; left:0 !important; right:auto;}
-	.history .section [class^=list_wrap-] [class^=list-] > div {margin-bottom:0.25rem; padding:0 0 0 0.7rem;}
-	.history .section [class^=list_wrap-] [class^=list-] > div:before,
-	.history .section [class^=list_wrap-] [class^=list-] > div i:before {display:none;}
-	.history .section [class^=list_wrap-] [class^=list-] > div i:after {top:0.3rem; left:0; width:0.2rem; height:0.2rem; transform:translateY(0);}
-	.history .section [class^=list_wrap-] [class^=list-] em,
-	.history .section [class^=list_wrap-] [class^=list-] span {float:left; font-size:0.55rem;}
-	.history .section [class^=list_wrap-] [class^=list-] span {margin:0 0 0 0.25rem;}
-	.history .section .list_wrap-2019 {padding-bottom:2.25rem;}
-	.history .section .list_wrap-2017 {padding-bottom:3.35rem;}
-	.history .section .list_wrap-2015 {padding-bottom:2.25rem;}
-	.history .section .list_wrap-2013 {padding-bottom:4.5rem;}
-	.history .section .list_wrap-2012 {padding-bottom:3.35rem;}
-	.history .section .list_wrap-2010,
-	.history .section .list_wrap-2009 {padding-bottom:2.25rem;}
-	.history .section .list_wrap-2007 {padding-bottom:3.35rem;}
-	.history .section .list_wrap-2006 {padding-bottom:0.75rem;}
+	.history.section {background-position:0.1rem 2.25rem;}
+	.history.section .list_wrap strong {background:transparent; padding:0.25rem 0; font-size:1.25rem;}
+	.history.section .list_wrap:first-child strong {background:#fff;}
+	.history.section .list_wrap [class^=list-] {float:left; width:100%;}
+	.history.section .list_wrap [class^=list-] > div {margin-bottom:0.25rem; padding:0 0 0 0.7rem;}
+	.history.section .list_wrap [class^=list-] > div:before,
+	.history.section .list_wrap [class^=list-] > div i:before {display:none;}
+	.history.section .list_wrap [class^=list-] > div i:after {top:0.3rem; left:0; width:0.2rem; height:0.2rem; transform:translateY(0);}
+	.history.section .list_wrap [class^=list-] em {width:1.25rem; margin:0;}
+	.history.section .list_wrap [class^=list-] em,
+	.history.section .list_wrap [class^=list-] span {float:left; width:100%; font-size:0.55rem; text-align:left;}
+	.history.section .list_wrap [class^=list-] span {margin:0 0 0 0.25rem;}
+	.history.section .list_wrap [class^=list-] span br {display:none;}
 }
 
 .location .stit {margin-top:3.5rem;}
@@ -533,4 +519,16 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 	.mft1 .mft1_step li strong {margin-top:0.35rem; font-size:0.6rem;}
 	.mft1 .mft1_step li p {margin-top:0.5rem; font-size:0.4rem; letter-spacing:-2px;}
 	.mft1 .mft1_step li.s03 p br {display:none;}
+}
+
+.bss2 .tab {background-color:#fafafa; margin-bottom:5rem; border-bottom:2px solid #04468d;}
+.bss2 .tab:after {content:""; display:block; clear:both;}
+.bss2 .tab a {float:left; position:relative; width:25%; height:2.8rem; box-sizing:border-box; color:#555; font-size:1rem; text-align:center; line-height:2.8rem;}
+.bss2 .tab a:before {content:""; position:absolute; top:50%; left:0; background:#ddd; width:1px; height:0.7rem; transform:translateY(-50%);}
+.bss2 .tab a:first-child:before {display:none;}
+.bss2 .tab a.on {background-color:#04468d; color:#fff;}
+@media screen and (max-width:786px) {
+	.bss2 .tab {margin-bottom:2.5rem;}
+	.bss2 .tab a {height:1.4rem; font-size:0.6rem; line-height:1.4rem;}
+	.bss2 .tab a:before {height:0.35rem;}
 }
