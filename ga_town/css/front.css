@@ -155,39 +155,39 @@ body.all_menu #side_wrap {-webkit-transform:translateX(0); transform:translateX(
 /* 메인 */
 .visual_bnr .swiper-pagination span {background:#fff; opacity:1; transition:all .2s ease;}
 .visual_bnr .swiper-pagination span[class$=-active] {width:12px; border-radius:30px;}
+.visual_bnr .swiper-slide a img {vertical-align:top;}
 
-.main_menu {background:#fff; margin-top:5px; border-bottom:1px solid #e4e4e4;}
-.main_menu ul:after {content:""; display:block; clear:both;}
-.main_menu li {float:left; width:33.3%; border-top:1px solid #e4e4e4; border-left:1px solid #e4e4e4;}
-.main_menu li:first-child,
-.main_menu li:nth-child(4) {width:calc(33.4% - 2px); border-left:0;}
-.main_menu li a {display:block; height:44px; text-align:center;}
-.main_menu li a p {display:inline-block; height:44px; vertical-align:middle; line-height:44px; font-size:14px;}
-.main_menu li a span {display:inline-block; width:25px; height:25px; margin-right:3px; vertical-align:middle;}
-.main_menu li.m01 a span {background:url(../images/town/ico_main_01.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m02 a span {background:url(../images/town/ico_main_02.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m03 a span {background:url(../images/town/ico_main_03.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m04 a span {background:url(../images/town/ico_main_04.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m05 a span {background:url(../images/town/ico_main_05.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m06 a span {background:url(../images/town/ico_main_06.png) 50% 50% no-repeat; background-size:100% 100%;}
+.main_menu_wrap {}
+.main_menu_wrap .menu {background:#fff; border-bottom:1px solid #e4e4e4;}
+.main_menu_wrap .menu:after {content:""; display:block; clear:both;}
+.main_menu_wrap .menu > div {float:left; width:33.3%; border-left:1px solid #e4e4e4; box-sizing:border-box;}
+.main_menu_wrap .menu > div:first-child {border-left:0;}
+.main_menu_wrap .menu > div a {display:block; height:44px; box-sizing:border-box; text-align:center;}
+.main_menu_wrap .menu > div a span {display:inline-block; font-size:14px; letter-spacing:-1px;}
+.main_menu_wrap .menu > div a span:before {content:""; display:inline-block; width:33px; height:44px; margin-right:5px; vertical-align:middle;}
+.main_menu_wrap .menu > div.m101 a span:before {background:url(../images/town/ico_mService0103.png) 50% 50% no-repeat; background-size:32px 28px;}
+.main_menu_wrap .menu > div.m102 a span:before {background:url(../images/town/ico_mService0102.png) 50% 50% no-repeat; background-size:27px 24px;}
+.main_menu_wrap .menu > div.m103 a span:before {background:url(../images/town/ico_mService0101.png) 50% 50% no-repeat; background-size:35px 25px;}
+.main_menu_wrap .menu > div.m104 a span:before {background:url(../images/town/ico_mService0106.png) 50% 50% no-repeat; background-size:25px 27px;}
+.main_menu_wrap .menu > div.m105 a span:before {background:url(../images/town/ico_mService0104.png) 50% 50% no-repeat; background-size:21px 34px;}
+.main_menu_wrap .menu > div.m106 a span:before {background:url(../images/town/ico_mService0105.png) 50% 50% no-repeat; background-size:27px 23px;}
+.main_menu_wrap .menu > div.m107 a span:before {background:url(../images/town/ico_mService0107.png) 50% 50% no-repeat; background-size:24px 23px;}
+.main_menu_wrap .menu > div.m108 a span:before {background:url(../images/town/ico_mService0108.png) 50% 50% no-repeat; background-size:22px 23px; margin:0;}
+.main_menu_wrap .menu > div.m109 a span:before {background:url(../images/town/ico_mService0109.png) 50% 50% no-repeat; background-size:13px 27px;}
+.main_menu_wrap .menu > div a.on {border-bottom:2px solid #0b60a7;}
 
-.main_menu li.m01.on a span {background:url(../images/town/ico_main_01_on.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m02.on a span {background:url(../images/town/ico_main_02_on.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m03.on a span {background:url(../images/town/ico_main_03_on.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m04.on a span {background:url(../images/town/ico_main_04_on.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m05.on a span {background:url(../images/town/ico_main_05_on.png) 50% 50% no-repeat; background-size:100% 100%;}
-.main_menu li.m06.on a span {background:url(../images/town/ico_main_06_on.png) 50% 50% no-repeat; background-size:100% 100%;}
+.main_menu_wrap .dep2 {display:none;}
+.main_menu_wrap .dep2 .dep2_list {overflow-x:auto; overflow-y:hidden; background:#f2f4f6; width:100%; height:35px; box-sizing:border-box; -webkit-overflow-scrolling:touch; border-bottom:1px solid #d1d7df;}
+.main_menu_wrap .dep2 .dep2_list .innr {display:inline-flex; display:-webkit-inline-box; overflow:hidden; padding-right:10px;}
+.main_menu_wrap .dep2 .dep2_list a {display:block; height:32px; margin-left:10px; color:#666; font-size:14px; line-height:32px; white-space:nowrap;}
+.main_menu_wrap .dep2 .dep2_list a.on {border-bottom:2px solid #0b60a7; color:#0b60a7;}
 
-.main_menu .deps {display:none; border-top:1px solid #e4e4e4;}
-.main_menu .deps .dep2 {overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; background:#fff; text-align:center;}
-.main_menu .deps .dep2 .inr {overflow:hidden; display:inline-flex; display:-webkit-inline-flex; padding:0 20px; font-size:0; text-align:center;}
-.main_menu .deps .dep2 a {display:inline-block; width:auto; height:32px; padding:0 10px 0 0; color:#666; font-size:12px; white-space:nowrap; line-height:32px;}
-.main_menu .deps .dep2 a:before {content:""; display:inline-block; background:#b7b7b7; width:1px; height:10px; margin-right:10px; vertical-align:middle;}
-.main_menu .deps .dep2 a:first-child:before {display:none;}
-.main_menu .deps .dep3 {display:none; position:relative; background:#e8ebef; padding:15px 35px 5px 15px; box-sizing:border-box; font-size:0;}
-.main_menu .deps .dep3 a {display:inline-block; height:15px; margin:0 5px 10px 0; padding:0 10px; border:2px solid #666; border-radius:30px; color:#666; line-height:15px; font-size:11px;}
-.main_menu .deps .dep3 a:active {background:#666; color:#fff;}
-.main_menu .deps .dep3 .close {position:absolute; top:15px; right:15px; width:20px; height:20px;}
+.main_menu_wrap .dep3_wrap {display:none; position:relative; padding:15px 37px 10px 10px; font-size:0;}
+.main_menu_wrap .dep3_wrap .btn_close {position:absolute; top:0; right:0; background:url(../images/town/btn_dep3_close.gif) 0 100% no-repeat; background-size:20px 20px; width:35px; height:35px; font:0/0 a;}
+.main_menu_wrap .dep3_wrap .dep3 {display:none;}
+.main_menu_wrap .dep3_wrap .dep3 a {display:inline-block; height:26px; margin-right:5px; margin-bottom:5px; padding:0 5px; border:2px solid #666; border-radius:26px; box-sizing:border-box; color:#666; font-size:13px; line-height:22px;}
+.main_menu_wrap .dep3_wrap .dep3 a.on {background:#666; color:#fff;}
+
 
 
 .main-box {background:#fff; margin-top:10px; padding:15px;}

@@ -209,96 +209,127 @@
 			});
 			</script>
 
-			<div class="main_menu">
-				<ul>
-					<li class="m01"><a href="javascript:;"><span></span><p>보험뉴스</p></a></li>
-					<li class="m02"><a href="javascript:;"><span></span><p>고객터치</p></a></li>
-					<li class="m03"><a href="javascript:;"><span></span><p>보험상품</p></a></li>
-				</ul>
-				<div class="deps m01">
-					<div class="dep2">
-						<div class="inr">
-							<a href="javascript:;" class="m0101">인사말111</a>
-							<a href="javascript:;" class="m0102">니즈환기</a>
-							<a href="javascript:;" class="m0103">인사말111</a>
-							<a href="javascript:;" class="m0104">니즈환기</a>
-							<a href="javascript:;" class="m0105">인사말111</a>
-							<a href="javascript:;" class="m0106">니즈환기</a>
-						</div>
-					</div>
-					<div class="dep3 m0101">
-						<a href="">안부인사m0101</a>
-						<a href="">계절인사</a>
-						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
-					</div>
-					<div class="dep3 m0102">
-						<a href="">안부인사m0102</a>
-						<a href="">계절인사</a>
-						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
-					</div>
+
+			<script>
+			$(function(){
+				$(".main_menu_wrap .menu a").click(function(){
+					_dep2 = $(this).parent().attr("class");
+					$(".main_menu_wrap .menu a").removeClass("on");
+					$(this).addClass("on");
+					$(".main_menu_wrap .dep2").hide();
+					$(".main_menu_wrap .dep2." + _dep2).show();
+				});
+				$(".main_menu_wrap .dep2 .innr a").click(function(){
+					_dep3 = $(this).index() + 1;
+					$(this).addClass("on").siblings().removeClass("on");
+					$(this).closest(".dep2").find(".dep3_wrap").show();
+					$(this).closest(".dep2").find(".dep3_wrap .dep3").hide();
+					$(this).closest(".dep2").find(".dep3_wrap .dep3:nth-child(" +_dep3+ ")").show();
+				});
+				$(".main_menu_wrap .dep3_wrap .btn_close").click(function(){
+					$(this).closest(".dep2").find(".dep3_wrap").hide();
+					$(".main_menu_wrap .dep2 .innr a").removeClass("on");
+				});
+			});
+			</script>
+			<div class="main_menu_wrap">
+				<div class="menu">
+					<div class="m101 "><a href="javascript:;"><span>보험뉴스</span></a></div>
+					<div class="m102"><a href="javascript:;"><span>보험상품</span></a></div>
+					<div class="m103"><a href="javascript:;"><span>보험사</span></a></div>
 				</div>
-				<div class="deps m02">
-					<div class="dep2">
-						<div class="inr">
-							<a href="javascript:;">인사말222</a>
-							<a href="javascript:;">니즈환기</a>
-						</div>
-					</div>
-					<div class="dep3">
-						<a href="">안부인사222</a>
-						<a href="">계절인사</a>
-						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
-					</div>
-				</div>
-				<ul>
-					<li class="m04"><a href="javascript:;"><span></span><p>운세</p></a></li>
-					<li class="m05"><a href="javascript:;"><span></span><p>쇼핑/기프티쇼</p></a></li>
-					<li class="m06"><a href="javascript:;"><span></span><p>고객관리</p></a></li>
-				</ul>
-				<div class="deps">
-					<div class="dep2">
-						<div class="inr">
-							<a href="javascript:;">인사말</a>
-							<a href="javascript:;">니즈환기</a>
+				<div class="dep2 m101">
+					<div class="dep2_list">
+						<div class="innr">
+							<a href="javascript:;" class="">인사말</a>
 							<a href="javascript:;">친숙자료</a>
+							<a href="javascript:;">니즈환기</a>
 							<a href="javascript:;">문자</a>
 						</div>
 					</div>
-					<div class="dep3">
-						<a href="">안부인사</a>
-						<a href="">계절인사</a>
-						<a href="">가입/유지감사</a>
-						<a href="">결혼/상조</a>
-						<a href="">기념일</a>
-						<button type="button" class="close"><img src="../images/town/btn_dep3_close.png" alt=""></button>
+					<div class="dep3_wrap">
+						<div class="dep3">
+							<a href="" class="on">안부인사</a>
+							<a href="">계절인사</a>
+							<a href="">가입/유지감사</a>
+							<a href="">결혼/상조</a>
+							<a href="">기념일</a>
+						</div>
+						<div class="dep3">
+							<a href="">친숙자료 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">니즈환기 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">문자 3뎁스</a>
+						</div>
+						<button class="btn_close">닫기</button>
 					</div>
 				</div>
+				<div class="dep2 m102">
+					<div class="dep2_list">
+						<div class="innr">
+							<a href="javascript:;" class="">인사말</a>
+						</div>
+					</div>
+					<div class="dep3_wrap">
+						<div class="dep3">
+							<a href="" class="on">안부인사</a>
+							<a href="">계절인사</a>
+							<a href="">가입/유지감사</a>
+							<a href="">결혼/상조</a>
+							<a href="">기념일</a>
+						</div>
+						<div class="dep3">
+							<a href="">친숙자료 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">니즈환기 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">문자 3뎁스</a>
+						</div>
+						<button class="btn_close">닫기</button>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="m104"><a href="javascript:;"><span>고객관리</span></a></div>
+					<div class="m105"><a href="javascript:;"><span>고객터치</span></a></div>
+					<div class="m106"><a href="javascript:;"><span>지식동영상</span></a></div>
+				</div>
+				<div class="dep2 m104">
+					<div class="dep2_list">
+						<div class="innr">
+							<a href="javascript:;" class="">인사말</a>
+						</div>
+					</div>
+					<div class="dep3_wrap">
+						<div class="dep3">
+							<a href="" class="on">고객관리</a>
+							<a href="">고객관리</a>
+							<a href="">가입/유지감사</a>
+							<a href="">결혼/상조</a>
+							<a href="">기념일</a>
+						</div>
+						<div class="dep3">
+							<a href="">친숙자료 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">니즈환기 3뎁스</a>
+						</div>
+						<div class="dep3">
+							<a href="">문자 3뎁스</a>
+						</div>
+						<button class="btn_close">닫기</button>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="m107"><a href="javascript:;"><span>운세</span></a></div>
+					<div class="m108"><a href="javascript:;"><span>쇼핑/기프티쇼</span></a></div>
+					<div class="m109"><a href="javascript:;"><span>이벤트</span></a></div>
+				</div>
 			</div>
-			<script>
-				$(function(){
-					$(".main_menu li a").click(function(){
-						var $this = $(this).parent().attr("class");
-						$(".main_menu .deps, .main_menu .deps .dep3").hide();
-						
-						if($(this).closest("ul").next(".deps").css("display") == "none" && !$(this).parent().hasClass("on")){
-							$(".main_menu li").removeClass("on");
-							$(this).parent().addClass("on");
-							$(".main_menu .deps."+$this).show();
-						}else{
-							$(this).parent().removeClass("on");
-							$(this).closest("ul").next(".deps").hide();
-						}
-					});
-					$(".main_menu .dep2 a").click(function(){
-						var $this =  $(this).attr("class");
-						$(this).closest(".deps").find(".dep3").hide();
-						$(this).closest(".deps").find(".dep3."+$this).show();
-					});
-					$(".main_menu .dep3 .close").click(function(){
-						$(this).closest(".dep3").hide();
-					});
-				});
-			</script>
 
 			<div class="luck_wrap main-box">
 				<h2 class="mtit"><a href="">오늘의 운세</a></h2>
