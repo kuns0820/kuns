@@ -57,22 +57,36 @@
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
-					<script>
-					$(document).ready(function(){
-						var swiper = new Swiper('.license_list', {
-							pagination: {
-								el: '.swiper-pagination',
-							},
-							loop : true
-						});
-					});
-					</script>
+				</li>
+				<li class="license_wrap">
+					<span>판매보험사 :</span>
+					<div class="license_list swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
 				</li>
 			</ul>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.license_list', {
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					loop : true
+				});
+			});
+			</script>
 
 			<div class="fixed_nav nc">
 				<div class="btns">
-					<button type="button" class="btn-logo">로고변경</button>
+					<button type="button" class="btn-logo">판매보험사</button>
 					<button type="button" class="btn-license">자격증</button>
 					<button type="button" class="btn-photo">사진편집</button>
 					<button type="button" class="btn-send">보내기</button>

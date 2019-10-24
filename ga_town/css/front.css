@@ -352,7 +352,7 @@ img.prd_new {position:absolute; top:1px; left:1px; width:36px; height:36px; z-in
 .customer_list li .col-1 label {font-size:14px;}
 .customer_list li .col-2 {text-align:center; font-size:14px;}
 .customer_list li .col-3 {width:80px;}
-.customer_list li .col-3 button {display:block; background-size:2px 12px; width:59px; height:24px; margin:0 auto; border:1px solid #888; color:#888; font-size:14px; text-align:center; line-height:24px;}
+.customer_list li .col-3 button {display:block; background-size:2px 12px; width:65px; height:24px; margin:0 auto; border:1px solid #888; color:#888; font-size:14px; text-align:center; line-height:24px;}
 
 .chk-box {position:relative;}
 .chk-box span {position:absolute; top:0; left:0; width:16px; height:15px; z-index:1;}
@@ -448,14 +448,19 @@ img.prd_new {position:absolute; top:1px; left:1px; width:36px; height:36px; z-in
 
 .tit-regi {display:block; background:#f2f4f6; padding:15px 0 5px 15px; font-size:11px;}
 .regi-conts {padding:15px;}
+.inp-regi.tit {position:relative; padding-left:70px;}
 .inp-regi input[type=text],
 .inp-regi input[type=number] {background:#f2f4f6; width:100%; height:38px; padding-left:10px; border:1px solid #d4d4d4; font-size:14px;}
+.inp-regi.tit strong {position:absolute; top:50%; left:0; color:#666; font-size:14px; transform:translateY(-50%);}
+.inp-regi.tit strong:before {content:""; display:inline-block; background:#666; width:3px; height:3px; margin-right:3px; border-radius:50%; vertical-align:4px;}
 
 .regi-conts.default .inp-regi {margin-top:5px;}
 .regi-conts.default .inp-regi:first-child {margin-top:0;}
 .regi-conts.default a.btn-srh {display:block; background:#7a8190; height:38px; margin-top:10px; padding:0 15px; border:1px solid #6d7481; box-sizing:border-box; color:#fff; line-height:38px; font-size:14px;}
 .regi-conts.default a.btn-srh:before {content:""; display:inline-block; background:url(../images/town/btn_srh_regi.png) 0 0 no-repeat; background-size:100%; width:13px; height:13px; margin-right:10px; vertical-align:-2px;}
 .regi-conts.default a.btn-group {display:block; background:url(../images/town/ico_list_arrow.gif) calc(100% - 13px) 50% no-repeat; background-size:6px 10px; height:38px; margin-top:5px; padding:0 15px; border:1px solid #787878; box-sizing:border-box; color:#0a62aa; line-height:38px;}
+.regi-conts.default a.btn-sltGroup {display:block; background:#7a8190; height:38px; margin-top:10px; padding:0 15px; border:1px solid #6d7481; box-sizing:border-box; color:#fff; line-height:38px; font-size:14px;}
+.regi-conts.default a.btn-sltGroup:before {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg viewBox='0 0 24 14' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m23.081 3.672-9.263 9.262c-0.428 0.429-1.005 0.61-1.565 0.561-0.56 0.049-1.136-0.132-1.565-0.561l-9.263-9.262c-0.77-0.77-0.77-2.019 0-2.789s2.019-0.77 2.789 0l8.039 8.039 8.039-8.039c0.77-0.77 2.019-0.77 2.789 0s0.77 2.019 0 2.789z' fill='%23fff'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:13px; height:13px; margin-right:10px; vertical-align:-2px;}
 
 .regi-chk_field {display:table; width:100%; margin-bottom:5px; border:1px solid #d4d4d4;}
 .regi-chk_field strong {display:table-cell; width:100%; padding-left:10px; border-right:1px solid #d4d4d4;}
@@ -868,7 +873,7 @@ article.regi-detail .regi-conts.carInfo input {color:#0a62aa;}
 .gatown_info li.ga04 {background:url(../images/town/ico_gatown_04.png) 20px 50% no-repeat; background-size:31px 33px;}
 .gatown_info li.ga05 {background:url(../images/town/ico_gatown_05.png) 20px 50% no-repeat; background-size:38px 25px;}
 
-.fixe_btn-btm {position:fixed; bottom:0; left:0; width:100%;}
+.fixe_btn-btm {position:fixed; bottom:0; left:0; width:100%; z-index:100;}
 .fixe_btn-btm {font-size:0;}
 .fixe_btn-btm a,
 .fixe_btn-btm button {display:inline-block; background:#333742; width:100%; height:48px; color:#fff; text-align:center; font-size:14px; line-height:48px; vertical-align:middle;}
@@ -944,16 +949,16 @@ article.finish .text p {margin-top:15px; color:#666; font-size:13px;}
 .name_card .my_info_list li {height:40px; padding-left:15px; border-bottom:1px solid #e4e4e4; color:#666; font-size:14px; line-height:40px;}
 .name_card .my_info_list li > span {display:inline-block; color:#333742;}
 .name_card .my_info_list li > span:before {content:""; display:inline-block; background:#333742; width:2px; height:2px; margin-right:3px; border-radius:50%; vertical-align:middle;}
-.name_card .my_info_list li.license_wrap {height:auto; border-bottom:0;}
+.name_card .my_info_list li.license_wrap {height:auto; padding-bottom:10px;}
 .name_card .my_info_list li.license_wrap .license_list {padding-bottom:15px;}
-.name_card .my_info_list li.license_wrap .swiper-slide {border-bottom:1px solid #e4e4e4; text-align:center;}
+.name_card .my_info_list li.license_wrap .swiper-slide {text-align:center;}
 .name_card .my_info_list li.license_wrap .swiper-slide img {width:auto; height:48px;}
 .name_card .my_info_list li.license_wrap .swiper-pagination {bottom:0; font:0/0 a;}
 .name_card .my_info_list li.license_wrap .swiper-pagination span {background:#4f4c4d; opacity:1; transition:all .2s ease;}
 .name_card .my_info_list li.license_wrap .swiper-pagination span.swiper-pagination-bullet-active {background:#0b60a7; width:12px; border-radius:30px;}
 
-.fixed_nav.nc {background:#798190; padding:0 15px;}
-.fixed_nav.nc button {width:25%; margin:0; box-sizing:border-box; text-align:center; font-size:12px;}
+.fixed_nav.nc {background:#798190; padding:0 10px;}
+.fixed_nav.nc button {width:25%; margin:0; box-sizing:border-box; text-align:center; font-size:12px; letter-spacing:-1px;}
 .fixed_nav.nc .btn-logo:before {background:url(../images/town/ico_NCfix_01.png) 50% 50% no-repeat; background-size:100%; width:23px; height:23px; vertical-align:middle;}
 .fixed_nav.nc .btn-license:before {background:url(../images/town/ico_NCfix_02.png) 50% 50% no-repeat; background-size:100%; width:24px; height:22px; vertical-align:middle;}
 .fixed_nav.nc .btn-photo:before {background:url(../images/town/ico_NCfix_03.png) 50% 50% no-repeat; background-size:100%; width:21px; height:22px; vertical-align:middle;}
@@ -975,6 +980,7 @@ article.finish .text p {margin-top:15px; color:#666; font-size:13px;}
 .license .license_chk {float:left; width:50%; box-sizing:border-box;}
 .license .license_chk:first-child {border-right:1px solid #e4e4e4;}
 .license .license_chk li {min-height:47px; padding:15px 0 15px 15px; box-sizing:border-box; border-bottom:1px solid #e4e4e4;}
+.license .license_chk li.title {font-size:15px; color:#333;}
 .license .license_chk li label {padding-left:24px; color:#666; font-size:14px;}
 .license .license_chk_desc {display:block; margin-top:5px; padding-right:10px; color:#c2c2c2; font-size:11px; text-align:right;}
 

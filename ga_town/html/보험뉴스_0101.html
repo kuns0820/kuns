@@ -41,39 +41,81 @@
 
 	<div id="container">
 		<article class="">
-			<div class="cont_nav">
-				<ul>
-					<li><a href="">보험뉴스 홈</a></li>
-					<li class="on"><a href="">각사소식지</a></li>
-					<li><a href="">보험뉴스</a></li>
-					<li><a href="">업계동향</a></li>
-				</ul>
+			<div class="menu-scroll">
+				<div class="innr">
+					<a href="">전체</a>
+					<a href="" class="on">보험</a>
+					<a href="">경제</a>
+					<a href="">생활</a>
+					<a href="">건강</a>
+					<a href="">카드뉴스</a>
+				</div>
 			</div>
 
-			<div class="bnr main-box">
-				<a href=""><img src="../images/town/bnr_main_01.jpg" alt=""></a>
+			<div class="main-box vod_list">
+				<h2 class="mtit"><a href="">인기 콘텐츠</a href=""></h2>
+				<div class="conts">
+					<div class="product_slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									가을철 위험 살인진드기 조심하세요!
+								</p>
+								<div class="info">
+									<span>2019-02-06</span><span>조회수 : 000</span>
+								</div>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									가을철 위험 살인진드기 조심하세요!
+								</p>
+								<div class="info">
+									<span>2019-02-06</span><span>조회수 : 000</span>
+								</div>
+							</a></div>
+							<div class="swiper-slide cont-box"><a href="">
+								<span class="thum"><img src="../images/town/@sample1.jpg" alt=""></span>
+								<p class="tit">
+									가을철 위험 살인진드기 조심하세요!
+								</p>
+								<div class="info">
+									<span>2019-02-06</span><span>조회수 : 000</span>
+								</div>
+							</a></div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.product_slider', {
+					slidesPerView: 2.2,
+					paginationClickable: true,
+					spaceBetween: 10,
+					pagination: {
+						el: '.swiper-pagination',
+					},
+				});
+			});
+			</script>
+
+			<div class="sort_area  bg_gray">
+				<select name="tsortKey" id="tsortKey" onchange="goSortKey(this.value)">
+				<option value="contentsSeq">최신순</option>
+				<option value="readCnt" selected="">조회순</option>
+				<option value="recomCnt">추천순</option>
+				</select>
 			</div>
 
-			<div class="main_menu2">
-				<h2>회사별 소식지</h2>
-				<ul>
-					<li><a href=""><img src="../images/town/logo_cMagazine_01.jpg" alt=""></a></li>
-					<li><a href=""><img src="../images/town/logo_cMagazine_02.jpg" alt=""></a></li>
-					<li><a href=""><img src="../images/town/logo_cMagazine_03.jpg" alt=""></a></li>
-					<li><a href=""><img src="../images/town/logo_cMagazine_04.jpg" alt=""></a></li>
-					<li><a href=""><img src="../images/town/logo_cMagazine_05.jpg" alt=""></a></li>
-					<li><a href=""><img src="../images/town/logo_cMagazine_06.jpg" alt=""></a></li>
-				</ul>
-			</div>
-
-			<div class="contents-box main-box">
-				<h2 class="mtit"><a href="">인기 소식지</a></h2>
+			<div class="insur_prd_list col">
 				<ul>
 					<li><a href="">
 						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
 						<div class="text_box">
-							<span class="logo"><img src="../images/town/logo_prd_01.png" alt=""></span>
-							<p class="tit">가을철 위험 살인진드기 조심하세요!</p>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
 							<div class="info">
 								<span>2019-02-06</span>
 								<span>조회수 : 000</span>
@@ -83,8 +125,7 @@
 					<li><a href="">
 						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
 						<div class="text_box">
-							<span class="logo"><img src="../images/town/logo_prd_01.png" alt=""></span>
-							<p class="tit">가을철 위험 살인진드기 조심하세요!</p>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
 							<div class="info">
 								<span>2019-02-06</span>
 								<span>조회수 : 000</span>
@@ -94,8 +135,7 @@
 					<li><a href="">
 						<span class="thum"><img src="../images/town/@sample3.jpg" alt=""></span>
 						<div class="text_box">
-							<span class="logo"><img src="../images/town/logo_prd_01.png" alt=""></span>
-							<p class="tit">가을철 위험 살인진드기 조심하세요!</p>
+							<p class="tit">가을철 위험 살인진드기 조심하세요조심하세요조심하세요조심하세요!</p>
 							<div class="info">
 								<span>2019-02-06</span>
 								<span>조회수 : 000</span>

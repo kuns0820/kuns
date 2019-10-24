@@ -25,9 +25,12 @@
 			<div class="input_wrap citation">
 				<input type="text" placeholder="인증번호를 입력해 주세요." name="id" id="id" value="">
 			</div>
-			<span class="time">03:00</span>
+			<div class="btn-auth-wrap" style="/* display:none */">
+				<button type="button" class="btn" id="btnAuth" onclick="fn_CkAuth()">인증번호 확인</button>
+				<span class="time">00:00</span>
+			</div>
 
-			<div class="input_wrap">
+			<div class="input_wrap auth_line">
 				<input type="text" placeholder="비밀번호를 입력해 주세요.(국.영문 혼용 6자리)" name="id" id="id" value="">
 			</div>
 			<div class="input_wrap">
