@@ -921,7 +921,7 @@ article.finish .text p {margin-top:15px; color:#666; font-size:13px;}
 
 .mymenu .layer_guide {position:fixed; top:0; bottom:0; left:0; right:0; width:100%; border:0; background:rgba(0,0,0,.4); z-index:10;}
 .mymenu .layer_guide .img {position:absolute; top:249px; left:50%; width:auto; height:200px; margin-left:-122px;}
-.mymenu .layer_guide .close {position:absolute; top:0; right:0;}
+.mymenu .layer_guide .close {position:absolute; top:0; right:0; background:url("data:image/svg+xml,%3csvg fill='%23fff' preserveAspectRatio='none' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m17.863 14.984 11.518 11.518c0.795 0.795 0.795 2.084 0 2.879s-2.084 0.795-2.879 0l-11.518-11.518-11.518 11.518c-0.795 0.795-2.084 0.795-2.879 0s-0.795-2.084 0-2.879l11.518-11.518-11.518-11.518c-0.795-0.795-0.795-2.084 0-2.879s2.084-0.795 2.879 0l11.518 11.518 11.518-11.518c0.795-0.795 2.084-0.795 2.879 0s0.795 2.084 0 2.879l-11.518 11.518z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:20px 20px; width:50px; height:50px; font:0/0 a;}
 
 .mymenu .my_info_list {margin-top:5px;}
 .mymenu .my_info_list li {height:40px; padding-left:15px; border-bottom:1px solid #e4e4e4; color:#666; font-size:14px; line-height:40px;}

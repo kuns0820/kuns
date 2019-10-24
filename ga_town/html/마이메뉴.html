@@ -58,6 +58,13 @@
 				<img src="../images/town/mymenu_guide.png" alt="" class="img">
 				<button type="button" class="close">가이드 닫기</button>
 			</div>
+			<script>
+			$(function(){
+				$(".layer_guide .close").click(function(){
+					$(this).parent().fadeOut("fast");
+				});
+			});
+			</script>
 		</article>
 	</div>
 </div>
