@@ -527,8 +527,43 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 .bss2 .tab a:before {content:""; position:absolute; top:50%; left:0; background:#ddd; width:1px; height:0.7rem; transform:translateY(-50%);}
 .bss2 .tab a:first-child:before {display:none;}
 .bss2 .tab a.on {background-color:#04468d; color:#fff;}
+
+.bss2 .logos {margin-top:4rem;}
+.bss2 .logos:after {content:""; display:block; clear:both;}
+.bss2 .logos li {float:left; width:calc(16.6% - 1.25rem); margin-left:1.5rem; margin-bottom:1rem; border:1px solid #ddd;}
+.bss2 .logos li:nth-child(6n+1) {margin-left:0;}
+
+.bss2_prd {margin-bottom:4rem;}
+.bss2_prd:after {content:""; display:block; clear:both;}
+.bss2_prd .img {float:left; width:47.4%; border:1px solid #ddd;}
+.bss2_prd .tbl {float:right; width:50%;}
+.bss2_prd .tbl table {width:100%; table-layout:fixed;}
+.bss2_prd .tbl table thead {border:2px solid #111;}
+.bss2_prd .tbl table thead th {height:3.3rem; color:#111; font-size:1.1rem; vertical-align:middle;}
+.bss2_prd .tbl table tbody td {height:3rem; border:1px solid #ddd; border-width:0 0 1px 1px; color:#555; font-size:0.9rem; text-align:center; vertical-align:middle;}
+.bss2_prd .tbl table tbody tr td:first-child {border-left:0;}
+
+.bss2_prd2 {margin-bottom:4rem;}
+.bss2_prd2:after {content:""; display:block; clear:both;}
+.bss2_prd2 li {float:left; width:calc(50% - 20px); margin-left:40px; margin-bottom:30px; border:1px solid #ddd;}
+.bss2_prd2 li:nth-child(2n+1) {margin-left:0;}
+
 @media screen and (max-width:786px) {
 	.bss2 .tab {margin-bottom:2.5rem;}
 	.bss2 .tab a {height:1.4rem; font-size:0.6rem; line-height:1.4rem;}
 	.bss2 .tab a:before {height:0.35rem;}
+
+	.bss2 .logos {margin-top:2rem;}
+	.bss2 .logos li {width:calc(33.3% - 0.5rem); margin-left:0.75rem; margin-bottom:0.5rem;}
+	.bss2 .logos li:nth-child(3n+1) {margin-left:0;}
+
+	.bss2_prd {margin-bottom:1.75rem;}
+	.bss2_prd .img,
+	.bss2_prd .tbl {width:100%;}
+	.bss2_prd .tbl {margin-top:0.5rem;}
+	.bss2_prd .tbl table thead th {height:1.5rem; font-size:0.6rem;}
+	.bss2_prd .tbl table tbody td {height:1.5rem; font-size:0.55rem;}
+
+	.bss2_prd2 {margin-bottom:1.75rem;}
+	.bss2_prd2 li {width:100%; margin-left:0; margin-bottom:0.5rem;}
 }
