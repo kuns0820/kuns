@@ -965,7 +965,7 @@ article.finish .text p {margin-top:15px; color:#666; font-size:13px;}
 .name_card .my_info_list li.license_wrap {height:auto; padding-bottom:10px;}
 .name_card .my_info_list li.license_wrap .license_list {padding-bottom:15px;}
 .name_card .my_info_list li.license_wrap .swiper-slide {text-align:center;}
-.name_card .my_info_list li.license_wrap .swiper-slide img {width:auto; height:48px;}
+.name_card .my_info_list li.license_wrap .swiper-slide img {width:auto; height:25px;}
 .name_card .my_info_list li.license_wrap .swiper-pagination {bottom:0; font:0/0 a;}
 .name_card .my_info_list li.license_wrap .swiper-pagination span {background:#4f4c4d; opacity:1; transition:all .2s ease;}
 .name_card .my_info_list li.license_wrap .swiper-pagination span.swiper-pagination-bullet-active {background:#0b60a7; width:12px; border-radius:30px;}
