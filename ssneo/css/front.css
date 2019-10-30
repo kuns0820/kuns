@@ -499,6 +499,9 @@ main.main {padding-top:210px; border-bottom:0; transition:padding .2s ease;}
 	.fMenu .innr .down_info a:nth-child(4) {margin-top:5px;}
 }
 
+.main .movie {position:relative; padding-bottom:56.25%;}
+.main .movie iframe {position:absolute; top:0; left:0; width:100%; height:100%;}
+
 
 /* Sub */
 .sVisual .innr {width:100%; max-width:1140px; height:306px; margin:0 auto; padding-top:155px; box-sizing:border-box;}
