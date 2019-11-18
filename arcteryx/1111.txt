@@ -1,0 +1,143 @@
+@charset "utf-8";
+.icomoon {font-family:"icomoon" !important;}
+h1, h2, h3, h4, h5 {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif;}
+
+#arc_footer {padding:0 0 30px;}
+#arc_footer .footerMenu {max-width:1430px; margin:0 auto; margin-bottom:20px; padding:60px 3% 40px; border:1px solid #999; border-width:1px 0;}
+#arc_footer .footerMenu:after {content:""; display:block; clear:both;}
+#arc_footer .footerMenu > div {float:left; width:17%;}
+#arc_footer .footerMenu .logo {width:15%;}
+#arc_footer .footerMenu > div li {margin-top:13px;}
+#arc_footer .footerMenu > div li:first-child {margin-top:0;}
+#arc_footer .footerMenu > div a {margin-top:13px; color:#333; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; font-size:13px;}
+#arc_footer .footerMenu > div a:hover {color:#000;}
+#arc_footer .footerMenu .util_wrap > div {margin-top:13px;}
+#arc_footer .footerMenu .util_wrap > div:first-child {margin-top:0;}
+#arc_footer .footerMenu .util_wrap a {display:inline-block; margin-top:0; vertical-align:middle;}
+#arc_footer .footerMenu .util_wrap .sign a:before {content:""; display:inline-block; margin-right:5px; font-family:"icomoon"; font-size:16px; vertical-align:middle;}
+#arc_footer .footerMenu .util_wrap .sign a.login:before {content:"\E971";}
+#arc_footer .footerMenu .util_wrap .sign a.flag_lang {margin-left:10px;}
+#arc_footer .footerMenu .util_wrap .sign a.flag_lang:before {background:url(/data/skin/responsive_multishop_flexible_gl/images/arc/flags.png) -999em -999em no-repeat; width:24px; height:24px;}
+#arc_footer .footerMenu .util_wrap .sign .flag_lang.ca:before {background-position: -72px 0;}
+#arc_footer .footerMenu .util_wrap .arcApp a:before {content:"\E908"; display:inline-block; font-family:"icomoon"; font-size:18px; vertical-align:middle; margin-right:10px;}
+#arc_footer .footerMenu .util_wrap .social a {margin:0 2.5%; font:0/0 a;}
+#arc_footer .footerMenu .util_wrap .social a:first-child {margin-left:0;}
+#arc_footer .footerMenu .util_wrap .social a:before {display:block; font-family:"icomoon"; font-size:17px; line-height:1.2;}
+#arc_footer .footerMenu .util_wrap .social .fb:before {content:"\EA90";}
+#arc_footer .footerMenu .util_wrap .social .instar:before {content:"\EA92";}
+#arc_footer .footerMenu .util_wrap .social .tw:before {content:"\EA96";}
+#arc_footer .footerMenu .util_wrap .social .pin:before {content:"\E902";}
+#arc_footer .footerMenu .util_wrap .social .yb:before {content:"\EA9D";}
+#arc_footer .services {padding:10px 0; text-align:center;}
+#arc_footer .services li {display:inline-block;}
+#arc_footer .services li a {color:#333; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; font-size:13px;}
+#arc_footer .services li a:hover {color:#000;}
+#arc_footer .services li a:before {content:""; display:inline-block; background:#333; width:1px; height:10px; margin:0 5px;}
+#arc_footer .services li:first-child a:before {display:none;}
+
+/* ÇÏ´Ü Äü */
+.quick {max-width:90%; margin:40px auto; padding:70px 0 0; text-align:center;}
+.quick i{font-size:60px; color:#333; width: 100%;}
+.quick dl {display:inline-block; margin:0 3%; vertical-align: top;width: 27%;}
+.quick dt {line-height:1.2; font-size:20px; color:#333; font-family: "Avenir LT W01 85 Heavy", arial, sans-serif;}
+.quick dt:before {content:""; display:block; padding-bottom:20px; color:#333; font-size:50px; text-align:center; font-family: "icomoon";}
+.quick .q01 dt:before {content:"\E922";}
+.quick .q02 dt:before {content:"\E91E"; padding:10px 0 25px; font-size:35px;}
+.quick .q03 dt:before {content:"\E921";}
+.quick dd {font-size:15px; font-weight:400;}
+.quick dd a{display: inline-table;width:100%; text-decoration: underline; padding-top:20px; text-transform: uppercase;}
+
+@media screen and (max-width: 1064px){
+	#arc_footer .footerMenu > div {width:20%;}
+	#arc_footer .footerMenu .logo {display:none;}
+}
+@media screen and (max-width: 929px){
+	#arc_footer .footerMenu > div {width:25%; min-height:160px; text-align:center;}
+	#arc_footer .footerMenu .util_wrap {width:100%; min-height:auto;}
+	#arc_footer .footerMenu .util_wrap > div {margin-top:20px;}
+	#arc_footer .footerMenu .util_wrap .social a {margin:0 1%;}
+	.quick dl {width:33.3%; margin:0;}
+	.quick dd {display:none;}
+	.quick dt {font-size:15px;}
+}
+@media screen and (max-width: 767px){
+	#arc_footer .footerMenu > div {width:50%; min-height:160px; text-align:center;}
+}
+
+
+#arc_conts {width:88%; max-width:1430px; margin:0 auto; padding:2.5em 0; color:#000; font-family:"Avenir LT W01 55 Roman", arial, sans-serif;}
+.top_wrap {}
+.top_wrap .bread  a {display:inline-block; text-decoration:underline; color:#000; font-size:14px;}
+.top_wrap .bread  a:hover {text-decoration:underline;}
+.top_wrap .bread  a:after {content:"\203A"; display:inline-block; height:17px; margin:0 5px;}
+.top_wrap h2 {font-size:20px; margin:5px 0 18px; font-family:"Avenir LT W01 85 Heavy", arial, sans-serif;}
+
+.float-box {}
+.float-box:after {content:""; display:block; clear:both;}
+.float-box .left-box {float:left; width:70%; min-height:500px; padding-bottom:3em; border-right:1px solid #ccc; box-sizing:border-box;}
+.float-box .right-box {float:right; width:30%; padding-left:70px; box-sizing:border-box;}
+
+.help_service strong {position:relative; font-size:18px; font-weight:bold;}
+.help_service strong:after {content:"\e906"; position:absolute; top:0; left:-50px; font-size:38px; font-family: "icomoon";}
+.help_service p {margin-top:1em;}
+.help_service em {display:block; margin-top:1em; font-weight:bold;}
+.help_service em a {text-decoration:underline; color:#000;}
+
+.sizing_guide p.des {width:80%;}
+.sizing_guide .prd_list {margin-top:1em;}
+.sizing_guide .prd_list:after {content:""; display:block; clear:both;}
+.sizing_guide .prd_list > div {float:left; position:relative; width:33.3%;}
+.sizing_guide .prd_list > div a {display:block;}
+.sizing_guide .prd_list > div img {display:block; margin:0 auto;}
+.sizing_guide .prd_list > div p {margin:1em 0; color:#000; font-size:15px; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; text-align:center;}
+.sizing_guide .prd_list > div span {display:block; background:#000; max-width:142px; height:42px; margin:0 auto; color:#fff; line-height:42px; text-align:center; font-size:16px;}
+.sizing_guide .prd_list > div span:hover {background-image:linear-gradient(#373737, #000);}
+.sizing_guide .prd_list .p01,
+.sizing_guide .prd_list .p02,
+.sizing_guide .prd_list .p03 {height:550px; margin-bottom:1.5em;}
+.sizing_guide .prd_list .p01 img,
+.sizing_guide .prd_list .p02 img {height:417px;}
+.sizing_guide .prd_list .p03:after {content:""; display:block; clear:both;}
+.sizing_guide .prd_list .p03 a {float:left; width:100%;}
+.sizing_guide .prd_list .p03 .link2 {margin-top:83px;}
+.sizing_guide .prd_list .p04 {padding-top:58px;}
+.sizing_guide .prd_list .p06 {padding-top:69px;}
+
+@media screen and (max-width: 1064px){
+	#arc_conts {width:94%;}
+}
+@media screen and (max-width: 929px){
+	.float-box .left-box {width:100%; min-height:auto; border:0;}
+	.float-box .right-box {width:100%; padding-left:50px;}
+}
+@media screen and (max-width: 539px){
+	.sizing_guide p.des {width:100%;}
+	.sizing_guide .prd_list .p01,
+	.sizing_guide .prd_list .p02 {width:50%;}
+	.sizing_guide .prd_list .p03 {width:100%; height:auto;}
+	.sizing_guide .prd_list .p03 a {width:50%;}
+	.sizing_guide .prd_list .p03 .link2 {margin-top:40px;}
+	.sizing_guide .prd_list .p04,
+	.sizing_guide .prd_list .p05 {width:50%;}
+	.sizing_guide .prd_list .p06 {width:100%;}
+}
+
+.prd-service_info {max-width:650px;}
+.prd-service_info strong {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif; font-weight:normal;}
+.prd-service_info .btn-serviceInfo {display:inline-block; background:#000; min-width:142px; max-width:400px; height:42px; margin:1em 0 1.5em; padding:0 20px; color:#fff; font-size:16px; line-height:42px; font-family: "Avenir LT W01 65 Medium", arial, sans-serif; text-align:center;}
+.prd-service_info .btn-serviceInfo:hover {background-image: linear-gradient(#373737, #000);}
+.prd-service .float-box {border-top:1px solid #ccc; margin-top:2em; padding-top:2em;}
+.service_faq {padding-right:2em;}
+.service_faq h2 {color:#000; font-size:18px;}
+.service_faq dl {margin-top:15px;}
+.service_faq dl dt a {display:block; position:relative; padding-right:20px; color:#000; font-size:15px; font-family: "Avenir LT W0 55 Roman", arial, sans-serif; line-height:1.5; transition:all .2s ease;}
+.service_faq dl dt a:after {content:"+"; position:absolute; top:-5px; right:0; font-size:22px; transition:all .2s ease;}
+.service_faq dl dd {display:none; padding:20px 0 30px;}
+.service_faq dl dd p {max-width:650px; color:#000; font-size:15px; line-height:1.5;}
+.service_faq dl.on dt a {font-size:16px; font-family:"Avenir LT W01 85 Heavy", arial, sans-serif;}
+.service_faq dl.on dt a:after {font-size:28px; transform: rotate(45deg);}
+.service_faq dl.on dd {display:block;}
+
+@media screen and (max-width: 929px){
+	.service_faq {padding-right:0;}
+}
