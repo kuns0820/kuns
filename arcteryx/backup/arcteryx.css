@@ -1,0 +1,201 @@
+@charset "utf-8";
+.icomoon {font-family:"icomoon" !important;}
+h1, h2, h3, h4, h5 {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif;}
+
+#arc_footer {padding:0 0 30px; border-top:1px solid #999;}
+#arc_footer .footerMenu {max-width:1430px; margin:0 auto; padding:60px 3% 40px; border-width:1px 0;}
+#arc_footer .footerMenu:after {content:""; display:block; clear:both;}
+#arc_footer .footerMenu > div {float:left; width:17%;}
+#arc_footer .footerMenu .logo {width:15%;}
+#arc_footer .footerMenu > div li {margin-top:13px;}
+#arc_footer .footerMenu > div li:first-child {margin-top:0;}
+#arc_footer .footerMenu > div a {margin-top:13px; color:#333; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; font-size:13px;}
+#arc_footer .footerMenu > div a:hover {color:#000;}
+#arc_footer .footerMenu .util_wrap > div {margin-top:13px;}
+#arc_footer .footerMenu .util_wrap > div:first-child {margin-top:0;}
+#arc_footer .footerMenu .util_wrap a {display:inline-block; margin-top:0; vertical-align:middle;}
+#arc_footer .footerMenu .util_wrap .sign a:before {content:""; display:inline-block; margin-right:5px; font-family:"icomoon"; font-size:16px; vertical-align:middle;}
+#arc_footer .footerMenu .util_wrap .sign a.login:before {content:"\E971";}
+#arc_footer .footerMenu .util_wrap .sign a.flag_lang {margin-left:10px;}
+#arc_footer .footerMenu .util_wrap .sign a.flag_lang:before {background:url(/data/skin/responsive_multishop_flexible_gl/images/arc/flags.png) -999em -999em no-repeat; width:24px; height:24px;}
+#arc_footer .footerMenu .util_wrap .sign .flag_lang.ca:before {background-position: -72px 0;}
+#arc_footer .footerMenu .util_wrap .arcApp a:before {content:"\E908"; display:inline-block; font-family:"icomoon"; font-size:18px; vertical-align:middle; margin-right:10px;}
+#arc_footer .footerMenu .util_wrap .social a {margin:0 2.5%; font:0/0 a;}
+#arc_footer .footerMenu .util_wrap .social a:first-child {margin-left:0;}
+#arc_footer .footerMenu .util_wrap .social a:before {display:block; font-family:"icomoon"; font-size:17px; line-height:1.2;}
+#arc_footer .footerMenu .util_wrap .social .fb:before {content:"\EA90";}
+#arc_footer .footerMenu .util_wrap .social .instar:before {content:"\EA92";}
+#arc_footer .footerMenu .util_wrap .social .tw:before {content:"\EA96";}
+#arc_footer .footerMenu .util_wrap .social .pin:before {content:"\E902";}
+#arc_footer .footerMenu .util_wrap .social .yb:before {content:"\EA9D";}
+#arc_footer .services {padding:10px 0; text-align:center;}
+#arc_footer .services.terms {border-top:1px solid #999; padding-top:35px;}
+#arc_footer .services li {display:inline-block;}
+#arc_footer .services li a {color:#333; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; font-size:13px;}
+#arc_footer .services li a:hover {color:#000;}
+#arc_footer .services li a:before {content:""; display:inline-block; background:#333; width:1px; height:10px; margin:0 5px;}
+#arc_footer .services li:first-child a:before {display:none;}
+
+/* 하단 퀵 */
+.quick {max-width:90%; margin:40px auto; padding:70px 0 0; text-align:center;}
+.quick i{font-size:60px; color:#333; width: 100%;}
+.quick dl {display:inline-block; margin:0 3%; vertical-align: top;width: 27%;}
+.quick dt {line-height:1.2; font-size:20px; color:#333; font-family: "Avenir LT W01 85 Heavy", arial, sans-serif;}
+.quick dt:before {content:""; display:block; padding-bottom:20px; color:#333; font-size:50px; text-align:center; font-family: "icomoon";}
+.quick .q01 dt:before {content:"\E922";}
+.quick .q02 dt:before {content:"\E91E"; padding:10px 0 25px; font-size:35px;}
+.quick .q03 dt:before {content:"\E921";}
+.quick dd {font-size:15px; font-weight:400;}
+.quick dd a{display: inline-table;width:100%; text-decoration: underline; padding-top:20px; text-transform: uppercase;}
+
+#arc-mobExplore {display:none; border-top:1px solid #ccc;}
+#arc-mobExplore h3:after {content:""; display:block; clear:both;}
+#arc-mobExplore h3 a {display:block; position:relative; color:#000; font-family: "Avenir LT W01 85 Heavy", arial, sans-serif; font-size:14px; padding:25px; font-weight:bold;}
+#arc-mobExplore h3 a:after {content:"+";  float:right; font-size:20px; line-height:1; transition:all .2s ease;}
+#arc-mobExplore li {width:96%; margin:0 auto;}
+#arc-mobExplore li a {display:block; position:relative; border-top:1px solid #999; font-size:15px; padding:25px; box-sizing:border-box; color:#000;}
+#arc-mobExplore > div {display:none;}
+#arc-mobExplore.on > div {display:block;}
+#arc-mobExplore.on h3 a:after {transform:rotate(45deg);}
+
+
+@media screen and (max-width: 1064px){
+	#arc_footer .footerMenu > div {width:20%;}
+	#arc_footer .footerMenu .logo {display:none;}
+}
+@media screen and (max-width: 929px){
+	#arc_footer .footerMenu > div {width:25%; min-height:160px; text-align:center;}
+	#arc_footer .footerMenu .util_wrap {width:100%; min-height:auto;}
+	#arc_footer .footerMenu .util_wrap > div {margin-top:20px;}
+	#arc_footer .footerMenu .util_wrap .social a {margin:0 1%;}
+	.quick dl {width:33.3%; margin:0;}
+	.quick dd {display:none;}
+	.quick dt {font-size:15px;}
+}
+@media screen and (max-width: 767px){
+	#arc-mobExplore {display:block;;}
+	#arc_footer .footerMenu > div {width:50%; min-height:160px; text-align:center;}
+}
+
+
+#arc_conts {width:88%; max-width:1430px; margin:0 auto; padding:2.5em 0; color:#000; font-family:"Avenir LT W01 55 Roman", arial, sans-serif;}
+.top_wrap {}
+.top_wrap .bread  a {display:inline-block; text-decoration:underline; color:#000; font-size:14px;}
+.top_wrap .bread  a:hover {text-decoration:underline;}
+.top_wrap .bread  a:after {content:"\203A"; display:inline-block; height:17px; margin:0 5px;}
+.top_wrap h2 {font-size:20px; margin:5px 0 18px; font-family:"Avenir LT W01 85 Heavy", arial, sans-serif;}
+
+.float-box {}
+.float-box:after {content:""; display:block; clear:both;}
+.float-box .left-box {float:left; width:70%; min-height:500px; padding-bottom:3em; padding-right:2em; border-right:1px solid #ccc; box-sizing:border-box;}
+.float-box .right-box {float:right; width:30%; padding-left:70px; box-sizing:border-box;}
+
+.help_service {color:#000; font-family: "Avenir LT W01 55 Roman", arial, sans-serif;}
+.help_service strong {display:block; position:relative; margin-top:2em; font-size:18px; font-weight:bold;}
+.help_service strong:after {content:"\e906"; position:absolute; top:0; left:-50px; font-size:38px; font-family: "icomoon";}
+.help_service strong:first-of-type {margin-top:0;}
+.help_service p {margin-top:1em;}
+.help_service em {display:block; margin-top:1em; font-weight:bold;}
+.help_service em a {text-decoration:underline; color:#000;}
+
+.sizing_guide p.des {width:80%;}
+.sizing_guide .prd_list {margin-top:1em;}
+.sizing_guide .prd_list:after {content:""; display:block; clear:both;}
+.sizing_guide .prd_list > div {float:left; position:relative; width:33.3%;}
+.sizing_guide .prd_list > div a {display:block;}
+.sizing_guide .prd_list > div img {display:block; margin:0 auto;}
+.sizing_guide .prd_list > div p {margin:1em 0; color:#000; font-size:15px; font-family:"Avenir LT W01 55 Roman", arial, sans-serif; text-align:center;}
+.sizing_guide .prd_list > div span {display:block; background:#000; max-width:142px; height:42px; margin:0 auto; color:#fff; line-height:42px; text-align:center; font-size:16px;}
+.sizing_guide .prd_list > div span:hover {background-image:linear-gradient(#373737, #000);}
+.sizing_guide .prd_list .p01,
+.sizing_guide .prd_list .p02,
+.sizing_guide .prd_list .p03 {height:550px; margin-bottom:1.5em;}
+.sizing_guide .prd_list .p01 img,
+.sizing_guide .prd_list .p02 img {height:417px;}
+.sizing_guide .prd_list .p03:after {content:""; display:block; clear:both;}
+.sizing_guide .prd_list .p03 a {float:left; width:100%;}
+.sizing_guide .prd_list .p03 .link2 {margin-top:83px;}
+.sizing_guide .prd_list .p04 {padding-top:58px;}
+.sizing_guide .prd_list .p06 {padding-top:69px;}
+
+@media screen and (max-width: 1064px){
+	#arc_conts {width:94%;}
+}
+@media screen and (max-width: 929px){
+	.float-box .left-box {width:100%; min-height:auto; padding-right:0; border:0;}
+	.float-box .right-box {width:100%; padding-left:50px;}
+}
+@media screen and (max-width: 539px){
+	.sizing_guide p.des {width:100%;}
+	.sizing_guide .prd_list .p01,
+	.sizing_guide .prd_list .p02 {width:50%;}
+	.sizing_guide .prd_list .p03 {width:100%; height:auto;}
+	.sizing_guide .prd_list .p03 a {width:50%;}
+	.sizing_guide .prd_list .p03 .link2 {margin-top:40px;}
+	.sizing_guide .prd_list .p04,
+	.sizing_guide .prd_list .p05 {width:50%;}
+	.sizing_guide .prd_list .p06 {width:100%;}
+}
+
+.prd-service_info {max-width:650px;}
+.prd-service_info strong {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif; font-weight:normal;}
+.prd-service_info .btn-serviceInfo {display:inline-block; background:#000; min-width:142px; max-width:400px; height:42px; margin:1em 0 1.5em; padding:0 20px; color:#fff; font-size:16px; line-height:42px; font-family: "Avenir LT W01 65 Medium", arial, sans-serif; text-align:center;}
+.prd-service_info .btn-serviceInfo:hover {background-image: linear-gradient(#373737, #000);}
+.prd-service .float-box {border-top:1px solid #ccc; margin-top:2em; padding-top:2em;}
+.service_faq h2 {color:#000; font-size:18px;}
+.service_faq dl {margin-top:15px;}
+.service_faq dl dt a {display:block; position:relative; padding-right:20px; color:#000; font-size:15px; font-family: "Avenir LT W0 55 Roman", arial, sans-serif; line-height:1.5; transition:all .2s ease;}
+.service_faq dl dt a:after {content:"+"; position:absolute; top:-5px; right:0; font-size:22px; transition:all .2s ease;}
+.service_faq dl dd {display:none; padding:20px 0 30px;}
+.service_faq dl dd p {max-width:650px; color:#000; font-size:15px; line-height:1.5;}
+.service_faq dl.on dt a {font-size:16px; font-family:"Avenir LT W01 85 Heavy", arial, sans-serif;}
+.service_faq dl.on dt a:after {font-size:28px; transform: rotate(45deg);}
+.service_faq dl.on dd {display:block;}
+
+@media screen and (max-width: 929px){
+	.service_faq {padding-right:0;}
+}
+
+
+.support .spt_conts .list:after {content:""; display:block; clear:both;}
+.support .spt_conts .list li {float:left; width:48%; margin:0 0 2em; border:1px solid #ccc;}
+.support .spt_conts .list li:nth-child(even) {float:right;}
+.support .spt_conts .list li p {display:table; width:100%;}
+.support .spt_conts .list li a {display:table-cell; height:85px; text-align:center; vertical-align:middle;}
+.support .spt_conts .list li a span {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif; font-size:15px; color:#000;}
+.support .spt_conts .list li a span:before {display:inline-block; margin-right:10px; font-family:"icomoon"; line-height:1; font-size:33px; vertical-align:middle;}
+.support .spt_conts .list li.s01 a span:before {content:"\e90f";}
+.support .spt_conts .list li.s02 a span:before {content:"\e915";}
+.support .spt_conts .list li.s03 a span:before {content:"\e917";}
+.support .spt_conts .list li.s04 a span:before {content:"\e914"}
+.support .spt_conts .list li.s05 a span:before {content:"\e912"}
+.support .spt_conts .list li.s06 a span:before {content:"\e918"; font-size:42px;}
+.support .spt_conts .list li.s07 a span:before {content:"\e91d"}
+.support .spt_conts .list li.s08 a span:before {content:""; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1048 1024'%3e%3cpath d='M679.897 856.67l27.196-20.397c23.419-16.997 24.174-24.174 24.174-63.457V580.179c0-35.506-2.266-37.772-24.93-40.794h-26.44v-16.62l142.401-69.501 7.554 4.91v281.024c0 37.772 3.022 45.704 24.174 46.837l27.196 1.889v16.62l-201.325 68.745zm45.704-478.95c1.171-33.982 24.614-62.178 56.131-70.515l.527-.119c34.75-11.709 56.658-2.644 56.658 32.106-1.171 33.982-24.614 62.178-56.131 70.515l-.527.119c-34.75 12.842-56.658 5.666-56.658-32.106zM524.276 288.201L33.995 124.648c-6.888-1.137-12.077-7.048-12.077-14.172 0-7.927 6.426-14.353 14.353-14.353 2.486 0 4.825.632 6.864 1.744l-.075-.038L524.276 258.36l480.838-160.531a13.898 13.898 0 012.277-.182c7.927 0 14.353 6.426 14.353 14.353 0 5.441-3.027 10.175-7.49 12.609l-.075.038z'/%3e%3cpath d='M524.276 231.543L58.169 75.544c-4.537-2.472-7.565-7.206-7.565-12.646 0-7.927 6.426-14.353 14.353-14.353.804 0 1.592.066 2.36.193l-.083-.011 457.042 151.088 457.797-150.71a13.898 13.898 0 012.277-.182c7.927 0 14.353 6.426 14.353 14.353 0 5.441-3.027 10.175-7.49 12.609l-.075.038z'/%3e%3cpath d='M524.276 174.885L82.721 27.574c-5.91-1.904-10.111-7.355-10.111-13.787 0-7.983 6.472-14.455 14.455-14.455 1.551 0 3.045.244 4.446.697L91.409 0l432.868 145.045L956.767 0a13.898 13.898 0 012.277-.182c7.927 0 14.353 6.426 14.353 14.353 0 5.441-3.027 10.175-7.49 12.609l-.075.038z'/%3e%3cpath d='M524.276 1024h-4.533L9.82 853.27c-5.748-1.955-9.811-7.301-9.821-13.597V159.775a13.963 13.963 0 015.998-11.301l.046-.03a14.24 14.24 0 018.284-2.632c1.631 0 3.199.272 4.66.773l-.101-.03 505.39 168.463 505.39-168.463a14.042 14.042 0 014.156-.615c7.878 0 14.273 6.346 14.353 14.205V840.05c-.009 6.297-4.073 11.643-9.72 13.568l-.101.03-509.545 169.596zM28.329 830.985l495.947 165.442 495.569-165.442V179.417L528.808 343.348c-1.353.466-2.911.734-4.533.734s-3.18-.269-4.634-.764l.101.03L28.328 179.417z'/%3e%3cpath d='M446.466 486.882h-4.533L94.808 370.544c-6.888-1.137-12.077-7.048-12.077-14.172 0-7.927 6.426-14.353 14.353-14.353 2.486 0 4.825.632 6.864 1.744l-.075-.038 347.125 115.582c5.236 2.218 8.843 7.315 8.843 13.254 0 7.583-5.881 13.793-13.33 14.317l-.045.003zM446.466 609.263h-4.533L94.808 491.037c-6.888-1.137-12.077-7.048-12.077-14.172 0-7.927 6.426-14.353 14.353-14.353 2.486 0 4.825.632 6.864 1.744l-.075-.038L450.998 579.8c5.236 2.218 8.843 7.315 8.843 13.254 0 7.583-5.881 13.793-13.33 14.317l-.045.003zM446.466 731.644h-4.533L94.808 615.306c-6.888-1.137-12.077-7.048-12.077-14.172 0-7.927 6.426-14.353 14.353-14.353 2.486 0 4.825.632 6.864 1.744l-.075-.038 347.125 115.582c5.236 2.218 8.843 7.315 8.843 13.254 0 7.583-5.881 13.793-13.33 14.317l-.045.003zM446.466 854.026h-4.533L94.808 737.31c-6.888-1.137-12.077-7.048-12.077-14.172 0-7.927 6.426-14.353 14.353-14.353 2.486 0 4.825.632 6.864 1.744l-.075-.038 347.125 115.582c5.236 2.218 8.843 7.315 8.843 13.254 0 7.583-5.881 13.793-13.33 14.317l-.045.003zM524.276 1024c-7.635-.205-13.771-6.341-13.975-13.956V330.128c1.156-6.866 7.057-12.033 14.165-12.033s13.009 5.166 14.153 11.948l.012.084v679.897c-.211 7.763-6.554 13.976-14.348 13.976h-.005z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:auto; height:33px;}
+.support .spt_conts .list li.s09 a span:before {content:""; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 27.35'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%23231f20%7d%3c/style%3e%3c/defs%3e%3cg id='Layer_2' data-name='Layer 2'%3e%3cg id='Layer_1-2' data-name='Layer 1'%3e%3cpath class='cls-1' d='M19 18.47H0V18a9.46 9.46 0 015.25-8.5 5.69 5.69 0 118.49 0A9.46 9.46 0 0119 18zm-18-1h17a8.46 8.46 0 00-5.3-7.38l-.76-.31.62-.54a4.69 4.69 0 10-6.1 0l.62.54-.76.31A8.46 8.46 0 001 17.47zM.5 20.66h2.42c1.35 0 2.48.43 2.48 2s-1 2-2.41 2H1.94v2.54H.5zm1.44 2.76h1c.51 0 1-.18 1-.78s-.68-.76-1.23-.76h-.77zM6.07 20.66H8.6c1.34 0 2.46.46 2.46 2a1.68 1.68 0 01-1.41 1.79l1.66 2.75H9.58l-1.36-2.62h-.71v2.61H6.07zm1.44 2.7h.85c.53 0 1.21 0 1.21-.73s-.59-.76-1.11-.76h-.95zM15 20.5a3.3 3.3 0 013.52 3.43A3.3 3.3 0 0115 27.35a3.3 3.3 0 01-3.52-3.43A3.3 3.3 0 0115 20.5zm0 5.5a2 2 0 002-2.1 2 2 0 10-4.05 0A2 2 0 0015 26z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:auto; height:33px;}
+.support .spt_conts .list li.s10 a span:before {content:"\e920"}
+.support .spt_conts .list li.s11 a span:before {content:"\e91a"}
+
+.support_terms {margin:8em 0 0; color:#000; text-align:center;}
+.support_terms a {color:#000; font-size:15px; text-decoration:underline;}
+.support_terms a:hover {text-decoration:underline;}
+.support_terms a:before {content:""; display:inline-block; width:1px; height:14px; margin:0 9px 0 5px; background:#000; vertical-align:middle;}
+.support_terms a:first-child:before {display:none;}
+
+@media screen and (max-width: 929px){
+	.support .spt_conts .list li a {height:120px;}
+	.support .spt_conts .list li a span:before {display:block; width:100%; margin-bottom:10px; text-align:center;}
+}
+
+#loginTab li:nth-child(2) {background:#fff; border-right:0; border-top:0;}
+#loginTab li:nth-child(2) a {display:none;}
+
+
+.terms_page .text-box .inner {width:100%; max-width:750px;}
+
+.float-box.return-info {margin-top:2em;}
+.float-box.return-info .left-box {width:60%;}
+.float-box.return-info .right-box {width:40%;}
+.float-box.return-info .left-box .title_sub1 {padding-top:0;}
+.float-box.return-info .left-box .order-stat {padding-left:2em;}
+.float-box.return-info .left-box .order-stat li {margin-bottom:20px; color:#000; font-size:15px; font-family: "Avenir LT W01 55 Roman",arial,sans-serif; list-style: disc;}

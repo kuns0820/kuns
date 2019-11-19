@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*----------------------------------*/
+/* O2O
+/*----------------------------------*/
+body {
+	background-image:url("../images/design/o2o_join_back.png"), url("../images/design/o2o_join_back_circle.png"), url("../images/design/o2o_join_back_circle.png"), url("../images/design/o2o_join_back_circle.png"), linear-gradient( 45deg, #f576a2 10%, #f8807f);
+	background-repeat:no-repeat, no-repeat, no-repeat;
+	background-size:100% 362px, 780px 780px, 780px 780px, 780px 780px, 100% 362px; 
+	background-position:0 0, calc(50% - 300px) 230px, calc(50% - 150px) 190px, calc(50% + 300px) 110px, 0 0; background-color:#fbfbfb;
+}
+
+#layout_body {background:none !important;}
+
+
+
+

@@ -1,0 +1,30 @@
+@charset "UTF-8"; 
+#promo_popup {width:300px; border:5px solid #a1a1a1; padding-bottom:20px; background-color:#fff;}
+#promo_popup_close {width:300px; height:18px; background:#a1a1a1; color:#fff; font-size:11px; letter-spacing:-1px; text-align:right; padding:5px}
+#promo_popup_close a {color:#fff}
+div.online_coupon { width:255px; height:120px; margin-top:5px;}
+div.online_coupon .discount_price {padding-top:50px; padding-left:70px;}
+
+div.online_coupon_percent_ { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_percent_ .discount_price { padding-top:55px; padding-left:70px;}
+div.online_coupon_percent_sametime { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_percent_sametime .discount_price { padding-top:45px; padding-left:70px;}
+
+div.online_coupon_won_ { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_won_ .discount_price { padding-top:55px; padding-left:50px;}
+div.online_coupon_won__shipping { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_won__shipping .discount_price { padding-top:55px; padding-left:50px;}
+div.online_coupon_won_sametime { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_won_sametime .discount_price { padding-top:45px; padding-left:50px;}
+div.online_coupon_won_sametime_shipping { width:255px; height:120px; margin-top:5px;}
+div.online_coupon_won_sametime_shipping .discount_price { padding-top:45px; padding-left:50px;}
+
+
+
+div.use_limit_txt { overflow-x:hidden; margin-top:-1px;}
+.couponDownload {cursor:pointer;} 
+.coupongoodsreviewbtn {cursor:pointer;}
+
+.cpn_list {font-size:14px; margin:10px auto 20px; letter-spacing:-1px}
+.cpn_list th {color:#999; padding:3px 0}
+.cpn_list td {color:#000; padding-left:5px}
