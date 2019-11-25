@@ -2063,7 +2063,7 @@ label.checkbox_allselect .txt { display:inline-block; vertical-align:middle; pad
 .subpage_wrap .subpage_container.v3 { padding:0; }
 
 .subpage_lnb .title1 { padding:60px 0 0 0; height:70px; }
-.subpage_lnb .title1>a { display:block; padding-left:10px; font-size:20px; font-weight:700; color:#000; }
+.subpage_lnb .title1>a { display:block; padding-left:10px; font-size:20px; color:#000; }
 .subpage_lnb .title2 { margin-top:20px; border-bottom:1px #eee solid; border-radius:2px; }
 .subpage_lnb .title1 + .title2 { margin-top:0; }
 .subpage_lnb .title2>a { display:block; padding:10px 0 6px 10px; font-size:19px; line-height:1.3; font-weight:500; color:#333; }
@@ -3016,7 +3016,7 @@ div.coupon_detail { padding:10px 0; }
 
 /* -------------------------------------- Layout --------------------------------------------- */
 #layout_body{max-width:100%; margin:0 auto;}
-.resp_wrap { max-width:78%; margin:0 auto; padding-left:40px; padding-right:40px; }
+.resp_wrap { max-width:88%; margin:0 auto; padding-left:40px; padding-right:40px; }
 .resp_wrap:after {display:block; content:""; clear:both;}
 .wrap_aside { padding:0 10px; }
 .wrap_aside.v2 { padding-top:30px; }
@@ -3178,8 +3178,8 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 .layout_header .logo_wrap { zoom:1; }
 .layout_header .logo_wrap:after {display:block; content:""; clear:both;}
 .layout_header .logo_wrap .resp_wrap { position:relative; }
-.layout_header .logo_wrap .logo_area { /*display:table;*/ margin:0 auto; }
-.layout_header .logo_wrap .logo_area>a { display:table-cell; height:148px; vertical-align:middle; }
+.layout_header .logo_wrap .logo_area {}
+.layout_header .logo_wrap .logo_area>a {height:148px; vertical-align:middle; }
 .layout_header .logo_wrap.flying {position:fixed; width:100%; top:0; left:0; right:0; z-index:900; height:auto; border-top:none; background:rgba(255,255,255,0.9); }
 .layout_header .logo_wrap.flying .logo_area { height:auto; line-height:normal; }
 .layout_header .logo_wrap.flying .logo_area img { max-height:32px; }
@@ -3213,8 +3213,8 @@ iframe#actionFrame { width:0; height:0; position:absolute; left:0; bottom:0; vis
 /* GNB 카테고리 네비게이션 */
 .layout_header .nav_wrap { border-top:1px #f0f0f0 solid; }
 .layout_header .nav_wrap .resp_wrap { position:relative; }
-.layout_header .nav_wrap .respCategoryList { display:table; width:100%; table-layout:fixed; }
-.layout_header .nav_wrap .respCategoryList>li { display:table-cell; text-align:center; position:relative; vertical-align:middle; }
+.layout_header .nav_wrap .respCategoryList {}
+.layout_header .nav_wrap .respCategoryList>li {text-align:center; position:relative; vertical-align:middle; }
 .layout_header .nav_wrap .respCategoryList .categoryDepthLink { display:block; height:50px; padding:0 2px; font-size:15px; line-height:51px; font-weight:400; color:#333; }
 .layout_header .nav_wrap .respCategoryList .categoryDepthLink>em { display:inline-block; height:49px; position:relative; }
 .layout_header .nav_wrap .respCategoryList .categoryDepthLink>em:after { display:block; position:absolute; left:50%; bottom:-1px; width:0px; padding-top:1px; background:#444; transition:all .2s; content:"" }
@@ -4122,7 +4122,7 @@ input:placeholder{font-size:15px; }
 /* ==================== Mobile Aside ==================== */
 .layout_side_background {z-index:990; background-color:#333; opacity:0.6; filter:alpha(opacity=60); position:fixed; left:0px; top:0px; width:100%; height:100%; display:none;}
 .aside_navigation_bottom_line { padding-top:1px; background-color:#aaa; position:relative; top:-1px; z-index:3; }
-.side_close { display:block; position:fixed; left:295px; margin-top:20px; z-index:2010; width:0; height:30px; text-indent:-9999px; transition:width 0.4s 0.8s; }
+.side_close { display:block; position:fixed; left:295px; margin-top:20px; z-index:2010; width:0; height:30px; text-indent:-9999px; transition:width  0.2s; }
 .side_close:before, .side_close:after { display:block; content:''; position:absolute; left:0; top:calc(50% - 2px); width:100%; height:4px; background:#fff; border-radius:2px; transform:rotate(0deg); transition:transform 0.4s 0s;  box-shadow:0 0 2px #999; }
 .side_close.on { width:30px; }
 .side_close.on:before { transform:rotate(45deg); transition-delay:1.2s; }

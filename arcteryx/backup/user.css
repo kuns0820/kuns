@@ -62,7 +62,7 @@ body{overflow-x:hidden;}
 .layout_header .util_wrap a {font-size:13px; color:#333; font-weight:400;}
 .layout_header .logo_wrap .resp_wrap { height:100px; margin-bottom:-80px;}
 .layout_header .logo_wrap .logo_area {margin:0;}
-.layout_header .logo_wrap .logo_area>a {position:absolute; z-index:200; height:inherit; line-height:90px;}
+.layout_header .logo_wrap .logo_area>a {position:relative; left:-70px; z-index:200; height:inherit; line-height:90px;}
 .layout_header .logo_wrap .resp_top_hamburger {display:none;}
 .resp_top_hamburger>a {width:24px;}
 .resp_top_hamburger>a:before {transform:translateY(-7px) rotate(0deg);}
@@ -74,9 +74,10 @@ body{overflow-x:hidden;}
 .layout_header .resp_top_search .search_ver2 .search_new .contetns_area {width: 348px;}
 .layout_header .resp_top_search .search_ver2 .search_new .input_area button.close {display:none;}
 .layout_header .resp_top_search .search_ver2 .search_new .input_area button.search {background:url('../images/design_resp/icon_search.png') 0 center no-repeat; background-size:cover;}
-.layout_header .nav_wrap {position:relative; border-color:transparent;}
-.layout_header .nav_wrap .respCategoryList {margin:auto;  margin-left:-400px; table-layout:auto; display:flex; align-items:center; justify-content:center; list-style:none; transform:none !important;}
-.layout_header .nav_wrap .respCategoryList>li {white-space:nowrap;}
+.layout_header .nav_wrap {position:relative; top:-10px; border-color:transparent;}
+.layout_header .nav_wrap .respCategoryList {margin-left:230px}
+.layout_header .nav_wrap .respCategoryList:after {content:""; display:block; clear:both;}
+.layout_header .nav_wrap .respCategoryList>li {float:left;}
 .layout_header .nav_wrap .respCategoryList .categoryDepthLink {padding:0 18px; height:80px; line-height:80px; font-size:15px;}
 .layout_header .nav_wrap .respCategoryList .categoryDepthLink>em {height:79px;}
 .layout_header .nav_wrap .respCategoryList .categoryDepth1 .categoryDepthLink,
@@ -110,17 +111,19 @@ body{overflow-x:hidden;}
 @media only screen and (max-width:1200px) {   
     .layout_header .logo_wrap .resp_wrap {margin-bottom:0; padding-top:0; padding-bottom:0;}
 	.layout_header .logo_wrap .resp_top_hamburger {display:block; left:10px; margin-top:-10px;}
-    .layout_header .logo_wrap .logo_area>a {left:50px;}
+    .layout_header .logo_wrap .logo_area>a {left:-50px;}
     .layout_header .nav_wrap {display:none;}
     .layout_header .resp_top_cart {display:none;}
     .layout_header .resp_top_search {right:10px;}    
 }   
 @media only screen and (max-width:1023px) {   
+	.layout_header .logo_wrap .logo_area>a {left:-30px;}
     .layout_header .logo_wrap.flying .resp_wrap {padding-top:0; padding-bottom:0;}
     .layout_header .util_wrap_menu2 .respCartArea {display:block;}
 }
  @media only screen and (max-width:767px) {   
     .layout_header .util_wrap {display:none;} 
+	.layout_header .logo_wrap .logo_area>a {left:50px;}
     .layout_header .resp_top_cart {display:block; right:45px; top:50%; margin-top:-10px; width:20px; height:20px; background:url('../images/design_resp/icon_cart.png') 0 center no-repeat; background-size:cover; padding-left:0;}
     .layout_header .resp_top_cart .cart_cnt2 {position:absolute; top:-5px; right:-10px;}
     .layout_header .resp_top_search {right:10px;}    
@@ -340,7 +343,17 @@ input[type=checkbox],
 .ct_wrap .ct2 p.text2{position: relative; left: 20%; top: 7%;  font-size: 23px; font-weight: 700;
  color: #222; font-style: italic; line-height: 24px;}
 .ct_wrap .ct2 p.text2 span.t1{position: relative; left:10%;}
-.ft_img img{ height: 100%; width: 49.9%;}
-.ft_img {margin-top:10%; width:100%;}
 
-#goods_thumbs {  width: 60%!important;}
+.ft_img {margin-top:10%; width:100%;}
+.ft_img:after {content:""; display:block; clear:both;}
+.ft_img .left {float:left; width:calc(50% - 5px); margin-right:10px;}
+.ft_img .right {float:right; width:calc(50% - 5px);}
+
+@media screen and (max-width: 767px){
+	.ft_img .left, .ft_img .right {width:100%; margin-bottom:1em;}
+}
+
+
+#goods_thumbs {  width: 60% !important;}
+
+.sliderB .sbtn {width:auto;}

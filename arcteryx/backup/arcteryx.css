@@ -607,3 +607,8 @@ text-align:center; font-weight:bold;}
 	#newsRoom .news_wrap .wrap {display:block; padding:0 25px;}
 	#newsRoom .news_wrap .wrap > div  {margin-bottom:2em;}
 }
+
+.cook-policy h3 {font-family: "Avenir LT W01 85 Heavy", arial, sans-serif; max-width:750px; font-size:16px;}
+.cook-policy p {font-family: "Avenir LT W01 55 Roman", arial, sans-serif; font-size:15px; line-height:1.5; max-width:650px; margin-bottom:1em;}
+.cook-policy p.title {margin-bottom:0;}
+.cook-policy a {text-decoration:underline;}
