@@ -322,10 +322,12 @@ input[type=checkbox],
 /* 메인컨텐츠 */
 .ct_wrap img { max-width: 100%;height: auto;}
 .ct_wrap{padding-top:1%;position: relative; margin-bottom:10%;}
+.ct_wrap:after {content:""; display:block; clear:both;}
+.ct_wrap .ct1, .ct_wrap .ct2 {float:left; height:615px;}
 .ct_wrap .ct1{background: url(../images/homes-for-all-bg_0.jpg);  background-repeat: no-repeat; background-position: center;vertical-align: top;position: relative;
-  background-size: cover; width:48.8%; height:400px; display:inline-block; margin-right:1%;}
+  background-size: cover; width:calc(50% - 5px); height:400px; margin-right:10px; box-sizing:border-box;}
 .ct_wrap .ct2{background: url(../images/d.png);  background-repeat: no-repeat; background-position: center;
-  background-size: cover; width:50%; height:600px; display:inline-block;vertical-align: top;position: relative;}
+  background-size: cover; width:calc(50% - 5px); height:600px; vertical-align: top;position: relative; box-sizing:border-box;}
 .ct_wrap .ct1 p.text2 img{width:200px; height:auto;}
 .ct_wrap .ct1 p.text2{position: relative; top: 58%; left: 20%;}
 .ct_wrap .ct1 p{display:inline-block;}
@@ -336,7 +338,7 @@ input[type=checkbox],
 .ct_wrap .sbtn { box-sizing: border-box;  display: inline-block; width: 200px;  border: 1px solid #000; height: 46px;
   padding: 0 25px;  min-width: 120px; text-align: center; font-size: 15px; font-weight: 300;  line-height: 46px;
    margin: 13px 0px 0 0; background:#fff;}
-.ct_wrap .ct1 p.text3{background: url(../images/icon1.gif) no-repeat left;position: relative; width:175px; height:74px; left: 30%;  top: 88%;  font-size: 24px; padding-left: 80px; line-height: 26px;}
+.ct_wrap .ct1 p.text3{background: url(../images/icon1.gif) no-repeat left;position: absolute; width:175px; height:74px; right:0;  top:440px;  font-size: 24px; padding-left: 80px; line-height: 26px;}
 .ct_wrap .ct2 p.link{position: relative; top:73%;}
 .ct_wrap .ct2 p.text1{line-height: 20px;  left: 0px;  font-size: 20px; position: relative;  text-align: right; width: 80px; color:#333;}
 .ct_wrap .ct2 p.text1 span.t2{top:10px; left:25px;position: relative;}
@@ -349,8 +351,37 @@ input[type=checkbox],
 .ft_img .left {float:left; width:calc(50% - 5px); margin-right:10px;}
 .ft_img .right {float:right; width:calc(50% - 5px);}
 
+.bnnr_mid {margin-top:10px; margin-bottom:8%; width:100%;}
+.bnnr_mid:after {content:""; display:block; clear:both;}
+.bnnr_mid .left, .bnnr_mid .right {padding-bottom:36.25%; position:relative;}
+.bnnr_mid .left {float:left; width:calc(50% - 5px); margin-right:10px; background:url(/data/skin/responsive_multishop_flexible_gl/images/arc/bnr_mid_01.jpg) 0 0 no-repeat; background-size:cover;}
+.bnnr_mid .right {float:right; width:calc(50% - 5px); background:url(/data/skin/responsive_multishop_flexible_gl/images/arc/bnr_mid_02.jpg) 0 0 no-repeat; background-size:cover;}
+.bnnr_mid .left a, .bnnr_mid .right a {display:inline-block; height:38px; color:#fff; border:1px solid #fff; text-align:center; font-size:16px; line-height:38px; box-sizing:border-box; transition:all .2s ease;}
+.bnnr_mid .left a {position:absolute; top:53%; left:34.7%; width:15%;}
+.bnnr_mid .left a:hover {background-color:#fff; color:#000;}
+.bnnr_mid .right .btn_wrap {position:absolute; top:60%; left:0; width:100%; font-size:0; text-align:center;}
+.bnnr_mid .right a {display:inline-block; border-color:#000; color:#000; width:20%;}
+.bnnr_mid .right a:hover {background-color:#000; color:#fff;}
+.bnnr_mid .right a:first-child {margin-right:5px;}
+
+@media screen and (max-width: 1024px){
+	.ft_img, .bnnr_mid {width:calc(100% + 20px); margin-left:-10px;}
+	.bnnr_mid .right .btn_wrap {top:59%;}
+	.bnnr_mid .right .btn_wrap a {height:34px; line-height:34px; width:25%;}
+}
+@media screen and (max-width: 850px){
+	.bnnr_mid .left a {top:54%;}
+	.bnnr_mid .left, .bnnr_mid .right {width:100%; margin-bottom:1em; padding-bottom:72.25%;}
+	.bnnr_mid .right .btn_wrap {top:61%;}
+	.bnnr_mid .right .btn_wrap a {height:38px; line-height:38px; width:15%;}
+}
 @media screen and (max-width: 767px){
 	.ft_img .left, .ft_img .right {width:100%; margin-bottom:1em;}
+	.bnnr_mid .right .btn_wrap a {height:30px; line-height:30px; width:25%;}
+}
+@media screen and (max-width: 450px){
+	.bnnr_mid .right .btn_wrap {top:60%;}
+	.bnnr_mid .right .btn_wrap a {height:26px; line-height:26px; width:30%;}
 }
 
 
