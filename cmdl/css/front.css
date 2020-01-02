@@ -101,7 +101,7 @@ header .gnb-layer .gnb li .dep2 a {color:#fff; text-align:center;}
 header .gnb-layer .gnb li .dep2 a:hover {color:#fff;}
 header .gnb-layer .btn_allClose {position:absolute; top:10rem; left:50%; background:url("data:image/svg+xml,%3csvg viewBox='0 0 27 27' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m26.935 24.814-2.121 2.121-11.314-11.314-11.314 11.314-2.121-2.121 11.314-11.314-11.314-11.314 2.121-2.121 11.314 11.314 11.314-11.314 2.121 2.121-11.314 11.314 11.314 11.314z' fill='%23fff' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:1.4rem; height:1.4rem; margin-left:-0.7rem; font:0/0 a;}
 
-.main footer {border:0;}
+
 footer {padding:2.1rem 0 3.5rem; border-top:1px solid #eee;}
 footer .innr {position:relative; max-width:1498px; margin:0 auto;}
 footer .innr:after {content:""; display:block; clear:both;}
