@@ -263,10 +263,15 @@ img.mo {display:none;}
 .svisual.company4 {background:url(../images/sub/svisual_company4.jpg) 50% 0 no-repeat;}
 .svisual.equ {background:url(../images/sub/svisual_equ.jpg) 50% 0 no-repeat;}
 .svisual.equ2 {background:url(../images/sub/svisual_equ2.jpg) 50% 0 no-repeat;}
+.svisual.equ3 {background:url(../images/sub/svisual_equ3.jpg) 50% 0 no-repeat;}
+.svisual.equ4 {background:url(../images/sub/svisual_equ4.jpg) 50% 0 no-repeat;}
+.svisual.equ5 {background:url(../images/sub/svisual_equ5.jpg) 50% 0 no-repeat;}
+.svisual.equ6 {background:url(../images/sub/svisual_equ6.jpg) 50% 0 no-repeat;}
+.svisual.equ7 {background:url(../images/sub/svisual_equ7.jpg) 50% 0 no-repeat;}
 .svisual.sub03 {background:url(../images/sub/svisual_sub03.jpg) 50% 0 no-repeat;}
 .svisual.sub04 {background:url(../images/sub/svisual_sub04.jpg) 50% 0 no-repeat;}
 .svisual.support2 {background:url(../images/sub/svisual_support2.jpg) 50% 0 no-repeat;}
-
+.svisual.che {background:url(../images/sub/svisual_che.jpg) 50% 0 no-repeat;}
 
 
 main #contents {max-width:1498px; margin:0 auto; padding:7rem 0 7rem 0;}
@@ -607,6 +612,15 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 .que .box6 {background:url(../images/sub/img_equ06.jpg) 0 0 no-repeat; background-size:cover;}
 .que .box7 {background:url(../images/sub/img_equ07.jpg) 0 0 no-repeat; background-size:cover;}
 .que .box8 {background:url(../images/sub/img_equ08.jpg) 0 0 no-repeat; background-size:cover;}
+
+.che .box1 {background:url(../images/sub/img_che01.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box2 {background:url(../images/sub/img_che02.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box3 {background:url(../images/sub/img_che03.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box4 {background:url(../images/sub/img_che04.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box5 {background:url(../images/sub/img_che05.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box6 {background:url(../images/sub/img_che06.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box7 {background:url(../images/sub/img_che07.jpg) 0 0 no-repeat; background-size:cover;}
+.che .box8 {background:url(../images/sub/img_che08.jpg) 0 0 no-repeat; background-size:cover;}
 
 .conts_text {margin:4rem 0 3.5rem; color:#555; font-size:0.9rem; line-height:2; text-align:center; word-break:keep-all;}
 .conts_desc {margin-top:3.75rem; color:#111; font-size:1.7rem; text-align:center; line-height:1.5; letter-spacing:-2px; word-break:keep-all;}
