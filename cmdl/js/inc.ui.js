@@ -63,10 +63,10 @@ var inc_dom = {
 		incFR.push('<p>Tel : 031-954-1111  |  fax : 031-953-1111  |  E-mail : cmdl@cmdl.co.kr</p>');
 		incFR.push('<em>copyrightⓒ cmdl. all right reserved</em>');
 		incFR.push('<div class="fMenu">');
-		incFR.push('<a href="">장비사업</a>');
-		incFR.push('<a href="">화학사업</a>');
-		incFR.push('<a href="">Contact</a>');
-		incFR.push('<a href="">SiteMap</a>');
+		incFR.push('<a href="equipment.html">장비사업</a>');
+		incFR.push('<a href="chemistry.html">화학사업</a>');
+		incFR.push('<a href="support02.html">Contact</a>');
+		incFR.push('<a href="sitemap.html">SiteMap</a>');
 		incFR.push('</div>');
 		incFR.push('</div>');
 		incFR.push('</footer>');
