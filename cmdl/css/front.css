@@ -272,6 +272,7 @@ img.mo {display:none;}
 .svisual.sub04 {background:url(../images/sub/svisual_sub04.jpg) 50% 0 no-repeat; background-size:cover;}
 .svisual.support2 {background:url(../images/sub/svisual_support2.jpg) 50% 0 no-repeat; background-size:cover;}
 .svisual.che {background:url(../images/sub/svisual_che.jpg) 50% 0 no-repeat; background-size:cover;}
+.svisual.che1 {background:url(../images/sub/svisual_che1.jpg) 50% 0 no-repeat; background-size:cover;}
 
 
 main #contents {max-width:1498px; margin:0 auto; padding:7rem 0 7rem 0;}
@@ -667,4 +668,22 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 	.equ0 .logo_list li {float:left; width:calc(33.3% - .5rem); margin-left:.5rem; margin-bottom:.5rem;}
 }
 
-
+.che0 .fl-box {margin-bottom:1.5rem;}
+.che0 .fl-box:after {content:""; display:block; clear:both;}
+.che0 .fl-box > img {float:left; width:50%; margin-right:40px; margin-bottom:0;}
+.che0 .fl-box.right > img {float:right; margin-left:2rem;}
+.che0 .fl-box .text {padding-top:5rem;}
+.che0 .fl-box .text strong {display:block; color:#111; font-size:1.7rem; word-break: keep-all;}
+.che0 .fl-box .text p {margin-top:1.5rem; color:#555; font-size:.9rem; line-height:1.6;}
+.che0 .fl-box.img img {float:right; width:49.5%; margin:0;}
+.che0 .fl-box.img img:first-child {float:left;}
+.che0 .conts_text {margin-top:1.5rem;}
+@media screen and (max-width:786px) {
+	.che0 > img {margin-bottom:1rem;}
+	.che0 .fl-box {margin-bottom:1rem;}
+	.che0 .fl-box > img {width:100%; margin:0 0 1rem;}
+	.che0 .fl-box .text {padding-top:2.5rem;}
+	.che0 .fl-box .text strong {font-size:.85rem;}
+	.che0 .fl-box .text p {margin-top:.7rem; font-size:.6rem; line-height:1.4;}
+	.che0 .fl-box.img img {width:100%; margin-bottom:1rem;}
+}

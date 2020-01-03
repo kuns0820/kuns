@@ -28,7 +28,7 @@ var inc_dom = {
 		incHD.push('</li>');
 		incHD.push('<li><a href="chemistry.html">화학사업</a>');
 		incHD.push('<ul class="dep2">');
-		incHD.push('<li><a href="chemistry.html">Introduction</a></li>');
+		incHD.push('<li><a href="chemistry00.html">Introduction</a></li>');
 		incHD.push('<li><a href="chemistry01.html">OEM</a></li>');
 		incHD.push('<li><a href="chemistry02.html">공정개발</a></li>');
 		incHD.push('<li><a href="chemistry03.html">공장</a></li>');
@@ -38,7 +38,7 @@ var inc_dom = {
 		incHD.push('<li><a href="support02.html">Contact</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
-		incHD.push('<li><a href=".html">SUPPORT</a>');
+		incHD.push('<li><a href="support01.html">SUPPORT</a>');
 		incHD.push('<ul class="dep2">');
 		incHD.push('<li><a href="support01.html">인재채용</a></li>');
 		incHD.push('<li><a href="support02.html">Contact us</a></li>');
