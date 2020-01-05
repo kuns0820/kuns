@@ -247,6 +247,7 @@ section .btn_detail {display:block; background:url("data:image/svg+xml,%3csvg vi
 
 /* 서브 */
 main {margin-top:5rem;}
+main.mt0 {margin-top:0 !important;}
 
 img.pc {display:block;}
 img.mo {display:none;}
@@ -725,3 +726,8 @@ main #contents .stit {margin-bottom:26px; color:#111; font-size:1.5rem;}
 .sitemap dl {float:left; width:calc(25% - 1rem); margin-left:1rem;}
 .sitemap dl dt {margin-bottom:.5rem; padding:0 0 1rem 1rem; border-bottom:2px solid #111; box-sizing:border-box; color:#111; font-size:1.5rem;}
 .sitemap dl dd a {display:inline-block; padding:.5rem 0 .5rem 1rem; color:#555; font-size:.9rem;}
+@media screen and (max-width:786px) {
+	.sitemap dl {width:100%; margin-bottom:1rem;}
+	.sitemap dl dt {font-size:.7rem; padding:0 0 .5rem .5rem;}
+	.sitemap dl dd a {font-size:.6rem; padding:.25rem 0 .25rem .5rem;}
+}
