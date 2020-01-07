@@ -105,10 +105,11 @@ header .gnb-layer .btn_allClose {position:absolute; top:10rem; left:50%; backgro
 footer {padding:2.1rem 0 3.5rem; border-top:1px solid #eee;}
 footer .innr {position:relative; max-width:1498px; margin:0 auto;}
 footer .innr:after {content:""; display:block; clear:both;}
-footer span.logo {float:left; margin-right:7.5rem;}
+footer span.logo {float:left;}
 footer p,
-footer em {color:#999; font-size:0.75rem; line-height:1.6;}
+footer em {margin-left:17.2rem; color:#999; font-size:0.75rem; line-height:1.6;}
 footer em {display:block; margin-top:0.25rem;}
+footer p br {display:none;}
 footer .fMenu {position:absolute; top:0; right:0;}
 footer .fMenu:after {content:""; display:block; clear:both;}
 footer .fMenu a {float:left; width:4.5rem; height:2rem; margin-left:.5rem; border:1px solid #dbdbdb; border-radius:30px; color:#555; font-size:.8rem; text-align:center; line-height:1.9rem;}
@@ -146,7 +147,8 @@ footer .fMenu a {float:left; width:4.5rem; height:2rem; margin-left:.5rem; borde
 	footer {padding:1.05rem 0 1.75rem; text-align:center;}
 	footer span.logo {display:block; float:none; margin:0 0 .75rem;}
 	footer span.logo img {width:auto; height:1.75rem;}
-	footer p, footer em {font-size:0.55rem; word-break:keep-all;}
+	footer p, footer em {margin-left:0; font-size:0.55rem; word-break:keep-all;}
+	footer p br {display:block;}
 	footer .fMenu {position:static; margin-top:1rem; text-align:center;}
 	footer .fMenu a {float:none; display:inline-block; width:2.25rem; height:1rem; font-size:.4rem; line-height:.9rem;}
 }
@@ -281,6 +283,7 @@ img.mo {display:none;}
 .svisual.che5 {background:url(../images/sub/svisual_che5.jpg) 50% 0 no-repeat; background-size:cover;}
 .svisual.che6 {background:url(../images/sub/svisual_che6.jpg) 50% 0 no-repeat; background-size:cover;}
 
+.sub_main main #contents {padding-top:0;}
 
 main #contents {max-width:1498px; margin:0 auto; padding:7rem 0 7rem 0;}
 main #contents h3 {margin-bottom:4.3rem; text-align:center;}
@@ -438,7 +441,7 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 .sppt_step li {float:left; position:relative; width:33.3%; height:13rem; padding:1.75rem 0 0 2.25rem; border-left:1px solid #ddd; box-sizing:border-box;}
 .sppt_step li em {color:#ddd; font-size:2rem; font-weight:bold; font-family:"Montserrat";}
 .sppt_step li p {margin-top:1rem; color:#555; font-size:0.9rem; line-height:1.6;}
-.sppt_step li .btn_down {position:absolute; bottom:2rem; right:2rem; background:url(../images/sub/ico_sppt1_01.png) 0 0 no-repeat; background-size:2.95rem 2.5rem; width:2.95rem; height:2.5rem; font:0/0 a;}
+.sppt_step li.s01 {background:url(../images/sub/ico_sppt1_01.png) calc(100% - 2rem) calc(100% - 2rem) no-repeat; background-size:2.15rem 2.6rem;}
 .sppt_step li.s02 {background:url(../images/sub/ico_sppt1_02.png) calc(100% - 2rem) calc(100% - 2rem) no-repeat; background-size:2.3rem 2.7rem;}
 .sppt_step li.s03 {background:url(../images/sub/ico_sppt1_03.png) calc(100% - 2rem) calc(100% - 2rem) no-repeat; background-size:2.85rem 1.9rem;}
 .sppt1 .tbl table {width:100%; border:1px solid #111; border-width:1px 0;}
@@ -618,6 +621,7 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 	.col-grid > div a {height:12.2rem; font-size:1.2rem;}
 }
 
+.que .box0 {background:url(../images/sub/svisual_equ.jpg) center 0 no-repeat; background-size:cover;}
 .que .box1 {background:url(../images/sub/img_equ01.jpg) center no-repeat; background-size:cover;}
 .que .box2 {background:url(../images/sub/img_equ02.jpg) center no-repeat; background-size:cover;}
 .que .box3 {background:url(../images/sub/img_equ03.jpg) center no-repeat; background-size:cover;}
@@ -627,6 +631,7 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 .que .box7 {background:url(../images/sub/img_equ07.jpg) center no-repeat; background-size:cover;}
 .que .box8 {background:url(../images/sub/img_equ08.jpg) center no-repeat; background-size:cover;}
 
+.che .box0 {background:url(../images/sub/svisual_che.jpg) center 0 no-repeat; background-size:cover;}
 .che .box1 {background:url(../images/sub/img_che01.jpg) center no-repeat; background-size:cover;}
 .che .box2 {background:url(../images/sub/img_che02.jpg) center no-repeat; background-size:cover;}
 .che .box3 {background:url(../images/sub/img_che03.jpg) center no-repeat; background-size:cover;}
@@ -638,6 +643,7 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 
 .conts_text {margin:3rem 0 3.5rem; color:#555; font-size:0.9rem; line-height:2; text-align:center; word-break:keep-all;}
 .conts_desc {margin-top:3.75rem; color:#111; font-size:1.7rem; text-align:center; line-height:1.5; letter-spacing:-2px; word-break:keep-all;}
+.conts_desc2 {margin-top:3rem; margin-bottom:3rem; color:#111; font-size:1.2rem; text-align:center; line-height:1.5; letter-spacing:-2px; word-break:keep-all;}
 .equ_step {font-size:0; line-height:0; text-align:center;}
 .equ_step li {display:inline-block; margin-left:5rem;}
 .equ_step li:first-child {margin-left:0;}
@@ -647,6 +653,7 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 	.conts_text {margin:1rem 0 1.75rem; font-size:0.55rem;}
 	.conts_text br {display:none;}
 	.conts_desc {margin-top:1.85rem; font-size:0.8rem;}
+	.conts_desc2 {margin-top:1.5rem; margin-bottom:1.5rem; font-size:0.6rem;}
 	.equ_step li {display:block; margin-left:0; margin-bottom:1.5rem;}
 	.equ_step li img {margin-bottom:.5rem;}
 	.equ_step li p {font-size:.5rem;}
@@ -707,6 +714,9 @@ main #contents img.img_ct {display:block; margin-left:auto; margin-right:auto;}
 .che6 .step:after {content:""; display:block; clear:both;}
 .che6 .step li {float:left; width:49%; height:5rem; margin-top:1rem; border:1px solid #ddd; padding:1rem 0; box-sizing:border-box; color:#555; font-size:.9rem; line-height:2rem; text-align:center; word-break:keep-all;}
 .che6 .step li:nth-child(odd) {float:right;}
+
+.che1.equ0 .step-box > div ul li {line-height:1.3rem;}
+
 @media screen and (max-width:786px) {
 	.che0.che1 .fl-box {margin-bottom:2rem;}
 	.che1 .step-box {margin-bottom:0;}
