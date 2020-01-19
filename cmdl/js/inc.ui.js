@@ -59,11 +59,11 @@ var inc_dom = {
 		incFR.push('<footer>');
 		incFR.push('<div class="innr">');
 		incFR.push('<span class="logo"><img src="images/logo_foot.png" alt="(주)씨엠디엘"></span>');
-		incFR.push('<p>주식회사 씨엠디엘  |  사업자등록번호 : 129-81-1111</p>');
+		incFR.push('<p>주식회사 씨엠디엘  |  사업자등록번호 : 171-81-00621</p>');
 		incFR.push('<p>주소(천안본사) : 충남 천안시 동남구 5산단2로 107 |<br> Tel: 041-563-5400 | Fax: 041-563-5401</p>');
 		incFR.push('<p>주소(성남사옥) : 경기 성남시 중원구 갈마치로 176 |<br> Tel: 031-734-5400 | Fax:031-732-1954</p>');
-		incFR.push('<p>E-mail : cmdl@cmdl.co.kr</p>');
-		incFR.push('<em>copyrightⓒ cmdl. all right reserved</em>');
+		incFR.push('<p>E-mail : job@thecmdl.co.kr</p>');
+		incFR.push('<em>copyrightⓒ cmdl all right reserved</em>');
 		incFR.push('<div class="fMenu">');
 		incFR.push('<a href="equipment.html">장비사업</a>');
 		incFR.push('<a href="chemistry.html">화학사업</a>');
