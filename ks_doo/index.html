@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/front.js"></script>
+	<script>
+		$(function(){
+			$("#menu > ul > li > a").click(function(){
+				var _attr = $(this).attr("href");
+				if(_attr == "javascript:;"){
+					$(this).parent().toggleClass("on");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="wrap" class="">
+	<div id="sideArea">
+		<div class="inner">
+			<h1><a href=""><img src="images/logo.png" alt=""></a></h1>
+			<div id="menu">
+				<ul>
+					<li class="m1 on"><a href="javascript:;">수급현광</a>
+						<ul>
+							<li><a href="">신청</a></li>
+							<li><a href="">등록</a></li>
+						</ul>
+					</li>
+					<li class="m2"><a href="">A/S</a></li>
+					<li class="m3"><a href="javascript:;">수급현황</a>
+						<ul>
+							<li><a href="">현황</a></li>
+							<li><a href="">배정</a></li>
+						</ul>
+					</li>
+					<li class="m4"><a href="javascript:;">고객관리</a>
+						<ul>
+							<li><a href="">현황</a></li>
+							<li><a href="">PC등록</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="container"><div class="inner">
+		<div class="header">
+			<div class="topSelectBox fl_l">
+				<select name="" id="">
+					<option value="">업체를 선택해주세요</option>
+				</select>
+				<button type="button">적용</button>
+			</div>
+			<div class="fl_r">
+				<button type="button" class="logout">로그아웃</button>
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="topSrhBox">
+				<strong>기간검색</strong>
+				<div>
+					<div><input type="text" name="" id="" value="2020.01.01" readonly><button type="button" class="btn"><img src="images/ico_cal.png" alt=""></button></div>
+					<i>~</i>
+					<div><input type="text" name="" id="" value="2020.01.01" readonly><button type="button" class="btn"><img src="images/ico_cal.png" alt=""></button></div>
+					<button type="button" class="btn_srhSumit">검색</button>
+				</div>
+			</div>
+			
+			<div class="mainBox">
+				<div class="fl_l">
+					<p>2020.01.14일 기준</p>
+					<div class="box">
+						<P><i>S</i> <span>DB수급</span></P>
+						<div>
+							<p>신청</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<p>공급</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+					</div>
+					<div class="box">
+						<P><i>F</i> <span>DB수급 결과</span></P>
+						<div>
+							<p>실사용</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<p>A/S</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+					</div>
+					<div class="box">
+						<P><i>A</i> <span>A/S</span></P>
+						<div>
+							<p>신청</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<p>승인</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<p>반려</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+					</div>
+					<div class="box">
+						<P><i>L</i> <span>DB미배정 현황</span></P>
+						<div>
+							<p>미배정</p>
+							<strong>1000<em>건</em></strong>
+						</div>
+					</div>
+				</div>
+				<div class="fl_r">
+					<p>2020.01.14일 기준</p>
+					<div class="box">
+						<P><i>F</i> <span>DB 접촉률</span></P>
+						<div>
+							<strong>1000<em>%</em></strong>
+						</div>
+						<span class="text">※ DB접촉성공건 / 공급건수</span>
+					</div>
+					<div class="box">
+						<P><i>I</i> <span>영업활동 진행현황</span></P>
+						<div>
+							<p>TA</p>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<p>AP</p>
+							<strong>268<em>건</em></strong>
+						</div>
+						<div>
+							<p>PT&C</p>
+							<strong>198<em>건</em></strong>
+						</div>
+					</div>
+					<div class="box">
+						<P><i>A</i> <span>A/S 비율</span></P>
+						<div>
+							<strong>1000<em>%</em></strong>
+						</div>
+						<span class="text">※ 승인건/공급건</span>
+					</div>
+					<div class="box">
+						<P><i>C</i> <span>계약완료</span></P>
+						<div>
+							<strong>1958<em>건</em></strong>
+						</div>
+						<div>
+							<strong>1000<em>%</em></strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>Ⓒ 2020 NCL Peoples ALL RIGHTS RESERVED.</p>
+		</div>
+	</div></div>
+</div>
+</body>
+</html>
