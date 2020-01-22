@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/front.js"></script>
+</head>
+<body>
+<div id="wrap" class="">
+	<div id="sideArea">
+		<div class="inner">
+			<h1><a href=""><img src="images/logo.png" alt=""></a></h1>
+			<div id="menu">
+				<ul>
+					<li class="m1 on"><a href="javascript:;">수급현광</a>
+						<ul>
+							<li><a href="">신청</a></li>
+							<li><a href="">등록</a></li>
+						</ul>
+					</li>
+					<li class="m2"><a href="">A/S</a></li>
+					<li class="m3"><a href="javascript:;">수급현황</a>
+						<ul>
+							<li><a href="">현황</a></li>
+							<li><a href="">배정</a></li>
+						</ul>
+					</li>
+					<li class="m4"><a href="javascript:;">고객관리</a>
+						<ul>
+							<li><a href="">현황</a></li>
+							<li><a href="">PC등록</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="container"><div class="inner">
+		<div class="header">
+			<div class="topSelectBox fl_l">
+				<select name="" id="">
+					<option value="">업체를 선택해주세요</option>
+				</select>
+				<button type="button">적용</button>
+			</div>
+			<div class="fl_r">
+				<button type="button" class="logout">로그아웃</button>
+			</div>
+		</div>
+
+		<div class="contents">
+			<h2 class="title">수급현황 > 현황</h2>
+			
+			<div class="btn_tbl">
+				<button type="button">다운로드</button>
+			</div>
+			
+			<div class="tbl_board">
+				<div class="tbl_select">
+					<div><strong>KS두레</strong></div>
+					<div><select name="" id="" class=""><option value="">본부</option></select></div>
+					<div><select name="" id="" class=""><option value="">사업단</option></select></div>
+					<div><select name="" id="" class=""><option value="">직할지점</option></select></div>
+					<div><select name="" id="" class=""><option value="">팀ABN</option></select></div>
+				</div>
+				<table>
+					<colgroup>
+						<col>
+						<col>
+						<col style="width:150px;">
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>권역</th>
+							<th>고객명</th>
+							<th>전화번호</th>
+							<th>음성</th>
+							<th>지점</th>
+							<th>담당자</th>
+							<th>DB이관</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>서울</td>
+							<td>홍길동</td>
+							<td>010-0000-1234</td>
+							<td><button type="button" class="btn_voice">음성</button></td>
+							<td>논현지점</td>
+							<td>담당자</td>
+							<td><a href="javascript:;" class="btn_text" data-layer="removal_layer" onclick="layers(this);">[이관]</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="paging">
+					<a href="javascript:;" class="prev">이전</a>
+					<a href="javascript:;" class="on">1</a>
+					<a href="javascript:;">2</a>
+					<a href="javascript:;">3</a>
+					<a href="javascript:;">4</a>
+					<a href="javascript:;">5</a>
+					<a href="javascript:;">6</a>
+					<a href="javascript:;">8</a>
+					<a href="javascript:;">9</a>
+					<a href="javascript:;">10</a>
+					<a href="javascript:;" class="next">다음</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>Ⓒ 2020 NCL Peoples ALL RIGHTS RESERVED.</p>
+		</div>
+	</div></div>
+</div>
+
+<div class="layer_wrap removal_layer">
+	<h2 class="date">최종 변경일 : 2020.01.02</h2>
+	<div class="conts">
+		<div class="tbl_board">
+			<table>
+				<colgroup>
+					<col>
+					<col style="width:90px;">
+					<col style="width:126px;">
+					<col style="width:140px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>담당자</th>
+						<th>이름</th>
+						<th>전화번호</th>
+						<th>사유</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>기존</td>
+						<td>홍길동</td>
+						<td>010-1234-1234</td>
+						<td>퇴사</td>
+					</tr>
+					<tr class="modify">
+						<td>변경</td>
+						<td><input type="text" name="" id=""></td>
+						<td><input type="text" name="" id=""></td>
+						<td><input type="text" name="" id=""></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button">취소</button>
+		<button type="button">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+</body>
+</html>
