@@ -70,6 +70,9 @@ select {background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .contents .title {margin-bottom:15px; color:#464646; font-size:22px;}
 .contents .title:before {content:""; display:inline-block; background:#004a80; width:28px; height:10px; margin-right:10px; border-radius:10px; vertical-align:1px;}
 
+input[type=text],
+input[type=number] {height:40px; padding-left:20px; border:1px solid #e3e3e3; color:#b7bbc2; font-size:1.6rem;}
+
 .topSrhBox {background:#fff; margin-bottom:50px; padding:25px 0; text-align:center;}
 .topSrhBox * {display:inline-block; vertical-align:middle;}
 .topSrhBox strong {margin-right:15px; color:#464646; line-height:40px;}
@@ -112,12 +115,18 @@ select {background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .tbl_board {background:#fff; padding:15px 20px 35px;}
 .tbl_board .desc {position:relative; top:65px; left:20px; color:#727272; font-size:16px; text-align:right;}
 .tbl_board table {width:100%;}
-.tbl_board table th, .tbl_board table td {height:44px; vertical-align:middle; text-align:center;}
-.tbl_board table th {height:44px; border-bottom:1px solid #464646; color:#464646; font-size:20px;}
-.tbl_board table td {border-bottom:1px solid #e6ebf1; color:#727272; font-size:16px;}
+.tbl_board table thead th, .tbl_board table td, .tbl_board table tbody th {height:44px; vertical-align:middle; text-align:center;}
+.tbl_board table thead th {height:44px; border-bottom:1px solid #464646; color:#464646; font-size:20px;}
+.tbl_board table td, .tbl_board table tbody th {border-bottom:1px solid #e6ebf1; color:#727272; font-size:16px; font-weight:normal;}
+.tbl_board table tbody th {color:#464646;}
 .tbl_board table td .btn_voice {display:block; overflow:visible; background:#b7bbc2; width:20px; height:20px; margin:0 auto; border-radius:50%; font:0/0 a;}
 .tbl_board table td .btn_voice:after {content:""; display:inline-block; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 15'%3e%3cpath d='M11 7.48L0 15V0l11 7.48z' fill='%23fff'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:5px; height:9px; margin-left:1px;}
 .tbl_board table td .btn_text {color:#0076a3; font-size:15px;}
+.tbl_board table td select {height:30px; border:1px solid #e6ebf1; vertical-align:middle;}
+.tbl_board table td .btn_basic {height:30px; padding:0 10px; border:1px solid #727272; color:#727272; font-size:14px; line-height:28px; vertical-align:middle;}
+
+.tbl_btn {margin-top:20px; text-align:right; font-size:0;}
+.tbl_btn button {height:40px; margin-left:10px; padding:0 40px; border:1px solid #666; color:#666; font-size:16px; line-height:38px;}
 
 .tbl_board .tbl_select {display:table; width:100%; margin-bottom:15px; font-size:0;}
 .tbl_board .tbl_select > div {display:table-cell; padding-left:5px; vertical-align:middle;}
@@ -148,6 +157,7 @@ select {background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/
 .layer_wrap .chk_area > * {display:inline-block; vertical-align:middle;}
 .layer_wrap .chk_area label {margin-left:4px; color:#727272; font-size:16px;}
 .layer_wrap .chk_area label:first-of-type {margin-right:30px;}
+.layer_wrap .tbl_board {padding:0;}
 
 input[type=checkbox],input[type=radio] {display:inline-block; width:18px; height:18px; border:1px solid #cbcbcb; appearance:none; -webkit-appearance:none; vertical-align:middle;}
 input[type=checkbox]:checked, input[type=radio]:checked {background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 18'%3e%3cpath fill-rule='evenodd' fill='%23ED1C24' d='M14.4 8.5l-5 8-.2.2-.2.2h-.2l-.3.1h-.3-.5l-.2-.1-.3-.2-.1-.2H7v-.1l-.1-.3L1 2.3C.7 1.8.9 1.1 1.6.8c.7-.3 1.5-.2 1.9.4l5 11.8L12 7.4c.4-.5 1.2-.7 1.9-.4.7.3.9 1 .5 1.5z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:15px 18px;}
@@ -160,3 +170,26 @@ input[type=checkbox]:checked, input[type=radio]:checked {background:url("data:im
 
 .viewList_layer {width:590px;}
 .viewList_layer .tbl_board {padding:0;}
+
+.kit_layer .tbl_board table td {text-align:left;}
+.kit_layer .tbl_board table td input {width:124px; height:36px; padding:0; text-align:center;}
+.kit_layer .tbl_board table td input,
+.kit_layer .tbl_board table td .count {display:inline-block; vertical-align:middle;}
+.kit_layer .tbl_board table td .count button {display:block; position:relative; overflow:visible; width:18px; height:18px; margin:0; padding:0; border:1px solid #e6ebf1; font:0/0 a;}
+.kit_layer .tbl_board table td .count button:after {content:""; display:inline-block; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 4'%3e%3cpath fill-rule='evenodd' d='M0 0h7L3.5 4z' fill='%23b1b1b2'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%; width:7px; height:4px;}
+.kit_layer .tbl_board table td .count button.up:after {transform:rotate(180deg);}
+
+.ap_layer .tbl_board table td,
+.pt_layer .tbl_board table td {text-align:left;}
+.pt_layer .tbl_board table td textarea,
+.ap_layer .tbl_board table td textarea {width:348px; height:127px; border:1px solid #e6ebf1; border-top:0; color:#727272; font-size:16px; resize:none;}
+
+.ta2_layer .tbl_board table td {text-align:left;}
+.ta2_layer .tbl_board table td textarea {width:348px; height:127px; border:1px solid #e6ebf1; border-top:0; color:#727272; font-size:16px; resize:none;}
+.ta2_layer .tbl_board table tr.file th,
+.ta2_layer .tbl_board table tr.file td {padding:10px 0;}
+.ta2_layer .tbl_board table tr.file th {padding-top:12px; vertical-align:top;} 
+.ta2_layer .tbl_board table td .btn {margin-top:5px; text-align:right;}
+
+.textList_layer .tbl_board table th {border-color:#e6ebf1;}
+.textList_layer .textModify {width:100%; margin-top:10px;}
