@@ -127,6 +127,7 @@ input[type=number] {height:40px; padding-left:20px; border:1px solid #e3e3e3; co
 
 .tbl_btn {margin-top:20px; text-align:right; font-size:0;}
 .tbl_btn button {height:40px; margin-left:10px; padding:0 40px; border:1px solid #666; color:#666; font-size:16px; line-height:38px;}
+.tbl_btn button.btn_save {background:#666; color:#fff;}
 
 .tbl_board .tbl_select {display:table; width:100%; margin-bottom:15px; font-size:0;}
 .tbl_board .tbl_select > div {display:table-cell; padding-left:5px; vertical-align:middle;}
@@ -193,3 +194,8 @@ input[type=checkbox]:checked, input[type=radio]:checked {background:url("data:im
 
 .textList_layer .tbl_board table th {border-color:#e6ebf1;}
 .textList_layer .textModify {width:100%; margin-top:10px;}
+
+.adm_detail td {position:relative;}
+.adm_detail td input[type=text] {width:100%; height:30px;}
+.adm_detail td p {margin-right:55px;}
+.adm_detail td .btn_srh {position:absolute; top:6px; right:0;}
