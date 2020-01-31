@@ -128,7 +128,7 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	header .innr .util li.login,
 	header .innr .util li.last {display:block; margin-left:20px;}
 	header .innr .util li.login a {border-left:0; font-size:11px;}
-	header .util li a.btn_all {width:15px; height:11px;}
+	header .util li a.btn_all {width:18px; height:14px;}
 }
 
 @media screen and (max-width:718px) {
