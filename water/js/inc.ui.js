@@ -113,11 +113,12 @@ $(window).resize(function(){
 });
 
 function resize(){
-	// if(winW < 1200){
-	// 	$("body").addClass("mobile");
-	// }else{
-	// 	$("body").removeClass("mobile");
-	// }
+	if(winW < 1550){
+		$("body").addClass("mobile");
+		$("header .allMenu").html($("header .gnb_wrap").html());
+	}else{
+		$("body").removeClass("mobile");
+	}
 }
 
 

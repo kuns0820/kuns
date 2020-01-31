@@ -129,6 +129,18 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	header .innr .util li.last {display:block; margin-left:20px;}
 	header .innr .util li.login a {border-left:0; font-size:11px;}
 	header .util li a.btn_all {width:18px; height:14px;}
+
+	body.allMenu {overflow:hidden;}
+	body.allMenu .allMenu {overflow:auto;}
+	body.allMenu .innr:after {display:none;}
+	.allMenu header .innr {background:#1781cc;}
+	.allMenu .innr .util li.login {display:none;}
+	.allMenu header .allMenu {height:100vh;}
+	.allMenu .allMenu > ul {margin-top:55px; text-align:center;}
+	.allMenu .allMenu > ul > li > a {color:#fff; font-size:15px; font-weight:bold;}
+	.allMenu .allMenu > ul > li .dep2 {background:#fff; width:90%; margin:15px auto; padding:15px 0;}
+	.allMenu .allMenu > ul > li .dep2 a {color:#666; font-size:13px; line-height:2;}
+
 }
 
 @media screen and (max-width:718px) {
