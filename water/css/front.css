@@ -127,21 +127,14 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	header .innr .util li {display:none;}
 	header .innr .util li.login,
 	header .innr .util li.last {display:block; margin-left:20px;}
-	header .innr .util li.login a {border-left:0;}
+	header .innr .util li.login a {border-left:0; font-size:11px;}
 	header .util li a.btn_all {width:15px; height:11px;}
 }
 
 @media screen and (max-width:718px) {
 	
 
-	footer .innr {width:calc(100% - 30px); height:120px; min-height:auto;}
-	footer .innr .util {position:static;}
-	footer .innr .util ul li {margin-left:19px;}
-	footer .innr .util select {bottom:13px; left:0; width:100px; height:20px; padding:0; font-size:11px;}
-	footer .innr .util ul li a {height:30px; font-size:12px; line-height:30px;}
-	footer .innr .addr {margin-top:15px; font-size:11px;}
-	footer .innr .sns {top:auto; bottom:13px; right:0;}
-	footer .innr .sns li a img {width:20px; height:20px; margin-left:0;}
+
 }
 
 .swiper-container,
