@@ -85,6 +85,7 @@ header .util li a.btn_all {background:url("data:image/svg+xml,%3csvg xmlns='http
 header .gnb_wrap > ul > li.on .dep2 {display:block;}
 
 header .allMenu {display:none; position:absolute; top:0; left:0; right:0; background:#1781cc; height:420px; z-index:20;}
+header .allMenu ul {display:none;}
 header .allMenu .btn_close {position:absolute; top:2rem; right:2.5rem;}
 .allMenu header .innr { z-index:21;}
 .allMenu header .innr:after {content:""; position:fixed; top:5rem; left:0; right:0; background:#57a3d8; height:1px;}
@@ -132,6 +133,7 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 
 	body.allMenu {overflow:hidden;}
 	body.allMenu .allMenu {overflow:auto;}
+	body.allMenu .allMenu ul {display:block;}
 	body.allMenu .innr:after {display:none;}
 	.allMenu header .innr {background:#1781cc;}
 	.allMenu .innr .util li.login {display:none;}
