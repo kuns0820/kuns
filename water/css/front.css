@@ -121,7 +121,7 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 }
 
 @media screen and (max-width:1024px) {
-	header .innr {height:40px; padding:5px 0 0;}
+	header .innr {height:50px; padding:10px 0 0;}
 	header .innr .logo a {width:99px; height:25px;}
 	header .gnb_wrap {display:none;}
 	header .innr .util li {display:none;}
@@ -132,20 +132,7 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 }
 
 @media screen and (max-width:718px) {
-	header {border-width:0 0 3px;}
-	header .innr {height:auto; padding:5px 0;}
-	header h1 img {width:46px;}
-	header .util li img {width:20px;}
-
-	header .allMenu .logo {padding:5px 0 0;}
-	header .allMenu .logo img {width:46px;}
-	header .allMenu .btn_close {top:10px;}
-	header .allMenu .btn_close img {height:20px;}
-	header .allMenu .gnb_all > ul {padding:40px 40px 0;}
-	header .allMenu .gnb_all > ul > li {width:100%; margin-top:40px;}
-	header .allMenu .gnb_all > ul > li > a {font-size:20px;}
-	header .allMenu .gnb_all .dep2 {padding-top:10px;}
-	header .allMenu .gnb_all .dep2 a {height:25px; font-size:13px; line-height:25px;}
+	
 
 	footer .innr {width:calc(100% - 30px); height:120px; min-height:auto;}
 	footer .innr .util {position:static;}
