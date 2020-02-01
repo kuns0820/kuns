@@ -43,7 +43,7 @@ html {font-size:20px;}
 }
 ol , ul {list-style:none;}
 em , i {font-style:normal;}
-table {border-collapse:collapse; border-spacing:0;}
+table {width:100%; border-collapse:collapse; border-spacing:0;}
 a , button {font-family:inherit;}
 a {color:inherit; color:inherit;font-family:inherit; font-weight:normal; text-decoration:none;}
 a:active , a:visited , a:hover {text-decoration:none; outline:none;}
@@ -56,8 +56,8 @@ input[type="text"]:-ms-clear {display:none;}
 a , textarea {color:inherit; font-family:inherit; text-decoration:none;}
 textarea::-webkit-input-placeholder {color:#dcdcdc;}
 textarea:-ms-input-placeholder {color:#dcdcdc;}
-input[type="text"]::-webkit-input-placeholder , input[type="number"]::-webkit-input-placeholder {color:#dcdcdc;}
-input[type="text"]:-ms-input-placeholder , input[type="number"]:-ms-input-placeholder {color:#dcdcdc;}
+input[type="text"]::-webkit-input-placeholder , input[type="number"]::-webkit-input-placeholder {color:#999;}
+input[type="text"]:-ms-input-placeholder , input[type="number"]:-ms-input-placeholder {color:#999;}
 input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 img.pc {display:block;}
 img.mo {display:none;}
@@ -78,6 +78,8 @@ header .gnb_wrap > ul > li > a {display:block; height:5rem; padding:0 2.5rem; co
 header .gnb_wrap > ul > li.on > a {color:#1781cc;}
 header .gnb_wrap .dep2 {display:none; position:absolute; top:5rem; left:0; background:#1781cc; width:100%; padding:1rem 0; white-space:nowrap; z-index:20;}
 header .gnb_wrap .dep2 a {display:block; height:1.7rem; padding:0 1rem; box-sizing:border-box; color:#fff; font-size:0.8rem; line-height:1.7rem;}
+header .gnb_wrap .dep2 ul a {color:#80caff;}
+header .gnb_wrap .dep2 ul a:hover {color:#fff; text-decoration:underline;}
 header .util {position:absolute; top:50%; right:2.5rem; transform:translateY(-50%);}
 header .util:after {content:""; display:block; clear:both;}
 header .util li {float:left; margin-left:0.5rem;}
@@ -144,6 +146,8 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	.allMenu .allMenu > ul > li > a {color:#fff; font-size:15px; font-weight:bold;}
 	.allMenu .allMenu > ul > li .dep2 {background:#fff; width:calc(100% - 30px); margin:15px auto; padding:15px 0;}
 	.allMenu .allMenu > ul > li .dep2 a {color:#666; font-size:13px; line-height:2;}
+	.allMenu .allMenu > ul > li .dep2 ul a {color:#1781cc;}
+	.allMenu .allMenu > ul > li .dep2 ul a i {display:none;}
 }
 
 @media screen and (max-width:720px) {
@@ -216,4 +220,98 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	.notice_area .innr .list li .date {font-size:11px;}
 	.notice_area .innr .list li a {height:35px; line-height:35px; font-size:12px;}
 	.notice_area .innr .list li a:after {width:6px; height:6px;}
+}
+
+#container article:not(.main) {max-width:1300px; margin:0 auto; padding:90px 0 120px; transition:all .2s;}
+.sub_visual {display:table; width:100%; text-align:center;}
+.sub_visual .innr {display:table-cell; height:321px; color:#fff; vertical-align:middle;}
+.sub_visual .innr h2 {font-size:45px; font-weight:bold;}
+.sub_visual .innr p {margin-top:20px; font-size:16px;}
+.sub_visual .innr p:before {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M1 12V6H0V5h1V4h1V3h1V2h1V1h1V0h2v1h1v1h1v1h1v1h1v1h1v1h-1v6H7V8H5v4H1z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:12px; height:12px; margin-right:15px; vertical-align:0;}
+.sub_visual.join {background:url(../images/sub/visual_join.png) 50% 0 no-repeat; background-size:cover;}
+
+@media screen and (max-width:1300px) {
+	#container article:not(.main) {padding:90px 30px 120px;}
+}
+@media screen and (max-width:720px) {
+	#container article:not(.main) {padding:45px 15px 60px;}
+	.sub_visual .innr {height:160px;}
+	.sub_visual .innr h2 {font-size:23px;}
+	.sub_visual .innr p {font-size:11px;}
+	.sub_visual .innr p:before {width:8px; height:8px; margin-right:5px;}
+}
+
+.tab_text {margin-bottom:40px; text-align:center;}
+.tab_text a {display:inline-block; color:#666; font-size:26px;}
+.tab_text a:first-child {margin-right:60px;}
+.tab_text a:first-child:after {content:""; display:inline-block; background:#ddd; width:1px; height:16px; margin-left:60px; vertical-align:0;}
+.tab_text a.on {color:#1781cc; font-weight:bold;}
+
+input[type=text],
+input[type=password],
+input[type=number] {height:50px; padding-left:20px; border:1px solid #ddd; box-sizing:border-box; color:#111; font-size:17px; vertical-align:middle;}
+
+input[type=radio] {display:inline-block; background:#e9e9e9; width:30px; height:30px; margin:0 5px 0 0; border-radius:50%; appearance:none; -webkit-appearance:none; vertical-align:middle;}
+input[type=radio]:checked {background:#1781cc url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11'%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M5.5 0a5.5 5.5 0 110 11 5.5 5.5 0 010-11z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:10px 10px;}
+input[type=radio] + label {display:inline-block; vertical-align:middle;}
+
+.board {border-top:2px solid #111;}
+.board td select {border:1px solid #ddd; height:50px; padding-left:15px; color:#111; font-size:17px;}
+.board .th {width:190px;}
+.board th, .board td {padding:15px 0; border-bottom:1px solid #eee; color:#111; vertical-align:middle; font-size:17px;}
+.board th {padding-left:30px; text-align:left; font-weight:normal;}
+.board .btn {position:absolute; top:0; right:0; background:#666; height:50px; padding:0 30px; color:#fff; line-height:50px;}
+.board td > div {position:relative;}
+.board td > div:after {content:""; display:block; clear:both;}
+.board td > div.id {max-width:727px; padding-right:130px;}
+.board td > div.full {max-width:597px;}
+.board td input[type=text],
+.board td input[type=password],
+.board td input[type=number] {width:100%;}
+.board td .birth {max-width:597px;}
+.board td .birth > * {float:left;}
+.board td .birth input {width:25%;}
+.board td .birth span {width:8.33%; height:50px; line-height:50px; text-align:center;}
+.board td label {margin-right:30px; color:#111; font-size:17px;}
+.board td .tel {max-width:530px;}
+.board td .tel > * {float:left;}
+.board td .tel input {width:30%; padding:0; text-align:center;}
+.board td .tel span {width:5%; height:50px; line-height:50px; text-align:center;}
+.board td .email {max-width:530px;}
+.board td .email > * {float:left;}
+.board td .email input {width:30%; padding:0; text-align:center;}
+.board td .email span {width:8.33%; height:50px; line-height:50px; text-align:center;}
+.board td .email select {float:right; width:30%;}
+.board td .adr1 {max-width:350px; padding-right:165px;}
+.board td .adr2 {max-width:600px; margin:10px 0;}
+.board td .adr3 {max-width:600px;}
+.board td.slt > select {float:left; min-width:15%; margin-right:10px;}
+.board td.slt input[type=text] {float:left; width:15%}
+.board td.chk span {display:inline-block; margin-bottom:5px;}
+.btn_c {margin-top:70px;}
+.btn_c button {display:block; background:#1781cc; width:225px; height:70px; margin:0 auto; color:#fff; font-size:20px; text-align:center; line-height:70px;}
+
+@media screen and (max-width:720px) {
+	.tab_text {margin-bottom:20px;}
+	.tab_text a {font-size:13px;}
+	.tab_text a:first-child {margin-right:30px;}
+	.tab_text a:first-child:after {height:8px; margin-left:30px;}
+
+	input[type=text],
+	input[type=password],
+	input[type=number] {height:30px; padding-left:10px; font-size:11px;}
+	input[type=radio] {width:14px; height:14px; margin:0 5px 0 0;}
+	input[type=radio]:checked {background:#1781cc url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11'%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M5.5 0a5.5 5.5 0 110 11 5.5 5.5 0 010-11z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:4px 4px;}
+	input[type=radio] + label {display:inline-block; vertical-align:middle;}
+	.board td select {height:30px; padding-left:0; font-size:11px;}
+	.board .th {width:90px;}
+	.board th, .board td {padding-top:5px; padding-bottom:5px; padding-left:0; font-size:11px;}
+	.board .btn {height:30px; padding:0 15px; line-height:30px;}
+	.board td > div.id {padding-right:75px;}
+	.board td span {height:30px !important; line-height:30px !important;}
+	.board td label {margin-right:15px; font-size:11px;}
+	.board td .adr1 {max-width:none; padding-right:100px;}
+	.board td .adr2 {margin:5px 0;}
+	.btn_c {margin-top:35px;}
+	.btn_c button {width:100%; height:36px; font-size:11px; line-height:36px;}
 }
