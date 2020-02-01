@@ -56,8 +56,12 @@ input[type="text"]:-ms-clear {display:none;}
 a , textarea {color:inherit; font-family:inherit; text-decoration:none;}
 textarea::-webkit-input-placeholder {color:#dcdcdc;}
 textarea:-ms-input-placeholder {color:#dcdcdc;}
-input[type="text"]::-webkit-input-placeholder , input[type="number"]::-webkit-input-placeholder {color:#999;}
-input[type="text"]:-ms-input-placeholder , input[type="number"]:-ms-input-placeholder {color:#999;}
+input[type="text"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {color:#999;}
+input[type="text"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {color:#999;}
 input[type="number"]::-webkit-outer-spin-button , input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none;}
 img.pc {display:block;}
 img.mo {display:none;}
@@ -229,12 +233,14 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 .sub_visual .innr p {margin-top:20px; font-size:16px;}
 .sub_visual .innr p:before {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M1 12V6H0V5h1V4h1V3h1V2h1V1h1V0h2v1h1v1h1v1h1v1h1v1h1v1h-1v6H7V8H5v4H1z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:12px; height:12px; margin-right:15px; vertical-align:0;}
 .sub_visual.join {background:url(../images/sub/visual_join.png) 50% 0 no-repeat; background-size:cover;}
-
+.sub_visual.noti {background:url(../images/sub/visual_noti.png) 50% 0 no-repeat; background-size:cover;}
+h3.title {margin-bottom:40px; color:#000; font-size:36px; text-align:center;}
 @media screen and (max-width:1300px) {
 	#container article:not(.main) {padding:90px 30px 120px;}
 }
 @media screen and (max-width:720px) {
 	#container article:not(.main) {padding:45px 15px 60px;}
+	h3.title {margin-bottom:20px; font-size:18px;}
 	.sub_visual .innr {height:160px;}
 	.sub_visual .innr h2 {font-size:23px;}
 	.sub_visual .innr p {font-size:11px;}
@@ -316,4 +322,126 @@ input[type=radio] + label {display:inline-block; vertical-align:middle;}
 	.board td.slt input[type=text] {width:25%;}
 	.btn_c {margin-top:35px;}
 	.btn_c button {width:100%; height:36px; font-size:11px; line-height:36px;}
+}
+
+
+.paging {margin-top:40px; text-align:center; font-size:0;}
+.paging a {display:inline-block; width:20px; height:30px; margin-left:5px; border:1px solid #fff; box-sizing:border-box; color:#999; font-size:17px; vertical-align:middle; line-height:28px;}
+.paging a.on,
+.paging a:hover {color:#111;}
+.paging a.prev,
+.paging a.next {font:0/0 a;}
+.paging a.prev {background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 20'%3e%3cpath fill-rule='evenodd' fill='%23666' d='M11.3 2.7L4.5 9.6l6.8 6.8a1.6 1.6 0 01-2.2 2.2l-7.8-7.8C1 10.4.8 10 .9 9.6c0-.5 0-1 .4-1.3L9 .5a1.6 1.6 0 012.2 2.2z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:7px 15px; width:30px; margin-left:0; border-color:#ddd;}
+.paging a.next {background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 20'%3e%3cpath fill-rule='evenodd' fill='%23666' d='M11.3 10.8l-7.9 7.8a1.6 1.6 0 01-2.2-2.2l6.9-6.8-6.9-6.9A1.6 1.6 0 013.4.5l7.9 7.8c.3.4.4.8.4 1.3 0 .4 0 .8-.4 1.2z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:7px 15px; width:30px; border-color:#ddd;}
+
+.tbl_board {border-top:2px solid #111;}
+.tbl_board table {table-layout:fixed;}
+.tbl_board th {border-bottom:1px solid #111; color:#111;}
+.tbl_board th, .tbl_board td {height:60px; font-size:17px; vertical-align:middle; text-align:center;}
+.tbl_board td {border-bottom:1px solid #eee; color:#999;}
+.tbl_board td.sbj {padding-left:10px; text-align:left;}
+.tbl_board td.sbj a {display:block; overflow:hidden; text-overflow:ellipsis; max-width:100%; color:#111; white-space:nowrap;}
+.tbl_board td.sbj a em {display:inline-block; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 24'%3e%3cpath fill-rule='evenodd' fill='%236A78A0' d='M1 24H0V0h22v24H1zm17-1v-9H4v9h14zM16 1H6v7h10V1zm5 0h-4v8H5V1H1v22h2V13h16v10h2V1zm-7 5h-1V3h1v3z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:22px; height:24px; margin-left:5px; vertical-align:-6px;}
+.tbl_board td.comp {color:#1781cc;}
+
+@media screen and (max-width:720px) {
+	.tbl_board .pc {display:none;}
+	.tbl_board th, .tbl_board td {height:30px; font-size:12px;}
+	.paging {margin-top:20px;}
+	.paging a {width:18px !important; height:18px; font-size:12px; line-height:16px;}
+
+	.tbl_board td.sbj a em {width:11px; height:12px; vertical-align:-1px;}
+}
+
+.board_view {border-top:2px solid #111;}
+.board_view dt {padding:30px; border-bottom:1px solid #111;}
+.board_view dt strong {color:#111; font-size:30px; font-weight:bold;}
+.board_view dt p {margin-top:15px; color:#666; font-size:17px;}
+.board_view dd {border-bottom:1px solid #eee;}
+.board_view dd {color:#111; font-size:17px; line-height:1.7;}
+.board_view dd > div {padding:30px;}
+.board_view dd .answer_text {background:#eee;}
+.board_view dd .file_wrap {position:relative; min-height:50px;}
+.board_view dd .file_wrap a:hover {text-decoration:underline;}
+.board_view dd .file_wrap .btn {position:absolute; bottom:30px; right:30px; text-align:right;}
+.board_view dd .file_wrap .btn button {display:inline-block; height:50px; padding:0 10px; border:1px solid #111; color:#111; font-size:16px; line-height:50px;}
+
+.bord_btnR {margin-top:60px; margin-bottom:-140px; text-align:right; font-size:0;}
+.bord_btnR button {display:inline-block; background:#666; width:150px; height:70px; margin-left:10px; color:#fff; font-size:20px; text-align:center; line-height:70px;}
+@media screen and (max-width:720px) {
+	.board_view dt {padding:15px;}
+	.board_view dt strong {font-size:15px;}
+	.board_view dt p {margin-top:5px; font-size:11px;}
+	.board_view dd {font-size:11px;}
+	.board_view dd > div {padding:15px;}
+	.board_view dd .file_wrap {min-height:25px;}
+	.board_view dd .file_wrap .btn {bottom:15px; right:15px;}
+	.board_view dd .file_wrap .btn button {height:26px; padding:0 5px; font-size:11px; line-height:26px;}
+	.bord_btnR {margin-top:30px; margin-bottom:0;}
+	.bord_btnR button {width:calc(50% - 5px); height:36px; margin:0; padding:0; font-size:11px; line-height:36px;}
+	.bord_btnR button:first-child {margin-right:10px;}
+	.bord_btnR + .btn_c {margin-top:10px;}
+}
+
+.wr_board {border-top:2px solid #111;}
+.wr_board dl {display:table; width:100%;}
+.wr_board dt, .wr_board dd {display:table-cell; padding:15px 0; border-bottom:1px solid #eee; font-size:17px; vertical-align:middle;}
+.wr_board dt {width:190px; padding-left:30px; color:#111;}
+.wr_board dd {color:#999;}
+.wr_board dd input[type=text],
+.wr_board dd textarea {width:100%; margin:0; padding:0; border:1px solid #ddd; box-sizing:border-box;}
+.wr_board dd input[type=text] {padding-left:10px;}
+.wr_board dd textarea {height:400px; padding:10px; resize:none;}
+@media screen and (max-width:720px) {
+	.wr_board dl {display:block;}
+	.wr_board dt, .wr_board dd {display:block;}
+	.wr_board dt {width:100%; padding:15px 0 0 0; border-bottom:0; font-size:11px;}
+	.wr_board dd {padding:5px 0;}
+	.wr_board dd textarea {height:200px;}
+}
+
+.faq_warp {border-top:2px solid #111;}
+.faq_warp dl {border-bottom:1px solid #eee;}
+.faq_warp dt a {display:block; position:relative; padding:20px 30px; color:#111; font-size:17px; font-weight:bold;}
+.faq_warp dt a:after {content:""; position:absolute; top:50%; right:20px; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 8'%3e%3cpath fill-rule='evenodd' d='M.775 1.448c.002-.21.092-.418.264-.565.316-.267.79-.229 1.058.087l3.396 4 3.468-3.906c.275-.309.749-.338 1.058-.062.312.276.339.748.063 1.059L5.467 7.256.953 1.941c-.121-.144-.179-.319-.178-.493z' fill='%23666'/%3e%3c/svg%3e"); background-position:0 0; background-size:100% 100%; background-repeat:no-repeat; width:20px; height:18px; transform-origin:50% 0; transform:translateY(-50%); transition:all .2s;}
+.faq_warp dd {display:none; background:#eee; padding:60px; color:#111; font-size:17px; line-height:2;}
+.faq_warp dl.on dd {display:block;}
+.faq_warp dl.on dt a:after {transform:rotate(180deg);}
+@media screen and (max-width:720px) {
+	.faq_warp dt a {padding:10px 15px; font-size:11px;}
+	.faq_warp dt a:after {right:10px; width:10px; height:8px;}
+	.faq_warp dd {padding:20px; font-size:11px;}
+}
+
+.idpw {max-width:440px; margin:0 auto;}
+.idpw .tab {margin-bottom:30px;}
+.idpw .tab:after {content:""; display:block; clear:both;}
+.idpw .tab a {float:left; position:relative; background:#eee; width:50%; height:60px; color:#666; font-size:18px; font-weight:bold; text-align:center; line-height:60px;}
+.idpw .tab a:after {content:""; position:absolute; bottom:-10px; left:50%; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 4'%3e%3cpath fill-rule='evenodd' d='M0 0h7L3.5 4z' fill='%23eee'/%3e%3c/svg%3e") 0 0 no-repeat; background-size:100% 100%; width:20px; height:10px; transform:translateX(-50%);}
+.idpw .tab a.on {background-color:#333; color:#fff;}
+.idpw .tab a.on:after {background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7 4'%3e%3cpath fill-rule='evenodd' d='M0 0h7L3.5 4z' fill='%23333'/%3e%3c/svg%3e") 0 0 no-repeat;}
+
+.idpw .inp input[type=text],
+.idpw .inp input[type=password] {width:100%;}
+.idpw .inp input[type=text]:first-child {border-bottom:0;}
+.idpw .btn_c {margin-top:30px;}
+.idpw .btn_c button {width:100%;}
+@media screen and (max-width:720px) {
+	.idpw .tab {margin-bottom:15px;}
+	.idpw .tab a {height:40px; font-size:12px; line-height:40px;}
+	.idpw .tab a:after {bottom:-9px; width:10px; height:10px;}
+	.idpw .btn_c {margin-top:15px;}
+}
+.login .inp input {padding-left:60px;}
+.login .inp input.id {background:url(../images/sub/ico_login.png) 20px 50% no-repeat;}
+.login .inp input.pw {background:url(../images/sub/ico_pw.png) 20px 50% no-repeat;}
+.join_menu {margin-top:40px; text-align:center;}
+.join_menu a {display:inline-block; position:relative; padding:0 40px; color:#666; font-size:16px;}
+.join_menu a:first-child:after {content:""; position:absolute; top:50%; right:0; background:#ccc; width:1px; height:10px; transform:translateY(-50%);}
+@media screen and (max-width:720px) {
+	.login .inp input {padding-left:40px;}
+	.login .inp input.id {background-position:15px 50%; background-size:auto 14px;}
+	.login .inp input.pw {background-position:15px 50%; background-size:auto 16px;}
+	.join_menu {margin-top:20px;}
+	.join_menu a {padding:0 20px; font-size:11px;}
 }
