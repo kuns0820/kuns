@@ -81,7 +81,7 @@ header .gnb_wrap > ul > li {float:left; position:relative;}
 header .gnb_wrap > ul > li > a {display:block; height:5rem; padding:0 2.5rem; color:#111; font-size:1rem; line-height:5rem; font-weight:bold;}
 header .gnb_wrap > ul > li.on > a {color:#1781cc;}
 header .gnb_wrap .dep2 {display:none; position:absolute; top:5rem; left:0; background:#1781cc; width:100%; padding:1rem 0; white-space:nowrap; z-index:20;}
-header .gnb_wrap .dep2 a {display:block; height:1.7rem; padding:0 1rem; box-sizing:border-box; color:#fff; font-size:0.8rem; line-height:1.7rem;}
+header .gnb_wrap .dep2 a {display:block; height:auto; padding:.5rem 1rem; box-sizing:border-box; color:#fff; font-size:0.8rem; line-height:1.2;}
 header .gnb_wrap .dep2 ul a {color:#80caff;}
 header .gnb_wrap .dep2 ul a:hover {color:#fff; text-decoration:underline;}
 header .util {position:absolute; top:50%; right:2.5rem; transform:translateY(-50%);}
@@ -149,8 +149,8 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 	.allMenu .allMenu > ul {margin-top:55px; text-align:center;}
 	.allMenu .allMenu > ul > li > a {color:#fff; font-size:15px; font-weight:bold;}
 	.allMenu .allMenu > ul > li .dep2 {background:#fff; width:calc(100% - 30px); margin:15px auto; padding:15px 0;}
-	.allMenu .allMenu > ul > li .dep2 a {color:#666; font-size:13px; line-height:2;}
-	.allMenu .allMenu > ul > li .dep2 ul a {color:#1781cc;}
+	.allMenu .allMenu > ul > li .dep2 a {display:inline-block; padding:5px 0; color:#666; font-size:13px;}
+	.allMenu .allMenu > ul > li .dep2 ul a {display:inline-block; padding:5px 0; color:#1781cc;}
 	.allMenu .allMenu > ul > li .dep2 ul a i {display:none;}
 }
 
