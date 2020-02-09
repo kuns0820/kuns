@@ -235,12 +235,14 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 .sub_visual.join {background:url(../images/sub/visual_join.png) 50% 0 no-repeat; background-size:cover;}
 .sub_visual.noti {background:url(../images/sub/visual_noti.png) 50% 0 no-repeat; background-size:cover;}
 h3.title {margin-bottom:40px; color:#000; font-size:36px; text-align:center;}
+h3.title + .desc {margin-top:40px; color:#000; font-size:30px; text-align:center;}
 @media screen and (max-width:1300px) {
 	#container article:not(.main) {padding:90px 30px 120px;}
 }
 @media screen and (max-width:720px) {
 	#container article:not(.main) {padding:45px 15px 60px;}
 	h3.title {margin-bottom:20px; font-size:18px;}
+	h3.title + .desc {margin-top:20px; font-size:15px;}
 	.sub_visual .innr {height:160px;}
 	.sub_visual .innr h2 {font-size:23px;}
 	.sub_visual .innr p {font-size:11px;}
@@ -445,3 +447,26 @@ input[type=radio] + label {display:inline-block; vertical-align:middle;}
 	.join_menu {margin-top:20px;}
 	.join_menu a {padding:0 20px; font-size:11px;}
 }
+
+.ceo .box {display:table; width:100%; margin-top:2rem;}
+.ceo .box > span {display:table-cell; width:43%;}
+.ceo .box > span img {max-width:100%;}
+.ceo .box > div {display:table-cell; padding-left:70px; color:#666; font-size:17px; line-height:2; vertical-align:middle;}
+.ceo .box > div span {color:#999;}
+@media screen and (max-width:1300px) {
+	.ceo .box > div br.pc {display:none;}
+}
+@media screen and (max-width:720px) {
+	.ceo .box {display:block;}
+	.ceo .box > span {display:block; width:100%; text-align:center;}
+	.ceo .box > div {display:block; margin-top:40px; padding-left:0;}
+}
+
+.org .org_box {margin-top:60px; border-top:1px solid #111;}
+.org .org_box:after {content:""; display:block; clear:both;}
+.org .org_box table {float:left; width:50%;}
+.org .org_box table .th {width:27%;}
+.org .org_box table th,
+.org .org_box table td {height:60px; border-bottom:1px solid #eee; text-align:left; font-size:18px; vertical-align:middle;}
+.org .org_box table th {background:#fafafa; padding-left:30px; color:#000;}
+.org .org_box table td {padding-left:50px; color:#666;}
