@@ -295,7 +295,8 @@ input[type=radio] + label {display:inline-block; vertical-align:middle;}
 .board td.slt input[type=text] {float:left; width:15%}
 .board td.chk span {display:inline-block; margin-bottom:5px;}
 .btn_c {margin-top:70px;}
-.btn_c button {display:block; background:#1781cc; width:225px; height:70px; margin:0 auto; color:#fff; font-size:20px; text-align:center; line-height:70px;}
+.btn_c button,
+.btn_c a {display:block; background:#1781cc; width:225px; height:70px; margin:0 auto; color:#fff; font-size:20px; text-align:center; line-height:70px;}
 
 @media screen and (max-width:720px) {
 	.tab_text {margin-bottom:20px;}
