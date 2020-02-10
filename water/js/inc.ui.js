@@ -6,7 +6,7 @@ var inc_dom = {
 		incHD.push('<h1 class="logo"><a href="main.html">K water 운영관리</a></h1>');
 		incHD.push('<div class="gnb_wrap">');
 		incHD.push('<ul>');
-		incHD.push('<li class=""><a href="company01.html">회사소개</a>');
+		incHD.push('<li class=""><a href="ceo.html">회사소개</a>');
 		incHD.push('<ul class="dep2">');
 		incHD.push('<li><a href="ceo.html">CEO인사말</a></li>');
 		incHD.push('<li><a href="org.html">조직 및 연락처</a></li>');
@@ -14,7 +14,7 @@ var inc_dom = {
 		incHD.push('<li><a href="ci.html">CI</a></li>');
 		incHD.push('</ul>');
 		incHD.push('</li>');
-		incHD.push('<li class=""><a href=".html">알림마당</a>');
+		incHD.push('<li class=""><a href="notice.html">알림마당</a>');
 		incHD.push('<ul class="dep2">');
 		incHD.push('<li><a href="notice.html">공지사항</a></li>');
 		incHD.push('<li><a href="download.html">자료실</a></li>');

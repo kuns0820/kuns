@@ -1,0 +1,47 @@
+
+/data/skin/responsive_ver1_default_gl/event/200204_pc_feb_1260.jpg
+
+/data/skin/responsive_ver1_default_gl/event/200205_m_feb_800.jpg
+
+<div class="event_pc" style="position:relative;">
+<img src="http://korcham.firstmall.kr/data/skin/responsive_ver1_default_gl/event/200204_pc_feb_1260.jpg" alt="" style="display:block; width:100%;">
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/212')" style="position:absolute; top:17.8%; left:3.10%; width:93.7%; height:6.80%; font:0/0 a;">에어팟</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/45')" style="position:absolute; top:25.8%; left:30.3%; width:31.0%; height:6.13%; font:0/0 a;">MACBOOK</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/76')" style="position:absolute; top:25.8%; left:61.4%; width:31.0%; height:6.13%; font:0/0 a;">Gram</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/38')" style="position:absolute; top:32.4%; left:30.5%; width:31.0%; height:6.13%; font:0/0 a;">IPAD</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/27')" style="position:absolute; top:32.4%; left:61.5%; width:31.0%; height:6.13%; font:0/0 a;">IPAD PRO</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/230')" style="position:absolute; top:39.0%; left:30.3%; width:31.0%; height:6.13%; font:0/0 a;">완전무선이어폰</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/186')" style="position:absolute; top:39.0%; left:61.5%; width:31.0%; height:6.13%; font:0/0 a;">갤럭시 버즈</a>
+
+<a href="http://korcham.firstmall.kr/goods/catalog?category=c0002#p33" target="_blank" style="position:absolute; top:52.3%; left:3.10%; width:93.6%; height:6.72%; font:0/0 a;">ok닥터</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=279" target="_blank" style="position:absolute; top:60.4%; left:14.2%; width:34.8%; height:8.41%; font:0/0 a;">온바디한의원</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=319" target="_blank" style="position:absolute; top:60.4%; left:50.8%; width:34.8%; height:8.41%; font:0/0 a;">위드셀의원</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=346" target="_blank" style="position:absolute; top:69.2%; left:14.3%; width:34.8%; height:8.41%; font:0/0 a;">밝은성모안과</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=326" target="_blank" style="position:absolute; top:69.2%; left:50.8%; width:34.8%; height:8.41%; font:0/0 a;">제아치과</a>
+<a href="javascript:welfarePVLanding.pvEvent(13,'http://www.jtiflorist.co.kr/goods/goods_list/sel_menu/2')" style="position:absolute; top:84.9%; left:14.3%; width:34.9%; height:8.49%; font:0/0 a;">꽃다발배달</a>
+<a href="javascript:welfarePVLanding.pvEvent(13,'http://www.jtiflorist.co.kr/goods/goods_list/sel_menu/9')" style="position:absolute; top:84.9%; left:50.9%; width:34.9%; height:8.49%; font:0/0 a;">꽃박스배달</a>
+</div>
+
+
+<div class="event_mobile" style="position:relative;">
+<img src="http://korcham.firstmall.kr/data/skin/responsive_ver1_default_gl/event/200205_m_feb_800.jpg" alt="" style="display:block; width:100%;">
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/212')" style="position:absolute; top:20.2%; left:0.125%; width:99.8%; height:6.50%; font:0/0 a;">에어팟</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/45')" style="position:absolute; top:30.0%; left:2.25%; width:47.6%; height:5.82%; font:0/0 a;">맥북</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/76')" style="position:absolute; top:30.0%; left:50.1%; width:47.6%; height:5.82%; font:0/0 a;">그램</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/38')" style="position:absolute; top:38.9%; left:2.50%; width:47.6%; height:5.82%; font:0/0 a;">아이패드7세대</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/27')" style="position:absolute; top:38.9%; left:50.1%; width:47.6%; height:5.82%; font:0/0 a;">아이패드프로</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/230')" style="position:absolute; top:47.9%; left:2.13%; width:47.6%; height:5.82%; font:0/0 a;">완전무선이어폰</a>
+<a href="javascript:welfarePVLanding.pvEvent(24,'/product/detail/186')" style="position:absolute; top:47.9%; left:49.9%; width:47.6%; height:5.82%; font:0/0 a;">갤럭시버즈</a>
+<a href="http://korcham.firstmall.kr/goods/catalog?category=c0002#p33" target="_blank" style="position:absolute; top:59.7%; left:0.00%; width:99.6%; height:6.43%; font:0/0 a;">ok닥터</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=279" target="_blank" style="position:absolute; top:66.9%; left:2.13%; width:46.8%; height:7.32%; font:0/0 a;">온바디한의원</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=319" target="_blank" style="position:absolute; top:67.0%; left:51.1%; width:46.8%; height:7.32%; font:0/0 a;">위드셀의원</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=346" target="_blank" style="position:absolute; top:74.5%; left:2.25%; width:46.8%; height:7.32%; font:0/0 a;">밝은성모안과</a>
+<a href="https://okaydr.com/index.php/Doctor/contents/health_event/viewEvent?seq=326" target="_blank" style="position:absolute; top:74.4%; left:50.9%; width:46.8%; height:7.32%; font:0/0 a;">제아치과</a>
+<a href="javascript:welfarePVLanding.pvEvent(13,'http://www.jtiflorist.co.kr/goods/goods_list/sel_menu/2')" style="position:absolute; top:87.0%; left:2.13%; width:46.6%; height:6.83%; font:0/0 a;">꽃다발</a>
+<a href="javascript:welfarePVLanding.pvEvent(13,'http://www.jtiflorist.co.kr/goods/goods_list/sel_menu/9')" style="position:absolute; top:87.0%; left:51.1%; width:46.6%; height:6.83%; font:0/0 a;">꽃박스</a>
+</div>
+
+
+
+
+http://korcham.firstmall.kr/data/skin/responsive_ver1_default_gl/images/ems/edm_200210_01.jpg
