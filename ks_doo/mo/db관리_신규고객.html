@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/ta_adm_mo.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ta_adm_mo.js"></script>
+</head>
+<body>
+<div id="wrap" class="">
+	<header>
+		<button type="button" class="back">뒤로</button>
+		<h1>DB관리</h1>
+	</header>
+
+	<div id="container">
+		<div class="tab">
+			<a href="" class="on">신규고객</a>
+			<a href="">고객현황</a>
+		</div>
+
+		<div class="tbl">
+			<table>
+				<colgroup>
+					<col>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>진행결과</th>
+						<th>권역</th>
+						<th>고객명</th>
+						<th>상세보기</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>장기부재</td>
+						<td>서울</td>
+						<td>홍길동</td>
+						<td><button type="button" class="detail" data-layer="detail_layer" onclick="layers(this);">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>거절</td>
+						<td>경기</td>
+						<td>홍길동</td>
+						<td><button type="button" class="detail" data-layer="detail_layer" onclick="layers(this);">상세보기</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="paging">
+			<button type="button" class="prev">이전</button>
+			<p><span>1</span> for 10</p>
+			<button type="button" class="next">다음</button>
+		</div>
+	</div>
+</div>
+
+<div class="layer_wrap detail_layer">
+	<h2 class="line">상세정보</h2>
+	<div class="conts">
+		<dl>
+			<dt>권&nbsp;&nbsp;&nbsp;역</dt>
+			<dd>: 서울</dd>
+		</dl>
+		<dl>
+			<dt>고객명</dt>
+			<dd>: 홍길동</dd>
+		</dl>
+		<dl>
+			<dt>성&nbsp;&nbsp;&nbsp;별</dt>
+			<dd>: 남</dd>
+		</dl>
+		<dl>
+			<dt>연&nbsp;&nbsp;&nbsp;령</dt>
+			<dd>: 39(1980.01.01)</dd>
+		</dl>
+		<dl>
+			<dt>연락처</dt>
+			<dd>: 010-0000-0000</dd>
+		</dl>
+		<dl>
+			<dt>주&nbsp;&nbsp;&nbsp;소</dt>
+			<dd>: 서울시 강남구 언주로 121길<br /> 17, 파인시티 2층</dd>
+		</dl>
+		<dl>
+			<dt>예약시간</dt>
+			<dd>: 오전 11시</dd>
+		</dl>
+		<button type="button" class="tel">전화걸기</button>
+		<button type="button" class="voice">음성(녹취)듣기</button>
+	</div>
+	<div class="btn_area">
+		<button type="button">T/A등록</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+<i class="dim"></i>
+</body>
+</html>
