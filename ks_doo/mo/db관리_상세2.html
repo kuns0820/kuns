@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/ta_adm_mo.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ta_adm_mo.js"></script>
+</head>
+<body class="">
+<div id="wrap" class="">
+	<header>
+		<h1>고객 정보 수정</h1>
+		<button type="button" class="close">닫기</button>
+	</header>
+
+	<div id="container" class="">
+		<div class="tbl_row view">
+			<table>
+				<colgroup>
+					<col style="width:85px">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>항목</th>
+						<th>내용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>고객명</th>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td>010-0000-0000 <a href="tel:010-0000-0000">전화걸기</a></td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td class="birth">
+							1980.01.01
+						</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="addr">
+							서울시 강남구 언주로 12길 17
+						</td>
+					</tr>
+					<tr>
+						<th>상세주소</th>
+						<td>파인시티 2층</td>
+					</tr>
+					<tr>
+						<th>진행결과</th>
+						<td class="stats">
+							<div>
+								<select name="" id=""><option value="">진행중</option></select>
+							</div>
+							<button type="button">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>T/A1차</th>
+						<td>
+							<button type="button" class="basic" data-layer="ta_layer" onclick="layers(this);">등록</button>
+							<button type="button" class="basic" data-layer="modify_layer" onclick="layers(this);">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>T/A2차</th>
+						<td>
+							<button type="button" class="basic" data-layer="ta_layer" onclick="layers(this);">등록</button>
+							<button type="button" class="basic" data-layer="modify_layer" onclick="layers(this);">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>T/A3차</th>
+						<td>
+							<button type="button" class="basic" data-layer="ta_layer" onclick="layers(this);">등록</button>
+							<button type="button" class="basic" data-layer="modify_layer" onclick="layers(this);">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>T/A4차</th>
+						<td>
+							<button type="button" class="basic" data-layer="ta_layer" onclick="layers(this);">등록</button>
+							<button type="button" class="basic" data-layer="modify_layer" onclick="layers(this);">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>T/A5차</th>
+						<td>
+							<button type="button" class="basic" data-layer="ta_layer" onclick="layers(this);">등록</button>
+							<button type="button" class="basic" data-layer="modify_layer" onclick="layers(this);">수정</button>
+						</td>
+					</tr>
+					<tr>
+						<th>키트</th>
+						<td><button type="button" class="kit" data-layer="kit_layer" onclick="layers(this);">1</button></td>
+					</tr>
+					<tr>
+						<th>AP결과</th>
+						<td><button type="button" class="basic" data-layer="ap_layer" onclick="layers(this);">등록</button></td>
+					</tr>
+					<tr>
+						<th>PT결과</th>
+						<td><button type="button" class="basic" data-layer="pt_layer" onclick="layers(this);">등록</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn_bottom">
+			<button type="button" class="modify">수정하기</button>
+		</div>
+	</div>
+</div>
+
+<!-- T/A -->
+<div class="layer_wrap ta_layer">
+	<h2 class="line">T/A 1차</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>등록일</dt>
+			<dd>: 2020.02.02</dd>
+		</dl>
+		<dl>
+			<dt>내용</dt>
+			<dd>
+				<textarea name="" id=""></textarea>
+			</dd>
+		</dl>
+		<dl>
+			<dt>음성(녹취)업로드</dt>
+			<dd>
+				<input type="file" name="" id="">
+				<div class="btn_area">
+					<button type="button" class="enr">등록</button>
+					<button type="button" class="del">삭제</button>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>이미지 업로드</dt>
+			<dd>
+				<input type="file" name="" id="">
+				<div class="btn_area">
+					<button type="button" class="enr">등록</button>
+					<button type="button" class="del">삭제</button>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<!-- T/A 수정 -->
+<div class="layer_wrap modify_layer">
+	<h2 class="">T/A 1차</h2>
+	<div class="conts">
+		<div class="tbl">
+			<table>
+				<colgroup>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>등록일</th>
+						<th>내용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2020.02.02</td>
+						<td>1/3 10시 방문예정</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="list voice">
+			<p>음성(녹취)</p>
+			<div class="btns">
+				<button type="button" class="basic">등록</button>
+				<button type="button" class="basic">듣기</button>
+			</div>
+		</div>
+		<div class="list img">
+			<p>이미지</p>
+			<div class="btns">
+				<button type="button" class="basic">등록</button>
+				<button type="button" class="basic">듣기</button>
+			</div>
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="only" onclick="layersClose(this);">닫기</button>
+	</div>
+</div>
+
+<!-- 키트 -->
+<div class="layer_wrap kit_layer">
+	<h2 class="line">키트</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>등록일</dt>
+			<dd>: 2020.02.02</dd>
+		</dl>
+		<dl>
+			<dt>갯수</dt>
+			<dd class="count">
+				<div><input type="number" name="" id=""></div>
+				<button type="button" class="up">증가</button>
+				<button type="button" class="down">감소</button>
+			</dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<!-- AP결과 -->
+<div class="layer_wrap ap_layer">
+	<h2 class="line">AP 결과</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>등록일</dt>
+			<dd>: 2020.02.02</dd>
+		</dl>
+		<dl>
+			<dt>내용</dt>
+			<dd class="count">
+				<textarea name="" id=""></textarea>
+			</dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<!-- PT결과 -->
+<div class="layer_wrap pt_layer">
+	<h2 class="line">PT 결과</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>등록일</dt>
+			<dd>: 2020.02.02</dd>
+		</dl>
+		<dl>
+			<dt>내용</dt>
+			<dd class="count">
+				<textarea name="" id=""></textarea>
+			</dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+<i class="dim"></i>
+</body>
+</html>
