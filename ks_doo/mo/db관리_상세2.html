@@ -36,7 +36,7 @@
 					</tr>
 					<tr>
 						<th>전화번호</th>
-						<td>010-0000-0000 <a href="tel:010-0000-0000">전화걸기</a></td>
+						<td>010-0000-0000 <a href="tel:010-0000-0000" class="tel">전화걸기</a></td>
 					</tr>
 					<tr>
 						<th>생년월일</th>
@@ -107,8 +107,20 @@
 						<td><button type="button" class="basic" data-layer="ap_layer" onclick="layers(this);">등록</button></td>
 					</tr>
 					<tr>
+						<th>증권분석</th>
+						<td><button type="button" class="basic" data-layer="analysis_layer" onclick="layers(this);">등록</button></td>
+					</tr>
+					<tr>
 						<th>PT결과</th>
 						<td><button type="button" class="basic" data-layer="pt_layer" onclick="layers(this);">등록</button></td>
+					</tr>
+					<tr>
+						<th>생보계약</th>
+						<td><button type="button" class="basic" data-layer="contract1" onclick="layers(this);">등록</button></td>
+					</tr>
+					<tr>
+						<th>손보계약</th>
+						<td>1건 | 100,000원 <button type="button" class="basic" data-layer="contract2" onclick="layers(this);">수정</button></td>
 					</tr>
 				</tbody>
 			</table>
@@ -272,6 +284,65 @@
 	</div>
 	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
 </div>
+
+<!-- 생보계약 -->
+<div class="layer_wrap contract_layer contract1">
+	<h2 class="line">생보계약</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>건수 :</dt>
+			<dd><input type="number" name="" id="" placeholder="숫자를 입력해주세요."></dd>
+		</dl>
+		<dl class="tbl">
+			<dt>금액 :</dt>
+			<dd><input type="number" name="" id="" placeholder="금액을 입력해주세요."></dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<!-- 손보계약 -->
+<div class="layer_wrap contract_layer contract2">
+	<h2 class="line">손보계약</h2>
+	<div class="conts">
+		<dl class="tbl">
+			<dt>건수 :</dt>
+			<dd><input type="number" name="" id="" placeholder="숫자를 입력해주세요."></dd>
+		</dl>
+		<dl class="tbl">
+			<dt>금액 :</dt>
+			<dd><input type="number" name="" id="" placeholder="금액을 입력해주세요."></dd>
+		</dl>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<!-- 증권분석 -->
+<div class="layer_wrap analysis_layer">
+	<h2 class="line">증권분석 진행여부</h2>
+	<div class="conts">
+		<div class="chk_area">
+			<input type="radio" name="confirm_chk" id="chk1">
+			<label for="chk1">아니오</label>
+			<input type="radio" name="confirm_chk" id="chk2">
+			<label for="chk2">예</label>
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="cancel" onclick="layersClose(this);">취소</button>
+		<button type="button" class="save">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
 <i class="dim"></i>
 </body>
 </html>

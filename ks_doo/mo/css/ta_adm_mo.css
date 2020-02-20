@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html , body , div , span , applet , object , iframe , h1 , h2 , h3 , h4 , h5 , h6 , p , blockquote , pre , a , abbr , acronym , address , big , cite , code , del , dfn , em , img , ins , kbd , q , s , samp , small , strike , strong , sub , sup , tt , var , b , u , i , center , dl , dt , dd , ol , ul , li , fieldset , form , label , legend , table , caption , tbody , tfoot , thead , tr , th , td , article , aside , canvas , details , embed , figure , figcaption , footer , header , hgroup , menu , nav , output , ruby , section , summary , time , mark , audio , video {margin:0; padding:0; border:0; box-sizing:border-box; font-family:"HelveticaNeue-Light", "AppleSDGothicNeo-Medium","AppleGothic","Sans-serif","맑은 고딕","Dotum","Verdana",sans-serif; font-size:12px;}
+html , body , div , span , applet , object , iframe , h1 , h2 , h3 , h4 , h5 , h6 , p , blockquote , pre , a , abbr , acronym , address , big , cite , code , del , dfn , em , img , ins , kbd , q , s , samp , small , strike , strong , sub , sup , tt , var , b , u , i , center , dl , dt , dd , ol , ul , li , fieldset , form , label , legend , table , caption , tbody , tfoot , thead , tr , th , td , article , aside , canvas , details , embed , figure , figcaption , footer , header , hgroup , menu , nav , output , ruby , section , summary , time , mark , audio , video , textarea {margin:0; padding:0; border:0; box-sizing:border-box; font-size:12px;}
 article , aside , details , figcaption , figure , footer , header , hgroup , menu , nav , section {display:block;}
 ol , ul {list-style:none;}
 em , i , u , b {font-style:normal; font-weight:normal; text-decoration:none;}
@@ -17,6 +17,7 @@ input[type=number],
 input[type=password] {background:none; margin:0; padding:0; border:0; outline:none; -webkit-appearance:none;}
 textarea {margin:0; padding:0; box-sizing:border-box; resize:none;}
 body {background-color:#fff; color:#666; line-height:1.5;}
+body, button, table, select, input, textarea {font-family:"HelveticaNeue-Light", "AppleSDGothicNeo-Medium", "맑은 고딕" , "AppleGothic","Sans-serif","맑은 고딕","Dotum","Verdana",sans-serif;}
 
 body.bgG {background-color:#e8ebef;}
 
@@ -43,7 +44,7 @@ footer {padding:25px 0; color:#b7b7b7; font-size:11px; text-align:center;}
 .tbl th {background:#c2c2c2; height:24px; color:#fff;}
 .tbl td {height:38px; border-bottom:1px solid #e4e4e4; text-align:center;}
 .tbl td button {display:block; width:100%; height:38px; color:#666;}
-.tbl td button.detail {display:inline-block; width:auto; height:18px; margin:0 auto; padding:0 5px; border:1px solid #888; line-height:18px;}
+.tbl td button.detail {display:inline-block; width:auto; height:20px; margin:0 auto; padding:0 5px; border:1px solid #888; line-height:18px;}
 
 .paging {margin-top:15px; font-size:0; text-align:center;}
 .paging > * {display:inline-block; vertical-align:middle;}
@@ -78,6 +79,7 @@ i.dim {display:none; position:fixed; top:0; bottom:0; left:0; right:0; backgroun
 .csInfo_box dl dt {padding-left:15px; font-size:13px; text-align:left;}
 .csInfo_box dl dd {padding-right:15px; font-size:24px; font-weight:bold; text-align:right;}
 .csInfo_box dl dd em {font-size:13px; font-weight:normal;}
+.csInfo_box.contract dl dd {padding:10px 15px 10px 0; line-height:1.2;}
 
 .tbl_row {border-top:10px solid #f2f4f6;}
 .tbl_row thead th, .tbl_row tbody th, .tbl_row td {vertical-align:middle;}
@@ -92,12 +94,13 @@ i.dim {display:none; position:fixed; top:0; bottom:0; left:0; right:0; backgroun
 .tbl_row td.birth em {width:10%; height:24px; line-height:24px;}
 .tbl_row td.addr div {margin-right:50px;}
 .tbl_row td.addr button {position:absolute; top:50%; right:8px; background-color:#c2c2c2; width:40px; height:24px; margin-top:-12px; border:1px solid #bbb; color:#fff; text-align:center; line-height:24px;}
-button.basic {display:inline-block; height:18px; padding:0 15px; border:1px solid #888; color:#888; line-height:18px;}
+button.basic {display:inline-block; height:20px; padding:0 15px; border:1px solid #888; color:#888; line-height:18px;}
 button.basic:first-of-type {margin-right:3px;}
 .tbl_row td.stats div {margin-right:50px;}
 .tbl_row td.stats div select {width:100%; height:24px; border:1px solid #d4d4d4; color:#666;}
-.tbl_row td.stats button {position:absolute; top:50%; right:8px; background-color:#c2c2c2; width:40px; height:24px; margin-top:-12px; border:1px solid #bbb; color:#fff; text-align:center; line-height:24px;}
+.tbl_row td.stats button {position:absolute; top:50%; right:8px; background-color:#c2c2c2; width:40px; height:24px; margin-top:-12px; border:1px solid #bbb; color:#fff; text-align:center; line-height:22px;}
 .tbl_row td button.kit {padding:0 10px;}
+.tbl_row td a.tel {display:inline-block; background:url(../imgM/ico_detail_01.png) 0 0 no-repeat; background-size:100% 100%; width:20px; height:20px; margin-left:3px; vertical-align:14px; font:0/0 a;}
 
 .btn_bottom {margin-bottom:-30px; border-top:10px solid #f2f4f6;}
 .btn_bottom:after {content:""; display:block; clear:both;}
@@ -191,3 +194,21 @@ button.basic:first-of-type {margin-right:3px;}
 .modify_layer .list.img p:before {background:url(../imgM/ico_detail_04.png) 0 0 no-repeat; background-size:100% 100%;}
 
 .modify_layer .list .btns {padding-right:15px; text-align:right;}
+
+.contract_layer dl.tbl {display:table;}
+.contract_layer dl.tbl dt, .contract_layer dl.tbl dl {display:table-cell;}
+.contract_layer dl.tbl dt {width:60px;}
+.contract_layer dl {width:100%;}
+.contract_layer dl dt,
+.contract_layer dl dd {padding:5px 0; vertical-align:middle;}
+.contract_layer dl dt {color:#333}
+.contract_layer dl dt:before {content:""; display:inline-block; background:#333; width:4px; height:4px; margin-right:3px; border-radius:50%; vertical-align:2px;}
+.contract_layer dd input[type=number] {width:100%; height:38px; border:1px solid #e4e4e4; box-sizing:border-box; color:#333; font-size:14px; text-align:center;}
+
+input[type=checkbox],input[type=radio] {display:inline-block; width:18px; height:18px; margin:0; border:1px solid #cbcbcb; appearance:none; -webkit-appearance:none; vertical-align:middle;}
+input[type=checkbox]:checked, input[type=radio]:checked {background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 18'%3e%3cpath fill-rule='evenodd' fill='%23ED1C24' d='M14.4 8.5l-5 8-.2.2-.2.2h-.2l-.3.1h-.3-.5l-.2-.1-.3-.2-.1-.2H7v-.1l-.1-.3L1 2.3C.7 1.8.9 1.1 1.6.8c.7-.3 1.5-.2 1.9.4l5 11.8L12 7.4c.4-.5 1.2-.7 1.9-.4.7.3.9 1 .5 1.5z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:15px 18px;}
+
+.analysis_layer .chk_area {padding:25px 0 10px; text-align:center;}
+.analysis_layer .chk_area label {margin-left:5px;}
+.analysis_layer .chk_area label {display:inline-block; height:18px; line-height:18px; vertical-align:middle;}
+.analysis_layer .chk_area label:first-of-type {margin-right:10px;}

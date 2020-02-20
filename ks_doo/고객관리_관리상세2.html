@@ -105,7 +105,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<th>진행결과</th>
+							<th>진행현황</th>
 							<td>
 								<select name="" id=""><option value="">계약체결</option></select>
 								<button type="button" class="btn_basic">적용</button>
@@ -164,8 +164,29 @@
 							<td></td>
 						</tr>
 						<tr>
+							<th>증권분석</th>
+							<td><a href="javascript:;" class="btn_text" data-layer="analysis_layer" onclick="layers(this);">[등록]</a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
 							<th>PT결과</th>
 							<td><a href="javascript:;" class="btn_text" data-layer="pt_layer" onclick="layers(this);">[등록]</a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>생명보험계약</th>
+							<td><a href="javascript:;" class="btn_text" data-layer="contract1" onclick="layers(this);">[등록]</a></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>손해보험계약</th>
+							<td><span>00건 | 000,000원</span> <a href="javascript:;" class="btn_text" data-layer="contract2" onclick="layers(this);">[수정]</a></td>
 							<td></td>
 							<td></td>
 							<td></td>
@@ -388,6 +409,80 @@
 	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
 </div>
 
+<div class="layer_wrap analysis_layer">
+	<h2>증권분석 진행 여부</h2>
+	<div class="conts">
+		<div class="chk_area">
+			<input type="radio" name="confirm_chk" id="chk1">
+			<label for="chk1">아니오</label>
+			<input type="radio" name="confirm_chk" id="chk2">
+			<label for="chk2">예</label>
+		</div>
+	</div>
+	<div class="btn_area line">
+		<button type="button">취소</button>
+		<button type="button">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<div class="layer_wrap contract_layer contract1">
+	<h2>생보계약</h2>
+	<div class="conts">
+		<div class="tbl_board">
+			<table>
+				<colgroup>
+					<col style="width:60px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>건수</th>
+						<td>: <input type="number" name="" id="" placeholder="숫자를 입력해주세요."></td>
+					</tr>
+					<tr>
+						<th>금액</th>
+						<td>: <input type="number" name="" id="" placeholder="금액을 입력해주세요."></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button">취소</button>
+		<button type="button">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
+
+<div class="layer_wrap contract_layer contract2">
+	<h2>손보계약</h2>
+	<div class="conts">
+		<div class="tbl_board">
+			<table>
+				<colgroup>
+					<col style="width:60px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>건수</th>
+						<td>: <input type="number" name="" id="" placeholder="숫자를 입력해주세요."></td>
+					</tr>
+					<tr>
+						<th>금액</th>
+						<td>: <input type="number" name="" id="" placeholder="금액을 입력해주세요."></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button">취소</button>
+		<button type="button">저장</button>
+	</div>
+	<button type="button" class="btn_close" onclick="layersClose(this);">레이어 닫기</button>
+</div>
 
 </body>
 </html>
