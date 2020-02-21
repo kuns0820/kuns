@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GA</title>
+	<link rel="stylesheet" type="text/css" href="https://www.gatown.co.kr/css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="https://www.gatown.co.kr/css/swiper.min.css"/>
+	<script src="https://www.gatown.co.kr/js/jquery.min.js"></script>
+	<script src="https://www.gatown.co.kr/js/swiper.min.js"></script>
+</head>
+<body class="">
+<div id="ga_wrap">
+	<div id="container">
+		<article class="name_card">
+			<div class="nc_top none">
+				<div class="profile">
+					<img src="https://www.gatown.co.kr/images/town/img_NC_thum.jpg" alt="">
+					<p>안녕하세요</p>
+				</div>
+			</div>
+
+			<dl class="nc_mypoint">
+				<dt>내 포인트</dt>
+				<dd>100,000P</dd>
+			</dl>
+
+			<ul class="my_info_list">
+				<li>
+					<span>휴대폰 :</span>
+					<em>010-1234-1234</em>
+				</li>
+				<li>
+					<span>이메일 :</span>
+					<em>gatown@ncl.co.kr</em>
+				</li>
+				<li>
+					<span>회사명 :</span>
+					<em>NLC GLOBAL GA</em>
+				</li>
+				<li>
+					<span>지점명 :</span>
+					<em>논현동 글로벌지점</em>
+				</li>
+				<li>
+					<span>테스트 회사지정 :</span>
+					<em>
+						<select name="" id="">
+							<option value="">지정안함</option>
+						</select>
+					</em>
+				</li>
+				<li class="license_wrap">
+					<span>자격증 :</span>
+					<div class="license_list swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town/img_license_01.jpg" alt=""></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</li>
+				<li class="license_wrap">
+					<span>판매보험사 :</span>
+					<div class="license_list swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town//@logo1.png" alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town//@logo2.png" alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#"><img src="../images/town//@logo3.png" alt=""></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</li>
+			</ul>
+
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.license_list', {
+					pagination: {
+						el: '.swiper-pagination',
+					},
+					loop : true
+				});
+			});
+			</script>
+
+			<div class="fixe_btn-btm col-2">
+				<button type="submit" class="btn-negative">문자하기</button>
+				<a href="tel:" class="btn-positive">전화하기</a>
+			</div>
+		</article>
+	</div>
+</div>
+
+</body>
+</html>
