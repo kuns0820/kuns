@@ -10,27 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.5.3.1.js"></script>
-	<script>
-		$(function(){
-			var _body = $("body");
-			$("header .btn-menu").click(function(){
-				if(!_body.hasClass("menuOn")){
-					_body.addClass("menuOn");
-				}else{
-					_body.removeClass("menuOn");
-				}
-			});
-			$("#side_wrap .menu_close").click(function(){
-				_body.removeClass("menuOn");
-			});
-
-			$("#side_wrap .menu_dep1 li a").click(function(){
-				_target = $(this).parent().data("tg");
-				$(this).parent().addClass("on").siblings().removeClass("on");
-				$("#side_wrap .menu_dep2 ul." + _target).addClass("on").siblings().removeClass("on");
-			});
-		});
-	</script>
+	<script src="js/front.js"></script>
 </head>
 <body class="fix_item ">
 <div id="orange_wrap">
@@ -44,7 +24,16 @@
 	<div id="side_wrap">
 		<div class="my_ranking_wrap">
 			<div class="innr">
-				<div class="img"><span class="my_rank rankO"></span></div>
+				<div class="img">
+					<span class="my_rank rankG">
+						<img src="images/img_rank1.png" alt="" class="img1">
+						<img src="images/img_rank2.png" alt="" class="img2">
+						<img src="images/img_rank3.png" alt="" class="img3">
+						<img src="images/img_rank4.png" alt="" class="img4">
+						<img src="images/img_rank5.png" alt="" class="img5">
+						<img src="images/img_rank6.png" alt="" class="img6">
+					</span>
+				</div>
 				<span class="branch">율도국 소속 강남지점</span>
 				<p><em>홍길동 <span>opener</span></em> <button type="button"><img src="images/btn_info.png" alt="회원등급 정책 보기"></button></p>
 				<dl>
@@ -118,7 +107,16 @@
 		<article>
 			<div class="my_ranking_wrap">
 				<div class="innr">
-					<div class="img"><span class="my_rank rankO"></span></div>
+					<div class="img">
+						<span class="my_rank rankG">
+							<img src="images/img_rank1.png" alt="" class="img1">
+							<img src="images/img_rank2.png" alt="" class="img2">
+							<img src="images/img_rank3.png" alt="" class="img3">
+							<img src="images/img_rank4.png" alt="" class="img4">
+							<img src="images/img_rank5.png" alt="" class="img5">
+							<img src="images/img_rank6.png" alt="" class="img6">
+						</span>
+					</div>
 					<span class="branch">율도국 소속 강남지점</span>
 					<p><em>홍길동 <span>opener</span></em> <button type="button"><img src="images/btn_info.png" alt="회원등급 정책 보기"></button></p>
 					<dl>
