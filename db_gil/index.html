@@ -5,7 +5,6 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 	<title></title>
 	<link rel="stylesheet" href="css/front.ui.css">
-	<link rel="stylesheet" href="css/slick.css">
 	<script src="js/jquery-1.11.3.js"></script>
 	<script src="js/slick.js"></script>
 	<script type="text/javascript">
@@ -15,7 +14,7 @@
 				fade: true,
 				cssEase: 'linear',
 				arrows: true,
-				dots: true
+				dots: false
 			});
 			$('#sliders').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 				// console.log(currentSlide,nextSlide,event)
@@ -25,9 +24,22 @@
 				// 	$("body").removeClass("main");
 				// }
 			});
+			$("#sliders .slick-arrow").hide();
 			$('#sliders').on('afterChange', function(event, slick, currentSlide, nextSlide){
-			//	console.log(currentSlide)
-				
+				slideNum = currentSlide;
+				if(currentSlide == 0 || currentSlide == 1){
+					$("#sliders .slick-arrow").hide();
+				}else{
+					$("#sliders .slick-arrow").fadeIn("fast");
+				}
+				$(".slick-slide").removeClass("active1");
+				$(".slick-slide").removeClass("active2");
+				$(".slick-slide").removeClass("active3");
+			});
+
+			$(".slick-slide .btn").click(function(){
+				_cls = $(this).data("active");
+				$(this).closest(".slick-slide").addClass(_cls);
 			});
 		});
 	</script>
@@ -35,10 +47,27 @@
 <body class="main">
 	<div id="wrap">
 		<div id="sliders">
-			<div class="cont01"></div>
-			<div class="cont02"><a href="http://www.mohw.go.kr/react/al/sal0301vw.jsp?PAR_MENU_ID=04&MENU_ID=0403&page=1&CONT_SEQ=349638&SEARCHKEY=TITLE&SEARCHVALUE=%EC%95%84%EB%8F%99%EA%B5%AC%EA%B0%95" target="_blank"></a></div>
-			<div class="cont03"><a href="http://www.mohw.go.kr/react/al/sal0301vw.jsp?PAR_MENU_ID=04&MENU_ID=0403&page=1&CONT_SEQ=349638&SEARCHKEY=TITLE&SEARCHVALUE=%EC%95%84%EB%8F%99%EA%B5%AC%EA%B0%95" target="_blank"></a></div>
-			<div class="cont04"><a href="http://www.mohw.go.kr/react/al/sal0301vw.jsp?PAR_MENU_ID=04&MENU_ID=0403&page=1&CONT_SEQ=349638&SEARCHKEY=TITLE&SEARCHVALUE=%EC%95%84%EB%8F%99%EA%B5%AC%EA%B0%95" target="_blank"></a></div>
+			<div class="cont01">
+				<div class="load-1">가나다ㅏㄹ</div>
+				<div class="load-2">가나다ㅏㄹ</div>
+				<div class="load-3">가나다ㅏㄹ</div>
+				<div class="load-4">가나다ㅏㄹ</div>
+				<div class="load-5">가나다ㅏㄹ</div>
+				<button type="button" class="btn btn1" data-active="active1">손모양 버튼</button>
+				<div class="acv1-1">버튼 누른 후 모션</div>
+				<div class="acv1-2"></div>
+				<button type="button" class="btn btn2" data-active="active2">손모양 버튼</button>
+				<div class="acv2-1 blink"><img src="images/ico.png" alt=""></div>
+			</div>
+			<div class="cont02">
+				<div class="acv1-1">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
+				<div class="acv1-2">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
+				<div class="acv1-3">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
+			</div>
+			<div class="cont03"></div>
+			<div class="cont04"></div>
+			<div class="cont05"></div>
+			<div class="cont06"></div>
 		</div>
 	</div>
 </body>

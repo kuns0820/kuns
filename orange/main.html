@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.5.3.1.js"></script>
+	<script>
+		$(function(){
+			var _body = $("body");
+			$("header .btn-menu").click(function(){
+				if(!_body.hasClass("menuOn")){
+					_body.addClass("menuOn");
+				}else{
+					_body.removeClass("menuOn");
+				}
+			});
+			$("#side_wrap .menu_close").click(function(){
+				_body.removeClass("menuOn");
+			});
+
+			$("#side_wrap .menu_dep1 li a").click(function(){
+				_target = $(this).parent().data("tg");
+				$(this).parent().addClass("on").siblings().removeClass("on");
+				$("#side_wrap .menu_dep2 ul." + _target).addClass("on").siblings().removeClass("on");
+			});
+		});
+	</script>
+</head>
+<body class="fix_item ">
+<div id="orange_wrap">
+	<header>
+		<h1><a href="" class="logo"><img src="images/logo.png" alt=""></a></h1>
+		<a href="javascript:;" class="col-l_01 btn-menu">전체메뉴</a>
+		<a href="" class="col-r_02 btn-tsrh">통합검색</a>
+		<a href="" class="col-r_01 btn-mypage">마이페이지</a>
+	</header>
+
+	<div id="side_wrap">
+		<div class="my_ranking_wrap">
+			<div class="innr">
+				<div class="img"><span class="my_rank rankO"></span></div>
+				<span class="branch">율도국 소속 강남지점</span>
+				<p><em>홍길동 <span>opener</span></em> <button type="button"><img src="images/btn_info.png" alt="회원등급 정책 보기"></button></p>
+				<dl>
+					<dt>내 포인트</dt>
+					<dd>50,000P</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="util">
+			<a href="" class="mypage"><img src="images/ico_util1.png" alt=""> 마이페이지</a>
+			<a href="" class="account"><img src="images/ico_util2.png" alt=""> 계정관리</a>
+		</div>
+
+		<div class="menu_wrap">
+			<div class="menu_dep1">
+				<ul>
+					<li class="on" data-tg="allm1"><a href="javascript:;">오늘의 운세</a></li>
+					<li data-tg="allm2"><a href="javascript:;">오렌지콘</a></li>
+					<li data-tg="allm3"><a href="javascript:;">알리미</a></li>
+					<li data-tg="allm4"><a href="javascript:;">오늘의 뉴스</a></li>
+					<li data-tg="allm5"><a href="javascript:;">상품연구소</a></li>
+					<li data-tg="allm6"><a href="javascript:;">고객센터</a></li>
+				</ul>
+			</div>
+			<div class="menu_dep2">
+				<ul class="allm1 on">
+					<li><a href="">오늘의 운세</a></li>
+					<li><a href="">오늘의 운세2</a></li>
+				</ul>
+				<ul class="allm2">
+					<li><a href="">이용약관1</a></li>
+				</ul>
+				<ul class="allm3">
+					<li><a href="">이용약관2</a></li>
+				</ul>
+				<ul class="allm4">
+					<li><a href="">뉴스</a></li>
+					<li><a href="">친숙자료</a></li>
+					<li><a href="">니즈환기</a></li>
+					<li><a href="">인사말</a></li>
+					<li><a href="">상품자료</a>
+						<ul>
+							<li><a href="">- 건강보험</a></li>
+							<li><a href="">- 연금보험</a></li>
+							<li><a href="">- 종신보험</a></li>
+							<li><a href="">- 변액보험</a></li>
+							<li><a href="">- 회사소개</a></li>
+						</ul>
+					</li>
+					<li><a href="">기타</a></li>
+				</ul>
+				<ul class="allm5">
+					<li><a href="">이용약관4</a></li>
+				</ul>
+				<ul class="allm6">
+					<li><a href="">이용약관</a></li>
+					<li><a href="">개인정보처리방침</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="btn">
+			<a href="javascript:;">로그아웃</a>
+		</div>
+
+		<button type="button" class="menu_close">닫기</button>
+	</div>
+
+	<div id="container" class="main">
+		<article>
+			<div class="my_ranking_wrap">
+				<div class="innr">
+					<div class="img"><span class="my_rank rankO"></span></div>
+					<span class="branch">율도국 소속 강남지점</span>
+					<p><em>홍길동 <span>opener</span></em> <button type="button"><img src="images/btn_info.png" alt="회원등급 정책 보기"></button></p>
+					<dl>
+						<dt>내 포인트</dt>
+						<dd>50,000P</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="main_bnr_wrap">
+				<div class="main_bnr swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href=""><img src="images/sample0.jpg" /></a></div>
+						<div class="swiper-slide"><a href=""><img src="images/sample0.jpg" /></a></div>
+						<div class="swiper-slide"><a href=""><img src="images/sample0.jpg" /></a></div>
+					</div>
+				</div>
+				<div class="swiper-pagination mbnr_paging"></div>
+				<script>
+					var swiper = new Swiper('.main_bnr', {
+						slidesPerView: 1.2,
+						spaceBetween: 10,
+						loop:true,
+						centeredSlides: true,
+						pagination: {
+							el: '.mbnr_paging',
+							clickable: true,
+						},
+					});
+				</script>
+			</div>
+
+			<div class="main_menu">
+				<ul>
+					<li class="m1"><a href="">
+						<em><img src="images/ico_m01.png" alt=""></em>
+						<span>오늘의 운세</span>
+					</a></li>
+					<li class="m2"><a href="">
+						<em><img src="images/ico_m02.png" alt=""></em>
+						<span>오렌지콘</span>
+					</a></li>
+					<li class="m3"><a href="">
+						<em><img src="images/ico_m03.png" alt=""></em>
+						<span>알리미</span>
+					</a></li>
+					<li class="m4"><a href="">
+						<em><img src="images/ico_m04.png" alt=""></em>
+						<span>오늘의 뉴스</span>
+					</a></li>
+					<li class="m5"><a href="">
+						<em><img src="images/ico_m05.png" alt=""></em>
+						<span>상품연구소</span>
+					</a></li>
+				</ul>
+			</div>
+
+			<section>
+				<div class="title">
+					<h3>오늘의 운세</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+				<div class="unse_detail"><a href="">
+					<span class="thumb"><img src="images/sample5.jpg" alt=""></span>
+					<div class="text">
+						<strong>홍길동님의 오늘의 운세</strong>
+						<p>장수가 전쟁터를 만난 형국입니다. 이전 임금이 착한 신하를 얻은 운세입니다.  그 동안의 침체에서 벗어 그 동안의 침체에서 벗어그 동안의 침체에서 벗어</p>
+					</div>
+				</a></div>
+			</section>
+			
+			<section>
+				<div class="title">
+					<h3>오렌지콘</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+				<div class="bbs_list orgCon">
+					<div class="noti_title">
+						<strong>시책공지</strong>
+						<a href="">더보기</a>
+					</div>
+					<ul>
+						<li class="new"><a href="">
+							<p><span>3월 프로모션 관련 공지사항</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+						<li><a href="">
+							<p><span>3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="title">
+					<h3>이벤트 공지</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+
+				<div class="event_bnr_wrap">
+					<div class="event_bnr swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="">
+								<img src="images/sample1.jpg" />
+								<div>
+									오렌지를 모아라! APP<br />오픈 기념 출석체크 이벤트
+									<span>2020.03.02</span>
+								</div>
+							</a></div>
+							<div class="swiper-slide"><a href="">
+								<img src="images/sample1.jpg" />
+								<div>
+									오렌지를 모아라! APP<br />오픈 기념 출석체크 이벤트
+									<span>2020.03.02</span>
+								</div>
+							</a></div>
+						</div>
+					</div>
+					<div class="swiper-pagination evnr_paging"></div>
+
+					<script>
+						var swiper = new Swiper('.event_bnr', {
+							slidesPerView: 1.2,
+							spaceBetween: 10,
+							loop:true,
+							centeredSlides: true,
+							pagination: {
+								el: '.evnr_paging',
+								clickable: true,
+							},
+						});
+					</script>
+				</div>
+			</section>
+
+			<section>
+				<div class="title">
+					<h3>알리미</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+				<div class="info_list">
+					<ul>
+						<li class="new"><a href="">
+							<img src="images/ico_info1.png" alt="">
+							<span>소식지</span>
+						</a></li>
+						<li><a href="">
+							<img src="images/ico_info2.png" alt="">
+							<span>공지사항</span>
+						</a></li>
+						<li><a href="">
+							<img src="images/ico_info3.png" alt="">
+							<span>공문</span>
+						</a></li>
+						<li><a href="">
+							<img src="images/ico_info4.png" alt="">
+							<span>업적조회</span>
+						</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<div class="title">
+					<h3>오늘의 뉴스</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+				<div class="today_news" data-type="scroll-horizon">
+					<ul class="scroll-innr">
+						<li><a href="">
+							<img src="images/sample2.jpg" />
+							<div>
+								<span class="cate">친숙 자료</span>
+								<dl>
+									<dt>생활/상식</dt>
+									<dd>2020.03.02</dd>
+								</dl>
+								<p>알아두면 도움이 되는 뺑소니 기준</p>
+							</div>
+						</a></li>
+						<li><a href="">
+							<img src="images/sample2.jpg" />
+							<div>
+								<span class="cate">친숙 자료</span>
+								<dl>
+									<dt>생활/상식</dt>
+									<dd>2020.03.02</dd>
+								</dl>
+								<p>알아두면 도움이 되는 뺑소니 기준</p>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+
+				<div class="bbs_list">
+					<ul>
+						<li class="new"><a href="">
+							<p><span>[속보] ‘600명 증가’ 대구.경북서 580명...확진자 총</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+						<li><a href="">
+							<p><span>‘중증’절반 이상이 정상체온...의심환자 판단 어쩌나...</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+						<li><a href="">
+							<p><span>3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+						<li><a href="">
+							<p><span>3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항3월 프로모션 관련 공지사항</span></p>
+							<span>2020.03.03</span>
+						</a></li>
+					</ul>
+				</div>
+
+				<div class="main_adBnr">
+					<a href=""><img src="images/sample3.jpg" alt=""></a>
+				</div>
+			</section>
+
+			<section>
+				<div class="title">
+					<h3>상품연구소</h3>
+					<a href="" class="more">더보기</a>
+				</div>
+				<div class="prd_research" data-type="scroll-horizon">
+					<ul class="scroll-innr">
+						<li><a href="">
+							<img src="images/sample4.jpg" />
+							<div>
+								<strong>보험맛집</strong>
+								<p>주력상품 5종 상품별 특징 등 제작 리플렛 주력상품 5종 상품별 특징 등 제작 리플렛</p>
+							</div>
+						</a></li>
+						<li><a href="">
+							<img src="images/sample4.jpg" />
+							<div>
+								<strong>보험맛집</strong>
+								<p>주력상품 5종 상품별 특징 등 제작 리플렛 주력상품 5종 상품별 특징 등 제작 리플렛</p>
+							</div>
+						</a></li>
+						<li><a href="">
+							<img src="images/sample4.jpg" />
+							<div>
+								<strong>보험맛집</strong>
+								<p>주력상품 5종 상품별 특징 등 제작 리플렛 주력상품 5종 상품별 특징 등 제작 리플렛</p>
+							</div>
+						</a></li>
+						<li><a href="">
+							<img src="images/sample4.jpg" />
+							<div>
+								<strong>보험맛집</strong>
+								<p>주력상품 5종 상품별 특징 등 제작 리플렛 주력상품 5종 상품별 특징 등 제작 리플렛</p>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+			</section>
+		</article>
+	</div>
+
+	<footer>
+		<p>ⓒ 2020 오렌지라이프 ALL RIGHTS RESERVED</p>
+		<a href="#" class="btn_top"></a>
+	</footer>
+
+	<div class="fix-main">
+		<ul>
+			<li><a href="">
+				<span><img src="images/ico_fix1.png" alt=""></span>
+				<p>홈</p>
+			</a></li>
+			<li><a href="">
+				<span><img src="images/ico_fix2.png" alt=""></span>
+				<p>카테고리</p>
+			</a></li>
+			<li><a href="">
+				<span><img src="images/ico_fix3.png" alt=""></span>
+				<p>검색</p>
+			</a></li>
+			<li><a href="">
+				<span><img src="images/ico_fix4.png" alt=""></span>
+				<p>마이</p>
+			</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

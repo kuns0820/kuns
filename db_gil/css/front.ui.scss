@@ -17,15 +17,39 @@ input[type=number],
 input[type=password] {background:none; margin:0; padding:0; border:0; outline:none; -webkit-appearance:none;}
 textarea {resize:none}
 
-#wrap {position:relative; width:1920px; height:100%;}
+* {outline:none;}
 
-#sliders {position:relative; height:1008px;
-	.slick-arrow {position:absolute; bottom:-9999em; left:-9999em; width:0; height:0; font:0/0 a; z-index:5;
-		&.slick-prev {}
-		&.slick-next {}
+.slick-slider {display:block; position:relative; box-sizing:border-box; user-select:none; -moz-box-sizing:border-box; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; -webkit-touch-callout:none; -khtml-user-select:none; -ms-touch-action:pan-y; touch-action:pan-y; -webkit-tap-highlight-color:transparent;}
+.slick-list {display:block; overflow:hidden; position:relative; margin:0; padding:0;}
+.slick-list:focus {outline:none;}
+.slick-list.dragging {cursor:pointer; cursor:hand;}
+.slick-slider .slick-track , .slick-slider .slick-list {transform:translate3d(0, 0, 0);
+-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); }
+.slick-track {display:block; position:relative; top:0; left:0;}
+.slick-track:before , .slick-track:after {content:""; display:table;}
+.slick-track:after {clear:both;}
+.slick-loading .slick-track {visibility:hidden;}
+.slick-slide {display:none; float:left; height:100%; min-height:1px;}
+[dir="rtl"] .slick-slide {float:right;}
+.slick-slide img {display:block;}
+.slick-slide.slick-loading img {display:none;}
+.slick-slide.dragging img {pointer-events:none;}
+.slick-initialized .slick-slide {display:block;}
+.slick-loading .slick-slide {visibility:hidden;}
+.slick-vertical .slick-slide {display:block; height:auto; border:1px solid transparent;}
+.slick-arrow.slick-hidden {display:none;}
+
+#wrap {position:relative; width:1170px; height:100%;}
+
+#sliders {position:relative; height:877px;
+	.slick-arrow {position:absolute; bottom:50px; font:0/0 a; z-index:5;
+		&.slick-prev {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 16'%3e%3cpath fill-rule='evenodd' d='M8.53 14.47c.293.293.293.767 0 1.06-.293.293-.767.293-1.06 0l-7-7c-.293-.293-.293-.767 0-1.06l7-7c.293-.293.767-.293 1.06 0 .293.293.293.767 0 1.06L2.06 8l6.47 6.47z'/%3e%3c/svg%3e"); background-size:100% 100%; background-position:50% 50%; background-repeat:no-repeat; width:19px; height:26px; left:10px;}
+		&.slick-next {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 16'%3e%3cpath fill-rule='evenodd' d='M.47 14.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l7-7c.293-.293.293-.767 0-1.06l-7-7C1.237.177.763.177.47.47c-.293.293-.293.767 0 1.06L6.94 8 .47 14.47z'/%3e%3c/svg%3e"); background-size:100% 100%; background-position:50% 50%; background-repeat:no-repeat; width:19px; height:26px; right:10px;
+			&.slick-disabled {visibility:hidden; opacity:0;}
+		}
 	}
-	.slick-slide {position:relative; height:1008px;
-		.inn {width:100%; height:1008px;}
+	.slick-slide {position:relative; height:877px;
+		.inn {width:100%; height:877px;}
 	}
 	.slick-dots {position:absolute; bottom:10px; left:0; width:660px; text-align:center; font:0/0 a; z-index:1;
 		li {display:inline-block; margin-left:4px;
@@ -39,6 +63,78 @@ textarea {resize:none}
 	.close {position:absolute; width:45px; height:45px;}
 }
 
-.cont01 {
-	background:url(../images/cont01.jpg) 0 0 no-repeat, url(../images/bg_main.gif) 0 0 repeat-x;
+.slick-slide [class^=load-],
+.slick-slide [class^=acv1-],
+.slick-slide [class^=acv2-],
+.slick-slide [class^=acv3-] {position:absolute; z-index:10; opacity:0;}
+.slick-slide .btn {position:absolute; z-index:10;}
+
+
+.a-1 {animation:load1 1s ease .5s 1 both; @keyframes load1 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-2 {animation:load2 1s ease 1s 1 both; @keyframes load2 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-3 {animation:load3 1s ease 1.5s 1 both; @keyframes load3 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-4 {animation:load4 1s ease 2s 1 both; @keyframes load4 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-5 {animation:load5 1s ease 2.5s 1 both; @keyframes load5 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-6 {animation:load6 1s ease 3s 1 both; @keyframes load6 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-7 {animation:load7 1s ease 3.5s 1 both; @keyframes load7 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-8 {animation:load8 1s ease 4s 1 both; @keyframes load8 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-9 {animation:load9 1s ease 4.5s 1 both; @keyframes load9 { 0% {opacity:0;} 100% {opacity:1;} }}
+.a-10 {animation:load10 1s ease 5s 1 both; @keyframes load10 { 0% {opacity:0;} 100% {opacity:1;} }}
+
+@mixin size-w($name, $time, $size){
+	animation:$name 1s ease $time 1 both; 
+	@keyframes #{$name} {
+		0% {width:0; opacity:0;}
+		100% {width:$size; opacity:1;}
+	}
 }
+
+@mixin size-h($name, $time, $size){
+	animation:$name 1s ease $time 1 both; 
+	@keyframes #{$name} {
+		0% {height:0; opacity:0;}
+		100% {height:$size; opacity:1;}
+	}
+}
+@mixin size-wh($name, $time, $size , $size2){
+	animation:$name 1s ease $time 1 both; 
+	@keyframes #{$name} {
+		0% {width:0; height:0; opacity:0;}
+		100% {width:$size + px; height:$size2 + px; opacity:1;}
+	}
+}
+@mixin blink() {animation:blink 0s ease .5s 1 both; @keyframes blink { 0% {opacity:0;} 100% {opacity:1;} }
+	img {animation:blink2 1s ease 0s infinite;}
+	@keyframes blink2 {
+		49% {opacity:1;}
+		50% {opacity:0;}
+		99% {opacity:0;}
+		100%,0% {opacity:1;}
+	}
+}
+
+
+.cont01 {background:red;
+	.btn1 {top:0; left:200px;}
+	.btn2 {top:0; left:400px;}
+	.load-5 {position:absolute; top:50%; left:50px; background:skyblue; width:0; height:50px; z-index:10;}
+	.acv1-1 {position:absolute; bottom:40%; left:50px; background:skyblue; width:50px; height:0; z-index:10;}
+	.acv1-2 {position:absolute; bottom:50%; left:50%; background:tomato; width:0; height:0; z-index:10;}
+	&.slick-active {
+		.load-1 {@extend .a-1;}
+		.load-2 {@extend .a-2;}
+		.load-3 {@extend .a-3;}
+		.load-4 {@extend .a-4;}
+		.load-5 {@include size-w(aa, .5s, 50px);}
+	}
+	&.active1 {
+		.acv1-1 {@include size-h(aa1, 1.5s, 300px);}
+		.acv1-2 {transform-origin:0 100%; @include size-wh(ac2, .5s, 100, 100);}
+	}
+	&.active2 {
+		.acv2-1 {top:100px; right:50px; @include blink;}
+	}
+}
+.cont02 {background:blue;}
+.cont03 {background:green;}
+	

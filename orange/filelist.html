@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title></title>
+<link rel="shortcut icon" type="image/x-icon" href="//res.afreecatv.com/afreeca.ico">
+<script  src="js/jquery.min.js"></script>
+<style type="text/css">
+	* {margin:0; padding:0; list-style:none; font-family:"맑은 고딕";}
+	html, body {overflow:hidden; height:100%; font-size:12px;}
+	#document {height:100%; zoom:1;}
+	#document:after {content:''; display:block; clear:both;}
+	.list {position:absolute; top:0; bottom:0; left:0; overflow:auto; background:#808fa4; width:223px; height:100%; font-size:12px; z-index:5;}
+	.list h1 {background:#000; padding:5px 0 5px 10px; color:#fff; font-size:13px;}
+	.list h2 {background:#58677f; padding:5px 0 5px 10px; color:#fff; font-size:12px; font-weight:bold;}
+	.list ul li a {display:inline-block; padding:5px 0 5px 20px; color:#fff; text-decoration:none;}
+	.list ul li.active a {color:#000; text-decoration:underline; font-weight:bold;}
+	.viewer {float:left; padding:0 0 0 250px;}
+	.viewer iframe {width:364px; height:667px; box-shadow:0 0 4px #ddd;}
+
+	.pc .viewer {position:absolute; top:0; bottom:0; left:0; right:0; width:100%; height:100%; padding:0;}
+	.pc .list {transition:all .2s ease;
+		-webkit-transform:translateX(-90%); -ms-transform:translateX(-90%); transform:translateX(-90%);
+	}
+	.pc .list:hover {
+		-webkit-transform:translateX(0); -ms-transform:translateX(0); transform:translateX(0);
+	}
+	.pc .viewer .info {display:none;}
+	.pc .viewer iframe {width:100%; height:100%;}
+
+
+	.local_addr {margin:10px 0; font-size:12px;}
+	@media (max-width:415px) {
+		.list {float:left; width:100%;}
+		.list h2,
+		.list ul li a {font-size:16px;}
+		.viewer {display:none;}
+	}
+	/* Scroll */
+	::-webkit-scrollbar {width:3px; height:8px;}
+	::-webkit-scrollbar-button:start:decrement,
+	::-webkit-scrollbar-button:end:increment {display:none; height:10px;}
+	::-webkit-scrollbar-track {background:#808fa4;}
+	::-webkit-scrollbar-thumb {background:rgba(0,0,0,.3);}
+</style>
+</head>
+<body>
+<div id="document">
+	<div class="list">
+		<div id="mobile" class="device">
+			<h2></h2>
+			<ul>
+				<li><a href="main.html">메인 (LNB포함)</a></li>
+				<li><a href="rank.html">유저 등급</a></li>
+				<li><a href="비밀번호찾기.html">비밀번호찾기</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="viewer">
+		<div class="info">
+			<!-- 스크롤바 사이즈 17px 추가 -->
+			<select name="change_model" id="change_model">
+				<option value="364|640">galaxy s5 (360x640)</option>
+				<option value="337|568">iphone 5 (320x568)</option>
+				<option value="392|812">iphone X (375x812)</option>
+			</select>
+			<button type="button" id="new_page">새창</button>
+			<p class="local_addr"></p>
+		</div>
+		<iframe src="" id="ifrm" name="_frame" frameborder="0"></iframe>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+	var doc = document,
+		docEl = doc.documentElement,
+		anchors = doc.querySelectorAll('a'),
+		select = doc.querySelector('#change_model'),
+		newPage = doc.querySelector('#new_page'),
+		darkmode = doc.querySelector('#thema_dark'),
+		frame = doc.querySelector('iframe[name="_frame"]'),
+		thisPage = null;
+
+	function setFrame() {
+		if(docEl.clientWidth >= 415) {
+			for(var i=0; i<anchors.length; i++) {
+				anchors[i].setAttribute('target', '_frame');
+			}
+		} else {
+			for(var i=0; i<anchors.length; i++) {
+				anchors[i].setAttribute('target', '_blank');
+			}
+		}
+	}
+	setFrame();
+	window.addEventListener('resize', setFrame);
+
+	select.addEventListener('change', function() {
+		var size = this.value.split('|');
+		frame.style.width = size[0] + 'px';
+		frame.style.height = size[1] + 'px';
+	});
+
+	var _saveUrl = localStorage.getItem('bsUrl');
+	var _saveDevice = localStorage.getItem('device');
+	var _listTop = localStorage.getItem('listT');
+
+	$('.list a').on('click', function() {
+		$device = $(this).closest(".device").attr("id");
+		$("#document").attr("class","").addClass($device);
+		$('.list li').removeClass('active');
+		$(this).closest('li').addClass('active').siblings().removeClass('active');
+		thisPage = $(this).attr('href');
+		localStorage.setItem('bsUrl', $(this).attr("href"));
+		localStorage.setItem('device', $device);
+		localStorage.setItem('listT', $(".list").scrollTop());
+		$(".local_addr").text($(this).attr("href"));
+		scrollStyle();
+	});
+
+	newPage.addEventListener('click', function() {
+		window.open(thisPage);
+		return false;
+	});
+
+	
+	if(_saveUrl != null){
+		$("iframe[name='_frame']").attr("src" , _saveUrl);
+		thisPage = _saveUrl; // 새로고침 했을경우 새창버튼의 주소 추가
+		$(".local_addr").text(_saveUrl);
+		$("#document").addClass(_saveDevice);
+		scrollStyle();
+		$(".list").scrollTop(_listTop);
+	}
+
+	function scrollStyle(){
+		setTimeout(function(){
+			styleTag = $("iframe").contents().find("head").append("<style></style>").children("style");
+			styleTag.text('::-webkit-scrollbar {width:4px; height:4px;}::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {display:none; height:10px;}::-webkit-scrollbar-track {background:rgba(0,0,0,.1);}::-webkit-scrollbar-thumb {background:rgba(0,0,0,.3); border-radius:100px;}');
+		}, 500);
+	}
+})();
+</script>
+</body>
+</html>
+	
