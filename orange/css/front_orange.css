@@ -142,7 +142,7 @@ body.fix_item {padding-bottom:80px;}
 .title {display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;}
 .title h3 {color:#323232; font-size:23px;}
 .title .more {color:#a4a4a4; font-size:16px;}
-.title .more:after {content:""; display:inline-block; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 16'%3e%3cpath fill-rule='evenodd' d='M.47 14.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l7-7c.293-.293.293-.767 0-1.06l-7-7C1.237.177.763.177.47.47c-.293.293-.293.767 0 1.06L6.94 8 .47 14.47z' fill='%23a4a4a4'/%3e%3c/svg%3e"); background-size:100% 100%; background-position:50% 50%; background-repeat:no-repeat; width:6px; height:9px; margin-left:5px;}
+.title .more:after {content:""; display:inline-block; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 16'%3e%3cpath fill-rule='evenodd' d='M.47 14.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l7-7c.293-.293.293-.767 0-1.06l-7-7C1.237.177.763.177.47.47c-.293.293-.293.767 0 1.06L6.94 8 .47 14.47z' fill='%23a4a4a4'/%3e%3c/svg%3e"); background-size:100% 100%; background-position:50% 50%; background-repeat:no-repeat; width:6px; height:9px; margin-left:5px; vertical-align:1px;}
 
 section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4e4e4;}
 
@@ -170,7 +170,7 @@ section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4
 
 .event_bnr_wrap {position:relative; width:calc(100% + 30px); margin-left:-15px; padding-bottom:20px;}
 .event_bnr_wrap .swiper-slide {overflow:hidden; border:1px solid #a4a4a4; border-radius:15px; transform:scale(.95); transition:all .2s ease;}
-.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1);}
+.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1); -webkit-transform:scale(1);}
 .event_bnr_wrap .swiper-slide div {padding:15px 0; color:#323232; font-size:13px; text-align:center; line-height:1.5;}
 .event_bnr_wrap .swiper-slide div span {display:block; color:#a4a4a4;}
 .event_bnr_wrap .swiper-pagination {position:absolute; bottom:0; left:0; width:100%; text-align:center;}
