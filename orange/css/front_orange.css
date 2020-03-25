@@ -191,6 +191,7 @@ section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4
 .today_news li:first-of-type {margin-left:15px;}
 .today_news li:last-of-type {margin-right:15px;}
 .today_news li a {display:block; width:261px; box-sizing:border-box; border-radius:7px; border:1px solid #e0e0e0;}
+.today_news li a img {width:auto; height:128px;}
 .today_news li div {position:relative; height:80px; padding:17px 27px 0;}
 .today_news li div span {position:absolute; top:10px; left:13px; height:24px; padding:0 12px; border:1px solid #e2e2e2; border-radius:24px; color:#323232; font-size:13px; line-height:24px;}
 .today_news li div dl {text-align:right;}
