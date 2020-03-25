@@ -63,6 +63,46 @@
 				<div class="acv1-1"><img src="images/img030101.png" alt=""></div>
 				<div class="acv1-2"><img src="images/img030201.png" alt=""></div>
 				<div class="acv1-3"><img src="images/img030301.png" alt=""></div>
+				<div class="advert ad1">
+					<button type="button"></button>
+					<img src="images/img030102.jpg" alt="">
+				</div>
+				<div class="advert ad2">
+					<button type="button"></button>
+					<img src="images/img030202.jpg" alt="">
+				</div>
+				<div class="advert ad3">
+					<button type="button"></button>
+					<img src="images/img030302.jpg" alt="">
+				</div>
+				<script>
+					$(function(){
+						$(".cont03 .btn1").click(function(){
+							$(".advert").hide();
+							$(".advert.ad1").show();
+						});
+						$(".cont03 .btn2").click(function(){
+							$(".advert").hide();
+							$(".advert.ad2").show();
+						});
+						$(".cont03 .btn3").click(function(){
+							$(".advert").hide();
+							$(".advert.ad3").show();
+						});
+						// $(".cont03 > .btn").click(function(){
+						// 	$(".cont03 .advert > img").css({
+						// 		"opacity" : "0",
+						// 		"visibility" : "hidden"
+						// 	});
+						// });
+						$(".cont03 .advert > button").click(function(){
+							$(this).parent().find("img").css({
+								"opacity" : "1",
+								"visibility" : "visible"
+							});
+						});
+					});
+				</script>
 			</div>
 			<div class="cont04"></div>
 		</div>
