@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.5.3.1.js"></script>
+	<script src="js/front_orange.js"></script>
 </head>
 <body class="fix_item">
 <div id="orange_wrap">
@@ -23,8 +24,8 @@
 				<em></em><em class="on"></em><em></em><em></em>
 			</span>
 			<div class="join_desc">
-				<strong>약관에 동의해주세요.</strong>
-				<p><span>오렌지 체크 포인트 사용을 위한</span><em>약관 및 동의사항 입니다.</em></p>
+				<strong>약관에 동의해주세요</strong>
+				<p><span>오렌지 라운지 사용을 위한</span><em>약관 및 동의사항 입니다.</em></p>
 			</div>
 
 			<div class="terms-check">
@@ -35,7 +36,7 @@
 			<div class="terms-check">
 				<input type="checkbox" name="" id="terms1">
 				<label for="terms1">이용약관에 대한 동의</label>
-				<button type="button">자세히 보기</button>
+				<button type="button" data-layer="terms" onclick="layers(this);">자세히 보기</button>
 			</div>
 			
 			<div class="terms-text">
@@ -51,7 +52,7 @@
 			<div class="terms-check">
 				<input type="checkbox" name="" id="terms2">
 				<label for="terms2">개인정보취급방침 동의 </label>
-				<button type="button">자세히 보기</button>
+				<button type="button" data-layer="privacy" onclick="layers(this);">자세히 보기</button>
 			</div>
 			
 			<div class="terms-text">
@@ -68,6 +69,95 @@
 				<a href="" class="posi">다음</a>
 			</div>
 		</article>
+	</div>
+</div>
+<div class="layer-wrap">
+	<div class="layer-conts terms hidden">
+		<div class="head">
+			이용약관
+		</div>
+		<div class="conts_body">
+			[오렌지 체크 포인트 이용약관]<br><br>
+			제1조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제2조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제3조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제4조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+
+			제1조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+		</div>
+		<div class="fix-btns btn-col">
+			<a href="jvascript:;" class="posi" onclick="layersClose(this);">닫기</a>
+		</div>
+	</div>
+</div>
+
+<div class="layer-wrap">
+	<div class="layer-conts privacy hidden">
+		<div class="head">
+			개인정보취급방침
+		</div>
+		<div class="conts_body">
+			[오렌지 체크 포인트 이용약관]<br><br>
+			제1조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제2조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제3조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+
+			제4조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+
+			제1조 (목적)<br>
+			이 약관은 오렌지 체크 포인트를 제공하는 오렌지라이프(이하
+			“회사”라 합니다)와 오렌지 체크 포인트 서비스 이용자 (이하 
+			“이용자”라 합니다)간에 오렌지 체크 포인트 서비스 이용에 
+			관한 회사와 이용자의 권리와 의무, 기타 제반 사항을 정함을 
+			목적으로 합니다.<br><br>
+		</div>
+		<div class="fix-btns btn-col">
+			<a href="jvascript:;" class="posi" onclick="layersClose(this);">닫기</a>
+		</div>
 	</div>
 </div>
 </body>

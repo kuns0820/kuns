@@ -28,6 +28,10 @@ function layers(target){
 	var _winT = $(window).scrollTop() + 30;
 	var _layerT = $dom.height();
 
+	if($dom.hasClass("hidden")){console.log(123)
+		$("body").css("overflow" , "hidden");
+	}
+
 	if(_winT + _layerT >= _docT){
 		$dom.css({
 			top : _winT - ((_winT + _layerT) - _docT + 50)
@@ -41,4 +45,5 @@ function layers(target){
 function layersClose(target){
 	$this = $(target).closest(".layer-wrap");
 	$this.fadeOut("fast");
+	$("body").css("overflow" , "");
 }

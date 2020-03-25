@@ -14,7 +14,7 @@
 				fade: true,
 				cssEase: 'linear',
 				arrows: true,
-				dots: false
+				dots: true
 			});
 			$('#sliders').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 				// console.log(currentSlide,nextSlide,event)
@@ -24,11 +24,11 @@
 				// 	$("body").removeClass("main");
 				// }
 			});
-			$("#sliders .slick-arrow").hide();
+			$("#sliders .slick-arrow.slick-prev").hide();
 			$('#sliders').on('afterChange', function(event, slick, currentSlide, nextSlide){
 				slideNum = currentSlide;
-				if(currentSlide == 0 || currentSlide == 1){
-					$("#sliders .slick-arrow").hide();
+				if(currentSlide == 0){
+					$("#sliders .slick-arrow.slick-prev").hide();
 				}else{
 					$("#sliders .slick-arrow").fadeIn("fast");
 				}
@@ -48,6 +48,29 @@
 	<div id="wrap">
 		<div id="sliders">
 			<div class="cont01">
+				<div class="load-1"><img src="images/img0101.png" alt=""></div>
+			</div>
+			<div class="cont02">
+				<button type="button" class="btn btn1" data-active="active1"></button>
+				<div class="acv1-1"><img src="images/img0201.jpg" alt=""></div>
+				<div class="acv1-2"><img src="images/img0202.jpg" alt=""></div>
+				<div class="acv1-3"><img src="images/img0203.jpg" alt=""></div>
+			</div>
+			<div class="cont03">
+				<button type="button" class="btn btn1" data-active="active1"></button>
+				<button type="button" class="btn btn2" data-active="active2"></button>
+				<button type="button" class="btn btn3" data-active="active3"></button>
+				<div class="acv1-1"><img src="images/img030101.png" alt=""></div>
+				<div class="acv1-2"><img src="images/img030201.png" alt=""></div>
+				<div class="acv1-3"><img src="images/img030301.png" alt=""></div>
+			</div>
+			<div class="cont04"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+			<!-- <div class="cont01">
 				<div class="load-1">가나다ㅏㄹ</div>
 				<div class="load-2">가나다ㅏㄹ</div>
 				<div class="load-3">가나다ㅏㄹ</div>
@@ -58,17 +81,4 @@
 				<div class="acv1-2"></div>
 				<button type="button" class="btn btn2" data-active="active2">손모양 버튼</button>
 				<div class="acv2-1 blink"><img src="images/ico.png" alt=""></div>
-			</div>
-			<div class="cont02">
-				<div class="acv1-1">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
-				<div class="acv1-2">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
-				<div class="acv1-3">dddddddddddddddddddddddddddddddddddddddddddddddddd</div>
-			</div>
-			<div class="cont03"></div>
-			<div class="cont04"></div>
-			<div class="cont05"></div>
-			<div class="cont06"></div>
-		</div>
-	</div>
-</body>
-</html>
+			</div> -->

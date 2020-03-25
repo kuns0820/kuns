@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/front_orange.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.5.3.1.js"></script>
+</head>
+<body class="fix_item detail_page">
+<div id="orange_wrap">
+	<div id="container">
+		<article>
+			<div class="conts-detail swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018919&fileSn=0" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<div class="cts_item-box">
+							<h2>당신을 위한 추천 소식지</h2>
+							<div class="item-list">
+								<ul>
+									<li><a href="">
+										<img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018262&fileSn=0" alt="">
+										<p>오늘은 금요일 한주도 수고 하셨습니다.</p>
+									</a></li>
+									<li><a href="">
+										<img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018262&fileSn=0" alt="">
+										<p>오늘은 금요일 한주도 수고 하셨습니다.</p>
+									</a></li>
+									<li><a href="">
+										<img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018262&fileSn=0" alt="">
+										<p>오늘은 금요일 한주도 수고 하셨습니다.</p>
+									</a></li>
+									<li><a href="">
+										<img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018262&fileSn=0" alt="">
+										<p>오늘은 금요일 한주도 수고 하셨습니다.</p>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var swiper = new Swiper('.swiper-container', {
+					zoom:true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+								dynamicBullets: true
+							},
+						navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+						},
+					on: {
+						SlideChange : function(swiper) {
+							var swiperPage = swiper.isEnd;
+							if (swiperPage == true){
+								$('html,body').scrollTop(0);
+							} 
+						}
+					}
+				});
+			});
+			</script>
+
+			<div class="fixed_nav">
+				<button type="button" class="btn-back">뒤로</button>
+				<div class="btns">
+					<button type="button" class="btn-share">공유</button>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					$(".fixed_nav .btn-share").click(function(){
+						$(".share_layer").show();
+					});
+				});
+			</script>
+
+			<div class="layer-pop share_layer">
+				<div class="layer-conts">
+					<p>졸업/입학을 앞둔 우리 아이,<br />CI보험을 선택해야 하는 이유!</p>
+					<div class="share_list">
+						<ul>
+							<li><a href=""><img src="images/orange/btn_share_05.jpg" alt="카카오톡"></a></li>
+							<li><a href=""><img src="images/orange/btn_share_06.jpg" alt="카카오스토리"></a></li>
+							<li><a href=""><img src="images/orange/btn_share_03.jpg" alt="메세지"></a></li>
+							<li><a href=""><img src="images/orange/btn_share_04.jpg" alt="네이버밴드"></a></li>
+							<li><a href=""><img src="images/orange/btn_share_02.jpg" alt="인스타그램"></a></li>
+							<li><a href=""><img src="images/orange/btn_share_02.jpg" alt="페이스북"></a></li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="layer-close">닫기</button>
+				<i class="dim"></i>
+			</div>
+			<script>
+				$(function(){
+					$(".layer-pop .layer-close").click(function(){
+						$(".layer-pop").hide();
+					});
+				});
+			</script>
+		</article>
+	</div>
+</div>
+</body>
+</html>
