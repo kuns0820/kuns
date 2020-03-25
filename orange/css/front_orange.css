@@ -169,8 +169,8 @@ section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4
 .bbs_list.orgCon ul li:last-child a {border-bottom:0;}
 
 .event_bnr_wrap {position:relative; width:calc(100% + 30px); margin-left:-15px; padding-bottom:20px;}
-.event_bnr_wrap .swiper-slide {overflow:hidden; border:1px solid #a4a4a4; border-radius:15px; transform:scale(.95, .95); -webkit-transform:scale(.95, .95); transition:all .2s ease;}
-.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1,1); -webkit-transform:scale(1,1);}
+.event_bnr_wrap .swiper-slide {overflow:hidden; border:1px solid #a4a4a4; border-radius:15px; transition:all .2s ease;}
+.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1.2); -webkit-transform:scale(1.2);}
 .event_bnr_wrap .swiper-slide div {padding:15px 0; color:#323232; font-size:13px; text-align:center; line-height:1.5;}
 .event_bnr_wrap .swiper-slide div span {display:block; color:#a4a4a4;}
 .event_bnr_wrap .swiper-pagination {position:absolute; bottom:0; left:0; width:100%; text-align:center;}
@@ -209,6 +209,7 @@ section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4
 .prd_research li:first-of-type {margin-left:15px;}
 .prd_research li:last-of-type {margin-right:15px;}
 .prd_research li a {display:block; overflow:hidden; width:210px; box-sizing:border-box; border-radius:13px; border:1px solid #e0e0e0;}
+.prd_research li a img {width:auto; height:102px;}
 .prd_research li a div {height:65px; padding:10px 20px 0; text-align:center;}
 .prd_research li a div strong {display:block; margin-bottom:3px; color:#323232; font-size:13px;}
 .prd_research li a div p {display:block; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; white-space:normal; -webkit-line-clamp:2; max-height:40px; font-size:12px;}
