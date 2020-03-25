@@ -170,7 +170,7 @@ section {padding:15px; border-top:7px solid #f8f8f8; border-bottom:1px solid #e4
 
 .event_bnr_wrap {position:relative; width:calc(100% + 30px); margin-left:-15px; padding-bottom:20px;}
 .event_bnr_wrap .swiper-slide {overflow:hidden; border:1px solid #a4a4a4; border-radius:15px; transition:all .2s ease; transform:scale(.9); -webkit-transform:scale(.9);}
-.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1); -webkit-transform:scale(1);}
+.event_bnr_wrap .swiper-slide.swiper-slide-active {transform:scale(1); -webkit-transform:scale(1); border:1px solid red;}
 .event_bnr_wrap .swiper-slide div {padding:15px 0; color:#323232; font-size:13px; text-align:center; line-height:1.5;}
 .event_bnr_wrap .swiper-slide div span {display:block; color:#a4a4a4;}
 .event_bnr_wrap .swiper-pagination {position:absolute; bottom:0; left:0; width:100%; text-align:center;}
