@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/front_orange.css"/>
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/swiper.5.3.1.js"></script>
+	<script src="js/front_orange.js"></script>
 </head>
 <body class="fix_item point">
 <div id="orange_wrap">
@@ -52,10 +52,36 @@
 				<div class="rt">
 					<button type="button" class="like"><em></em><span>3</span></button>
 					<button type="button" class="like on"><em></em><span>3</span></button>
-					<button type="button" class="down">다운로드</button>
+					<button type="button" class="down" data-layer="get_point" onclick="layers(this);">다운로드</button>
+					<button type="button" class="down" data-layer="msg_text" onclick="layers(this);">다운로드</button>
 				</div>
 			</div>
 		</article>
+	</div>
+</div>
+
+<div class="layer-wrap">
+	<div class="layer-conts get_point">
+		<div class="conts_body">
+			<div class="img-point">
+				<span>5</span>
+			</div>
+			<strong>오렌지 정보 포인트 획득</strong>
+		</div>
+		<div class="btn_layer">
+			<a href="javascript:;" onclick="layersClose(this);">확인</a>
+		</div>
+	</div>
+</div>
+
+<div class="layer-wrap">
+	<div class="layer-conts msg_text">
+		<div class="conts_body">
+			<p>이미 포인트를 획득하셨습니다</p>
+		</div>
+		<div class="btn_layer">
+			<a href="javascript:;" onclick="layersClose(this);">확인</a>
+		</div>
 	</div>
 </div>
 </body>
