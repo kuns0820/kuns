@@ -12,7 +12,8 @@
 	* {margin:0; padding:0;}
 
 	.ga-header {position:relative; background:#333742; height:55px;}
-	.ga-header h1 {text-align:center; font-size:0;}
+	.ga-header h1 {position:static; padding:0; box-sizing:border-box; text-align:center; font-size:0;}
+	.ga-header h1.lt {padding-left:15px; text-align:left;}
 	.ga-header h1 a {display:inline-block; vertical-align:top;}
 	.ga-header h1 a img {vertical-align:middle;}
 	.ga-header h1 .logo img {width:auto; height:16px;}
@@ -26,6 +27,7 @@
 	.ga-header .btn-menu {background:url("data:image/svg+xml,%3csvg viewBox='0 0 48 41' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m44.344 23.824h-40.2c-1.989 0-3.6-1.611-3.6-3.6 0-1.988 1.611-3.6 3.6-3.6h40.2c1.988 0 3.6 1.612 3.6 3.6 0 1.989-1.612 3.6-3.6 3.6zm0-15.899h-40.2c-1.989 0-3.6-1.612-3.6-3.6 0-1.989 1.611-3.6 3.6-3.6h40.2c1.988 0 3.6 1.611 3.6 3.6 0 1.988-1.612 3.6-3.6 3.6zm-40.2 25.2h40.2c1.988 0 3.6 1.611 3.6 3.599s-1.612 3.6-3.6 3.6h-40.2c-1.989 0-3.6-1.612-3.6-3.6s1.611-3.599 3.6-3.599z' fill='white' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:22px 19px;}
 	.ga-header .btn-tsrh {background:url("data:image/svg+xml,%3csvg viewBox='0 0 48 47' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m45.919 45.708c-1.706 1.704-4.471 1.704-6.178 0l-7.711-7.703c-3.171 2.03-6.918 3.242-10.963 3.242-11.26 0-20.388-9.119-20.388-20.366 0-11.249 9.128-20.368 20.388-20.368 11.259 0 20.388 9.119 20.388 20.368 0 4.04-1.214 7.784-3.246 10.952l7.71 7.703c1.706 1.704 1.706 4.467 0 6.172zm-24.852-39.376c-8.043 0-14.563 6.513-14.563 14.549 0 8.034 6.52 14.547 14.563 14.547s14.562-6.513 14.562-14.547c0-8.036-6.519-14.549-14.562-14.549z' fill='white' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:21px 21px;}
 	.ga-header .btn-mypage {background:url("data:image/svg+xml,%3csvg viewBox='0 0 39 45' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m38.04 41.078c0 1.718-1.396 3.11-3.118 3.11h-31.175c-1.722 0-3.118-1.392-3.118-3.11 0-6.22 6.026-12.023 12.186-14.319-3.558-2.191-5.951-6.083-5.951-10.561v-3.11c0-6.87 5.583-12.44 12.47-12.44s12.47 5.57 12.47 12.44v3.11c0 4.478-2.392 8.37-5.95 10.561 6.16 2.296 12.186 8.099 12.186 14.319z' fill='white' fill-rule='evenodd'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:18px 21px;}
+	.ga-header .btn-home {background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3e%3cpath d='M20 40V28h8v12h10V24h6L24 6 4 24h6v16z' fill='%23fff'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:24px 24px;}
 
 	.main_menu_wrap {}
 	.main_menu_wrap .menu {position:relative; background:#fff;}
@@ -111,13 +113,28 @@
 	#side_wrap p.copy {background:#e8ebef; padding:15px 0 25px; color:#b7b7b7; font-size:11px; text-align:center;}
 	</style>
 </head>
-<body class="bg_main all_menu">
+<!-- all_menu -->
+<body class="bg_main ">
 <div id="ga_wrap">
 	<div class="ga-header">
 		<h1><a href="" class="logo"><img src="../images/town/logo.png" alt=""></a></h1>
 		<a href="javascript:;" class="col-l_01 btn-menu">전체메뉴</a>
 		<a href="" class="col-r_02 btn-tsrh">통합검색</a>
 		<a href="" class="col-r_01 btn-mypage">마이페이지</a>
+	</div>
+
+	<!-- 쇼핑 -->
+	<div class="ga-header">
+		<h1><a href="" class="logo"><img src="../images/town/logo.png" alt=""></a></h1>
+		<a href="javascript:;" class="col-l_01 btn-home">홈</a>
+		<a href="" class="col-r_02 btn-tsrh">통합검색</a>
+		<a href="" class="col-r_01 btn-menu">전체메뉴</a>
+	</div>
+
+	<!-- 기프티쇼/운세 -->
+	<div class="ga-header">
+		<h1 class="lt"><a href="" class="logo"><img src="../images/town/logo.png" alt=""></a></h1>
+		<a href="" class="col-r_01 btn-home">홈</a>
 	</div>
 
 	<div id="side_wrap">
