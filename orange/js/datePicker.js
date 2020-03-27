@@ -40,6 +40,7 @@ function initDatePickers() {
 	};
 
 	$('#schMonth').monthpicker(options);
+	$('#historyMonth').monthpicker(options);
 
 	// make year selector 
 	for (var i = currentYear; i >= startYear; i--) {
@@ -327,6 +328,7 @@ function initDatePickers() {
 	var schDate = date.yyyymmdd();
 	$('#schDate').val(schDate);
 	$('#schMonth').val(schDate.substr(0,7));
+	$('#historyMonth').val(schDate.substr(0,7));
 	
 	initDatePickers();
 

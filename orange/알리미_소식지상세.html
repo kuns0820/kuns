@@ -22,13 +22,13 @@
 
 	<div id="container">
 		<article>
-			<div class="org-menu col-5">
+			<div class="org-menu col-5 line"><div class="innr">
 				<a href="">전체</a>
 				<a href="" class="on">소식지</a>
-				<a href="">공지사항</a>
+				<a href="">공지</a>
 				<a href="">공문</a>
-				<a href="">업적조회</a>
-			</div>
+				<a href="">업적</a>
+			</div></div>
 			
 			<dl class="notice_view">
 				<dt>
@@ -62,8 +62,7 @@
 				<div class="rt">
 					<button type="button" class="like"><em></em><span>3</span></button>
 					<button type="button" class="like on"><em></em><span>3</span></button>
-					<button type="button" class="down" data-layer="get_point" onclick="layers(this);">다운로드</button>
-					<button type="button" class="down" data-layer="msg_text" onclick="layers(this);">다운로드</button>
+					<button type="button" class="down" data-layer="share_layer" onclick="layers(this);">공유하기</button>
 				</div>
 			</div>
 		</article>
@@ -71,28 +70,19 @@
 </div>
 
 <div class="layer-wrap">
-	<div class="layer-conts get_point">
-		<div class="conts_body">
-			<div class="img-point">
-				<span>5</span>
-			</div>
-			<strong>오렌지 정보 포인트 획득</strong>
-		</div>
-		<div class="btn_layer">
-			<a href="javascript:;" onclick="layersClose(this);">확인</a>
-		</div>
-	</div>
-</div>
-
-<div class="layer-wrap">
-	<div class="layer-conts msg_text">
-		<div class="conts_body">
-			<p>이미 포인트를 획득하셨습니다</p>
-		</div>
-		<div class="btn_layer">
-			<a href="javascript:;" onclick="layersClose(this);">확인</a>
+	<div class="layer-conts share_layer">
+		<div class="share_list">
+			<ul>
+				<li><a href=""><img src="images/orange/btn_share_05.jpg" alt="카카오톡"></a></li>
+				<li><a href=""><img src="images/orange/btn_share_06.jpg" alt="카카오스토리"></a></li>
+				<li><a href=""><img src="images/orange/btn_share_03.jpg" alt="메세지"></a></li>
+				<li><a href=""><img src="images/orange/btn_share_04.jpg" alt="네이버밴드"></a></li>
+				<li><a href=""><img src="images/orange/btn_share_08.jpg" alt="링크복사"></a></li>
+				<li><a href=""><img src="images/orange/btn_share_02.jpg" alt="페이스북"></a></li>
+			</ul>
 		</div>
 	</div>
+	<button type="button" class="layer-close"  onclick="layersClose(this);">닫기</button>
 </div>
 </body>
 </html>
