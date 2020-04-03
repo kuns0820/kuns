@@ -26,8 +26,7 @@ footer .top {display:block; width:34px; margin:15px auto 0;}
 
 #quick {position:fixed; bottom:70px; right:15px;}
 #quick:after {content:""; display:block; clear:both;}
-#quick a {float:left; margin-left:5px;}
-#quick a img {width:32px; height:33px;}
+#quick a {display:block; background-color:#636363; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 32'%3e%3cpath d='M19.001,15.984 L16.163,18.788 L16.163,18.788 L3.393,31.405 C2.610,32.179 1.339,32.179 0.555,31.405 C-0.228,30.631 -0.228,29.375 0.555,28.601 L13.325,15.984 L0.555,3.367 C-0.228,2.593 -0.228,1.338 0.555,0.563 C1.339,-0.211 2.610,-0.211 3.393,0.563 L16.163,13.180 L16.163,13.180 L19.001,15.984 Z' fill='%23fff'%3e%3c/path%3e%3c/svg%3e"); background-position:13px 50%; background-size:auto 21px; background-repeat:no-repeat; width:36px; height:36px; border-radius:50%; transform:rotate(180deg); font:0/0 a; box-shadow:-1px -1px 5px rgba(0,0,0,.5);}
 
 .sns-warp {background:#fff; padding:10px 15px; border-bottom:1px solid #e4e4e4; text-align:center;}
 .sns-warp > * {color:#636363; font-size:12px;}
