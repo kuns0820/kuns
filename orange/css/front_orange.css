@@ -620,7 +620,7 @@ select.select {background-color:#fff; background-image:url("data:image/svg+xml,%
 
 b.hilight {color:#fc6719 !important; font-weight:bold;}
 
-.paging {display:flex; justify-content:space-between; background:#fff; padding:25px 15px; border-top:1px solid #e4e4e4; text-align:center;}
+.paging {display:flex; justify-content:center; background:#fff; padding:25px 15px; border-top:1px solid #e4e4e4; text-align:center;}
 .paging a {display:inline-block; width:30px; height:30px; color:#444; font-size:13px; line-height:30px; font-weight:bold;}
 .paging a.on {color:#fc6719;}
 .paging a.first {background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 15'%3e%3cpath fill-rule='evenodd' d='M7.85 14.632c-.249.248-.651.248-.9 0L.586 8.268c-.248-.248-.248-.651 0-.9L6.95 1.005c.249-.249.651-.249.9 0 .248.248.248.651 0 .9L1.936 7.818l5.914 5.914c.248.248.248.651 0 .9zm6 0c-.249.248-.651.248-.9 0L6.586 8.268c-.248-.248-.248-.651 0-.9l6.364-6.363c.249-.249.651-.249.9 0 .248.248.248.651 0 .9L7.936 7.818l5.914 5.914c.248.248.248.651 0 .9z'/%3e%3c/svg%3e"); background-size:auto 13px; background-position:50% 50%; background-repeat:no-repeat;}
@@ -787,7 +787,11 @@ article.inform section .innr .title_sub h3 {font-size:22px;}
 .sliderNewsWrap .bbs_sort {width:calc(100% - 30px); margin:0 auto; padding-top:0; padding-right:0; border-top:0; border-bottom:1px solid #e4e4e4;}
 
 /* 메세지 수신화면 */
+<<<<<<< HEAD
 #share_view article {padding:0;}
 #share_view .profile-img {width:100%; margin:0;}
+=======
+#ga_wrap article {padding:0;}
+>>>>>>> 54d65fbf3003eeeb039d4d1ea7282f2b503ed58c
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {transform:translateX(0) !important; width:100% !important; text-align:center; margin-top:15px;}
 .fix-btns.userView {position:static; width:calc(100% + 30px); margin-left:-15px; margin-top:30px;}
