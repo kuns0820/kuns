@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>오렌지 라운지</title>
+	<link rel="stylesheet" type="text/css" href="css/front_orange.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.5.3.1.js"></script>
+	<script src="js/front_orange.js"></script>
+</head>
+<body id="share_view">
+<div id="">
+	<div id="container">
+		<article class="">
+			<div class="conts-detail swiper-container">
+				<div class="swiper-wrapper">
+
+
+				<!-- 카드형 이미지 -->
+					
+						
+						<div class="swiper-slide" style="background:#000;">
+							<a href="#"><img src="https://heungkukfire.ncl.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000018919&fileSn=0" width="100px"/></a>
+						</div>
+				
+				
+				
+
+				
+						
+				
+
+					<div class="swiper-slide">
+						<article class="userView">
+							<div class="profile-img">
+								<div class="pic_wrap">
+									<div class="img">
+									
+										
+										
+											<img src="/cmm/fms/getImage.do?atchFileId=FILE_000000000018900&fileSn=0" />
+											
+										
+									
+									</div>
+									<p>
+										
+											프로필 입력 테스트
+										
+									</p>
+								</div>
+							</div>
+
+							<div class="nameCardInfo fullW">
+								<strong class="tit">관리자 <span>비트랜</span></strong>
+							
+								<dl>
+									<dt>휴대폰번호</dt>
+									<dd>010-3896-6453</dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>이메일</dt>
+									<dd>karot@bitran.co.kr</dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>소속</dt>
+									<dd>비트랜</dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>지점</dt>
+									<dd>서초지점2</dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>주소</dt>
+									<dd></dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>FAX번호</dt>
+									<dd>010-010-0100</dd>
+								</dl>
+							
+							
+								<dl>
+									<dt>자격정보</dt>
+									<dd>자격정보</dd>
+								</dl>
+							
+
+							</div>
+
+							<div class="fix-btns btn-col userView">
+								<a href="sms:010-3896-6453" class="inac">문자하기</a>
+								<a href="tel:010-3896-6453" class="posi">전화하기</a>
+							</div>
+						</article>
+					</div>
+
+
+				</div>
+				<div class="share_paging"></div>
+			</div>
+			<script>
+			$(document).ready(function(){
+				var userSwipe = new Swiper('.conts-detail', {
+					autoHeight: true,
+					pagination: {
+						el: '.share_paging',
+						dynamicBullets: true
+					},
+					normalizeSlideIndex : true,
+					loop : false,
+				});
+				
+				userSwipe.on('slideChange', function (index) {
+					if($(".conts-detail .share_paging span:last-child").hasClass("swiper-pagination-bullet-active")){
+						$('.share_paging').fadeOut();
+					}else{
+						$('.share_paging').fadeIn();
+					}
+				});
+			});
+			</script>
+		</article>
+	</div>
+</div>
+
+<script type="text/javaScript" language="javascript">
+<!--
+
+/* ********************************************************
+ * 메세지 처리및 이동
+ ******************************************************** */
+
+
+-->
+</script>
+
+</body>
+</html>

@@ -172,7 +172,7 @@ footer .innr .family_site {position:absolute; top:5.25rem; right:0; background-c
 .swiper-container,
 .swiper-slide {height:41.45rem;}
 .swiper-slide.visual01 {background:url(../images/img_visual_01.jpg) 50% 0 no-repeat; background-size:auto 41.45rem;}
-.swiper-slide.visual02 {background:url(../images/img_visual_01.jpg) 50% 0 no-repeat; background-size:auto 41.45rem;}
+.swiper-slide.visual02 {background:url(../images/img_visual_02.jpg) 50% 0 no-repeat; background-size:auto 41.45rem;}
 .main .swiper-container-horizontal>.swiper-pagination-bullets {top:50%; bottom:auto; left:auto; right:2.5rem; width:auto; transform:translateY(-50%);}
 .main .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {display:block; background:transparent; width:0.6rem; height:0.6rem; margin:1rem 0 0; border:2px solid #fff; border-radius:0; opacity:1;}
 .main .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:first-child {margin-top:0;}
@@ -512,4 +512,15 @@ input[type=radio] + label {display:inline-block; vertical-align:middle;}
 .btn_c .btn_ci:after {content:""; display:inline-block; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 16'%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M22 15a1 1 0 01-1 1H1a1 1 0 010-2h20a1 1 0 011 1z'/%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M1 16c-.55 0-1-.18-1-.4V7.4C0 7.19.45 7 1 7s1 .18 1 .4v8.2c0 .22-.45.4-1 .4zM21 16c-.55 0-1-.18-1-.4V7.4c0-.22.45-.4 1-.4s1 .18 1 .4v8.2c0 .22-.45.4-1 .4zM10 0h2v9h-2V0z'/%3e%3cpath fill-rule='evenodd' fill='%23FFF' d='M15.24 7l-2.83 2.83L11 11.24 9.59 9.83 6.76 7l1.41-1.41L11 8.4l2.83-2.82L15.24 7z'/%3e%3c/svg%3e") 50% 50% no-repeat; background-size:100% 100%; width:22px; height:16px; margin-left:20px; vertical-align:0;}
 @media screen and (max-width:720px) {
 	.btn_c .btn_ci {width:100%;}
+}
+
+.tab_wrap {display:flex; justify-content:space-between; margin-bottom:40px;}
+.tab_wrap a {flex:1 0 auto; position:relative; height:60px; border-bottom:1px solid #ddd; color:#666; font-size:18px; text-align:center; line-height:60px; font-weight:bold;}
+.tab_wrap a:before {content:""; position:absolute; top:50%; left:0; background:#ddd; width:1px; height:14px; margin-top:-7px;}
+.tab_wrap a:first-child:before {display:none;}
+.tab_wrap a.on {background:#1781cc; color:#fff;}
+.tab_wrap a.on:before {display:none;}
+.tab_wrap a.on + a:before {display:none;}
+@media screen and (max-width:720px) {
+	.tab_wrap a {height:30px; line-height:30px; font-size:11px;}
 }
