@@ -17,12 +17,13 @@
 <script type="text/javascript" src="https://res.afreecatv.com/script/common/jquery.js"></script>
 	<script>
 		$(window).load(function(){
-			$("#bs-container").scroll(function(){console.log(333)
-				_wt = $(this).scrollTop();
+			$("#bs-container").scroll(function(){
+				_wt = $("#bs-container").scrollTop();
 				console.log(_wt)
-				if(_wt > $(".option_box_wrap").offset().top){ console.log(1)
+		//		if(_wt > $(".option_box_wrap").offset().top){
+				if(_wt > 148){
 					$("header .option_box").show();
-				}else{ console.log(2)
+				}else{
 					$("header .option_box").hide();
 				}
 			});
@@ -56,7 +57,7 @@
 			</div>
 		</section>
 
-		<div class="option_box">
+		<div class="option_box" style="background:#fff;">
 			<div class="grid-start">
 				<button type="button" class="btn-addfile"><span>첨부파일</span></button>
 				<button type="button" class="btn-emoticon"><span>이모티콘</span></button>
