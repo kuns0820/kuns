@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="keyword" content="주식회사 아프리카티비, 아프리카TV, AfreecaTV">
+<meta name="descript" content="주식회사 아프리카티비, 아프리카TV, AfreecaTV">
+<meta name="theme-color" content="#278853">
+<title>BJ닉네임 | 아프리카TV</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://res.afreecatv.com/afreeca.ico">
+<link rel="stylesheet" type="text/css" href="https://res.afreecatv.com/css/global/mobile/bj/mobile_bj.css">
+<link rel="stylesheet" type="text/css" href="https://res.afreecatv.com/css/global/bj_loading.css">
+<script type="text/javascript" src="https://res.afreecatv.com/script/common/jquery.js"></script>
+	<script>
+		$(window).load(function(){
+			$(window).scroll(function(){
+				_wt = $(this).scrollTop();
+				console.log(_wt)
+				if(_wt > $(".option_box_wrap").offset().top - 48){
+					$(".option_box").css({
+						position: "fixed",
+						top : "49px",
+						background : "#fff",
+						zIndex : 10
+					});
+				}else{
+					$(".option_box").css({
+						position: "static",
+						top : "49px",
+						background : "#fff"
+					});
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="bs-wrap" class="fix_bar">
+	<header>
+		<section class="basic-section">
+			<div class="grid-start">
+				<button type="button" class="btn-back"><span>뒤로가기</span></button>
+			</div>
+			<h2 class="title">글쓰기</h2>
+			<div class="group-end">
+				<button type="button"><span>임시저장</span></button>
+				<button type="button" disabled=""><span>등록</span></button>
+			</div>
+		</section>
+	</header>
+
+	<div id="bs-container"><div id="bs-contents">
+		<article class="write-frm">
+			<div class="slt_board">
+				<select name="" id=""><option value="">게시판을 선택해 주세요.</option></select>
+			</div>
+			<div class="text_inp_wrap">
+				<div class="subject">
+					<textarea name="" id="" class="sbj" placeholder="제목을 입력해 주세요." style="height:18px;"></textarea>
+				</div>
+				<div class="option_box_wrap" style="position:relative; height:45px;">
+					<div class="option_box" style="position: static; top: 49px; background: rgb(255, 255, 255); z-index: 10;">
+						<div class="grid-start">
+							<button type="button" class="btn-addfile"><span>첨부파일</span></button>
+							<button type="button" class="btn-emoticon"><span>이모티콘</span></button>
+							<button type="button" class="btn-vote"><span>투표</span></button>
+							<button type="button" class="btn-temporary"><span>임시글</span></button>
+						</div>
+						<div class="grid-end">
+							<div>
+								<button type="button" class="btn-bold on"><span>두껍게</span></button>
+								<button type="button" class="btn-italic"><span>기울이기</span></button>
+								<button type="button" class="btn-underline"><span>밑줄</span></button>
+								<button type="button" class="btn-through"><span>가운데줄</span></button>
+								<button type="button" class="btn-color"><span>색상</span></button>
+								<button type="button" class="btn-left"><span>왼쪽정렬</span></button>
+								<button type="button" class="btn-center"><span>가운데정렬</span></button>
+								<button type="button" class="btn-right"><span>오른쪽정렬</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="editor_wrap">
+					에디터 영역 <br>
+					placeholder="내용을 입력해 주세요."
+					color:#222;
+					<textarea name="" id="" style="width:100%; height:500px;"></textarea>
+				</div>
+
+				<div class="hashtag_wrap">
+					<textarea name="" id="" placeholder="# 태그를 입력하세요.
+띄어쓰기와 쉼표로 구분가능합니다. (10개까지 가능)"></textarea>
+					<span>최대 10자까지 입력할 수 있습니다.</span>
+				</div>
+			</div>
+			<div class="slt_notice flex-grid">
+				<p class="noti_tit">공지 설정</p>
+				<div class="noti_chk_wrap flex-grid">
+					<div class="chk-box">
+						<input type="checkbox" name="" id="chk1">
+						<label for="chk1">방송국</label>
+					</div>
+					<div class="chk-box">
+						<input type="checkbox" name="" id="chk2">
+						<label for="chk2">게시글</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- 투표 -->
+			<section class="vote-wrap">
+				<ul class="vote-list">
+					<li>
+						<p>투표제목은 1줄만 쓸겁니다. 여기가 투표</p>
+						<button type="button" class="vote-modify"><span>투표 수정</span></button>
+						<button type="button" class="vote-del"><span>투표 삭제</span></button>
+					</li>
+					<li>
+						<p>제목은 한 줄로 길게 길게 쓸겁니다 </p>
+						<button type="button" class="vote-modify"><span>투표 수정</span></button>
+						<button type="button" class="vote-del"><span>투표 삭제</span></button>
+					</li>
+					<li>
+						<p>제목은 한 줄로 길게 길게 쓸겁니다 </p>
+						<button type="button" class="vote-modify"><span>투표 수정</span></button>
+						<button type="button" class="vote-del"><span>투표 삭제</span></button>
+					</li>
+				</ul>
+			</section>
+			<!-- //투표 -->
+
+			<!-- 이미지추가 -->
+			<section class="file_list" style="display:block;">
+				<ul class="add-file">
+					<li class="file">
+						<button type="button" class="img chk">
+							<img src="https://res.afreecatv.com/images/afmain/img_thumb_profile.gif" alt="">
+							<em class="ico">대표</em>
+						</button>
+						<span class="img_name">이미지명</span>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+					</li>
+					<li class="file">
+						<button type="button" class="img"><img src="https://res.afreecatv.com/images/afmain/img_thumb_profile.gif" alt=""></button>
+						<span class="img_name">이미지명</span>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+					</li>
+					<li class="file">
+						<span class="img">
+							<div class="progress">
+								<span class="bar" style="width:50%;"></span>
+							</div>
+						</span>
+						<button type="button" class="btn-del"><span>삭제</span></button>
+					</li>
+				</ul>
+				<div class="upload_info">
+					<button type="button" class="btn-txt">이미지 <em>3장</em>/30장</button>
+				</div>
+			</section>
+			<!-- //이미지추가 -->
+
+			<!-- 공유버튼 -->
+			<section class="write_option">
+				<dl>
+					<dt>공유</dt>
+					<dd>
+						<input type="checkbox" id="share" checked="">
+						<label for="share">
+							<em>허용</em>
+							<span>허용안함</span>
+						</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt>실시간 인기글</dt>
+					<dd>
+						<input type="checkbox" id="live" checked="">
+						<label for="live">
+							<em>허용</em>
+							<span>허용안함</span>
+						</label>
+					</dd>
+				</dl>
+				<!--190808-->
+				<dl>
+					<dt>통합검색 노출</dt>
+					<dd>
+						<input type="checkbox" id="search" disabled="">
+						<label for="search">
+							<em>허용</em>
+							<span>허용안함</span>
+						</label>
+					</dd>
+				</dl>
+				<!--//190808-->
+			</section>
+			<section class="write_option">
+				<dl>
+					<dt>댓글 허용 설정</dt>
+					<dd>
+						<input type="checkbox" id="comment" checked="">
+						<label for="comment">
+							<em>허용</em>
+							<span>허용안함</span>
+						</label>
+					</dd>
+				</dl>
+				<dl class="comment_bj">
+					<dt>댓글 허용 설정</dt>
+					<dd>
+						<div class="radio-box">
+							<input type="radio" name="comment" id="comment_bj1" checked="">
+							<label for="comment_bj1" class="checked">
+								<span>전체 허용</span>
+							</label>
+						</div>
+						<div class="radio-box">
+							<input type="radio" name="comment" id="comment_bj2">
+							<label for="comment_bj2" class="checked">
+								<span>일부 허용</span>
+							</label>
+						</div>
+						<div class="radio-box">
+							<input type="radio" name="comment" id="comment_bj3">
+							<label for="comment_bj3" class="checked">
+								<span>허용 안함</span>
+							</label>
+						</div>
+					</dd>
+				</dl>
+				<dl class="comm_set">
+					<dt>권한 설정</dt>
+					<dd>
+                        <div class="chk-box">
+                            <input type="checkbox" name="" id="chk3" checked="">
+                            <label for="chk3">열혈팬</label>
+					    </div>
+					    <div class="chk-box">
+                            <input type="checkbox" name="" id="chk4">
+                            <label for="chk4">구독자</label>
+					    </div>
+					    <div class="chk-box">
+                            <input type="checkbox" name="" id="chk5">
+                            <label for="chk5">팬클럽</label>
+					    </div>
+					    <div class="chk-box">
+                            <input type="checkbox" name="" id="chk6" checked="" disabled="">
+                            <label for="chk6">서포터</label>
+					    </div>
+					    <div class="chk-box">
+                            <input type="checkbox" name="" id="chk7" disabled="">
+                            <label for="chk7">매니저</label>
+					    </div>
+					</dd>
+				</dl>
+			</section>
+			<!-- //공유버튼 -->
+
+			<!-- 등록버튼 -->
+			<div class="btn-col-2">
+				<span><button type="button" class="cancel">취소</button></span>
+				<span><button type="button" class="submit">등록</button></span>
+			</div>
+			<!-- //등록버튼 -->
+		</article>
+
+		<div class="emoticonArea" style="display:none;">
+			<div class="emoticon-wrap">
+				<div class="indicator"><span class="on">0</span><span class="">1</span><span class="">2</span><span class="">3</span><span class="">4</span><span class="">5</span><span class="">6</span><span class="">7</span></div>
+				<div class="react-swipe-container carousel"><div>
+					<div class="emoticon-list" style="display:none;">
+
+					</div>
+					<div class="emoticon-list ogq_item" style="">
+
+					</div>
+				</div></div>
+			</div>
+			<!-- 201124 -->
+			<div class="emoticon-tab-wrap ios"><!-- 아이폰 class="ios 추가 -->
+				<div class="emoticon-tab">
+
+				</div>
+				<button type="button" class="market">OGQ 마켓</button>
+			</div>
+			<!-- //201124 -->
+		</div>
+
+		<script>
+			$(window).load(function(){
+				$('.btn-emoticon').on('click' , function(){
+					if($('.emoticonArea').is(":visible") == false){
+						$('.emoticonArea').show();
+					}else{
+						$('.emoticonArea').hide();
+					}
+				})
+			});
+		</script>
+	</div></div>
+</div>
+
+
+</body></html>
