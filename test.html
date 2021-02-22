@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko"><head>
 	<meta charset="utf-8">
@@ -32,6 +31,19 @@
 						background : "#fff"
 					});
 				}
+			});
+		});
+
+		$(function(){
+			$("input, textarea").each(function(){
+				$(this).bind("focus", function(){
+					$("header").css("position", "absolute");
+					$(".option_box").css("position", "absolute");
+				});
+				$(this).bind("blur",function(){
+					$("header").css("position", "fixed");
+					$(".option_box").css("position", "fixed");
+				});
 			});
 		});
 	</script>
