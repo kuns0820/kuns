@@ -20,13 +20,10 @@
 			$("#bs-container").scroll(function(){
 				_wt = $("#bs-container").scrollTop();
 				console.log(_wt)
-		//		if(_wt > $(".option_box_wrap").offset().top){
 				if(_wt > 148){
 					$("header .option_box").show();
-		//			$(".text_inp_wrap").hide();
 				}else{
 					$("header .option_box").hide();
-		//			$(".text_inp_wrap").show();
 				}
 			});
 		});
@@ -45,8 +42,8 @@
 		});*/
 	</script>
 </head>
-<body>
-<div id="bs-wrap" class="fix_bar" style="position:fixed;">
+<body style="position:fixed;">
+<div id="bs-wrap" class="fix_bar">
 	<header style="position:relative;">
 		<section class="basic-section">
 			<div class="grid-start">
@@ -81,7 +78,7 @@
 		</div>
 	</header>
 
-	<div id="bs-container" style="overflow:scroll; height:calc(100vh - 48px); -webkit-overflow-scrolling:touch"><div id="bs-contents" style="margin-top:0;">
+	<div id="bs-container" style="position:fixed; overflow:scroll; width:100%; height:calc(100vh - 48px); -webkit-overflow-scrolling:touch"><div id="bs-contents" style="margin-top:0;">
 		<article class="write-frm">
 			<div class="slt_board">
 				<select name="" id=""><option value="">게시판을 선택해 주세요.</option></select>
