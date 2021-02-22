@@ -52,7 +52,7 @@
 </head>
 <body>
 <div id="bs-wrap" class="fix_bar">
-	<header>
+	<header style="position:static;">
 		<section class="basic-section">
 			<div class="grid-start">
 				<button type="button" class="btn-back"><span>뒤로가기</span></button>
@@ -63,9 +63,30 @@
 				<button type="button" disabled=""><span>등록</span></button>
 			</div>
 		</section>
+
+		<div class="option_box" style="position: static; top: 49px; background: rgb(255, 255, 255); z-index: 10;">
+			<div class="grid-start">
+				<button type="button" class="btn-addfile"><span>첨부파일</span></button>
+				<button type="button" class="btn-emoticon"><span>이모티콘</span></button>
+				<button type="button" class="btn-vote"><span>투표</span></button>
+				<button type="button" class="btn-temporary"><span>임시글</span></button>
+			</div>
+			<div class="grid-end">
+				<div>
+					<button type="button" class="btn-bold on"><span>두껍게</span></button>
+					<button type="button" class="btn-italic"><span>기울이기</span></button>
+					<button type="button" class="btn-underline"><span>밑줄</span></button>
+					<button type="button" class="btn-through"><span>가운데줄</span></button>
+					<button type="button" class="btn-color"><span>색상</span></button>
+					<button type="button" class="btn-left"><span>왼쪽정렬</span></button>
+					<button type="button" class="btn-center"><span>가운데정렬</span></button>
+					<button type="button" class="btn-right"><span>오른쪽정렬</span></button>
+				</div>
+			</div>
+		</div>
 	</header>
 
-	<div id="bs-container"><div id="bs-contents">
+	<div id="bs-container" style="overflow:scroll; height:calc(100vh - 48px);"><div id="bs-contents" style="margin-top:0;">
 		<article class="write-frm">
 			<div class="slt_board">
 				<select name="" id=""><option value="">게시판을 선택해 주세요.</option></select>
