@@ -11,27 +11,19 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://res.afreecatv.com/afreeca.ico">
 <link rel="stylesheet" type="text/css" href="https://res.afreecatv.com/css/global/mobile/bj/mobile_bj.css">
 <link rel="stylesheet" type="text/css" href="https://res.afreecatv.com/css/global/bj_loading.css">
+<style>
+	header .option_box {display:none;}
+</style>
 <script type="text/javascript" src="https://res.afreecatv.com/script/common/jquery.js"></script>
 	<script>
 		$(window).load(function(){
-			$(window).scroll(function(){
+			$("#bs-container").scroll(function(){console.log(333)
 				_wt = $(this).scrollTop();
 				console.log(_wt)
-				if(_wt > $(".option_box_wrap").offset().top - 48){
-					$(".option_box").css({
-						position: "fixed",
-						top : "auto",
-						bottom : "0",
-						background : "#fff",
-						zIndex : 10
-					});
-				}else{
-					$(".option_box").css({
-						position: "static",
-						top : "auto",
-						bottom : "0",
-						background : "#fff"
-					});
+				if(_wt > $(".option_box_wrap").offset().top - 48){ console.log(1)
+					$("header .option_box").show();
+				}else{ console.log(2)
+					$("header .option_box").hide();
 				}
 			});
 		});
@@ -64,7 +56,7 @@
 			</div>
 		</section>
 
-		<div class="option_box" style="position: static; top: 49px; background: rgb(255, 255, 255); z-index: 10;">
+		<div class="option_box">
 			<div class="grid-start">
 				<button type="button" class="btn-addfile"><span>첨부파일</span></button>
 				<button type="button" class="btn-emoticon"><span>이모티콘</span></button>
@@ -340,6 +332,3 @@
 
 
 </body></html>
-=======
-sdfsdf
->>>>>>> 62942dc4b0da7525e85017a3efe5ff71346fe158
