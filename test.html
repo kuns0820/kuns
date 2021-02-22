@@ -20,6 +20,7 @@
 				if(_wt > $(".option_box_wrap").offset().top - 48){
 					$(".option_box").css({
 						position: "fixed",
+						top : "auto",
 						bottom : "0",
 						background : "#fff",
 						zIndex : 10
@@ -27,13 +28,14 @@
 				}else{
 					$(".option_box").css({
 						position: "static",
+						top : "auto",
 						bottom : "0",
 						background : "#fff"
 					});
 				}
 			});
 		});
-
+/*
 		$(function(){
 			$("input, textarea").each(function(){
 				$(this).bind("focus", function(){
@@ -45,7 +47,7 @@
 					$(".option_box").css("position", "fixed");
 				});
 			});
-		});
+		});*/
 	</script>
 </head>
 <body>
