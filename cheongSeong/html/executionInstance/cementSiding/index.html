@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="referrer" content="no-referrer-when-downgrade">
+	<meta name="keywords" content="청성산업, 지붕공사, 지붕재, 물받이, 선홈통, 후레싱, 사이딩">
+	<meta name="description" content="지붕공사 청성산업">
+	<title>시멘트사이딩 | 시공사례 | 청성산업</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<div class="common_gnb">
+			<ul>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">ADMIN</a></li>
+			</ul>
+		</div>
+		<div class="main_header">
+			<h1><a href="#">청성산업</a></h1>
+			<ul class="gnb">
+				<li><a href="#">회사소개</a>
+					<ul class="lnb">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+					</ul>
+				</li>
+				<li><a href="#">지붕재</a>
+					<ul class="lnb">
+						<li><a href="#">슁글</a></li>
+						<li><a href="#">기와</a></li>
+						<li><a href="#">징크</a></li>
+					</ul>
+				</li>
+				<li><a href="#">물받이/선홈통/후레싱</a>
+					<ul class="lnb">
+						<li><a href="#">물받이</a></li>
+						<li><a href="#">선홈통</a></li>
+						<li><a href="#">후레싱</a></li>
+						<li><a href="#">기타부자재</a></li>
+					</ul>
+				</li>
+				<li><a href="index.html">사이딩</a>
+					<ul class="lnb">
+						<li><a href="index.html">시멘트사이딩</a></li>
+						<li><a href="#">목재사이딩</a></li>
+						<li><a href="#">비니사이딩</a></li>
+					</ul>
+				</li>
+				<li><a href="#">시공사례</a>
+					<ul class="lnb">
+						<li><a href="#">슁글</a></li>
+						<li><a href="#">기와</a></li>
+						<li><a href="#">메탈</a></li>
+						<li><a href="#">물받이외</a></li>
+						<li><a href="#">사이딩</a></li>
+						<li><a href="#">전원주택</a></li>
+						<li><a href="#">실내건축,리모델링</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a class="menu_btn" href="#">메뉴전체보기</a>
+			<div class="gnb_bg"></div>
+		</div>
+	</header>
+	<div id="container" class="sub_page">
+		<div class="sub_visual"></div>
+		<div class="contants">
+			<div class="snb">
+				<div class="sub_title">
+					<h2>시공사례</h2>
+					<span>EXECUTION INSTANCE</span>
+				</div>
+				<ul class="sub_list">
+					<li><a href="index.html" class="active">시멘트사이딩</a></li>
+					<li><a href="#">목재사이딩</a></li>
+					<li><a href="#">비닐사이딩</a></li>
+				</ul>
+				<div class="counsiling">
+					<em>고객지원/상담</em>
+					<p>무엇이든 물어보세요!</p>
+					<div class="tell">031.313.1700</div>
+					<div class="email">jgw8044@hanmail.net</div>
+				</div>
+			</div>
+			<div class="section">
+				ffff
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="address">
+			<p class="company">청성산업</p>
+			<div class="company_add">
+				<span>경기도 시흥시 찬우물1길 38-1(은행동 353-10)</span>
+				<span>Tel. 031-313-1700</span>
+				<span>Fax. 031-316-4200</span>
+			</div>
+			<p class="copy">COPYRIGHT  ⓒ 2012  www.chungsungroof.com. ALL RIGHTS RESERVED.</p>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript">
+	// lnb
+	$(function() {
+		$('.gnb>li,.gnb_bg').on('mouseover focusin', function() {
+			$('.lnb').stop().slideDown(200);
+			$('.gnb_bg').stop().slideDown(200);
+		});
+		$('.gnb>li,.gnb_bg').on('mouseout focusout', function() {
+			$('.lnb').stop().slideUp(200);
+			$('.gnb_bg').stop().slideUp(200);
+		});
+	});
+
+	$(function() {
+		$('.menu_btn').click(function() {
+			$('.lnb').slideToggle(200);
+			$('.gnb_bg').slideToggle(200);
+		});
+	});
+</script>
+</body>
+</html>
