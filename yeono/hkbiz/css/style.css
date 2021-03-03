@@ -7,8 +7,10 @@ a {color:#000; text-decoration:none;}
 strong, h1, p, span, dd {font-weight:400; word-break:keep-all;}
 
 body {background-color:#fff; color:#333; font-size:17px; font-family:'Nanum Gothic', sans-serif;}
+.sub_visual {display:flex; align-items:center; background:url(../images/sub_visual.jpg) 50% 50% no-repeat; background-size:cover; width:100%; height:380px; transition:height .3s;}
+.sub_visual h2 {width:1420px; margin:0 auto; color:#fff; font-size:50px; font-weight:700; text-shadow:1px 1px 1px #383838; letter-spacing:-1px;}
 .message .inner {max-width:1420px; height:auto; margin:0 auto;}
-.sub_tit {margin-bottom:100px; padding-top:10px;}
+.sub_tit {margin-bottom:100px; padding-top:45px;}
 .sub_tit h3 {margin:0 auto; text-align:center; font-size:45px;}
 .sub_tit h3:before {content:''; display:block; clear:both; width:1px; height:50px; margin:0 auto; margin-bottom:10px; background-color:#000;}
 .message .inner .ceo {display:flex; flex-direction:row; justify-content:space-between; margin-bottom:60px;}
@@ -44,8 +46,14 @@ body {background-color:#fff; color:#333; font-size:17px; font-family:'Nanum Goth
 .identity .section2 p {margin-bottom:30px; color:#666; line-height:27px;}
 .identity .section2 p span {color:#666; font-size:24px; font-weight:700;}
 
+@media screen and (max-width:1420px) {
+	.sub_visual h2 {padding-left:10px;}
+}
 
 @media screen and (max-width:1200px) {
+	.sub_visual {height:300px; transition:height .3s;}
+	.sub_visual h2 {font-size:30px;}
+	
 	.message .inner {max-width:768px;}
 	.message .inner .ceo {flex-wrap:wrap-reverse; justify-content:center;}
 	.message .inner .ceo .msg {width:100%;}
