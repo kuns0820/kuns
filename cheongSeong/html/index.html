@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="euc-kr">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="referrer" content="no-referrer-when-downgrade">
 	<meta name="keywords" content="청성산업, 지붕공사, 지붕재, 물받이, 선홈통, 후레싱, 사이딩">
@@ -13,47 +12,47 @@
 </head>
 
 <body>
-<div class="wrap">
+<div class="wrap main_page">
 	<header>
 		<div class="common_gnb">
-			<ul>
-				<li><a href="#">Contact us</a></li>
-				<li><a href="#">ADMIN</a></li>
-			</ul>
+			<div class="inner">
+				<a href="#">Contact us</a>
+				<a href="#">ADMIN</a>
+			</div>
 		</div>
-		<div class="main_header">
+		<div class="header">
 			<h1><a href="#">청성산업</a></h1>
 			<ul class="gnb">
 				<li><a href="#">회사소개</a>
-					<ul class="lnb">
+					<ul class="depth2">
 						<li><a href="#">회사소개</a></li>
 						<li><a href="#">찾아오시는 길</a></li>
 					</ul>
 				</li>
 				<li><a href="#">지붕재</a>
-					<ul class="lnb">
+					<ul class="depth2">
 						<li><a href="#">슁글</a></li>
 						<li><a href="#">기와</a></li>
 						<li><a href="#">징크</a></li>
 					</ul>
 				</li>
 				<li><a href="#">물받이/선홈통/후레싱</a>
-					<ul class="lnb">
+					<ul class="depth2">
 						<li><a href="#">물받이</a></li>
 						<li><a href="#">선홈통</a></li>
 						<li><a href="#">후레싱</a></li>
 						<li><a href="#">기타부자재</a></li>
 					</ul>
 				</li>
-				<li><a href="executionInstance/cementSiding/index.html">사이딩</a>
-					<ul class="lnb">
+				<li><a href="executionInstance/cementSiding.html">사이딩</a>
+					<ul class="depth2">
 						<li><a href="executionInstance/cementSiding/index.html">시멘트사이딩</a></li>
 						<li><a href="#">목재사이딩</a></li>
 						<li><a href="#">비니사이딩</a></li>
 					</ul>
 				</li>
 				<li><a href="#">시공사례</a>
-					<ul class="lnb">
+					<ul class="depth2">
 						<li><a href="#">슁글</a></li>
 						<li><a href="#">기와</a></li>
 						<li><a href="#">메탈</a></li>
@@ -64,40 +63,40 @@
 					</ul>
 				</li>
 			</ul>
-			<a class="menu_btn" href="#">메뉴전체보기</a>
+			<a class="menu_btn" href="javascript:">메뉴전체보기</a>
 			<div class="gnb_bg"></div>
 		</div>
 	</header>
-	<div id="container" class="main_page">
-		<ul class="main_visual">
-			<li><img src="../images/main_slide1.jpg"></li>
-			<li><img src="../images/main_slide2.jpg"></li>
-		</ul>
+	<div id="container">
+		<div class="main_visual">
+			<div class="visual1"></div>
+			<div class="visual2"></div>
+		</div>
 		<div class="contants">
-			<em class="en">PRODUCT</em>
 			<div class="main_title">
+				<em class="en">PRODUCT</em>
 				<h2>제품소개</h2>
 				<span>청성산업은 크고 아름다운세상을 만들어 가겠습니다.</span>
 			</div>
 			<div class="section">
-				<div class="list_box">
+				<a class="list_box" href="#">
 					<div class="inner_box">
 						<p>지붕재</p>
 						<span>최고의 품질과 아름다움을 자랑하는 지붕재들만 <br>엄선하여 제공하고 있습니다.</span>
 					</div>
-				</div>
-				<div class="list_box">
+				</a>
+				<a class="list_box"  href="#">
 					<div class="inner_box">
 						<p>물받이/선홈통/후레싱</p>
 						<span>건축자재에 꼭 필요한 <br>제품을 제공하여 드리고 있습니다. </span>
 					</div>
-				</div>
-				<div class="list_box">
+				</a>
+				<a class="list_box"  href="#">
 					<div class="inner_box">
 						<p>사이딩</p>
 						<span>청성산업에서는 최고급 외장재만을 엄선하여<br>제공하고 있습니다.</span>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -115,30 +114,30 @@
 </div>
 
 <script type="text/javascript">
-	// lnb
+	// gnb
 	$(function() {
-		$('.gnb>li,.gnb_bg').on('mouseover focusin', function() {
-			$('.lnb').stop().slideDown(200);
-			$('.gnb_bg').stop().slideDown(200);
+		$('.gnb>li,.gnb_bg').on('mouseover', function() {
+			$('.depth2').show();
+			$('.gnb_bg').show();
 		});
-		$('.gnb>li,.gnb_bg').on('mouseout focusout', function() {
-			$('.lnb').stop().slideUp(200);
-			$('.gnb_bg').stop().slideUp(200);
+		$('.gnb>li,.gnb_bg').on('mouseout', function() {
+			$('.depth2').hide();
+			$('.gnb_bg').hide();
 		});
 	});
 
 	$(function() {
 		$('.menu_btn').click(function() {
-			$('.lnb').slideToggle(200);
-			$('.gnb_bg').slideToggle(200);
+			$('.depth2').toggle();
+			$('.gnb_bg').toggle();
 		});
 	});
 	
 	//slide
 	$(function() {
-		$('.main_visual li:gt(0)').hide();
+		$('.main_visual div:gt(0)').hide();
 		setInterval (function() {
-			$('.main_visual li:first-child').fadeOut().next('li').fadeIn().end('li').appendTo('.main_visual')
+			$('.main_visual div:first-child').fadeOut().next('div').fadeIn().end('div').appendTo('.main_visual')
 		},5000);
 	});
 </script>
